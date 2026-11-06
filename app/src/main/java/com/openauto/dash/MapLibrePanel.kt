@@ -401,6 +401,22 @@ fun MapLibrePanel(modifier: Modifier = Modifier, wallpaper: Boolean = false) {
         map.getStyle { style -> enableLocation(map, style, context, scope, if (wallpaper) mapView else null) }
     }
 
+    // A destination picked before the first GPS fix: routed by itself once the fix comes.
+    val gpsNotReady = context.getString(R.string.info_map_gps_not_ready)
+    LaunchedEffect(destination, error) {
+        val dest = destination ?: return@LaunchedEffect
+        if (error != gpsNotReady) return@LaunchedEffect
+        while (true) {
+            delay(3_000L)
+            @SuppressLint("MissingPermission")
+            val loc = runCatching { mapRef?.locationComponent?.lastKnownLocation }.getOrNull()
+            if (loc != null && (kotlin.math.abs(loc.latitude) >= 0.01 || kotlin.math.abs(loc.longitude) >= 0.01)) {
+                routeTo(dest)
+                return@LaunchedEffect
+            }
+        }
+    }
+
     Box(modifier = modifier.fillMaxSize()) {
         AndroidView(factory = { mapView }, modifier = Modifier.fillMaxSize())
         // The search and route panels belong to the map tile, not to a wallpaper.
