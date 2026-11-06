@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="reverse_title">Vista de marcha a ré</string>
-    <string name="reverse_settings_detail">Linhas de guia e radar de estacionamento sobre a câmara</string>
+    <string name="reverse_settings_detail">Linhas de guia e radar de estacionamento sobre a câmera</string>
     <string name="reverse_switch">Vista de marcha a ré do Dashwheel</string>
-    <string name="reverse_switch_detail">Linhas que seguem o volante, o radar de estacionamento e o seu carro, sobre a câmara traseira.</string>
-    <string name="reverse_needs_access">Ative o serviço de acessibilidade do Dashwheel: é a única forma de desenhar sobre a câmara.</string>
+    <string name="reverse_switch_detail">Linhas que seguem o volante, o radar de estacionamento e o seu carro, sobre a câmera traseira.</string>
+    <string name="reverse_needs_access">Ative o serviço de acessibilidade do Dashwheel: é a única forma de desenhar sobre a câmera.</string>
     <string name="reverse_layout_title">No tela</string>
-    <string name="reverse_layout_both">Câmara e radar</string>
-    <string name="reverse_layout_camera">Câmara</string>
+    <string name="reverse_layout_both">Câmera e radar</string>
+    <string name="reverse_layout_camera">Câmera</string>
     <string name="reverse_layout_radar">Radar</string>
     <string name="reverse_layout_hint">Também pode mudar na própria tela de marcha a ré.</string>
     <string name="reverse_stock_title">Linhas da app do carro</string>
@@ -32,13 +32,13 @@
     <string name="reverse_near_stop">Pare</string>
     <string name="reverse_near_close">Perto</string>
     <string name="reverse_near_far">Algo atrás</string>
-    <string name="reverse_picture_title">Imagem da câmara</string>
+    <string name="reverse_picture_title">Imagem da câmera</string>
     <string name="reverse_picture_rom">App do carro</string>
     <string name="reverse_picture_own">Dashwheel</string>
-    <string name="reverse_picture_hint_rom">A app do carro mostra a câmara e o Dashwheel desenha por cima.</string>
-    <string name="reverse_picture_hint_own">Experimental: o Dashwheel mostra a câmara ele próprio. Se não chegar imagem, a da app do carro volta em segundos.</string>
-    <string name="reverse_picture_denied">O Dashwheel precisa da permissão da câmara para isto.</string>
-    <string name="reverse_picture_failed">O Dashwheel não conseguiu a câmara: imagem da app do carro</string>
+    <string name="reverse_picture_hint_rom">A app do carro mostra a câmera e o Dashwheel desenha por cima.</string>
+    <string name="reverse_picture_hint_own">Experimental: o Dashwheel mostra a câmera ele próprio. Se não chegar imagem, a da app do carro volta em segundos.</string>
+    <string name="reverse_picture_denied">O Dashwheel precisa da permissão da câmera para isto.</string>
+    <string name="reverse_picture_failed">O Dashwheel não conseguiu a câmera: imagem da app do carro</string>
     <string name="reverse_side_left">Lado esquerdo: %1$d cm</string>
     <string name="reverse_side_right">Lado direito: %1$d cm</string>
     <string name="reverse_boot_blocked">A mala não abre por completo aqui</string>
@@ -49,7 +49,7 @@
     <string name="reverse_second_title">Segunda tela</string>
     <string name="reverse_second_off">Não</string>
     <string name="reverse_second_hint">Ocupa sozinho a segunda tela em marcha a ré.</string>
-    <string name="reverse_second_hint_rom">A câmara precisa da vista traseira ligada com a imagem do Dashwheel: até lá a segunda tela mostra o radar.</string>
+    <string name="reverse_second_hint_rom">A câmera precisa da vista traseira ligada com a imagem do Dashwheel: até lá a segunda tela mostra o radar.</string>
     <string name="reverse_second_hint_video">Precisa de Vista simples desligada nas configurações da segunda tela.</string>
     <string name="reverse_near_ahead">Algo à frente</string>
     <string name="reverse_steer">Linhas de direção</string>
@@ -58,7 +58,7 @@
     <string name="reverse_radar_ground">Chão</string>
     <string name="reverse_radar_plain">Simples</string>
     <string name="reverse_radar_alert">Radar de estacionamento</string>
-    <string name="reverse_radar_ground_hint">O chão filmado pela câmara, sob os sensores.</string>
+    <string name="reverse_radar_ground_hint">O chão filmado pela câmera, sob os sensores.</string>
     <string name="reverse_radar_plain_hint">Só o carro, as distâncias e os sensores.</string>
     <string name="reverse_radar_alert_hint">Os arcos do radar de estacionamento, como dirigindo.</string>
     <string name="car_paint_title">Cor do carro no radar</string>

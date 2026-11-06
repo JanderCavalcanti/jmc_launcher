@@ -22,7 +22,7 @@
     <string name="phone_forget_title">Esquecer %1$s?</string>
     <string name="phone_forget_body">As mensagens e chamadas deixam de aparecer aqui. Para voltar a associar é preciso um novo código.</string>
     <string name="phone_pair_title">Associar um telefone</string>
-    <string name="phone_pair_step1">1. Instale o Dashwheel Companheiro no telefone: leia este código com a câmara.</string>
+    <string name="phone_pair_step1">1. Instale o Dashwheel Companheiro no telefone: leia este código com a câmera.</string>
     <string name="phone_pair_step2">2. Ative o hotspot Wi-Fi do telefone e ligue este autorrádio.</string>
     <string name="phone_pair_step3">3. Na app, toque em Associar um carro e leia este código.</string>
     <string name="phone_pair_waiting">À espera do telefone…</string>

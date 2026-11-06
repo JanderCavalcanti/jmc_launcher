@@ -13,11 +13,11 @@
     <string name="signals_forget">Esquecer</string>
     <string name="signals_find">Procurar</string>
     <string name="signals_find_again">Procurar de novo</string>
-    <string name="signals_camera">Câmara traseira</string>
-    <string name="signals_camera_chosen">Câmara %1$s</string>
-    <string name="signals_camera_rom">A câmara da app do carro</string>
-    <string name="signals_camera_item">Câmara %1$s: %2$s</string>
-    <string name="signals_camera_none">Nenhuma câmara encontrada</string>
+    <string name="signals_camera">Câmera traseira</string>
+    <string name="signals_camera_chosen">Câmera %1$s</string>
+    <string name="signals_camera_rom">A câmera da app do carro</string>
+    <string name="signals_camera_item">Câmera %1$s: %2$s</string>
+    <string name="signals_camera_none">Nenhuma câmera encontrada</string>
     <string name="signals_close">Fechar</string>
     <string name="signals_restart">Recomeçar</string>
     <string name="signals_done">Feito</string>

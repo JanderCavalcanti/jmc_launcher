@@ -70,7 +70,7 @@
     <string name="alert_say_call">Chamada de %1$s</string>
     <string name="alert_say_doors">Porta aberta: %1$s</string>
     <string name="settings_rom_radar_detail">Mostra os sensores de estacionamento no estilo do Dashwheel, em vez dos do rádio</string>
-    <string name="settings_rom_radar_needs_access">Ative o Dashwheel em Acessibilidade para o mostrar sobre a câmara de marcha a ré</string>
+    <string name="settings_rom_radar_needs_access">Ative o Dashwheel em Acessibilidade para o mostrar sobre a câmera de marcha a ré</string>
     <string name="settings_rom_ac_detail">Mostra as alterações da climatização no estilo do Dashwheel, em vez da janela do rádio</string>
     <string name="alert_kind_radar">Radar de estacionamento</string>
     <string name="alert_kind_ac">Climatização</string>
@@ -344,7 +344,7 @@
     <string name="report_item_maps">Google Maps num mosaico</string>
     <string name="report_item_obd">Adaptador OBD</string>
     <string name="report_item_can">Dados do carro: portas, clima, viagem</string>
-    <string name="report_item_camera">Câmara de marcha a ré</string>
+    <string name="report_item_camera">Câmera de marcha a ré</string>
     <string name="report_item_sound">Volume e música</string>
     <string name="report_item_sleep">Volta depois da suspensão</string>
     <string name="automation_title">Apps de automação</string>

@@ -43,6 +43,6 @@
     <string name="unit_cap_volume">Volume do rádio</string>
     <string name="unit_cap_launcher">Escolha do launcher pelo firmware</string>
     <string name="unit_cap_popups">Avisos do firmware substituídos</string>
-    <string name="unit_cap_camera">Câmara de marcha a ré</string>
+    <string name="unit_cap_camera">Câmera de marcha a ré</string>
     <string name="unit_cap_tyres">Pneus</string>
 </resources>

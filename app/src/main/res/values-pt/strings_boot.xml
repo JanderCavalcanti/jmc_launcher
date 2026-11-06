@@ -32,7 +32,7 @@
     <string name="boot_saved_usb">Salvo em %1$s. Desligue e volte a ligar a pendrive: o rádio importa a animação. Para o logotipo fixo: Configurações → Configurações de fábrica (8888) → Logo set → escolha %2$s → Update logo.</string>
     <string name="boot_no_usb">Nenhuma pendrive USB encontrada. Ligue uma e tente de novo.</string>
     <string name="boot_still">Mudar também o logotipo fixo</string>
-    <string name="boot_still_detail">A primeira imagem, antes do Android. Desligado por omissão: é escrito na partição do logotipo, com cópia antes e verificação depois.</string>
+    <string name="boot_still_detail">A primeira imagem, antes do Android. Desligado por padrão: é escrito na partição do logotipo, com cópia antes e verificação depois.</string>
     <string name="boot_still_confirm_title">Mudar o logotipo fixo?</string>
     <string name="boot_still_confirm_body">O logotipo fixo é escrito na partição do logotipo, com cópia antes.</string>
     <string name="boot_still_done">Logotipo fixo também atualizado.</string>
