@@ -39,8 +39,8 @@ android {
         versionName = System.getenv("VERSION_NAME") ?: "1.0"
 
         // Where the in-app updater looks for new releases.
-        buildConfigField("String", "GITHUB_OWNER", "\"deviloufr-ai\"")
-        buildConfigField("String", "GITHUB_REPO", "\"Dashwheel\"")
+        buildConfigField("String", "GITHUB_OWNER", "\"JanderCavalcanti\"")
+        buildConfigField("String", "GITHUB_REPO", "\"jmc_launcher\"")
 
         vectorDrawables {
             useSupportLibrary = true

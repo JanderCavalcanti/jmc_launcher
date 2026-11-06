@@ -1438,7 +1438,7 @@ private fun MoreWithGithubRow() {
 }
 
 internal const val KOFI_URL = "https://ko-fi.com/deviloufr"
-private const val PROJECT_URL = "https://github.com/deviloufr-ai/Dashwheel"
+private const val PROJECT_URL = "https://github.com/JanderCavalcanti/jmc_launcher"
 /** A Google Play listing, the package name appended (the Play edition's own, and the companion's). */
 internal const val PLAY_LISTING = "https://play.google.com/store/apps/details?id="
 

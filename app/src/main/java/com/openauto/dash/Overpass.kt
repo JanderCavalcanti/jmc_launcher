@@ -95,4 +95,4 @@ internal object Overpass {
 }
 
 /** How Dashwheel names itself to OpenStreetMap's servers, as their usage policy asks. */
-internal const val OVERPASS_AGENT = "Dashwheel/1.0 (https://github.com/deviloufr-ai/Dashwheel)"
+internal const val OVERPASS_AGENT = "jmc_launcher/1.0 (https://github.com/JanderCavalcanti/jmc_launcher)"

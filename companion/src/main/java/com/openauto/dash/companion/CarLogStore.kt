@@ -25,7 +25,7 @@ object CarLogStore {
     private const val DIR = "car_logs"
     private const val KEEP = 3
     private const val NOTIFICATION_ID = 0x10C
-    private const val NEW_ISSUE = "https://github.com/deviloufr-ai/Dashwheel/issues/new"
+    private const val NEW_ISSUE = "https://github.com/JanderCavalcanti/jmc_launcher/issues/new"
 
     /** Saves [log] and posts its notification; false when it can't be written. */
     fun receive(context: Context, log: CarLog): Boolean {

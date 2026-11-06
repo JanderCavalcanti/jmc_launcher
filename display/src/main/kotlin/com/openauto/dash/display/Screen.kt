@@ -38,7 +38,7 @@ class Screen(
     private val painter = Painter(mode.width, mode.height, config.overscanPct, logo).also {
         it.upsideDown = Rotation.upsideDown
         // The map's tiles, when the card names where they come from: a tile that arrives redraws the picture.
-        val agent = "dashwheel-display/" + (Screen::class.java.`package`?.implementationVersion ?: "dev") + " (+https://github.com/deviloufr-ai/Dashwheel)"
+        val agent = "dashwheel-display/" + (Screen::class.java.`package`?.implementationVersion ?: "dev") + " (+https://github.com/JanderCavalcanti/jmc_launcher)"
         it.tiles = config.tileUrl?.let { url -> TileCache(File(config.tileCache, "day"), url, config.mapZoom, agent, onLoaded = ::redraw) }
         it.nightTiles = config.tileUrlNight?.let { url -> TileCache(File(config.tileCache, "night"), url, config.mapZoom, agent, onLoaded = ::redraw) }
         // The buildings' heights, for the tilted map.

@@ -36,7 +36,7 @@ import androidx.compose.ui.unit.dp
  * as a QR code for the phone and a button for this screen.
  */
 
-internal const val WIKI_URL = "https://github.com/deviloufr-ai/Dashwheel/wiki"
+internal const val WIKI_URL = "https://github.com/JanderCavalcanti/jmc_launcher/wiki"
 
 /** A page of the wiki; [slug] null is the wiki's home. */
 internal enum class WikiPage(val slug: String?) {

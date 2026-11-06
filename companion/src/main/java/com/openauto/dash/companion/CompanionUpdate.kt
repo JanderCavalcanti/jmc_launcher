@@ -315,7 +315,7 @@ object CompanionUpdate {
     private fun prefs(context: Context) = context.getSharedPreferences("updates", Context.MODE_PRIVATE)
 
     const val EXTRA_INSTALL = "install_update"
-    private const val LATEST_URL = "https://api.github.com/repos/deviloufr-ai/Dashwheel/releases/latest"
+    private const val LATEST_URL = "https://api.github.com/repos/JanderCavalcanti/jmc_launcher/releases/latest"
     /** The companion's asset in each release (see .github/workflows/build.yml). */
     private const val APK_ASSET = "dashwheel-companion.apk"
     private const val APK_MIME = "application/vnd.android.package-archive"
