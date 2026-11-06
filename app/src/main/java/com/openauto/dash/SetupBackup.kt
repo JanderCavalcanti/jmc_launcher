@@ -30,7 +30,9 @@ internal object SetupBackup {
         "compile_after_update", "pmpatch", "ai_diagnoses",
         // The second screen's pairing secret, like the phone's; and this unit's own
         // system state: the navigation bar policy it found, the widget ids it let go of.
-        "display_link", "docked_nav_bar", "widget_host"
+        "display_link", "docked_nav_bar", "widget_host",
+        // The Google sign-in: a token, and which account; never copied to another unit.
+        "google_account"
     )
 
     /** Keys left out of a file that is otherwise saved: the Gemini key is a secret. */

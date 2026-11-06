@@ -41,6 +41,13 @@ android {
         // Where the in-app updater looks for new releases.
         buildConfigField("String", "GITHUB_OWNER", "\"JanderCavalcanti\"")
         buildConfigField("String", "GITHUB_REPO", "\"jmc_launcher\"")
+        // Google sign-in (OAuth client "TVs and limited input devices"). Kept out
+        // of the repository: read from ~/.gradle/gradle.properties on the build
+        // machine; empty means the build has no Google sign-in.
+        val googleId = providers.gradleProperty("JMC_GOOGLE_CLIENT_ID").getOrElse("")
+        val googleSecret = providers.gradleProperty("JMC_GOOGLE_CLIENT_SECRET").getOrElse("")
+        buildConfigField("String", "GOOGLE_CLIENT_ID", "\"$googleId\"")
+        buildConfigField("String", "GOOGLE_CLIENT_SECRET", "\"$googleSecret\"")
 
         vectorDrawables {
             useSupportLibrary = true

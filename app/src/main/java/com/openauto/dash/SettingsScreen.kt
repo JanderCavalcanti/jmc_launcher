@@ -1271,6 +1271,7 @@ private fun GeneralPane(m: TopBarModel, open: (Deep) -> Unit) {
     SettingsRow(Icons.Filled.Language, stringResource(R.string.language_title), languageName(AppLanguage.current(context))) { open(Deep.LANGUAGE) }
     SettingsRow(Icons.Filled.Straighten, stringResource(R.string.units_title), unitsSummary(units)) { open(Deep.UNITS) }
     Spacer(Modifier.height(20.dp))
+    GoogleAccountRows()
     SetupBackupRows()
     SettingsRow(Icons.Filled.Checklist, stringResource(R.string.setup_again), stringResource(R.string.setup_again_detail)) { m.onSetup(true) }
     // The demo stays here once turned on: the dashboard's badge stops it, and so does this switch.

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="google_section">Conta Google</string>
+    <string name="google_sign_in">Entrar com o Google</string>
+    <string name="google_sign_in_detail">Salva a configuração do launcher no seu Google Drive e traz de volta em outro aparelho</string>
+    <string name="google_not_configured">Indisponível nesta versão</string>
+    <string name="google_last_sync">Salvo em %1$s</string>
+    <string name="google_never_synced">Ainda não salvo</string>
+    <string name="google_save_now">Salvar agora</string>
+    <string name="google_save_now_detail">As alterações também são salvas automaticamente</string>
+    <string name="google_restore">Restaurar do Google</string>
+    <string name="google_restore_detail">Traz de volta a configuração salva na sua conta</string>
+    <string name="google_restore_title">Restaurar a configuração salva?</string>
+    <string name="google_restore_body">Sua conta tem uma configuração do launcher salva. Restaurar substitui a atual e reinicia o launcher.</string>
+    <string name="google_restore_confirm">Restaurar</string>
+    <string name="google_sign_out">Sair da conta</string>
+    <string name="google_sign_out_body">A configuração continua no seu Google Drive; este aparelho para de salvar nela.</string>
+    <string name="google_code_title">Entrar com o Google</string>
+    <string name="google_code_body">No celular, abra %1$s (ou leia o código) e digite:</string>
+    <string name="google_code_waiting">Aguardando aprovação…</string>
+    <string name="google_saved">Salvo na sua conta Google</string>
+    <string name="google_failed">Não foi possível acessar sua conta Google</string>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="google_section">Google account</string>
+    <string name="google_sign_in">Sign in with Google</string>
+    <string name="google_sign_in_detail">Saves your launcher setup to your Google Drive and brings it back on another unit</string>
+    <string name="google_not_configured">Not available in this build</string>
+    <string name="google_last_sync">Saved %1$s</string>
+    <string name="google_never_synced">Not saved yet</string>
+    <string name="google_save_now">Save now</string>
+    <string name="google_save_now_detail">Changes are also saved on their own</string>
+    <string name="google_restore">Restore from Google</string>
+    <string name="google_restore_detail">Puts back the setup saved in your account</string>
+    <string name="google_restore_title">Restore the saved setup?</string>
+    <string name="google_restore_body">Your account has a saved launcher setup. Restoring replaces the current one and restarts the launcher.</string>
+    <string name="google_restore_confirm">Restore</string>
+    <string name="google_sign_out">Sign out</string>
+    <string name="google_sign_out_body">The setup stays in your Google Drive; this unit stops saving to it.</string>
+    <string name="google_code_title">Sign in with Google</string>
+    <string name="google_code_body">On your phone, open %1$s (or scan the code) and type:</string>
+    <string name="google_code_waiting">Waiting for approval…</string>
+    <string name="google_saved">Saved to your Google account</string>
+    <string name="google_failed">Could not reach your Google account</string>
+</resources>

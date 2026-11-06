@@ -57,6 +57,8 @@ class DashApp : Application() {
         CrashReports.install(this)
         // Which head unit firmware this is, before anything asks its adapter.
         UnitPlatform.init(this)
+        // Saves the setup to the Google account, when signed in.
+        GoogleSync.install(this)
     }
 }
 
