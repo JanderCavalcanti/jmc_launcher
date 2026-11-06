@@ -64,11 +64,16 @@ object AdbInstaller {
         }
     }
 
-    /** The unit's ADB TCP port from `service.adb.tcp.port`, else the K706 default. */
-    fun announcedPort(): Int = runCatching {
-        val p = Runtime.getRuntime().exec(arrayOf("getprop", "service.adb.tcp.port"))
-        p.inputStream.bufferedReader().use { it.readText() }.trim().toIntOrNull()
-    }.getOrNull() ?: DEFAULT_PORT
+    /**
+     * The unit's ADB TCP port: `service.adb.tcp.port`, else `persist.adb.tcp.port`
+     * (the Carlinkit/Suding tbox sets only that one, to 5555), else the K706 default.
+     */
+    fun announcedPort(): Int = prop("service.adb.tcp.port") ?: prop("persist.adb.tcp.port") ?: DEFAULT_PORT
+
+    private fun prop(name: String): Int? = runCatching {
+        val p = Runtime.getRuntime().exec(arrayOf("getprop", name))
+        p.inputStream.bufferedReader().use { it.readText() }.trim().toIntOrNull()?.takeIf { it > 0 }
+    }.getOrNull()
 
     /**
      * The port adbd answers on at 127.0.0.1: the one the unit announces, else
