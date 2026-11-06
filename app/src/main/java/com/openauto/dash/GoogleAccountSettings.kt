@@ -55,6 +55,11 @@ internal fun GoogleAccountRows() {
     val failed = stringResource(R.string.google_failed)
     val saved = stringResource(R.string.google_saved)
 
+    // Signed in but the restore question never answered (Settings closed with it open): ask again.
+    LaunchedEffect(state.email) {
+        if (state.email != null && withContext(Dispatchers.IO) { GoogleAccount.onHold(context) }) askRestore = checkAfterSignIn(context)
+    }
+
     SettingsSection(stringResource(R.string.google_section))
     if (!GoogleAccount.configured) {
         SettingsRow(Icons.Filled.AccountCircle, stringResource(R.string.google_sign_in), stringResource(R.string.google_not_configured)) {}
@@ -100,11 +105,9 @@ internal fun GoogleAccountRows() {
                     GoogleAccount.Poll.Waiting -> Unit
                     is GoogleAccount.Poll.SlowDown -> wait += r.extraMs
                     is GoogleAccount.Poll.Done -> {
+                        // Clearing the code ends this effect, so the check runs in the rows' own scope.
                         code = null
-                        // A setup already saved from another unit or an earlier install: offer it.
-                        val remote = withContext(Dispatchers.IO) { GoogleAccount.hasRemote(context).getOrDefault(false) }
-                        if (remote) askRestore = true
-                        else withContext(Dispatchers.IO) { GoogleAccount.upload(context) }
+                        scope.launch { askRestore = checkAfterSignIn(context) }
                         return@LaunchedEffect
                     }
                     is GoogleAccount.Poll.Failed -> {
@@ -158,14 +161,18 @@ internal fun GoogleAccountRows() {
                         // Seen through even if Settings is closed meanwhile, like a restore from a file.
                         withContext(NonCancellable) {
                             withContext(Dispatchers.IO) { GoogleAccount.download(context).mapCatching { SetupBackup.restore(context, it).getOrThrow() } }
-                                .onSuccess { SetupBackup.restart(context) }
+                                .onSuccess { GoogleAccount.releaseHold(context); SetupBackup.restart(context) }
                                 .onFailure { Toast.makeText(context, failed, Toast.LENGTH_SHORT).show() }
                         }
                     }
                 }) { Text(stringResource(R.string.google_restore_confirm), color = DashColors.Critical) }
             },
             dismissButton = {
-                TextButton(onClick = { askRestore = false }) { Text(stringResource(R.string.dash_cancel), color = DashColors.Muted) }
+                TextButton(onClick = {
+                    askRestore = false
+                    // Kept this unit's setup: it is the one saved from now on.
+                    scope.launch { withContext(NonCancellable + Dispatchers.IO) { GoogleAccount.releaseHold(context); GoogleAccount.uploadIfChanged(context) } }
+                }) { Text(stringResource(R.string.google_restore_keep), color = DashColors.Muted) }
             }
         )
     }
@@ -188,4 +195,14 @@ internal fun GoogleAccountRows() {
             }
         )
     }
+}
+
+/**
+ * After sign-in: true when the account holds a saved setup, so the restore
+ * question is shown. With nothing saved yet, this unit's setup is saved now.
+ */
+private suspend fun checkAfterSignIn(context: android.content.Context): Boolean = withContext(Dispatchers.IO) {
+    val remote = GoogleAccount.hasRemote(context).getOrNull() ?: return@withContext false // offline: asked again later
+    if (!remote) GoogleAccount.upload(context)
+    remote
 }

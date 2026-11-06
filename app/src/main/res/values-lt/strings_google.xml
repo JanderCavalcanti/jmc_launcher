@@ -20,4 +20,5 @@
     <string name="google_code_waiting">Waiting for approval…</string>
     <string name="google_saved">Saved to your Google account</string>
     <string name="google_failed">Could not reach your Google account</string>
+    <string name="google_restore_keep">Keep this one</string>
 </resources>

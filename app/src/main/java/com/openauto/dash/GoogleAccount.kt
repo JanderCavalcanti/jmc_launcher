@@ -46,6 +46,10 @@ internal object GoogleAccount {
     private const val KEY_FILE_ID = "drive_file_id"
     private const val KEY_LAST_SYNC = "last_sync"
     private const val KEY_LAST_HASH = "last_hash"
+    // Set at sign-in until the driver has answered whether to restore the setup
+    // the account holds: no automatic save meanwhile, or this unit's factory
+    // setup could overwrite it.
+    private const val KEY_HOLD = "hold_until_answered"
 
     private const val SCOPE = "openid email https://www.googleapis.com/auth/drive.file"
     private const val DEVICE_URL = "https://oauth2.googleapis.com/device/code"
@@ -115,6 +119,7 @@ internal object GoogleAccount {
                 .putLong(KEY_ACCESS_UNTIL, System.currentTimeMillis() + (json.optLong("expires_in", 3600L) - 60L) * 1000L)
                 .putString(KEY_EMAIL, email)
                 .remove(KEY_FILE_ID).remove(KEY_LAST_HASH)
+                .putBoolean(KEY_HOLD, true)
                 .apply()
             refreshState(context)
             return Poll.Done(email)
@@ -186,6 +191,14 @@ internal object GoogleAccount {
     /** Whether the account already holds a saved setup. Off the main thread. */
     fun hasRemote(context: Context): Result<Boolean> = runCatching { findFile(context, accessToken(context)) != null }
 
+    /** The driver answered the restore question after sign-in (or there was nothing to restore): saving may start. */
+    fun releaseHold(context: Context) {
+        prefs(context).edit().remove(KEY_HOLD).apply()
+    }
+
+    /** Still waiting for that answer, e.g. Settings closed with the question open. */
+    fun onHold(context: Context): Boolean = signedIn(context) && prefs(context).getBoolean(KEY_HOLD, false)
+
     /** Saves the setup to Drive now. Off the main thread. */
     fun upload(context: Context): Result<Unit> = runCatching {
         val text = SetupBackup.export(context)
@@ -206,7 +219,7 @@ internal object GoogleAccount {
             s
         }
         if (status != HttpURLConnection.HTTP_OK) throw IOException("drive upload: http $status")
-        prefs(context).edit().putLong(KEY_LAST_SYNC, System.currentTimeMillis()).putString(KEY_LAST_HASH, hash(text)).apply()
+        prefs(context).edit().putLong(KEY_LAST_SYNC, System.currentTimeMillis()).putString(KEY_LAST_HASH, hash(text)).remove(KEY_HOLD).apply()
         refreshState(context)
     }
 
@@ -221,7 +234,7 @@ internal object GoogleAccount {
 
     /** Saves only when the setup changed since the last save. Off the main thread. */
     fun uploadIfChanged(context: Context) {
-        if (!configured || !signedIn(context)) return
+        if (!configured || !signedIn(context) || prefs(context).getBoolean(KEY_HOLD, false)) return
         val text = runCatching { SetupBackup.export(context) }.getOrNull() ?: return
         if (hash(text) == prefs(context).getString(KEY_LAST_HASH, null)) return
         upload(context).onFailure { Log.w(TAG, "automatic save failed: ${it.message}") }
