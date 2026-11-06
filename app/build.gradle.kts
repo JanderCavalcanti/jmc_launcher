@@ -30,7 +30,10 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.openauto.dash"
+        // Its own package: installs beside the official Dashwheel (com.openauto.dash)
+        // instead of replacing it, and its updater never takes Dashwheel's APKs.
+        // The code keeps the com.openauto.dash namespace.
+        applicationId = "com.jmc.launcher"
         minSdk = 29
         targetSdk = 36
         // Version is driven by CI (the Actions run number) so each build is

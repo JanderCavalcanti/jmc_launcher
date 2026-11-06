@@ -77,7 +77,7 @@ object SystemDisplayHelper {
     @JvmStatic
     fun main(args: Array<String>) {
         val token = args.getOrNull(0).orEmpty()
-        val pkg = args.getOrNull(1) ?: "com.openauto.dash"
+        val pkg = args.getOrNull(1) ?: BuildConfig.APPLICATION_ID
         try {
             run(token, pkg, selfTest = "--self-test" in args)
         } catch (e: Throwable) {

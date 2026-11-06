@@ -42,7 +42,7 @@ object PrivApp {
      * inside single quotes by the install scripts.
      */
     internal const val PRIVAPP_XML =
-        "<permissions><privapp-permissions package=\"com.openauto.dash\">" +
+        "<permissions><privapp-permissions package=\"" + BuildConfig.APPLICATION_ID + "\">" +
             "<permission name=\"android.permission.BIND_APPWIDGET\"/>" +
             "<permission name=\"android.permission.WRITE_SECURE_SETTINGS\"/>" +
             "<permission name=\"android.permission.READ_LOGS\"/>" +
