@@ -13,7 +13,7 @@
     <string name="tour_show_me">Mostrar</string>
     <string name="tour_not_now">Agora não</string>
     <string name="tour_tip">Dica %1$d de %2$d</string>
-    <string name="tour_skip">Saltar</string>
+    <string name="tour_skip">Pular</string>
     <string name="tour_next">Seguinte</string>
     <string name="tour_back">Voltar</string>
     <string name="tour_finish">Terminar</string>
@@ -25,7 +25,7 @@
     <string name="tour_arrange_body">Toque num mosaico para as opções, mantenha para o mover, arraste o canto para o redimensionar. Manter o próprio painel também inicia a organização.</string>
     <string name="tour_arrange_hint">Mais tarde, abra isto no menu, Editar painéis.</string>
     <string name="tour_add_title">Adicionar um widget ou uma app</string>
-    <string name="tour_add_body">Toque em Adicionar para pôr música, dados do carro, meteorologia ou uma app neste painel.</string>
+    <string name="tour_add_body">Toque em Adicionar para colocar música, dados do carro, meteorologia ou uma app neste painel.</string>
     <string name="tour_add_hint">Com pressa? Os modelos enchem um painel inteiro de uma vez.</string>
     <string name="tour_look_title">Ao seu gosto</string>
     <string name="tour_look_body">Abra o menu, depois Configurações e depois Aspeto. Escolha um tema e cores de dia ou de noite.</string>
@@ -35,7 +35,7 @@
     <string name="tour_obd_looking">Procurando</string>
     <string name="tour_obd_connected">Ligado</string>
     <string name="tour_hands_title">Olhos na estrada</string>
-    <string name="tour_hands_body">Os botões do volante podem mudar de painel, saltar músicas ou abrir o assistente de voz. O Dashwheel avisa sozinho quando algo importa.</string>
+    <string name="tour_hands_body">Os botões do volante podem mudar de painel, pular músicas ou abrir o assistente de voz. O Dashwheel avisa sozinho quando algo importa.</string>
     <string name="tour_hands_hint">Configure os botões em Configurações, Condução, Botões do volante.</string>
     <string name="tour_wheel_dashboard">Painel seguinte</string>
     <string name="tour_wheel_music">Música</string>

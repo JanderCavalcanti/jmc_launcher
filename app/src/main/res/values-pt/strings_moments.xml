@@ -16,7 +16,7 @@
     <string name="moments_off">Desligado</string>
     <string name="moments_change">Mudar o que mostra</string>
     <string name="moments_change_hint">Uma cópia deixa de fora apps em janela e widgets do sistema.</string>
-    <string name="moments_custom">A sua escolha</string>
+    <string name="moments_custom">Sua escolha</string>
     <string name="moments_as_it_came">Como veio</string>
     <string name="moments_copy_of">Uma cópia de %1$s</string>
     <string name="moments_back_home">Voltar ao seu início</string>

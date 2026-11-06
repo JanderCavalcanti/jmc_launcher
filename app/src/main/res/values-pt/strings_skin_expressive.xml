@@ -12,6 +12,6 @@
     <string name="expressive_battery">Bateria</string>
     <string name="expressive_load">Carga</string>
     <string name="expressive_fuel">Combustível</string>
-    <string name="expressive_car_cd">O seu carro</string>
+    <string name="expressive_car_cd">Seu carro</string>
     <string name="expressive_launch_bar_empty">Ainda sem apps. Toque no lápis para adicionar.</string>
 </resources>

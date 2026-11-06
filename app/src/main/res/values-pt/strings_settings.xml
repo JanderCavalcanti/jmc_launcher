@@ -14,7 +14,7 @@
     <string name="settings_section_diagnostics">Diagnóstico</string>
     <string name="settings_section_apps_in_tiles">Apps em blocos</string>
     <string name="settings_drive_lock">Alterações só com o carro parado</string>
-    <string name="settings_drive_lock_detail">A edição, as configurações e a grelha de apps esperam que o carro pare</string>
+    <string name="settings_drive_lock_detail">A edição, as configurações e a grade de apps esperam que o carro pare</string>
     <string name="settings_tap_sound">Som ao tocar</string>
     <string name="settings_tap_sound_detail">Um bip curto a cada toque, para telas que não vibram</string>
     <!-- Volume follows speed (SpeedVolume.kt), Settings → Driving -->
@@ -100,8 +100,8 @@
     <string name="settings_screen_vertical">Vertical</string>
     <string name="settings_screen_auto_hint_wide">Segue a tela: este é horizontal</string>
     <string name="settings_screen_auto_hint_tall">Segue a tela: este é vertical</string>
-    <string name="settings_screen_horizontal_hint">Põe o painel na horizontal, se a unidade o permitir</string>
-    <string name="settings_screen_vertical_hint">Põe o painel na vertical com uma disposição própria, se a unidade o permitir</string>
+    <string name="settings_screen_horizontal_hint">Coloca o painel na horizontal, se a unidade o permitir</string>
+    <string name="settings_screen_vertical_hint">Coloca o painel na vertical com um layout próprio, se a unidade o permitir</string>
     <string name="settings_section_display">Visualização</string>
     <string name="settings_appearance_title">Dia e noite</string>
     <string name="settings_appearance_detail">Auto pelo carro, pelo nascer e pôr do sol, ou a horas fixas</string>
@@ -148,7 +148,7 @@
     <string name="settings_obd_route_usb_hint">O adaptador é alcançado pelo seu cabo USB, ligado a este rádio.</string>
     <string name="settings_obd_route_hint">Primeiro um adaptador USB ligado, depois o celular quando a app companheira tem o adaptador; caso contrário, o Bluetooth do rádio.</string>
     <string name="settings_speed_fix_detail">Somada à velocidade mostrada, do carro ou do GPS acima de 15 km/h, para coincidir com o velocímetro. Em andamento, ajuste-a no bloco Indicadores do motor.</string>
-    <string name="settings_backup_section">A sua configuração</string>
+    <string name="settings_backup_section">Sua configuração</string>
     <string name="settings_backup_save">Salvar a configuração</string>
     <string name="settings_backup_save_detail">Painéis, configurações e locais, num arquivo. Sem a chave de IA nem os telefones associados.</string>
     <string name="settings_backup_restore">Restaurar uma configuração</string>
@@ -165,7 +165,7 @@
     <string name="bar_items_custom">Escolher o que a barra mostra</string>
     <string name="bar_items_theme">Desativado: a barra do tema</string>
     <string name="bar_items_skin">Os indicadores só aparecem com a barra padrão, não com uma skin.</string>
-    <string name="bar_items_custom_detail">Toque num indicador para o pôr na barra ou tirar; as setas definem a ordem. O que não couber fica de fora.</string>
+    <string name="bar_items_custom_detail">Toque num indicador para o colocar na barra ou tirar; as setas definem a ordem. O que não couber fica de fora.</string>
     <string name="bar_items_left">Mais cedo na barra</string>
     <string name="bar_items_right">Mais tarde na barra</string>
     <string name="bar_items_reset">Restaurar a seleção inicial</string>
@@ -328,7 +328,7 @@
     <string name="map_servers_routing">Endereço de rotas Valhalla</string>
     <string name="map_servers_reset">Servidores gratuitos</string>
     <string name="report_title">Contar como funciona</string>
-    <string name="report_row_detail">O seu rádio e o que funciona nele, como issue no GitHub</string>
+    <string name="report_row_detail">Seu rádio e o que funciona nele, como issue no GitHub</string>
     <string name="report_compat_intro">Marque o que funciona neste rádio. O relatório inclui o modelo, o firmware e a versão do Dashwheel, nada pessoal.</string>
     <string name="report_crash_title">O Dashwheel parou da última vez</string>
     <string name="report_crash_intro">Envie o erro para que possa ser corrigido. O relatório inclui o erro, o modelo e o firmware, nada pessoal.</string>
@@ -377,7 +377,7 @@
     <string name="settings_sum_expert">Laboratório, chaves API, servidores</string>
     <string name="alerts_say">Dizer</string>
     <string name="alerts_show">Mostrar</string>
-    <string name="alerts_intro">Dizer anuncia em voz alta, Mostrar põe a janela do Dashwheel na tela. Toque numa janela para o seu estilo.</string>
+    <string name="alerts_intro">Dizer anuncia em voz alta, Mostrar coloca a janela do Dashwheel na tela. Toque numa janela para o seu estilo.</string>
     <string name="alerts_group_car">Do carro</string>
     <string name="alerts_group_road">Na estrada</string>
     <string name="alerts_group_start">Ao dar partida</string>

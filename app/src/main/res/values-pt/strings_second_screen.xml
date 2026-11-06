@@ -6,7 +6,7 @@
     <string name="second_screen_status_unpaired">Nenhum segunda tela associado</string>
     <string name="second_screen_status_unpaired_detail">Leia o código da segunda tela com a app Dashwheel do celular enquanto o celular está ligado a este carro.</string>
     <string name="second_screen_status_searching">À procura da segunda tela</string>
-    <string name="second_screen_status_searching_detail">A tela e este auto-rádio têm de estar ambos no hotspot do celular.</string>
+    <string name="second_screen_status_searching_detail">A tela e este autorrádio têm de estar ambos no hotspot do celular.</string>
     <string name="second_screen_status_connected">Ligado a %1$s</string>
     <string name="second_screen_size">Tela %1$d × %2$d</string>
     <string name="second_screen_import">Importar um arquivo de associação</string>
@@ -58,7 +58,7 @@
     <string name="second_screen_keys_count">Botões que mudam de página: %1$s</string>
     <string name="second_screen_keys_learn">Aprender um botão</string>
     <string name="second_screen_keys_learn_prompt">Pressione o botão do volante que deve mudar a página do quadrante.</string>
-    <string name="second_screen_keys_learn_none">Se nada acontecer, este botão não chega às apps neste auto-rádio.</string>
+    <string name="second_screen_keys_learn_none">Se nada acontecer, este botão não chega às apps neste autorrádio.</string>
     <string name="second_screen_keys_clear">Esquecer os botões</string>
     <string name="second_screen_media_keys">Os botões multimédia mudam de página</string>
     <string name="second_screen_media_keys_detail">Um toque longo em seguinte ou anterior muda a página do quadrante.</string>
@@ -69,7 +69,7 @@
     <string name="second_screen_board">Quadro de páginas</string>
     <string name="second_screen_board_detail">Toque num widget para o mudar. A segunda tela mostra a página que edita.</string>
     <string name="second_screen_board_no_video">Toque num widget para o mudar. Com Vista simples, a tela desenha a página por si com os widgets que conhece: velocidade, relógio, combustível, autonomia, motor, média, direções, leituras, portas e mapa.</string>
-    <string name="second_screen_layout">Disposição</string>
+    <string name="second_screen_layout">Layout</string>
     <string name="second_screen_layout_one">Um</string>
     <string name="second_screen_layout_big_side">Grande + 1</string>
     <string name="second_screen_layout_big_stack">Grande + 2</string>

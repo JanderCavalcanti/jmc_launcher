@@ -46,7 +46,7 @@
     <string name="mine_err_no_reading">A resposta não corresponde a este pedido.</string>
     <string name="mine_err_math">A fórmula divide por zero.</string>
     <string name="mine_err_syntax">A fórmula não pode ser lida.</string>
-    <string name="mine_reset">Pôr a zero</string>
+    <string name="mine_reset">Colocar a zero</string>
     <string name="mine_err_name">Dê-lhe um nome.</string>
     <string name="mine_err_key">Nome nas fórmulas: primeiro uma letra, depois letras, algarismos ou _. A a H sozinhas e os nomes integrados estão ocupados.</string>
     <string name="mine_err_key_taken">Outra leitura já usa esse nome.</string>

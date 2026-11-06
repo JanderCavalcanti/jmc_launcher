@@ -13,8 +13,8 @@
     <string name="liquid_engine">Motor</string>
     <string name="liquid_range">Autonomia</string>
     <string name="liquid_launch_bar_empty">Ainda sem apps. Toque no lápis para adicionar.</string>
-    <string name="liquid_car_cd">O seu carro</string>
-    <string name="liquid_car_open_cd">O seu carro, uma porta está aberta</string>
+    <string name="liquid_car_cd">Seu carro</string>
+    <string name="liquid_car_open_cd">Seu carro, uma porta está aberta</string>
     <string name="liquid_doors">Portas</string>
     <string name="liquid_doors_open">aberta</string>
 </resources>

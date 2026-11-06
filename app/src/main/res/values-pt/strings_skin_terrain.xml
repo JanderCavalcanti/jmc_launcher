@@ -2,7 +2,7 @@
 <resources>
     <!-- Terrain skin -->
     <string name="terrain_talk_cd">Falar com o assistente</string>
-    <string name="terrain_car_cd">O seu carro</string>
+    <string name="terrain_car_cd">Seu carro</string>
     <string name="terrain_range">Autonomia</string>
     <string name="terrain_next_turn">Próxima viragem</string>
     <string name="terrain_weather_next">Tempo · próximas %1$d h</string>

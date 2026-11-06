@@ -29,5 +29,5 @@
     <string name="kinetic_range">Autonomia</string>
     <string name="kinetic_fuel_left">Combustível %1$d %%</string>
     <string name="kinetic_launch_bar_empty">Ainda sem apps. Toque no lápis para adicionar.</string>
-    <string name="kinetic_car_cd">O seu carro e a sua autonomia</string>
+    <string name="kinetic_car_cd">Seu carro e a sua autonomia</string>
 </resources>

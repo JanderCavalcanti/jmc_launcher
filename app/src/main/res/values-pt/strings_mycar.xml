@@ -38,6 +38,6 @@
     <string name="mycar_doors_title">Portas abertas</string>
     <string name="mycar_doors_top">Vista de cima</string>
     <string name="mycar_doors_3d">3D</string>
-    <string name="mycar_doors_top_hint">O seu carro visto de cima, com as portas abrindo</string>
-    <string name="mycar_doors_3d_hint">O seu carro em 3D vira-se para o que está aberto e abre-o</string>
+    <string name="mycar_doors_top_hint">Seu carro visto de cima, com as portas abrindo</string>
+    <string name="mycar_doors_3d_hint">Seu carro em 3D vira-se para o que está aberto e abre-o</string>
 </resources>

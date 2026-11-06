@@ -119,7 +119,7 @@
     <string name="obd_relay_choose">Escolher o adaptador</string>
     <string name="obd_relay_change">Mudar</string>
     <string name="obd_relay_stop">Desativar</string>
-    <string name="obd_relay_pick">O seu adaptador OBD</string>
+    <string name="obd_relay_pick">Seu adaptador OBD</string>
     <string name="obd_relay_pick_hint">Pareie primeiro o adaptador com este celular no Bluetooth, PIN 1234 ou 0000. O celular mantém-no para o carro, e as chamadas e o Android Auto deixam de atrapalhar.</string>
     <string name="news_title">Do seu carro</string>
     <string name="news_channel">Lembretes do carro</string>
@@ -149,7 +149,7 @@
 
     <!-- Car picture from three photos (CarFromPhotos). -->
     <string name="car_photos_open">Criar com 3 fotos</string>
-    <string name="car_photos_title">O seu carro em 3 fotos</string>
+    <string name="car_photos_title">Seu carro em 3 fotos</string>
     <string name="car_photos_detail">Três fotos do seu carro criam a sua imagem e a vista de cima.</string>
     <string name="car_photos_side">Lado</string>
     <string name="car_photos_front">Frente</string>
@@ -161,7 +161,7 @@
     <string name="car_photos_tip">Fique bem de frente para cada lado, a cerca de 8 passos. Retirar primeiro o fundo no Gemini ou na galeria dá contornos mais limpos.</string>
     <string name="car_photos_build">Criar o meu carro</string>
     <string name="car_photos_building">Criando o seu carro</string>
-    <string name="car_photos_result">O seu carro</string>
+    <string name="car_photos_result">Seu carro</string>
     <string name="car_photos_result_hint">Os anéis verdes mostram onde aparecem os avisos dos pneus e das portas.</string>
     <string name="car_photos_turned">Virado para a direita</string>
     <string name="car_photos_send">Enviar para o carro</string>
@@ -181,7 +181,7 @@
     <string name="car_photos_gemini_open">Abrir as portas no Gemini</string>
     <string name="car_photos_gemini_open_prompt">Redesenha exatamente esta imagem do meu carro visto de cima, com o mesmo tamanho, posição, ângulo e cores, mas com as quatro portas bem abertas, a porta-malas aberta e o capô aberto. Fundo branco liso, sem texto nem logotipo.</string>
     <string name="car_model_open">De um modelo 3D</string>
-    <string name="car_model_title">O seu carro a partir de um modelo 3D</string>
+    <string name="car_model_title">Seu carro a partir de um modelo 3D</string>
     <string name="car_model_detail">Escolha o seu carro como arquivo .glb. O celular desenha-o de todos os lados para a tela do carro e envia também o modelo para o mostrar em 3D.</string>
     <string name="car_model_pick">Escolher um modelo 3D (.glb)</string>
     <string name="car_model_drawing">Desenhando o seu carro</string>
@@ -228,9 +228,9 @@
     <string name="display_needs_car">Ligue-se primeiro ao carro e depois leia de novo o código da tela.</string>
     <string name="parking_channel">Estacionamento</string>
     <string name="parking_soon_title">O estacionamento termina em breve</string>
-    <string name="parking_soon_text">O seu estacionamento termina às %1$s.</string>
+    <string name="parking_soon_text">Seu estacionamento termina às %1$s.</string>
     <string name="parking_over_title">O estacionamento terminou</string>
-    <string name="parking_over_text">O seu estacionamento terminou às %1$s.</string>
+    <string name="parking_over_text">Seu estacionamento terminou às %1$s.</string>
 
     <!-- Registration certificate scan (RegistrationCard). -->
     <string name="reg_title">Documento do carro</string>

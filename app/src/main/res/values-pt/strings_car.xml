@@ -91,7 +91,7 @@
     <string name="car_break_title">TEMPO AO VOLANTE</string>
     <string name="car_break_ok">Uma pausa a cada 2 horas</string>
     <string name="car_break_due">Hora de uma pausa</string>
-    <string name="car_break_hint">Uma paragem de 15 min reinicia-o</string>
+    <string name="car_break_hint">Uma parada de 15 min reinicia-o</string>
 
     <!-- My car tile -->
     <string name="car_my_car_title">O MEU CARRO</string>
@@ -128,7 +128,7 @@
     <string name="car_fetch_no_key">adicione primeiro uma chave Gemini em Configurações → Carro → Mecânico IA</string>
     <string name="car_fetch_needs_key">Adicione uma chave Gemini em Configurações, Diagnóstico, Mecânico IA para preencher a ficha</string>
     <string name="car_section_engine">Motor</string>
-    <string name="car_section_gearbox">Caixa de velocidades</string>
+    <string name="car_section_gearbox">Câmbio</string>
     <string name="car_section_upkeep">Manutenção</string>
     <string name="car_section_fuel_price">Preço do combustível</string>
     <string name="car_section_notes">Pontos fracos conhecidos</string>
@@ -176,7 +176,7 @@
     <string name="car_say_filter_soot_short">Suas últimas %1$d viagens foram curtas e o filtro de partículas está a %2$d por cento. Tente fazer em breve uma viagem de 20 minutos numa via rápida.</string>
     <string name="car_say_filter_additive">O aditivo do filtro de partículas está baixo, a %1$d por cento. Peça para o atestar na próxima revisão.</string>
     <string name="car_say_break">Está dirigindo há %1$s. Está na hora de fazer uma pausa.</string>
-    <string name="car_say_fuel_short">A sua autonomia de %1$d quilômetros não chega ao destino, a %2$d quilômetros. Planeie uma paragem para abastecer.</string>
+    <string name="car_say_fuel_short">Sua autonomia de %1$d quilômetros não chega ao destino, a %2$d quilômetros. Planeje uma parada para abastecer.</string>
     <string name="car_hours_minutes">%1$s e %2$s</string>
     <plurals name="car_hours">
         <item quantity="one">%1$d hora</item>
@@ -227,7 +227,7 @@
     <string name="car_warn_steering">Falha na direção assistida</string>
     <string name="car_warn_abs">Falha do ABS</string>
     <string name="car_warn_esp">Falha do ESP</string>
-    <string name="car_warn_gearbox">Falha na caixa de velocidades, mande reparar</string>
+    <string name="car_warn_gearbox">Falha no câmbio, mande reparar</string>
     <string name="car_warn_additive">Aditivo do filtro de partículas baixo</string>
     <string name="car_warn_battery">Falha no carregamento da bateria</string>
     <string name="car_warn_airbag">Falha do airbag ou do cinto</string>

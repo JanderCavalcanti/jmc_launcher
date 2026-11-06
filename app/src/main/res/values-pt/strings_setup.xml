@@ -3,19 +3,19 @@
     <!-- First-run setup (SetupScreen.kt): the car, what the launcher may use, the look -->
     <string name="setup_title">Configurar o Dashwheel</string>
     <string name="setup_step">Passo %1$d de 3</string>
-    <string name="setup_skip">Saltar</string>
+    <string name="setup_skip">Pular</string>
     <string name="setup_back">Anterior</string>
     <string name="setup_next">Continuar</string>
     <string name="setup_done">Concluir</string>
-    <string name="setup_car_title">O seu carro</string>
-    <string name="setup_car_body">Marca, modelo e ano chegam. A ficha completa espera em Configurações, Carro.</string>
+    <string name="setup_car_title">Seu carro</string>
+    <string name="setup_car_body">Marca, modelo e ano bastam. A ficha completa fica em Configurações, Carro.</string>
     <string name="setup_car_make">Marca</string>
     <string name="setup_car_model">Modelo</string>
     <string name="setup_car_year">Ano</string>
     <string name="setup_car_fuel">Combustível</string>
-    <string name="setup_car_gearbox">Caixa de velocidades</string>
+    <string name="setup_car_gearbox">Câmbio</string>
     <string name="setup_later">Mais tarde</string>
-    <string name="setup_driver_side">Lugar do motorista</string>
+    <string name="setup_driver_side">Lado do motorista</string>
     <string name="setup_driver_left">À esquerda</string>
     <string name="setup_driver_right">À direita</string>
     <string name="setup_access_title">O que o Dashwheel pode usar</string>
