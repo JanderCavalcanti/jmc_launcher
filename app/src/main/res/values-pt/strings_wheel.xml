@@ -19,7 +19,7 @@
     <string name="wheel_monitor_title">O que o rádio vê</string>
     <string name="wheel_monitor_hint">Toque na linha que apareceu ao pressionar o botão para a usar.</string>
     <string name="wheel_monitor_empty">Ainda nada. Pressione um botão do volante.</string>
-    <string name="wheel_group_media">Multimédia</string>
+    <string name="wheel_group_media">Multimídia</string>
     <string name="wheel_group_volume">Volume</string>
     <string name="wheel_group_system">Sistema</string>
     <string name="wheel_group_phone">Telefone</string>

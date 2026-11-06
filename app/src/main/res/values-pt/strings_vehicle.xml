@@ -212,7 +212,7 @@
     <string name="vehicle_err_usb_open">Não foi possível abrir %1$s: desligue-o e volte a ligá-lo</string>
     <string name="vehicle_err_usb_silent">%1$s nunca respondeu como um adaptador OBD</string>
     <string name="vehicle_err_phone_not_linked">O OBD passa pelo celular: ligue primeiro o celular</string>
-    <string name="vehicle_err_phone_no_adapter">O OBD passa pelo celular: escolha o adaptador na app companheira</string>
+    <string name="vehicle_err_phone_no_adapter">O OBD passa pelo celular: escolha o adaptador na app do celular</string>
     <string name="vehicle_obd_asking_phone">Pedindo o adaptador ao celular</string>
     <string name="vehicle_err_phone_relay">O celular não conseguiu ligar a %1$s: verifique se está ligado e pareado com o celular</string>
     <string name="vehicle_err_in_call">O OBD fica em pausa durante a chamada e volta quando termina</string>

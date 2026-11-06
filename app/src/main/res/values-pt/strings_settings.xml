@@ -19,7 +19,7 @@
     <string name="settings_tap_sound_detail">Um bip curto a cada toque, para telas que não vibram</string>
     <!-- Volume follows speed (SpeedVolume.kt), Settings → Driving -->
     <string name="speed_volume_title">Volume conforme a velocidade</string>
-    <string name="speed_volume_detail">Cobre o ruído da estrada: mais alto ao acelerar, mais baixo ao abrandar. Suas próprias alterações de volume mantêm-se.</string>
+    <string name="speed_volume_detail">Cobre o ruído da estrada: mais alto ao acelerar, mais baixo ao desacelerar. Os ajustes que você faz no volume continuam valendo.</string>
     <string name="speed_volume_start">Começa a</string>
     <string name="speed_volume_start_detail">Abaixo disso nada é acrescentado</string>
     <string name="speed_volume_steps">Volume extra em andamento</string>
@@ -30,12 +30,12 @@
     <string name="speed_volume_more">Mais</string>
     <!-- How the volume is changed (MediaVolume.kt), Settings → Driving -->
     <string name="volume_way_title">Controle do volume</string>
-    <string name="volume_way_auto">Automático</string>
+    <string name="volume_way_auto">Auto</string>
     <string name="volume_way_android">Android</string>
-    <string name="volume_way_keys">Teclas de volume</string>
+    <string name="volume_way_keys">Teclas</string>
     <string name="volume_way_auto_hint">O volume do Android, ou o volume próprio do rádio ou as suas teclas de volume onde o ignora</string>
-    <string name="volume_way_android_hint">O volume multimédia do Android, como num celular</string>
-    <string name="volume_way_keys_hint">Carrega nas teclas de volume como os comandos do volante e o botão rotativo. Precisa de root ou do ADB do rádio</string>
+    <string name="volume_way_android_hint">O volume multimídia do Android, como num celular</string>
+    <string name="volume_way_keys_hint">Aperta as teclas de volume como os comandos do volante e o botão rotativo. Precisa de root ou do ADB do rádio</string>
     <string name="volume_way_keys_locked">As teclas de volume precisam de root ou do ADB do rádio</string>
     <string name="settings_rom_call_detail">As chamadas Bluetooth aparecem só no cartão do JMCAR, com atender e desligar</string>
     <string name="settings_rom_doors_detail">Mostra que porta está aberta por cima de qualquer app, em vez do alerta do rádio</string>
@@ -138,7 +138,7 @@
     <string name="settings_obd_saved">%1$s. Toque para escolher outro.</string>
     <string name="settings_obd_none">Nenhum escolhido. Toque para escolher o seu.</string>
     <string name="settings_obd_forget">Esquecer</string>
-    <string name="settings_obd_route_auto">Automático</string>
+    <string name="settings_obd_route_auto">Auto</string>
     <string name="settings_obd_route_unit">Bluetooth</string>
     <string name="settings_obd_route_phone">Celular</string>
     <string name="settings_obd_route_label">OBD alcançado através de</string>
@@ -146,7 +146,7 @@
     <string name="settings_obd_route_unit_hint">O adaptador é alcançado pelo Bluetooth deste rádio.</string>
     <string name="settings_obd_route_usb">USB</string>
     <string name="settings_obd_route_usb_hint">O adaptador é alcançado pelo seu cabo USB, ligado a este rádio.</string>
-    <string name="settings_obd_route_hint">Primeiro um adaptador USB ligado, depois o celular quando a app companheira tem o adaptador; caso contrário, o Bluetooth do rádio.</string>
+    <string name="settings_obd_route_hint">Primeiro um adaptador USB ligado, depois o celular quando a app do celular tem o adaptador; caso contrário, o Bluetooth do rádio.</string>
     <string name="settings_speed_fix_detail">Somada à velocidade mostrada, do carro ou do GPS acima de 15 km/h, para coincidir com o velocímetro. Em andamento, ajuste-a no bloco Indicadores do motor.</string>
     <string name="settings_backup_section">Sua configuração</string>
     <string name="settings_backup_save">Salvar a configuração</string>
@@ -224,7 +224,7 @@
     <string name="settings_rom_volume_next_start">Assume no próximo partida do rádio</string>
     <string name="settings_rom_volume_needs_magisk">Precisa do Magisk</string>
     <string name="alert_volume_muted">Sem som</string>
-    <string name="alert_volume_media">Multimédia</string>
+    <string name="alert_volume_media">Multimídia</string>
     <string name="alert_volume_radio">Rádio</string>
     <string name="alert_volume_call">Telefone</string>
     <string name="alert_volume_aux">AUX</string>
@@ -290,10 +290,10 @@
     <string name="settings_ov_not_linked">Sem conexão agora</string>
     <string name="settings_ov_connecting">Ligando</string>
     <string name="settings_ov_obd_deep">App Deep OBD</string>
-    <string name="settings_ov_obd_none">Nenhum escolhido</string>
+    <string name="settings_ov_obd_none">Nenhum</string>
     <string name="settings_ov_obd_pick">Toque para escolher o seu</string>
     <string name="settings_ov_phone_away">Associado, ausente</string>
-    <string name="settings_ov_upkeep_none">Nada previsto ainda</string>
+    <string name="settings_ov_upkeep_none">Nada previsto</string>
     <string name="settings_ov_not_allowed">Ainda não permitido: %1$s</string>
     <string name="settings_ov_not_allowed_detail">Alguns mosaicos e mensagens faladas esperam por isso</string>
     <string name="settings_ov_allow">Permitir</string>

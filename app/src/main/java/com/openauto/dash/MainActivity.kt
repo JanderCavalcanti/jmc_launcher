@@ -1,5 +1,8 @@
 package com.openauto.dash
 
+import androidx.compose.ui.unit.Density
+import androidx.compose.ui.platform.LocalDensity
+import androidx.compose.runtime.CompositionLocalProvider
 import android.annotation.SuppressLint
 import android.content.Context
 import android.content.res.Configuration
@@ -463,7 +466,16 @@ fun OpenAutoDashTheme(content: @Composable () -> Unit) {
     // The driving type scale (DashType.kt): nothing under 14 sp, labels at 16 sp.
     // The skin's corners for every stock dialog and menu (SkinChrome).
     // The driver's units reach every tile and pop-up from here (Units).
-    ProvideUnits {
-        MaterialTheme(colorScheme = colorScheme, typography = DashTypography, shapes = skinChrome().shapes, content = content)
+    // JMCAR: text 10 % smaller than the system's, so Portuguese labels fit the
+    // 1280x720 / 238 dpi head unit. The skins' tiles size their text against
+    // fontScale themselves (fixedSp), so the dashboard looks the same.
+    val density = LocalDensity.current
+    CompositionLocalProvider(LocalDensity provides Density(density.density, density.fontScale * TEXT_SCALE)) {
+        ProvideUnits {
+            MaterialTheme(colorScheme = colorScheme, typography = DashTypography, shapes = skinChrome().shapes, content = content)
+        }
     }
 }
+
+/** How much smaller than the system font the app's text is drawn. */
+private const val TEXT_SCALE = 0.9f

@@ -181,7 +181,7 @@ private fun StatusCard(icon: ImageVector, label: String, value: String, detail: 
             Spacer(Modifier.width(10.dp))
             Text(label, color = tone.color(), style = MaterialTheme.typography.labelLarge, maxLines = 2, overflow = TextOverflow.Ellipsis)
         }
-        Text(value, color = DashColors.TextPrimary, style = MaterialTheme.typography.titleMedium, maxLines = 1, overflow = TextOverflow.Ellipsis)
+        Text(value, color = DashColors.TextPrimary, style = MaterialTheme.typography.titleMedium, maxLines = 2, overflow = TextOverflow.Ellipsis)
         if (detail != null) Text(detail, color = DashColors.TextSecondary, style = MaterialTheme.typography.bodySmall, maxLines = 2, overflow = TextOverflow.Ellipsis)
     }
 }
@@ -343,8 +343,8 @@ private fun GroupTile(group: SettingsTab, summary: String, modifier: Modifier, o
             .padding(horizontal = 14.dp, vertical = 12.dp),
         verticalAlignment = Alignment.CenterVertically
     ) {
-        IconBadge(group.icon, DashColors.Accent, size = 60.dp)
-        Spacer(Modifier.width(14.dp))
+        IconBadge(group.icon, DashColors.Accent, size = 48.dp)
+        Spacer(Modifier.width(10.dp))
         Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(2.dp)) {
             Text(stringResource(group.titleRes), color = DashColors.TextPrimary, fontWeight = FontWeight.SemiBold, style = MaterialTheme.typography.titleMedium, maxLines = 2, overflow = TextOverflow.Ellipsis)
             Text(summary, color = DashColors.TextSecondary, style = MaterialTheme.typography.bodySmall, maxLines = 3, overflow = TextOverflow.Ellipsis)

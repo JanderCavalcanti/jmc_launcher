@@ -32,7 +32,7 @@
 
     <!-- Cockpit skin: media -->
     <string name="cockpit_tap_to_enable">TOCAR PARA ATIVAR</string>
-    <string name="cockpit_grant_media_access">Permitir acesso a multimédia</string>
+    <string name="cockpit_grant_media_access">Permitir mídia</string>
     <string name="cockpit_previous">Anterior</string>
     <string name="cockpit_play">Reproduzir</string>
     <string name="cockpit_pause">Pausa</string>

@@ -19,7 +19,7 @@
     <string name="horizon_cd_pause">Pausa</string>
     <string name="horizon_cd_play">Reproduzir</string>
     <string name="horizon_cd_next_track">Faixa seguinte</string>
-    <string name="horizon_allow_media_access">Permitir acesso a multimédia</string>
+    <string name="horizon_allow_media_access">Permitir mídia</string>
     <string name="horizon_music_caps">MÚSICA</string>
     <string name="horizon_now_playing_caps">A REPRODUZIR</string>
     <string name="horizon_paused_caps">EM PAUSA</string>
@@ -74,7 +74,7 @@
     <string name="tape_tap_to_enable_caps">TOCAR PARA ATIVAR</string>
     <string name="tape_unknown_artist_caps">ARTISTA DESCONHECIDO</string>
     <string name="tape_start_music_app_caps">ABRIR UMA APP DE MÚSICA</string>
-    <string name="tape_cd_grant_media_access">Conceder acesso a multimédia</string>
+    <string name="tape_cd_grant_media_access">Permitir mídia</string>
     <string name="tape_grant_access_caps">PERMITIR</string>
     <string name="tape_cd_previous_track">Faixa anterior</string>
     <string name="tape_cd_pause">Pausa</string>

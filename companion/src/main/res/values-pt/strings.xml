@@ -53,7 +53,7 @@
     <string name="drive_eco_none">Sem nota de condução ecológica: menos de 1 km ou sem dados do motor</string>
     <string name="drive_eco_smooth">Condução suave</string>
     <string name="drive_eco_fair">Razoável: algo brusca</string>
-    <string name="drive_eco_harsh">Brusca: abrande</string>
+    <string name="drive_eco_harsh">Brusca: desacelere</string>
     <string name="drive_hard">Acelerações / travagens bruscas: %1$d / %2$d</string>
     <string name="drive_band">Rotações na faixa tranquila: %1$d %%</string>
     <string name="drive_clutch">Retido na subida com o acelerador: %1$d</string>

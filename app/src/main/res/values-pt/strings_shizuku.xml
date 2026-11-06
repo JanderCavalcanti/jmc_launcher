@@ -7,7 +7,7 @@
     <string name="shizuku_detail_old">Demasiado antigo. Atualize o Shizuku</string>
     <string name="shizuku_detail_ask">Em execução. Permita o JMCAR no Shizuku</string>
     <string name="shizuku_detail_on">Em uso: os comandos de shell passam por ele</string>
-    <string name="shizuku_body">O Shizuku executa os comandos de shell que o root faria: mover janelas de apps, os ajustes da app do carro, as teclas de volume. Um rádio com root inicia-o no partida; outro inicia-o na app Shizuku após cada partida.</string>
+    <string name="shizuku_body">O Shizuku executa os comandos de shell que o root faria: mover janelas de apps, os ajustes da app do carro, as teclas de volume. Um rádio com root o inicia na partida; os outros o iniciam no app Shizuku a cada partida.</string>
     <string name="shizuku_get">Obter o Shizuku</string>
     <string name="shizuku_open">Abrir o Shizuku</string>
     <string name="shizuku_allow">Permitir</string>

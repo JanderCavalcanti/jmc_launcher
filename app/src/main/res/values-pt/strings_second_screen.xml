@@ -3,7 +3,7 @@
     <!-- The second screen: a Raspberry Pi display on the phone's hotspot (DisplayLink, SecondScreenSheet). -->
     <string name="settings_section_second_screen">Segunda tela</string>
     <string name="second_screen_experimental">Experimental: um Raspberry Pi controla uma segunda tela no carro. Ainda não testado num carro.</string>
-    <string name="second_screen_status_unpaired">Nenhum segunda tela associado</string>
+    <string name="second_screen_status_unpaired">Nenhuma segunda tela pareada</string>
     <string name="second_screen_status_unpaired_detail">Leia o código da segunda tela com a app JMCAR do celular enquanto o celular está ligado a este carro.</string>
     <string name="second_screen_status_searching">À procura da segunda tela</string>
     <string name="second_screen_status_searching_detail">A tela e este autorrádio têm de estar ambos no hotspot do celular.</string>
@@ -20,7 +20,7 @@
     <string name="second_screen_mode_app">Uma app</string>
     <string name="second_screen_pages">Páginas</string>
     <string name="second_screen_page_drive">Velocidade</string>
-    <string name="second_screen_page_media">Multimédia</string>
+    <string name="second_screen_page_media">Multimídia</string>
     <string name="second_screen_page_nav">Percurso</string>
     <string name="second_screen_page_obd">Leituras</string>
     <string name="second_screen_video">Vista simples</string>
@@ -38,8 +38,8 @@
     <string name="second_screen_by_wifi">por Wi-Fi</string>
     <string name="second_screen_program_older">O programa da tela é mais antigo do que esta app: grave de novo o seu cartão.</string>
     <string name="second_screen_program_newer">O programa da tela é mais recente do que esta app: atualize o JMCAR.</string>
-    <string name="second_screen_health_under_powered">A placa da tela recebe pouca corrente e abranda: use uma fonte de 5 V e 2,5 A e um cabo curto e grosso.</string>
-    <string name="second_screen_health_hot">A placa da tela está quente (%1$d °C) e abranda: dê-lhe ar ou um dissipador.</string>
+    <string name="second_screen_health_under_powered">A placa da tela recebe pouca corrente e fica lenta: use uma fonte de 5 V e 2,5 A e um cabo curto e grosso.</string>
+    <string name="second_screen_health_hot">A placa da tela está quente (%1$d °C) e fica lenta: dê-lhe ar ou um dissipador.</string>
     <string name="second_screen_health_throttled">A placa da tela está limitada pelo seu firmware: verifique a alimentação.</string>
     <string name="second_screen_output_lighter">Imagem aligeirada: a tela não acompanhava</string>
     <string name="second_screen_label_open">Aberto: %1$s</string>
@@ -60,7 +60,7 @@
     <string name="second_screen_keys_learn_prompt">Pressione o botão do volante que deve mudar a página do quadrante.</string>
     <string name="second_screen_keys_learn_none">Se nada acontecer, este botão não chega às apps neste autorrádio.</string>
     <string name="second_screen_keys_clear">Esquecer os botões</string>
-    <string name="second_screen_media_keys">Os botões multimédia mudam de página</string>
+    <string name="second_screen_media_keys">Os botões multimídia mudam de página</string>
     <string name="second_screen_media_keys_detail">Um toque longo em seguinte ou anterior muda a página do quadrante.</string>
     <string name="second_screen_bar_swipe">Deslizar a barra para mudar de página</string>
     <string name="second_screen_bar_swipe_detail">Deslizar para o lado na barra do launcher muda a página do painel enquanto é mostrado.</string>

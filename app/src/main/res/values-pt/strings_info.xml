@@ -127,12 +127,12 @@
     <string name="info_now_playing">A REPRODUZIR</string>
     <string name="info_paused">EM PAUSA</string>
     <string name="info_nothing_playing">Nada a reproduzir</string>
-    <string name="info_media_access_needed">Acesso multimédia</string>
+    <string name="info_media_access_needed">Acesso multimídia</string>
     <string name="info_media_tap_to_enable">Tocar para ativar</string>
     <string name="info_media_previous">Anterior</string>
     <string name="info_media_play_pause">Reproduzir/pausa</string>
     <string name="info_media_next">Seguinte</string>
-    <string name="info_media_grant_access">Conceder acesso a multimédia</string>
+    <string name="info_media_grant_access">Permitir mídia</string>
 
     <!-- Original theme telemetry tile -->
     <string name="info_telemetry_title">INDICADORES DO MOTOR</string>
