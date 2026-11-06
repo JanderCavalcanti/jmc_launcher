@@ -15,14 +15,14 @@
     <string name="design_paper_desc">Preto mate sobre cinzento, legível em pleno sol.</string>
     <string name="design_glass">Vidro</string>
     <string name="design_glass_desc">Painel fosco sobre luz colorida suave.</string>
-    <string name="design_carbon">Carbono desportivo</string>
+    <string name="design_carbon">Carbono esportivo</string>
     <string name="design_carbon_desc">Trama de carbono, faixa vermelha, números inclinados.</string>
     <string name="design_chrono">Cronógrafo</string>
     <string name="design_chrono_desc">Aro cromado e ponteiro, como um relógio.</string>
     <string name="design_flap">Palhetas</string>
     <string name="design_flap_desc">Painel de partidas da estação, uma palheta por carácter.</string>
     <string name="design_orb">Orbe</string>
-    <string name="design_orb_desc">Tudo dentro de um disco, com capa e controlos.</string>
+    <string name="design_orb_desc">Tudo dentro de um disco, com capa e controles.</string>
     <string name="design_liquid">Líquido</string>
     <string name="design_liquid_desc">O bloco enche-se com o valor, em ondas suaves.</string>
     <string name="design_dots">Matriz de pontos</string>
@@ -32,9 +32,9 @@
     <string name="design_duo">Duo</string>
     <string name="design_duo_desc">Um bloco de cor para o número, detalhes ao lado.</string>
     <string name="design_island">Ilha</string>
-    <string name="design_island_desc">Uma cápsula preta flutuante com imagem e controlos.</string>
+    <string name="design_island_desc">Uma cápsula preta flutuante com imagem e controles.</string>
     <string name="design_copper_cockpit">Cockpit cobre</string>
-    <string name="design_copper_cockpit_desc">Lâminas de cobre inclinadas percorrem um quadrante desportivo, preto com cantos cortados.</string>
+    <string name="design_copper_cockpit_desc">Lâminas de cobre inclinadas percorrem um quadrante esportivo, preto com cantos cortados.</string>
     <string name="design_tri_led">Tri-LED</string>
     <string name="design_tri_led_desc">Uma assinatura LED em triângulos que acende com a leitura, sobre azul petróleo.</string>
     <string name="design_copper_blade">Lâmina de cobre</string>
@@ -84,8 +84,8 @@
     <!-- Designs made for particular widgets (WidgetSignatures.kt) -->
     <string name="design_thermometer">Termómetro</string>
     <string name="design_thermometer_desc">Uma coluna de mercúrio que sobe do frio ao quente.</string>
-    <string name="design_fuel_tank">Depósito</string>
-    <string name="design_fuel_tank_desc">O próprio depósito, cheio até ao nível, de V a C.</string>
+    <string name="design_fuel_tank">Tanque</string>
+    <string name="design_fuel_tank_desc">O próprio tanque, cheio até ao nível, de V a C.</string>
     <string name="design_battery_cell">Bateria</string>
     <string name="design_battery_cell_desc">Segmentos de carga dentro de uma bateria.</string>
     <string name="design_fader">Fader vertical</string>
@@ -93,7 +93,7 @@
     <string name="design_speed_tape">Fita de velocidade</string>
     <string name="design_speed_tape_desc">Fita que desliza como num avião, valor na caixa.</string>
     <string name="design_road_sign">Sinal de trânsito</string>
-    <string name="design_road_sign_desc">O sinal certo: limite, P, autoestrada, combustível, área de serviço.</string>
+    <string name="design_road_sign_desc">O sinal certo: limite, P, rodovia, combustível, área de serviço.</string>
     <string name="design_twin_dials">Mostrador duplo</string>
     <string name="design_twin_dials_desc">Velocímetro e conta-rotações lado a lado.</string>
     <string name="design_shift_lights">Luzes de mudança</string>
@@ -103,11 +103,11 @@
     <string name="design_compass_rose">Rosa dos ventos</string>
     <string name="design_compass_rose_desc">Uma rosa que roda sob uma marca fixa.</string>
     <string name="design_pointer">Seta</string>
-    <string name="design_pointer_desc">Uma grande seta a apontar o caminho.</string>
+    <string name="design_pointer_desc">Uma grande seta apontando o caminho.</string>
     <string name="design_friction_circle">Círculo de aderência</string>
     <string name="design_friction_circle_desc">O ponto mostra para onde vai a aderência; o anel é o seu pico.</string>
     <string name="design_g_bars">Barras G</string>
-    <string name="design_g_bars_desc">Curva e aceleração/travagem como duas barras cruzadas.</string>
+    <string name="design_g_bars_desc">Curva e aceleração/frenagem como duas barras cruzadas.</string>
     <string name="design_spirit_level">Nível de bolha</string>
     <string name="design_spirit_level_desc">Uma bolha que desliza com as forças.</string>
     <string name="design_turn_card">Cartão de viragem</string>
@@ -116,8 +116,8 @@
     <string name="design_road_ahead_desc">Uma estrada em perspetiva com o marcador sobre ela.</string>
     <string name="design_radar">Radar</string>
     <string name="design_radar_desc">Anéis e um varrimento; o carro é o ponto.</string>
-    <string name="design_odometer">Conta-quilómetros</string>
-    <string name="design_odometer_desc">Tambores de números a rodar, o último invertido.</string>
+    <string name="design_odometer">Conta-quilômetros</string>
+    <string name="design_odometer_desc">Tambores de números rodando, o último invertido.</string>
     <string name="design_printout">Talão</string>
     <string name="design_printout_desc">Os números como um talão de caixa.</string>
     <string name="design_warning_lamp">Luz de aviso</string>
@@ -129,7 +129,7 @@
     <string name="design_car_top">Carro visto de cima</string>
     <string name="design_car_top_desc">O carro visto de cima, portas abertas a vermelho.</string>
     <string name="design_data_rain">Chuva de dados</string>
-    <string name="design_data_rain_desc">As tramas em bruto a cair pelo mosaico.</string>
+    <string name="design_data_rain_desc">As tramas em bruto caindo pelo mosaico.</string>
     <string name="design_sky">Céu</string>
     <string name="design_sky_desc">O céu da hora e do tempo, valor por cima.</string>
     <string name="design_sun_path">Percurso do sol</string>
@@ -141,13 +141,13 @@
     <string name="design_desk_calendar">Calendário de mesa</string>
     <string name="design_desk_calendar_desc">A folha de hoje ao lado do próximo evento.</string>
     <string name="design_card_stack">Pilha de cartões</string>
-    <string name="design_card_stack_desc">O mais recente em cima, os outros a espreitar atrás.</string>
+    <string name="design_card_stack_desc">O mais recente em cima, os outros espiando atrás.</string>
     <string name="design_faces">Rostos</string>
-    <string name="design_faces_desc">Grandes círculos de contactos, um toque para ligar.</string>
+    <string name="design_faces_desc">Grandes círculos de contatos, um toque para ligar.</string>
     <string name="design_badge">Crachá</string>
     <string name="design_badge_desc">O sino com o número por ler.</string>
     <string name="design_vinyl">Vinil</string>
-    <string name="design_vinyl_desc">Um disco a girar; o braço avança com a música.</string>
+    <string name="design_vinyl_desc">Um disco girando; o braço avança com a música.</string>
     <string name="design_cassette">Cassete</string>
     <string name="design_cassette_desc">A fita passa de uma bobina para a outra enquanto a música toca.</string>
     <string name="design_cover_art">Capa</string>
@@ -155,7 +155,7 @@
     <string name="design_volume_knob">Botão de volume</string>
     <string name="design_volume_knob_desc">Um botão serrilhado com escala iluminada.</string>
     <string name="design_level_meter">Medidor de nível</string>
-    <string name="design_level_meter_desc">Colunas de LED a saltar com o nível.</string>
+    <string name="design_level_meter_desc">Colunas de LED saltando com o nível.</string>
     <string name="design_filter_cells">Células do filtro</string>
     <string name="design_filter_cells_desc">A colmeia do filtro de partículas; a fuligem enche uma célula por viagem curta.</string>
     <string name="design_hourglass">Ampulheta</string>
@@ -171,7 +171,7 @@
     <string name="design_label_value">%1$s: %2$s</string>
 
     <string name="design_parked_looks">Estilos para parado</string>
-    <string name="design_parked_looks_note">Bonitos, mas mais lentos de ler a conduzir</string>
+    <string name="design_parked_looks_note">Bonitos, mas mais lentos de ler dirigindo</string>
     <string name="design_alert_hot">Quente</string>
     <string name="design_alert_low">Baixo</string>
 </resources>

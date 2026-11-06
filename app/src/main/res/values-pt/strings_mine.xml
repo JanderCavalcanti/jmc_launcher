@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- My readings: the driver's own OBD requests and formulas (MyReadings.kt, MyReadingsTile.kt) -->
-    <string name="mine_title">As minhas leituras</string>
-    <string name="mine_settings_detail">Os seus pedidos OBD e fórmulas</string>
-    <string name="mine_kind_blurb">As suas leituras OBD e fórmulas, definidas nas Definições</string>
-    <string name="mine_tile_empty">Adicione leituras em Definições → Carro → As minhas leituras.</string>
+    <string name="mine_title">Minhas leituras</string>
+    <string name="mine_settings_detail">Seus pedidos OBD e fórmulas</string>
+    <string name="mine_kind_blurb">Suas leituras OBD e fórmulas, definidas nas Configurações</string>
+    <string name="mine_tile_empty">Adicione leituras em Configurações → Carro → As minhas leituras.</string>
     <string name="mine_explanation">Peça ao carro qualquer leitura pelo seu pedido, ou calcule os seus próprios valores a partir dos outros.</string>
     <string name="mine_none">Ainda sem leituras.</string>
     <string name="mine_add">Adicionar leitura</string>
-    <string name="mine_examples_detail">Consumo de GPL calculado pelo caudal de ar. Ajuste os números ao seu carro.</string>
+    <string name="mine_examples_detail">Consumo de GLP calculado pelo caudal de ar. Ajuste os números ao seu carro.</string>
     <string name="mine_add_examples">Adicionar exemplos</string>
     <string name="mine_ex_maf">Caudal de ar</string>
-    <string name="mine_ex_lpg_lh">Consumo GPL</string>
-    <string name="mine_ex_lpg_used">GPL gasto</string>
-    <string name="mine_ex_lpg_l100">GPL aos 100 km</string>
+    <string name="mine_ex_lpg_lh">Consumo GLP</string>
+    <string name="mine_ex_lpg_used">GLP gasto</string>
+    <string name="mine_ex_lpg_l100">GLP aos 100 km</string>
     <string name="mine_kind_pid">Do carro</string>
     <string name="mine_kind_formula">Calculada</string>
     <string name="mine_kind_total">Acumulado</string>
     <string name="mine_new">Nova leitura</string>
     <string name="mine_delete">Eliminar</string>
-    <string name="mine_save">Guardar</string>
+    <string name="mine_save">Salvar</string>
     <string name="mine_type">Tipo</string>
     <string name="mine_name">Nome</string>
     <string name="mine_unit">Unidade</string>
@@ -32,7 +32,7 @@
     <string name="mine_formula">Fórmula</string>
     <string name="mine_hint_pid">As letras A a H são os bytes da resposta, por exemplo (A*256+B)/100 para 0110.</string>
     <string name="mine_hint_formula">Use os nomes abaixo com + - * / e min, max, abs, round, if.</string>
-    <string name="mine_hint_total">Soma o valor por hora: L/h passam a litros, km/h a quilómetros.</string>
+    <string name="mine_hint_total">Soma o valor por hora: L/h passam a litros, km/h a quilômetros.</string>
     <string name="mine_names">Nomes: %1$s</string>
     <string name="mine_decimals">Casas decimais</string>
     <string name="mine_on_tile">No mosaico</string>

@@ -17,7 +17,7 @@
     <string name="canvas_tab_service">Revisão</string>
     <string name="canvas_when_parked">Estacionado</string>
     <string name="canvas_when_driving">Em marcha</string>
-    <string name="canvas_when_fault">Avaria motor</string>
+    <string name="canvas_when_fault">Falha motor</string>
     <string name="canvas_when_navigating">Navegação</string>
     <string name="canvas_when_low_fuel">Reserva</string>
     <string name="canvas_tab_add">Adicionar</string>
@@ -25,11 +25,11 @@
     <string name="canvas_tab_done">Concluído</string>
     <string name="canvas_tab_name">Nome</string>
     <string name="canvas_tab_when">Aparece sozinho</string>
-    <string name="canvas_tab_when_hint">Estacionado: ao arrancar, ou parado há 2 minutos. Toque de novo numa opção para a retirar.</string>
+    <string name="canvas_tab_when_hint">Estacionado: ao dar partida, ou parado há 2 minutos. Toque de novo numa opção para a retirar.</string>
     <string name="canvas_map_title">Sob o painel</string>
     <string name="canvas_map_builtin">Mapa próprio</string>
     <string name="canvas_map_builtin_hint">O mapa do Dashwheel, com painéis para deslizar.</string>
-    <string name="canvas_map_app_hint">A app corre sob os mosaicos e recebe cada toque que eles não apanham. Os separadores da barra substituem o deslizar: mantenha um premido para lhe dar nome.</string>
+    <string name="canvas_map_app_hint">A app roda sob os mosaicos e recebe cada toque que eles não apanham. Os separadores da barra substituem o deslizar: mantenha um pressionado para lhe dar nome.</string>
     <string name="canvas_bar_add_title">Adicionar à barra</string>
     <string name="canvas_bar_add_dashboard">Painel</string>
     <string name="canvas_bar_add_dashboard_detail">Um novo conjunto de widgets, com o seu nome e lugar.</string>

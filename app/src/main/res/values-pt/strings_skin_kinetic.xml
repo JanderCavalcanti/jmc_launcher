@@ -10,7 +10,7 @@
     <string name="kinetic_sunset">Pôr do sol %1$s</string>
     <string name="kinetic_sunrise">Nascer do sol %1$s</string>
     <string name="kinetic_metres">metros</string>
-    <string name="kinetic_kilometres">quilómetros</string>
+    <string name="kinetic_kilometres">quilômetros</string>
     <string name="kinetic_miles">milhas</string>
     <string name="kinetic_feet">pés</string>
     <string name="kinetic_yards">jardas</string>
@@ -24,7 +24,7 @@
     <string name="kinetic_coolant">Arrefecimento</string>
     <string name="kinetic_battery">Bateria</string>
     <string name="kinetic_load">Carga</string>
-    <string name="kinetic_now_playing">A tocar</string>
+    <string name="kinetic_now_playing">Tocando</string>
     <string name="kinetic_paused">Em pausa</string>
     <string name="kinetic_range">Autonomia</string>
     <string name="kinetic_fuel_left">Combustível %1$d %%</string>

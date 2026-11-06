@@ -2,7 +2,7 @@
 <resources>
     <!-- Settings dialog (also the menu item) -->
     <string name="ai_title">Mecânico IA</string>
-    <string name="ai_explanation">Um novo código de avaria é explicado pelo Gemini e lido em voz alta. São enviados à Google os códigos, as leituras do motor, o modelo e a sua voz quando faz uma pergunta em voz alta.</string>
+    <string name="ai_explanation">Um novo código de falha é explicado pelo Gemini e lido em voz alta. São enviados à Google os códigos, as leituras do motor, o modelo e a sua voz quando faz uma pergunta em voz alta.</string>
     <string name="ai_key">Chave API Gemini</string>
     <string name="ai_key_hint">Grátis em aistudio.google.com → Get API key</string>
     <string name="ai_language">Idioma das respostas</string>
@@ -14,31 +14,31 @@
     <!-- Settings dialog: test results -->
     <string name="ai_test_ok">O Gemini funciona: %1$s</string>
     <string name="ai_test_failed">Não funcionou: %1$s</string>
-    <string name="ai_test_waiting">A contactar a Google… %1$d s</string>
-    <string name="ai_no_voice">Nenhuma voz em %1$s neste aparelho: adicionar uma em Definições do Android → Texto para voz.</string>
+    <string name="ai_test_waiting">Contatando a Google… %1$d s</string>
+    <string name="ai_no_voice">Nenhuma voz em %1$s neste aparelho: adicionar uma em Configurações do Android → Texto para voz.</string>
 
     <!-- Spoken by the car, in the mechanic's language (resolved with the AI language, not the screen's) -->
     <string name="ai_say_ready">O mecânico IA está pronto.</string>
     <plurals name="ai_say_new_codes">
-        <item quantity="one">%1$d nova avaria do motor: %2$s. Veja o mosaico Códigos de avaria quando estiver parado.</item>
-        <item quantity="many">%1$d novas avarias do motor: %2$s. Veja o mosaico Códigos de avaria quando estiver parado.</item>
-        <item quantity="other">%1$d novas avarias do motor: %2$s. Veja o mosaico Códigos de avaria quando estiver parado.</item>
+        <item quantity="one">%1$d nova falha do motor: %2$s. Veja o mosaico Códigos de falha quando estiver parado.</item>
+        <item quantity="many">%1$d novas falhas do motor: %2$s. Veja o mosaico Códigos de falha quando estiver parado.</item>
+        <item quantity="other">%1$d novas falhas do motor: %2$s. Veja o mosaico Códigos de falha quando estiver parado.</item>
     </plurals>
     <plurals name="ai_say_new_codes_untitled">
-        <item quantity="one">%1$d nova avaria do motor. Veja o mosaico Códigos de avaria quando estiver parado.</item>
-        <item quantity="many">%1$d novas avarias do motor. Veja o mosaico Códigos de avaria quando estiver parado.</item>
-        <item quantity="other">%1$d novas avarias do motor. Veja o mosaico Códigos de avaria quando estiver parado.</item>
+        <item quantity="one">%1$d nova falha do motor. Veja o mosaico Códigos de falha quando estiver parado.</item>
+        <item quantity="many">%1$d novas falhas do motor. Veja o mosaico Códigos de falha quando estiver parado.</item>
+        <item quantity="other">%1$d novas falhas do motor. Veja o mosaico Códigos de falha quando estiver parado.</item>
     </plurals>
-    <string name="ai_say_overheat">Atenção, o motor está a sobreaquecer: %1$d graus. Pare quando for seguro e desligue o motor.</string>
-    <string name="ai_say_not_charging">A bateria não está a carregar: %1$s volts com o motor a trabalhar. Siga para uma oficina e desligue o que não for necessário.</string>
+    <string name="ai_say_overheat">Atenção, o motor está superaquecendo: %1$d graus. Pare quando for seguro e desligue o motor.</string>
+    <string name="ai_say_not_charging">A bateria não está carregando: %1$s volts com o motor trabalhando. Siga para uma oficina e desligue o que não for necessário.</string>
     <string name="ai_say_weak_battery">A bateria está fraca: %1$s volts com o motor desligado. Convém testá-la em breve.</string>
 
     <!-- Fault codes tile: labels around the AI advice (in the mechanic's language, like the advice) -->
     <string name="ai_verdict_ok">Sem sinais de urgência</string>
     <string name="ai_verdict_soon">Verificar em breve</string>
     <string name="ai_verdict_stop">Pare o carro</string>
-    <string name="ai_rules_stop">Esta avaria pode danificar o motor: pare assim que for seguro e mande verificar antes de seguir.</string>
-    <string name="ai_rules_soon">Esta avaria precisa de uma oficina dentro de dias: conduza com suavidade até lá.</string>
+    <string name="ai_rules_stop">Esta falha pode danificar o motor: pare assim que for seguro e mande verificar antes de seguir.</string>
+    <string name="ai_rules_soon">Esta falha precisa de uma oficina dentro de dias: dirija com suavidade até lá.</string>
     <string name="ai_rules_raised">Considerada mais grave pelas regras de segurança integradas do que pela IA.</string>
     <string name="ai_disclaimer">Conselho da IA (%1$s): pode estar errado. Confirme numa oficina antes de qualquer reparação.</string>
     <string name="ai_details_parked">Os detalhes leem-se com o carro parado. Pode continuar a fazer a sua pergunta em voz alta.</string>
@@ -54,11 +54,11 @@
     <string name="ai_detail_repair">Reparação habitual</string>
     <string name="ai_detail_cost">Custo estimado</string>
     <string name="ai_detail_diy">Dá para fazer em casa?</string>
-    <string name="ai_detail_driving">Pode continuar a conduzir?</string>
+    <string name="ai_detail_driving">Pode continuar a dirigir?</string>
     <string name="ai_ask">Fazer uma pergunta</string>
     <string name="ai_ask_send">Enviar</string>
-    <string name="ai_ask_listening">Estou a ouvir… faça a sua pergunta; é enviada quando parar de falar.</string>
-    <string name="ai_ask_thinking">O mecânico está a pensar…</string>
+    <string name="ai_ask_listening">Estou ouvindo… faça a sua pergunta; é enviada quando parar de falar.</string>
+    <string name="ai_ask_thinking">O mecânico está pensando…</string>
     <string name="ai_ask_you_asked">Perguntou: %1$s</string>
     <string name="ai_ask_nothing_heard">Não ouvi nenhuma pergunta. Toque e pergunte de novo.</string>
     <string name="ai_ask_mic_denied">Permita o microfone para perguntar por voz.</string>
@@ -67,13 +67,13 @@
     <string name="ai_ask_replay">Ouvir de novo</string>
 
     <!-- Fault codes tile: status -->
-    <string name="ai_no_codes">Sem códigos de avaria</string>
+    <string name="ai_no_codes">Sem códigos de falha</string>
     <string name="ai_cleared">Apagados</string>
     <string name="ai_scan_failed">Falha na leitura</string>
     <string name="ai_clear_failed">Falha ao apagar</string>
-    <string name="ai_thinking">A consultar o mecânico IA…</string>
+    <string name="ai_thinking">Consultando o mecânico IA…</string>
     <string name="ai_retry">Tentar de novo</string>
-    <string name="ai_note_no_key">Adicionar uma chave Gemini gratuita em Definições → Carro → Mecânico IA para conselhos em linguagem simples.</string>
+    <string name="ai_note_no_key">Adicionar uma chave Gemini gratuita em Configurações → Carro → Mecânico IA para conselhos em linguagem simples.</string>
     <string name="ai_note_unavailable">IA indisponível: %1$s</string>
 
     <!-- Why asking Gemini failed (follows "AI unavailable: " / "Didn't work: ") -->
@@ -82,30 +82,30 @@
     <string name="ai_error_gemini">erro do Gemini %1$d</string>
     <string name="ai_error_empty">o Gemini deu uma resposta vazia</string>
     <string name="ai_error_unreadable">a resposta do Gemini era ilegível</string>
-    <string name="ai_error_offline">sem ligação à Internet</string>
+    <string name="ai_error_offline">sem conexão à Internet</string>
     <string name="ai_error_no_dns">sem internet: a Google não foi encontrada (verifique o Wi-Fi ou o hotspot do rádio)</string>
-    <string name="ai_error_no_access">o Wi-Fi está ligado mas sem internet (pode exigir início de sessão ou o telemóvel não tem dados)</string>
-    <string name="ai_error_timeout">a Google não respondeu a tempo: ligação demasiado lenta ou sem internet</string>
+    <string name="ai_error_no_access">o Wi-Fi está ligado mas sem internet (pode exigir início de sessão ou o celular não tem dados)</string>
+    <string name="ai_error_timeout">a Google não respondeu a tempo: conexão muito lenta ou sem internet</string>
     <string name="ai_error_gemini_busy">a IA da Google está sobrecarregada neste momento; tente novamente daqui a alguns minutos</string>
-    <string name="ai_error_tls">ligação segura recusada: verifique a data e a hora do rádio</string>
+    <string name="ai_error_tls">conexão segura recusada: verifique a data e a hora do rádio</string>
     <string name="ai_error_connect">não foi possível ligar à Google</string>
     <string name="ai_error_unknown">erro desconhecido</string>
-    <string name="ai_say_overcharging">A tensão da bateria está demasiado alta: %1$s volts com o motor a trabalhar. O regulador de carga pode estar avariado: mande verificar em breve.</string>
+    <string name="ai_say_overcharging">A tensão da bateria está muito alta: %1$s volts com o motor trabalhando. O regulador de carga pode estar com defeito: mande verificar em breve.</string>
     <!-- Asking the mechanic about the car as it is now (fault codes tile microphone, hands-free) -->
     <string name="ai_ask_wheel_action">Perguntar ao mecânico IA</string>
     <!-- Spoken, in the mechanic's language -->
-    <string name="ai_ask_say_listening">Estou a ouvir.</string>
+    <string name="ai_ask_say_listening">Estou ouvindo.</string>
     <string name="ai_ask_say_nothing_heard">Não ouvi nenhuma pergunta.</string>
-    <string name="ai_ask_say_no_key">O mecânico IA precisa de uma chave Gemini. Adicione-a nas definições do Carro, em Mecânico IA.</string>
-    <string name="ai_ask_say_mic">O microfone ainda não está autorizado. Toque uma vez no microfone do painel Códigos de avaria para o autorizar.</string>
+    <string name="ai_ask_say_no_key">O mecânico IA precisa de uma chave Gemini. Adicione-a nas configurações do Carro, em Mecânico IA.</string>
+    <string name="ai_ask_say_mic">O microfone ainda não está autorizado. Toque uma vez no microfone do painel Códigos de falha para o autorizar.</string>
     <string name="ai_gemini_live_missing">O Gemini não está instalado nesta unidade.</string>
     <string name="ai_gemini_live_end">Terminar</string>
     <string name="ai_gemini_live_show">Mostrar o Gemini Live</string>
-    <string name="ai_live_connecting">A ligar</string>
-    <string name="ai_live_listening">A ouvir</string>
-    <string name="ai_live_thinking">A pensar</string>
-    <string name="ai_live_speaking">A falar</string>
-    <string name="ai_live_failed">O Gemini não responde. Verifique a ligação.</string>
+    <string name="ai_live_connecting">Ligando</string>
+    <string name="ai_live_listening">Ouvindo</string>
+    <string name="ai_live_thinking">Pensando</string>
+    <string name="ai_live_speaking">Falando</string>
+    <string name="ai_live_failed">O Gemini não responde. Verifique a conexão.</string>
     <string name="ai_live_own">Gemini que conhece o carro</string>
     <string name="ai_live_own_detail">Usa a sua chave Gemini: lê o carro, a viagem e o painel, e age sobre eles. Desligado: a app Gemini da Google</string>
 </resources>

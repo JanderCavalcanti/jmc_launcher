@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="access_a11y_title">Acesso à acessibilidade</string>
-    <string name="access_a11y_body">O Dashwheel usa o serviço de acessibilidade do Android para pôr duas apps lado a lado, fazer os botões do volante cumprirem o que escolheu, como Voltar, e escrever no campo selecionado o que dita no telemóvel.\n\nPara isso vê que apps estão abertas e onde, os botões premidos e o campo onde escreve. Não lê mais nada no ecrã. Nada é guardado, enviado ou partilhado: tudo fica nesta unidade.</string>
+    <string name="access_a11y_body">O Dashwheel usa o serviço de acessibilidade do Android para pôr duas apps lado a lado, fazer os botões do volante cumprirem o que escolheu, como Voltar, e escrever no campo selecionado o que dita no celular.\n\nPara isso vê que apps estão abertas e onde, os botões pressionados e o campo onde escreve. Não lê mais nada na tela. Nada é salvo, enviado ou compartilhado: tudo fica nesta unidade.</string>
     <string name="access_notif_title">Acesso às notificações</string>
-    <string name="access_notif_body">O Dashwheel lê as notificações para mostrar o que está a tocar, a próxima curva e as mensagens novas no painel. Ficam nesta unidade.</string>
-    <string name="access_open_settings">Abrir definições</string>
+    <string name="access_notif_body">O Dashwheel lê as notificações para mostrar o que está tocando, a próxima curva e as mensagens novas no painel. Ficam nesta unidade.</string>
+    <string name="access_open_settings">Abrir configurações</string>
     <string name="access_agree">Aceito</string>
     <string name="access_not_now">Agora não</string>
     <string name="access_restricted_title">Bloqueado pelo Android</string>
-    <string name="access_restricted_body">O Android bloqueia isto nas apps instaladas a partir de um ficheiro. Abra as definições e toque uma vez em Dashwheel, depois Informações da app, ⋮, Permitir definições restritas, e tente de novo.</string>
+    <string name="access_restricted_body">O Android bloqueia isto nas apps instaladas a partir de um arquivo. Abra as configurações e toque uma vez em Dashwheel, depois Informações do app, ⋮, Permitir configurações restritas, e tente de novo.</string>
     <string name="access_app_info">Info. da app</string>
 </resources>

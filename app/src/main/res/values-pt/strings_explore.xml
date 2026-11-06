@@ -12,11 +12,11 @@
     <string name="explore_oil_temp">Temperatura do óleo</string>
     <string name="explore_explanation">Experimental: a IA propõe os pedidos de diagnóstico próprios deste carro e mantém aqueles a que o carro responde com um valor plausível e estável. Uma leitura mantida pode ainda estar errada.</string>
     <string name="explore_search">Procurar com IA</string>
-    <string name="explore_searching">A testar os pedidos… %1$d s</string>
+    <string name="explore_searching">Testando os pedidos… %1$d s</string>
     <string name="explore_verified">Leituras confirmadas</string>
-    <string name="explore_none_verified">Nenhuma ainda. Ligue o adaptador com o motor a trabalhar e procure.</string>
+    <string name="explore_none_verified">Nenhuma ainda. Ligue o adaptador com o motor trabalhando e procure.</string>
     <string name="explore_results">Testadas</string>
-    <string name="explore_forget">Repor tudo</string>
+    <string name="explore_forget">Restaurar tudo</string>
     <string name="explore_v_no_answer">sem resposta</string>
     <string name="explore_v_refused">recusado</string>
     <string name="explore_v_unreadable">ilegível</string>
@@ -28,7 +28,7 @@
     <string name="explore_nothing_found">Nada confirmado. Este carro talvez só as dê a uma ferramenta de oficina.</string>
     <string name="explore_source_standard">padrão</string>
     <string name="explore_source_ai">IA</string>
-    <string name="explore_regen_yes">A regenerar</string>
+    <string name="explore_regen_yes">Regenerando</string>
     <string name="explore_regen_no">Sem regeneração</string>
     <string name="explore_soot_status">Carga de fuligem %1$d %%</string>
 </resources>

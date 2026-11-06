@@ -15,7 +15,7 @@
     <string name="apps_kind_pip_anchor">Janela do Maps</string>
     <string name="apps_kind_pip_anchor_blurb">Fixa aqui a janela flutuante do Maps</string>
     <string name="apps_kind_media">Leitor de música</string>
-    <string name="apps_kind_media_blurb">A reproduzir, com controlos</string>
+    <string name="apps_kind_media_blurb">Reproduzindo, com controles</string>
     <string name="apps_kind_telemetry">Mostradores do motor</string>
     <string name="apps_kind_telemetry_blurb">Velocidade, rotações, líquido refrig., carga, bateria</string>
     <string name="apps_kind_obd_dtc">Problemas do carro</string>
@@ -23,7 +23,7 @@
     <string name="apps_kind_obd_all">Todos os dados do carro</string>
     <string name="apps_kind_obd_all_blurb">Todos os valores OBD em tempo real</string>
     <string name="apps_kind_range">Combustível e autonomia</string>
-    <string name="apps_kind_range_blurb">Nível do depósito e km restantes</string>
+    <string name="apps_kind_range_blurb">Nível do tanque e km restantes</string>
     <string name="apps_kind_doors">Portas</string>
     <string name="apps_kind_doors_blurb">Estado das portas e da mala, do carro</string>
     <string name="apps_kind_can_mon">Monitor CAN</string>
@@ -35,9 +35,9 @@
     <string name="apps_kind_trip">Computador de bordo</string>
     <string name="apps_kind_trip_blurb">Esta viagem e desde o último abastecimento, com combustível e custo</string>
     <string name="apps_kind_gforce">Força G</string>
-    <string name="apps_kind_gforce_blurb">g em curva e travagem</string>
+    <string name="apps_kind_gforce_blurb">g em curva e frenagem</string>
     <string name="apps_kind_parking">Estacionamento</string>
-    <string name="apps_kind_parking_blurb">Guardar o local do carro e voltar a pé</string>
+    <string name="apps_kind_parking_blurb">Salvar o local do carro e voltar a pé</string>
     <string name="apps_kind_clock">Relógio</string>
     <string name="apps_kind_clock_blurb">Hora e data, em grande</string>
     <string name="apps_kind_weather">Meteorologia</string>
@@ -45,11 +45,11 @@
     <string name="apps_kind_calendar">Agenda</string>
     <string name="apps_kind_calendar_blurb">Próximos eventos do calendário</string>
     <string name="apps_kind_quick_dial">Marcação rápida</string>
-    <string name="apps_kind_quick_dial_blurb">Contactos favoritos, chamada com um toque</string>
+    <string name="apps_kind_quick_dial_blurb">Contatos favoritos, chamada com um toque</string>
     <string name="apps_kind_notifications">Notificações</string>
     <string name="apps_kind_notifications_blurb">Mensagens e alertas das apps</string>
     <string name="apps_kind_audio">Áudio</string>
-    <string name="apps_kind_audio_blurb">Volume, silêncio, som e definições Bluetooth</string>
+    <string name="apps_kind_audio_blurb">Volume, silêncio, som e configurações Bluetooth</string>
 
     <!-- Add-widget catalogue: dialog -->
     <string name="apps_pick_launch_bar">Barra de apps</string>
@@ -57,7 +57,7 @@
     <string name="apps_pick_system_widget">Widget do sistema…</string>
     <string name="apps_pick_system_widget_blurb">Qualquer widget instalado</string>
     <string name="apps_cancel">Cancelar</string>
-    <string name="apps_save">Guardar</string>
+    <string name="apps_save">Salvar</string>
 
     <!-- Launch bar tile and its editor -->
     <string name="apps_launch_bar_empty">Barra de apps: tocar no lápis para adicionar apps</string>
@@ -87,9 +87,9 @@
     <string name="apps_window_docked">Fixado: %1$s (%2$s)</string>
     <string name="apps_window_tap_to_raise">Janela escondida? Toque aqui para a trazer para a frente.</string>
     <string name="apps_window_gave_up">O sistema mantém %1$s onde está</string>
-    <string name="apps_window_moving">A mover %1$s para aqui…</string>
-    <string name="apps_window_opening">A abrir %1$s aqui…</string>
-    <string name="apps_window_maps_hint">O Google Maps fixa-se aqui.\nAbrir abaixo, ou iniciar a navegação e premir Início.</string>
+    <string name="apps_window_moving">Movendo %1$s para aqui…</string>
+    <string name="apps_window_opening">Abrindo %1$s aqui…</string>
+    <string name="apps_window_maps_hint">O Google Maps fixa-se aqui.\nAbrir abaixo, ou iniciar a navegação e pressionar Início.</string>
     <string name="apps_window_app_hint">%1$s abre aqui, numa janela do tamanho deste bloco.</string>
     <string name="apps_window_open">Abrir %1$s aqui</string>
     <string name="apps_window_open_full">Abrir %1$s completo aqui</string>
@@ -102,16 +102,16 @@
     <string name="apps_window_diag_seen">Janelas: %1$s</string>
 
     <!-- Floating split-screen swap button (accessibility label) -->
-    <string name="apps_swap_split_panes">Trocar as apps do ecrã dividido</string>
+    <string name="apps_swap_split_panes">Trocar as apps do tela dividida</string>
     <!-- The add sheet (AddSheet.kt): widgets, apps and windows in one place -->
     <string name="apps_add_title">Adicionar a %1$s</string>
     <string name="apps_tab_widgets">Widgets</string>
     <string name="apps_tab_apps">Apps</string>
     <string name="apps_search">Procurar</string>
     <string name="apps_category_all">Tudo</string>
-    <string name="apps_embed_app_starting">A abrir %1$s</string>
+    <string name="apps_embed_app_starting">Abrindo %1$s</string>
     <string name="apps_embed_app_missing">%1$s não está instalada</string>
-    <string name="apps_embed_app_blocked">%1$s não corre dentro de um mosaico nesta unidade. Adicione-o como janela.</string>
+    <string name="apps_embed_app_blocked">%1$s não roda dentro de um mosaico nesta unidade. Adicione-o como janela.</string>
     <string name="apps_embed_under_dashboard">Já está sob o painel</string>
     <string name="apps_pair_pick_first">Toque na app para o lado esquerdo.</string>
     <string name="apps_pair_pick_second">%1$s à esquerda. Agora toque na app para o lado direito.</string>
@@ -119,20 +119,20 @@
     <string name="apps_kind_maps_inside">Google Maps integrado</string>
     <string name="apps_kind_maps_inside_blurb">A verdadeira app Google Maps, neste bloco</string>
     <string name="apps_kind_dash_bar">Barra de painéis</string>
-    <string name="apps_kind_dash_bar_blurb">Os seus painéis e aplicações, um toque cada, neste painel</string>
+    <string name="apps_kind_dash_bar_blurb">Seus painéis e aplicações, um toque cada, neste painel</string>
     <string name="apps_most_used">As mais usadas</string>
-    <string name="apps_kind_screen_light">Brilho do ecrã Pi</string>
-    <string name="apps_kind_screen_light_blurb">A retroiluminação do segundo ecrã, de dia e de noite</string>
+    <string name="apps_kind_screen_light">Brilho da tela Pi</string>
+    <string name="apps_kind_screen_light_blurb">A retroiluminação da segunda tela, de dia e de noite</string>
     <string name="apps_kind_radios">Wi-Fi e Bluetooth</string>
     <string name="apps_kind_radios_blurb">Ligue e desligue o Wi-Fi e o Bluetooth do rádio</string>
     <string name="apps_radio_wifi">Wi-Fi</string>
     <string name="apps_radio_bluetooth">Bluetooth</string>
     <string name="apps_radio_on">Ligado</string>
     <string name="apps_radio_off">Desligado</string>
-    <string name="apps_radio_switching">A mudar</string>
+    <string name="apps_radio_switching">Mudando</string>
 
     <string name="apps_needs_obd">Precisa do adaptador OBD</string>
-    <string name="apps_needs_phone">Precisa do telemóvel</string>
+    <string name="apps_needs_phone">Precisa do celular</string>
     <string name="apps_needs_internet">Precisa de Internet</string>
     <string name="apps_needs_root">Precisa de root</string>
     <string name="apps_needs_carbox">Precisa da caixa do carro</string>
@@ -143,6 +143,6 @@
     <string name="apps_in_tile_inside">Corre dentro do mosaico, neste painel</string>
     <string name="apps_in_tile_window">Fica aberta numa janela do tamanho do mosaico</string>
     <string name="apps_side_by_side">Lado a lado</string>
-    <string name="apps_side_by_side_detail">Duas aplicações ao mesmo tempo, em ecrã dividido</string>
+    <string name="apps_side_by_side_detail">Duas aplicações ao mesmo tempo, em tela dividida</string>
     <string name="apps_icon_size">Tamanho dos ícones</string>
 </resources>

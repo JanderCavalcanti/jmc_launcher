@@ -6,7 +6,7 @@
     <string name="ambient_turn_in">Em %1$s</string>
     <string name="ambient_talk">Falar</string>
     <string name="ambient_talk_cd">Falar com o assistente</string>
-    <string name="ambient_listening">A ouvir</string>
+    <string name="ambient_listening">Ouvindo</string>
     <string name="ambient_speed_limit_cd">Limite de velocidade %1$d</string>
     <string name="ambient_rpm">rpm</string>
     <string name="ambient_coolant">Refrigerante %1$s</string>

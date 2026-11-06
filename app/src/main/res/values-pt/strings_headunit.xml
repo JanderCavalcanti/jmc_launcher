@@ -4,14 +4,14 @@
     <string name="unit_card_title">Rádio</string>
     <string name="unit_detected">%1$s, detetado</string>
     <string name="unit_chosen">%1$s, a sua escolha</string>
-    <string name="unit_choose_title">O meu rádio é</string>
+    <string name="unit_choose_title">Meu rádio é</string>
     <string name="unit_auto">Automático</string>
     <string name="unit_restart">Reiniciar o Dashwheel</string>
-    <string name="unit_restart_hint">A escolha aplica-se quando o Dashwheel voltar a arrancar.</string>
+    <string name="unit_restart_hint">A escolha aplica-se quando o Dashwheel voltar a dar partida.</string>
     <string name="unit_caps_section">O que este firmware oferece</string>
     <string name="unit_state_live">Funciona</string>
     <string name="unit_state_ready">Pronto</string>
-    <string name="unit_needs_settings">Precisa da permissão de definições ou de uma shell</string>
+    <string name="unit_needs_settings">Precisa da permissão de configurações ou de uma shell</string>
     <string name="unit_needs_shell">Precisa de root, Shizuku ou do ADB do rádio</string>
     <string name="unit_needs_root">Precisa de root</string>
     <string name="unit_survival_section">Ficar acordado durante a suspensão</string>
@@ -19,7 +19,7 @@
     <string name="unit_applied">Feito</string>
     <string name="unit_open_whitelist">Abrir a app da lista branca</string>
     <string name="unit_fyt_keys_title">Tomar as teclas do volante</string>
-    <string name="unit_fyt_keys_detail">Após um reinício o firmware entrega as teclas do volante e do painel ao Dashwheel. As suas apps perdem-nas entretanto.</string>
+    <string name="unit_fyt_keys_detail">Após um reinício o firmware entrega as teclas do volante e do painel ao Dashwheel. Suas apps perdem-nas entretanto.</string>
     <string name="unit_needs_firmware">Precisa do firmware %1$s</string>
     <string name="unit_family_qf">QF (Hizpo, ROCO K706)</string>
     <string name="unit_family_fyt">FYT (Joying, Atoto, Mekede)</string>
@@ -43,6 +43,6 @@
     <string name="unit_cap_volume">Volume do rádio</string>
     <string name="unit_cap_launcher">Escolha do launcher pelo firmware</string>
     <string name="unit_cap_popups">Avisos do firmware substituídos</string>
-    <string name="unit_cap_camera">Câmara de marcha-atrás</string>
+    <string name="unit_cap_camera">Câmara de marcha a ré</string>
     <string name="unit_cap_tyres">Pneus</string>
 </resources>

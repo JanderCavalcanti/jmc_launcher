@@ -14,7 +14,7 @@
     <string name="dash_screen_layout">Posição do Google Maps: %1$s</string>
     <string name="dash_more">Mais</string>
     <string name="dash_obd_connected">OBD ligado</string>
-    <string name="dash_obd_connecting">A ligar OBD</string>
+    <string name="dash_obd_connecting">Ligando OBD</string>
     <string name="dash_obd_error">Erro OBD, tocar para voltar a ligar</string>
     <string name="dash_obd_off">OBD desligado, tocar para ligar</string>
     <string name="dash_alert_battery">Bateria %1$.1fV</string>
@@ -26,16 +26,16 @@
     <string name="dash_menu_theme">Tema</string>
 
     <!-- Edit bar (arranging a dashboard) -->
-    <string name="dash_arranging_dashboard">A organizar: %1$s</string>
+    <string name="dash_arranging_dashboard">Organizando: %1$s</string>
     <string name="dash_arranging_hint">Toque num mosaico para as opções, mantenha para o mover, arraste o canto para o redimensionar.</string>
     <string name="dash_undo">Anular</string>
     <string name="dash_reset_page">Remover painel…</string>
 
     <!-- Update banner -->
-    <string name="dash_update_downloading">A transferir atualização… %1$d %%</string>
-    <string name="dash_update_installing">A iniciar o instalador…</string>
+    <string name="dash_update_downloading">Baixando atualização… %1$d %%</string>
+    <string name="dash_update_installing">Iniciando o instalador…</string>
     <string name="dash_menu_check_updates">Procurar atualizações</string>
-    <string name="dash_update_checking">A procurar atualizações…</string>
+    <string name="dash_update_checking">Procurando atualizações…</string>
     <string name="dash_update_up_to_date">O Dashwheel está atualizado, v%1$s</string>
     <string name="dash_update">Atualizar</string>
 
@@ -63,15 +63,15 @@
 
     <!-- Split screen -->
     <string name="dash_swap_split">Trocar apps esquerda/direita</string>
-    <string name="dash_split_with">Ecrã dividido com…</string>
-    <string name="dash_enable_split_title">Ativar ecrã dividido</string>
-    <string name="dash_enable_split_body">O Dashwheel usa o ecrã dividido do sistema, o das aplicações recentes. Ative o Dashwheel uma vez em Definições, Acessibilidade.</string>
-    <string name="dash_open_settings">Abrir definições</string>
+    <string name="dash_split_with">Tela dividida com…</string>
+    <string name="dash_enable_split_title">Ativar tela dividida</string>
+    <string name="dash_enable_split_body">O Dashwheel usa o tela dividida do sistema, o das aplicações recentes. Ative o Dashwheel uma vez em Configurações, Acessibilidade.</string>
+    <string name="dash_open_settings">Abrir configurações</string>
 
     <!-- System app install (root) -->
     <string name="dash_system_app_title">Aplicação de sistema</string>
     <string name="dash_system_app_body">Instala o Dashwheel como app de sistema: os widgets Android são adicionados sem perguntar sempre. Precisa de root ou do ADB interno na porta %1$d, e de reiniciar depois.</string>
-    <string name="dash_root_checking">A verificar root…</string>
+    <string name="dash_root_checking">Verificando root…</string>
     <string name="dash_root_available">Root disponível. Instala-se como módulo Magisk se o Magisk estiver presente.</string>
     <string name="dash_root_missing">Sem root. Vai tentar o ADB interno na porta %1$d.</string>
     <string name="dash_install_system_app">Instalar como app de sistema</string>
@@ -111,7 +111,7 @@
     <string name="dash_theme_original">Original</string>
     <string name="dash_theme_original_desc">O primeiro visual do launcher: cartões planos, dois indicadores de ponteiro</string>
     <string name="dash_theme_aurora">Vidro Aurora</string>
-    <string name="dash_theme_aurora_desc">Painéis de vidro, indicadores luminosos, controlos em gradiente</string>
+    <string name="dash_theme_aurora_desc">Painéis de vidro, indicadores luminosos, controles em gradiente</string>
     <string name="dash_theme_neon">Néon</string>
     <string name="dash_theme_neon_desc">Cockpit futurista azul e violeta</string>
     <string name="dash_theme_clean">Limpo</string>
@@ -119,11 +119,11 @@
     <string name="dash_theme_premium_glass">Vidro Premium</string>
     <string name="dash_theme_premium_glass_desc">Vidro fumado à noite, fosco de dia</string>
     <string name="dash_theme_sporty">Desportivo</string>
-    <string name="dash_theme_sporty_desc">Cockpit desportivo vermelho</string>
+    <string name="dash_theme_sporty_desc">Cockpit esportivo vermelho</string>
     <string name="dash_theme_floating">Flutuante</string>
     <string name="dash_theme_floating_desc">Sem fundo nos blocos: widgets e ícones sobre o fundo</string>
     <string name="dash_theme_orbit">Órbita</string>
-    <string name="dash_theme_orbit_desc">Tudo redondo: um disco a girar, indicadores em anel, bolhas</string>
+    <string name="dash_theme_orbit_desc">Tudo redondo: um disco girando, indicadores em anel, bolhas</string>
     <string name="dash_theme_cockpit">Cockpit</string>
     <string name="dash_theme_cockpit_desc">Mostradores analógicos com aros cromados e interruptores sobre pele pespontada</string>
     <string name="dash_theme_horizon">Horizonte</string>
@@ -133,7 +133,7 @@
 
     <!-- Screen layouts (the enum names are what gets saved) -->
     <string name="dash_layout_grid">Só painéis</string>
-    <string name="dash_layout_grid_desc">Painéis deslizantes ocupam o ecrã</string>
+    <string name="dash_layout_grid_desc">Painéis deslizantes ocupam a tela</string>
     <string name="dash_layout_maps_left">Google Maps à esquerda</string>
     <string name="dash_layout_maps_left_desc">Google Maps fixo na metade esquerda, painéis deslizantes à direita</string>
     <string name="dash_layout_maps_right">Google Maps à direita</string>
@@ -186,7 +186,7 @@
     <string name="dash_theme_nordic">Nórdico minimal</string>
     <string name="dash_theme_nordic_desc">Grafite e azul-gelo, linhas finas, nada que grite</string>
     <string name="dash_theme_canvas">Canvas</string>
-    <string name="dash_theme_canvas_desc">O mapa enche o ecrã, a viagem numa linha. Barra lateral por defeito; muda-se em Ecrã.</string>
+    <string name="dash_theme_canvas_desc">O mapa enche a tela, a viagem numa linha. Barra lateral por defeito; muda-se em Tela.</string>
     <!-- Updates without a strip (⋮ dot, Settings row, ready prompt); edit-mode confirms; tile options; theme gallery -->
     <string name="dash_update_to">Atualizar para %1$s</string>
     <string name="dash_update_available_detail">Mais recente que a v%1$s. Instalar reinicia o Dashwheel.</string>
@@ -198,7 +198,7 @@
     <string name="dash_update_allow_installs">Permita que o Dashwheel instale atualizações e toque de novo em Atualizar</string>
     <string name="dash_dashboard_options">Opções do painel</string>
     <string name="dash_remove_dashboard_title">Remover %1$s?</string>
-    <string name="dash_remove_dashboard_body">Esvaziar, ou tirar dos deslizes com os seus mosaicos. Anular repõe-nos.</string>
+    <string name="dash_remove_dashboard_body">Esvaziar, ou tirar dos deslizes com os seus mosaicos. Anular restaura-nos.</string>
     <string name="dash_tile_move">Mover para outro painel</string>
     <string name="dash_tile_remove">Remover</string>
     <string name="dash_tile_restart_app">Reiniciar a app</string>
@@ -219,9 +219,9 @@
     <string name="dash_dashboard_removed">%1$s removido</string>
     <string name="dash_remove_empty">Esvaziar</string>
     <string name="dash_remove_take_out">Tirar dos deslizes</string>
-    <string name="dash_bring_back_title">Repor %1$s?</string>
+    <string name="dash_bring_back_title">Restaurar %1$s?</string>
     <string name="dash_bring_back_body">O mosaico vai para lá e o painel volta aos deslizes.</string>
-    <string name="dash_bring_back">Repor</string>
+    <string name="dash_bring_back">Restaurar</string>
     <string name="dash_moved_to">Movido para %1$s</string>
     <string name="dash_page_removed">%1$s, fora dos deslizes</string>
     <string name="dash_way_home_up">Deslize para cima para o Início</string>
@@ -234,7 +234,7 @@
     <string name="dash_theme_modern">Moderno</string>
     <string name="dash_theme_modern_desc">Cartões de vidro fosco sobre uma cidade em 3D, a rota iluminada.</string>
     <string name="dash_theme_motorsport">Desporto motorizado</string>
-    <string name="dash_theme_motorsport_desc">O ecrã de um carro de corrida: luzes de mudança, tempos por setor, moldura da cor da bandeira.</string>
+    <string name="dash_theme_motorsport_desc">A tela de um carro de corrida: luzes de mudança, tempos por setor, moldura da cor da bandeira.</string>
     <string name="dash_theme_anime">Anime</string>
     <string name="dash_theme_anime_desc">Quadros de banda desenhada num céu de pôr do sol, o seu carro como autocolante que fala.</string>
     <string name="dash_theme_racing">Corrida</string>
@@ -242,11 +242,11 @@
     <string name="dash_theme_panorama">Panorama</string>
     <string name="dash_theme_panorama_desc">Uma faixa de vidro curva com segmentos acesos, o seu carro num pedestal iluminado e uma doca em volante.</string>
     <string name="dash_theme_liquid">Líquido</string>
-    <string name="dash_theme_liquid_desc">Vidro que curva a luz sobre um fundo vivo, o seu carro a rodar no centro.</string>
+    <string name="dash_theme_liquid_desc">Vidro que curva a luz sobre um fundo vivo, o seu carro rodando no centro.</string>
     <string name="dash_theme_expressive">Expressivo</string>
-    <string name="dash_theme_expressive_desc">Formas marcantes e as cores da música a tocar; cada widget tem a sua forma.</string>
+    <string name="dash_theme_expressive_desc">Formas marcantes e as cores da música tocando; cada widget tem a sua forma.</string>
     <string name="dash_theme_kinetic">Cinético</string>
-    <string name="dash_theme_kinetic_desc">Primeiro as palavras: a próxima viragem em letras grandes em movimento, o resto a passar por baixo.</string>
+    <string name="dash_theme_kinetic_desc">Primeiro as palavras: a próxima viragem em letras grandes em movimento, o resto passando por baixo.</string>
     <string name="dash_theme_glyph">Glifo</string>
     <string name="dash_theme_glyph_desc">Algarismos em pontos num painel claro, teclas que parecem reais e faixas de luz nas margens.</string>
     <string name="dash_theme_windshield">Para-brisa</string>
@@ -262,7 +262,7 @@
     <string name="dash_theme_chrome">Cromado</string>
     <string name="dash_theme_chrome_desc">Letras em cromado líquido, fichas holográficas e uma gota de metal que mexe com a música.</string>
     <string name="dash_theme_spatial">Espacial</string>
-    <string name="dash_theme_spatial_desc">Janelas de vidro a flutuar a diferentes profundidades sobre uma cidade 3D à noite.</string>
+    <string name="dash_theme_spatial_desc">Janelas de vidro flutuando a diferentes profundidades sobre uma cidade 3D à noite.</string>
     <string name="dash_theme_paper">Papel</string>
     <string name="dash_theme_paper_desc">Tinta sobre cinzento como o papel eletrónico: um mapa de pontos, factos simples e nada que se mexa.</string>
     <string name="look_layout_applied">Início disposto como %1$s</string>

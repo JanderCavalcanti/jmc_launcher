@@ -12,7 +12,7 @@
     <string name="terrain_dry">Sem chuva em %1$d h</string>
     <string name="terrain_rain_hours_cd">Chuva em %1$d das próximas 6 horas</string>
     <string name="terrain_music">Música</string>
-    <string name="terrain_playing">A tocar</string>
+    <string name="terrain_playing">Tocando</string>
     <string name="terrain_paused">Em pausa</string>
     <string name="terrain_engine">Motor</string>
     <string name="terrain_speed">Velocidade</string>

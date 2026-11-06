@@ -3,7 +3,7 @@
     <!-- Moments: Home follows the drive (Moments.kt, MomentsScreen.kt) -->
     <string name="moments_title">Momentos</string>
     <string name="moments_hint">O início acompanha a viagem. Sem tocar.</string>
-    <string name="moments_apps_note">Uma app corre num mosaico do início, por isso o início fica como está.</string>
+    <string name="moments_apps_note">Uma app roda num mosaico do início, por isso o início fica como está.</string>
     <string name="moments_settings_off">Desligado: o início fica como o arrumou</string>
     <string name="moments_master">Mudar sozinho</string>
     <string name="moments_now">Agora</string>
@@ -11,7 +11,7 @@
     <string name="moments_starts">Começa</string>
     <string name="moments_ends">Acaba</string>
     <string name="moments_stays">Fica parado</string>
-    <string name="moments_stays_body">Nunca muda enquanto toca no ecrã</string>
+    <string name="moments_stays_body">Nunca muda enquanto toca na tela</string>
     <string name="moments_on">Ligado</string>
     <string name="moments_off">Desligado</string>
     <string name="moments_change">Mudar o que mostra</string>
@@ -23,8 +23,8 @@
     <string name="moment_engine_on">Motor ligado</string>
     <string name="moment_engine_on_shows">Combustível, tempo e o dia</string>
     <string name="moment_engine_on_starts">Ao ligar o motor</string>
-    <string name="moment_engine_on_ends">Quando o carro arranca</string>
-    <string name="moment_guiding">A guiar</string>
+    <string name="moment_engine_on_ends">Quando o carro dá partida</string>
+    <string name="moment_guiding">Guiando</string>
     <string name="moment_guiding_shows">O mapa e a próxima viragem à frente</string>
     <string name="moment_guiding_starts">Quando o Maps ou o Waze guia</string>
     <string name="moment_guiding_ends">Quando a rota termina</string>
@@ -35,9 +35,9 @@
     <string name="moment_parked">Estacionado</string>
     <string name="moment_parked_shows">Estado do carro e mensagens</string>
     <string name="moment_parked_starts">Após uma viagem, 2 min parado</string>
-    <string name="moment_parked_ends">Quando o carro arranca</string>
+    <string name="moment_parked_ends">Quando o carro dá partida</string>
     <string name="moment_fault">Algo está mal</string>
-    <string name="moment_fault_shows">O código de avaria e os dados do motor</string>
-    <string name="moment_fault_starts">Quando aparece um código de avaria</string>
+    <string name="moment_fault_shows">O código de falha e os dados do motor</string>
+    <string name="moment_fault_starts">Quando aparece um código de falha</string>
     <string name="moment_fault_ends">Após 5 min, ou a tecla Início</string>
 </resources>

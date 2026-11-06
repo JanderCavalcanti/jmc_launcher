@@ -3,7 +3,7 @@
     <!-- Demo mode: a made-up drive that shows every tile working (DemoMode.kt) -->
     <string name="demo_menu_start">Modo demo</string>
     <string name="demo_menu_stop">Parar demo</string>
-    <string name="demo_settings_detail">Uma viagem inventada preenche todos os mosaicos. Nada é guardado.</string>
+    <string name="demo_settings_detail">Uma viagem inventada preenche todos os mosaicos. Nada é salvo.</string>
     <string name="demo_badge">Demo · dados fictícios</string>
     <string name="demo_stop">Parar</string>
     <!-- Fake turn-by-turn instructions; %1$s = street name -->
@@ -16,11 +16,11 @@
     <string name="demo_notif_event_text">Amanhã às 9:30</string>
 
     <!-- The mechanic's canned advice on the demo's fault code (P0401, EGR flow too low) -->
-    <string name="demo_p0401_summary">A válvula EGR não deixa voltar gás de escape suficiente, quase de certeza por fuligem. Pode conduzir; mande limpá-la em breve.</string>
+    <string name="demo_p0401_summary">A válvula EGR não deixa voltar gás de escape suficiente, quase de certeza por fuligem. Pode dirigir; mande limpá-la em breve.</string>
     <string name="demo_p0401_meaning">Caudal EGR insuficiente</string>
     <string name="demo_p0401_explanation">O motor devolve parte do escape à admissão para poluir menos. A centralina pediu mais do que recebeu; neste motor é quase sempre uma válvula cheia de fuligem.</string>
     <string name="demo_p0401_cause_1">Válvula EGR entupida com fuligem</string>
-    <string name="demo_p0401_cause_2">Válvula EGR presa, ou o seu motor a falhar</string>
+    <string name="demo_p0401_cause_2">Válvula EGR presa, ou o seu motor falhando</string>
     <string name="demo_p0401_cause_3">Arrefecedor ou conduta EGR obstruídos</string>
     <string name="demo_p0401_check_first">Desmontar a válvula EGR e verificar a fuligem</string>
     <string name="demo_p0401_repair">Limpar a válvula, ou substituí-la se prende</string>

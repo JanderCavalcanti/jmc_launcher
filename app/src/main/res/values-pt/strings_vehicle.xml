@@ -10,7 +10,7 @@
     <string name="vehicle_fuel">Combustível</string>
     <string name="vehicle_close">Fechar</string>
     <string name="vehicle_cancel">Cancelar</string>
-    <string name="vehicle_reset">Repor</string>
+    <string name="vehicle_reset">Restaurar</string>
     <string name="vehicle_capture_a">Captura A</string>
     <string name="vehicle_capture_b">Captura B</string>
 
@@ -43,7 +43,7 @@
     <string name="vehicle_try_obd_fuel_pid">Experimentar PID de combustível OBD</string>
     <string name="vehicle_km_to_empty">KM RESTANTES</string>
     <string name="vehicle_range_approx">≈ autonomia</string>
-    <string name="vehicle_in_tank">No depósito</string>
+    <string name="vehicle_in_tank">No tanque</string>
     <string name="vehicle_avg_use">Consumo médio</string>
     <string name="vehicle_learn_fuel">Aprender combustível da caixa CAN</string>
     <string name="vehicle_recalibrate_fuel">Recalibrar combustível</string>
@@ -53,11 +53,11 @@
     <string name="vehicle_range_from_car">computador de bordo</string>
 
     <!-- Fuel signal finder dialog -->
-    <string name="vehicle_finder_help">Defina o nível indicado no painel e toque em Captura A, depois feche e use o carro normalmente. Dias depois, quando o indicador tiver descido um pouco, reabra, defina o novo valor e toque em Captura B. A Captura A fica guardada após reinícios. Só são propostos os bytes que variaram com o combustível.</string>
+    <string name="vehicle_finder_help">Defina o nível indicado no painel e toque em Captura A, depois feche e use o carro normalmente. Dias depois, quando o indicador tiver descido um pouco, reabra, defina o novo valor e toque em Captura B. A Captura A fica salva após reinícios. Só são propostos os bytes que variaram com o combustível.</string>
     <string name="vehicle_dash_reads">O painel indica</string>
-    <string name="vehicle_waiting_canbox">A aguardar dados da caixa CAN: requer root</string>
+    <string name="vehicle_waiting_canbox">Aguardando dados da caixa CAN: requer root</string>
     <string name="vehicle_finder_step_a">Defina o nível de combustível indicado e toque em Captura A.</string>
-    <string name="vehicle_finder_step_b">A capturada a %1$d %%, guardada. Pode fechar e conduzir normalmente, volte quando o indicador descer alguns %%, defina o novo valor e depois Captura B.</string>
+    <string name="vehicle_finder_step_b">A capturada a %1$d %%, salva. Pode fechar e dirigir normalmente, volte quando o indicador descer alguns %%, defina o novo valor e depois Captura B.</string>
     <string name="vehicle_finder_same">A e B estão no mesmo nível. Faça a Captura B com outro nível de combustível.</string>
     <string name="vehicle_finder_none">Nenhum byte acompanhou a variação. Repita B após uma descida maior.</string>
     <string name="vehicle_finder_candidates">Bytes que variaram com o combustível</string>
@@ -75,29 +75,29 @@
 
     <!-- OBD adapter picker -->
     <string name="vehicle_select_adapter">Selecionar adaptador OBD</string>
-    <string name="vehicle_no_paired">Nenhum dispositivo Bluetooth emparelhado nem adaptador USB. Emparelhe o adaptador OBD nas definições de Bluetooth ou ligue um USB.</string>
-    <string name="vehicle_bt_settings">Definições de Bluetooth</string>
+    <string name="vehicle_no_paired">Nenhum dispositivo Bluetooth pareado nem adaptador USB. Pareie o adaptador OBD nas configurações de Bluetooth ou ligue um USB.</string>
+    <string name="vehicle_bt_settings">Configurações de Bluetooth</string>
 
     <!-- OBD adapter status messages -->
     <string name="vehicle_unknown_device">Dispositivo desconhecido</string>
     <string name="vehicle_no_response">Sem resposta do adaptador</string>
-    <string name="vehicle_no_dtc_answer">A centralina do motor não respondeu ao pedido de códigos de avaria. Tente de novo daqui a pouco.</string>
-    <string name="vehicle_lamp_no_codes">A luz do motor está acesa mas não chegou nenhum código. Tente de novo com o motor a trabalhar.</string>
+    <string name="vehicle_no_dtc_answer">A centralina do motor não respondeu ao pedido de códigos de falha. Tente de novo daqui a pouco.</string>
+    <string name="vehicle_lamp_no_codes">A luz do motor está acesa mas não chegou nenhum código. Tente de novo com o motor trabalhando.</string>
     <string name="vehicle_pending">Pendente</string>
     <string name="vehicle_lamp_on">Luz do motor acesa</string>
     <string name="vehicle_lamp_off">Luz do motor apagada</string>
-    <string name="vehicle_engine_off_hint">Motor desligado: com a ignição ligada, a luz do motor acende para se testar e apaga quando o motor arranca. A leitura repete-se sozinha com o motor a trabalhar.</string>
-    <string name="vehicle_obd_scope">O OBD normal só vê avarias do motor e de emissões; ABS, airbag e carroçaria precisam da ferramenta de diagnóstico da Citroën.</string>
+    <string name="vehicle_engine_off_hint">Motor desligado: com a ignição ligada, a luz do motor acende para se testar e apaga quando o motor dá partida. A leitura repete-se sozinha com o motor trabalhando.</string>
+    <string name="vehicle_obd_scope">O OBD normal só vê falhas do motor e de emissões; ABS, airbag e carroçaria precisam da ferramenta de diagnóstico da Citroën.</string>
     <string name="vehicle_clear_rejected">O adaptador respondeu «%1$s». Ligue a ignição (motor desligado) e tente novamente.</string>
 
     <!-- Doors tile -->
     <string name="vehicle_doors_title">PORTAS</string>
-    <string name="vehicle_waiting_mcu">A aguardar dados da caixa CAN: requer root</string>
+    <string name="vehicle_waiting_mcu">Aguardando dados da caixa CAN: requer root</string>
     <string name="vehicle_door_front_left">Dianteira esquerda</string>
     <string name="vehicle_door_front_right">Dianteira direita</string>
     <string name="vehicle_door_rear_left">Traseira esquerda</string>
     <string name="vehicle_door_rear_right">Traseira direita</string>
-    <string name="vehicle_door_tailgate">Porta da bagageira</string>
+    <string name="vehicle_door_tailgate">Porta da porta-malas</string>
     <string name="vehicle_door_bonnet">Capô</string>
     <string name="vehicle_door_any_open">Há uma porta aberta</string>
     <string name="vehicle_doors_all_closed">Tudo fechado</string>
@@ -129,53 +129,53 @@
     <string name="vehicle_dtc_p0016_fix">Clássico do 1.6 THP: corrente de distribuição esticada. Verificar corrente, tensor e sensores de cames/cambota. Muitas vezes requer um kit de corrente de distribuição.</string>
     <string name="vehicle_dtc_p0017_title">Correlação cambota/cames (banco 1 sensor B)</string>
     <string name="vehicle_dtc_p0017_fix">Provável corrente de distribuição / tensor esticados (1.6 THP). Inspecionar corrente e carretos.</string>
-    <string name="vehicle_dtc_p0011_title">Árvore de cames de admissão demasiado avançada (banco 1)</string>
-    <string name="vehicle_dtc_p0011_fix">Variador VVT ou válvula de controlo de óleo. Verificar nível/qualidade do óleo, eletroválvula VVT e desgaste da corrente de distribuição.</string>
+    <string name="vehicle_dtc_p0011_title">Árvore de cames de admissão muito avançada (banco 1)</string>
+    <string name="vehicle_dtc_p0011_fix">Variador VVT ou válvula de controle de óleo. Verificar nível/qualidade do óleo, eletroválvula VVT e desgaste da corrente de distribuição.</string>
     <string name="vehicle_dtc_p0341_title">Sensor de posição da árvore de cames: gama</string>
-    <string name="vehicle_dtc_p0341_fix">Verificar o sensor de cames e a cablagem; confirmar que a distribuição (corrente) está correta.</string>
+    <string name="vehicle_dtc_p0341_fix">Verificar o sensor de cames e a fiação; confirmar que a distribuição (corrente) está correta.</string>
     <string name="vehicle_dtc_p0340_title">Sensor de posição da árvore de cames: circuito</string>
-    <string name="vehicle_dtc_p0340_fix">Testar/substituir o sensor de cames; inspecionar ficha e cablagem.</string>
+    <string name="vehicle_dtc_p0340_fix">Testar/substituir o sensor de cames; inspecionar ficha e fiação.</string>
     <string name="vehicle_dtc_p0299_title">Pressão do turbo insuficiente</string>
     <string name="vehicle_dtc_p0299_fix">Comum em THP/HDi. Procurar fugas de pressão (tubos/intercooler), verificar wastegate/atuador do turbo e a válvula de descarga.</string>
     <string name="vehicle_dtc_p0234_title">Sobrepressão do turbo</string>
     <string name="vehicle_dtc_p0234_fix">Verificar se o atuador da wastegate está preso, a eletroválvula de pressão e se o VNT está bloqueado (HDi).</string>
-    <string name="vehicle_dtc_p0087_title">Pressão da rampa de combustível demasiado baixa</string>
+    <string name="vehicle_dtc_p0087_title">Pressão da rampa de combustível muito baixa</string>
     <string name="vehicle_dtc_p0087_fix">HDi: verificar filtro de combustível, alimentação de baixa pressão, bomba de alta pressão e regulador de pressão da rampa; procurar ar/fugas.</string>
     <string name="vehicle_dtc_p0089_title">Desempenho do regulador de pressão de combustível</string>
     <string name="vehicle_dtc_p0089_fix">Verificar o regulador de pressão da rampa/válvula doseadora e a bomba; inspecionar o filtro de combustível.</string>
     <string name="vehicle_dtc_p0093_title">Grande fuga de combustível detetada</string>
-    <string name="vehicle_dtc_p0093_fix">HDi: inspecionar retornos dos injetores, tubos de alta pressão e vedantes da bomba quanto a fugas de gasóleo.</string>
+    <string name="vehicle_dtc_p0093_fix">HDi: inspecionar retornos dos injetores, tubos de alta pressão e vedantes da bomba quanto a fugas de diesel.</string>
     <string name="vehicle_dtc_p0420_title">Eficiência do catalisador abaixo do limite (banco 1)</string>
     <string name="vehicle_dtc_p0420_fix">Muitas vezes um catalisador gasto ou uma sonda lambda traseira lenta. Excluir primeiro fugas no escape e falhas de ignição.</string>
     <string name="vehicle_dtc_p0401_title">Fluxo EGR insuficiente</string>
     <string name="vehicle_dtc_p0401_fix">Limpar ou substituir a válvula EGR; verificar o refrigerador EGR e as condutas quanto a carvão (comum em HDi).</string>
     <string name="vehicle_dtc_p0402_title">Fluxo EGR excessivo</string>
     <string name="vehicle_dtc_p0402_fix">Verificar se a válvula EGR está presa aberta e o seu comando; limpar a acumulação de carvão.</string>
-    <string name="vehicle_dtc_p2463_title">Acumulação de fuligem no FAP demasiado alta</string>
-    <string name="vehicle_dtc_p2463_fix">Diesel HDi: fazer um percurso longo em autoestrada para regenerar; verificar o sensor de pressão do FAP e o nível de aditivo (Eolys). Pode exigir regeneração forçada.</string>
+    <string name="vehicle_dtc_p2463_title">Acumulação de fuligem no FAP muito alta</string>
+    <string name="vehicle_dtc_p2463_fix">Diesel HDi: fazer um percurso longo em rodovia para regenerar; verificar o sensor de pressão do FAP e o nível de aditivo (Eolys). Pode exigir regeneração forçada.</string>
     <string name="vehicle_dtc_p242f_title">Obstrução do FAP (acumulação de cinzas)</string>
     <string name="vehicle_dtc_p242f_fix">FAP em fim de vida ou obstruído; pode exigir regeneração forçada ou limpeza/substituição do FAP.</string>
     <string name="vehicle_dtc_p0113_title">Sensor de temperatura do ar de admissão: sinal alto</string>
-    <string name="vehicle_dtc_p0113_fix">Verificar o sensor IAT e a cablagem/ficha; limpar ou substituir o sensor (muitas vezes no medidor de massa de ar/admissão).</string>
+    <string name="vehicle_dtc_p0113_fix">Verificar o sensor IAT e a fiação/ficha; limpar ou substituir o sensor (muitas vezes no medidor de massa de ar/admissão).</string>
     <string name="vehicle_dtc_p0128_title">Líquido refrig. abaixo da temperatura do termóstato</string>
     <string name="vehicle_dtc_p0128_fix">Normalmente um termóstato preso aberto. Substituir o termóstato; verificar o nível do líquido e o sensor.</string>
     <string name="vehicle_dtc_p0135_title">Aquecimento da sonda lambda (banco 1 sonda 1)</string>
     <string name="vehicle_dtc_p0135_fix">Verificar o circuito de aquecimento da sonda lambda a montante e o fusível; substituir a sonda se o aquecimento estiver interrompido.</string>
     <string name="vehicle_dtc_p0130_title">Circuito da sonda lambda (banco 1 sonda 1)</string>
-    <string name="vehicle_dtc_p0130_fix">Inspecionar a sonda lambda a montante e a cablagem; substituir se estiver lenta/avariada.</string>
-    <string name="vehicle_dtc_p0171_title">Mistura demasiado pobre (banco 1)</string>
+    <string name="vehicle_dtc_p0130_fix">Inspecionar a sonda lambda a montante e a fiação; substituir se estiver lenta/com defeito.</string>
+    <string name="vehicle_dtc_p0171_title">Mistura muito pobre (banco 1)</string>
     <string name="vehicle_dtc_p0171_fix">Procurar entradas de ar na admissão/vácuo (comum), medidor de massa de ar sujo, bomba de combustível/injetores fracos.</string>
-    <string name="vehicle_dtc_p0172_title">Mistura demasiado rica (banco 1)</string>
-    <string name="vehicle_dtc_p0172_fix">Procurar injetores a pingar, pressão de combustível alta, medidor de massa de ar sujo ou sonda lambda avariada.</string>
-    <string name="vehicle_dtc_p0505_title">Sistema de controlo do ralenti</string>
+    <string name="vehicle_dtc_p0172_title">Mistura muito rica (banco 1)</string>
+    <string name="vehicle_dtc_p0172_fix">Procurar injetores pingando, pressão de combustível alta, medidor de massa de ar sujo ou sonda lambda com defeito.</string>
+    <string name="vehicle_dtc_p0505_title">Sistema de controle do ralenti</string>
     <string name="vehicle_dtc_p0505_fix">Limpar o corpo de borboleta; procurar entradas de ar e verificar o motor da borboleta.</string>
     <string name="vehicle_dtc_p2100_title">Circuito do motor do atuador da borboleta</string>
-    <string name="vehicle_dtc_p2100_fix">Verificar o motor do corpo de borboleta e a cablagem; pode exigir a substituição do corpo de borboleta.</string>
+    <string name="vehicle_dtc_p2100_fix">Verificar o motor do corpo de borboleta e a fiação; pode exigir a substituição do corpo de borboleta.</string>
 
     <!-- Fault codes not in the table: described from the code's structure -->
     <string name="vehicle_dtc_unknown_code">Código desconhecido</string>
-    <string name="vehicle_dtc_fallback_title">Avaria de %1$s (%2$s): %3$s</string>
-    <string name="vehicle_dtc_fallback_fix">Sem descrição guardada. Procurar códigos relacionados, verificar o sensor/cablagem do circuito afetado e pesquisar «%1$s Citroën C4 Picasso» para indicações específicas do modelo.</string>
+    <string name="vehicle_dtc_fallback_title">Falha de %1$s (%2$s): %3$s</string>
+    <string name="vehicle_dtc_fallback_fix">Sem descrição salva. Procurar códigos relacionados, verificar o sensor/fiação do circuito afetado e pesquisar «%1$s Citroën C4 Picasso» para indicações específicas do modelo.</string>
     <string name="vehicle_dtc_system_powertrain">grupo motopropulsor</string>
     <string name="vehicle_dtc_system_chassis">chassis</string>
     <string name="vehicle_dtc_system_body">carroçaria</string>
@@ -186,23 +186,23 @@
     <string name="vehicle_dtc_area_fuel_air">doseamento ar/combustível</string>
     <string name="vehicle_dtc_area_ignition">ignição / falhas de ignição</string>
     <string name="vehicle_dtc_area_emissions">emissões / auxiliares</string>
-    <string name="vehicle_dtc_area_idle">velocidade / controlo do ralenti</string>
+    <string name="vehicle_dtc_area_idle">velocidade / controle do ralenti</string>
     <string name="vehicle_dtc_area_computer">centralina / saídas</string>
     <string name="vehicle_dtc_area_transmission">transmissão</string>
     <string name="vehicle_dtc_area_system">sistema</string>
 
     <!-- Why the adapter is not connected -->
-    <string name="vehicle_obd_connecting_to">A ligar a %1$s…</string>
-    <string name="vehicle_obd_pairing_pin">A emparelhar: introduza o PIN do adaptador na janela</string>
-    <string name="vehicle_obd_switching_bt_on">A ligar o Bluetooth do autorrádio…</string>
+    <string name="vehicle_obd_connecting_to">Ligando a %1$s…</string>
+    <string name="vehicle_obd_pairing_pin">Pareando: introduza o PIN do adaptador na janela</string>
+    <string name="vehicle_obd_switching_bt_on">Ligando o Bluetooth do autorrádio…</string>
     <string name="vehicle_obd_adapter">Adaptador: %1$s</string>
     <string name="vehicle_choose_adapter">Escolher adaptador</string>
     <string name="vehicle_err_bt_off">O Bluetooth do rádio está desligado</string>
-    <string name="vehicle_err_not_paired">%1$s não está emparelhado com o autorrádio: toque em OBD para o emparelhar de novo</string>
-    <string name="vehicle_err_pairing_failed">O emparelhamento com %1$s não terminou: toque em OBD e introduza o PIN</string>
+    <string name="vehicle_err_not_paired">%1$s não está pareado com o autorrádio: toque em OBD para o parear de novo</string>
+    <string name="vehicle_err_pairing_failed">O pareamento com %1$s não terminou: toque em OBD e introduza o PIN</string>
     <string name="vehicle_err_bt_still_off">O Bluetooth do autorrádio está desligado e não liga: reinicie o autorrádio e toque em OBD</string>
     <string name="vehicle_err_bt_stuck">O Bluetooth Android do autorrádio está bloqueado: reinicie o autorrádio e toque em OBD</string>
-    <string name="vehicle_err_refused">%1$s recusou a ligação: ocupado por um telemóvel ou outra app, sem alimentação ou fora de alcance</string>
+    <string name="vehicle_err_refused">%1$s recusou a conexão: ocupado por um celular ou outra app, sem alimentação ou fora de alcance</string>
     <string name="vehicle_err_silent">%1$s ligou-se mas nunca respondeu: ligue a ignição e toque em OBD</string>
     <string name="vehicle_usb_cable">Cabo USB</string>
     <string name="vehicle_obd_usb_allow">Permita na janela que o Dashwheel use o adaptador</string>
@@ -211,20 +211,20 @@
     <string name="vehicle_err_usb_denied">O Dashwheel não foi autorizado a usar %1$s</string>
     <string name="vehicle_err_usb_open">Não foi possível abrir %1$s: desligue-o e volte a ligá-lo</string>
     <string name="vehicle_err_usb_silent">%1$s nunca respondeu como um adaptador OBD</string>
-    <string name="vehicle_err_phone_not_linked">O OBD passa pelo telemóvel: ligue primeiro o telemóvel</string>
-    <string name="vehicle_err_phone_no_adapter">O OBD passa pelo telemóvel: escolha o adaptador na app companheira</string>
-    <string name="vehicle_obd_asking_phone">A pedir o adaptador ao telemóvel</string>
-    <string name="vehicle_err_phone_relay">O telemóvel não conseguiu ligar a %1$s: verifique se está ligado e emparelhado com o telemóvel</string>
+    <string name="vehicle_err_phone_not_linked">O OBD passa pelo celular: ligue primeiro o celular</string>
+    <string name="vehicle_err_phone_no_adapter">O OBD passa pelo celular: escolha o adaptador na app companheira</string>
+    <string name="vehicle_obd_asking_phone">Pedindo o adaptador ao celular</string>
+    <string name="vehicle_err_phone_relay">O celular não conseguiu ligar a %1$s: verifique se está ligado e pareado com o celular</string>
     <string name="vehicle_err_in_call">O OBD fica em pausa durante a chamada e volta quando termina</string>
-    <string name="vehicle_err_phone_aa">O Android Auto em %1$s está a bloquear o adaptador OBD</string>
+    <string name="vehicle_err_phone_aa">O Android Auto em %1$s está bloqueando o adaptador OBD</string>
     <string name="vehicle_phone_aa_fix">Como resolver</string>
     <string name="vehicle_phone_aa_title">O Android Auto bloqueia o OBD</string>
-    <string name="vehicle_phone_aa_body">O telemóvel e o adaptador OBD partilham o Bluetooth do rádio. O Android Auto no telemóvel tenta sem parar arrancar sem cabo e ocupa-o.</string>
-    <string name="vehicle_phone_aa_step1">No telemóvel, abra Definições, depois Aplicações, depois Android Auto.</string>
+    <string name="vehicle_phone_aa_body">O celular e o adaptador OBD compartilham o Bluetooth do rádio. O Android Auto no celular tenta sem parar dar partida sem cabo e ocupa-o.</string>
+    <string name="vehicle_phone_aa_step1">No celular, abra Configurações, depois Aplicações, depois Android Auto.</string>
     <string name="vehicle_phone_aa_step2">Toque em Permissões, depois Dispositivos próximos, e escolha Não permitir.</string>
     <string name="vehicle_phone_aa_step3">Desligue a ignição e volte a ligá-la.</string>
     <string name="vehicle_phone_aa_note">As chamadas, a música e o Android Auto por cabo USB continuam a funcionar.</string>
-    <string name="vehicle_phone_aa_say">O Android Auto em %1$s está a bloquear o OBD. Os passos para resolver estão no ecrã.</string>
+    <string name="vehicle_phone_aa_say">O Android Auto em %1$s está bloqueando o OBD. Os passos para resolver estão na tela.</string>
     <string name="vehicle_err_permission">Permissão Bluetooth não concedida</string>
     <string name="vehicle_obd_connect_from_bar">Ligue com o botão OBD da barra</string>
     <string name="vehicle_recent_alerts">Últimos avisos</string>
@@ -234,8 +234,8 @@
     <string name="vehicle_speed_fix_more">Subir a correção</string>
     <string name="vehicle_speed_fix_now">Velocidade atual: %1$d km/h. Ajuste até coincidir com o velocímetro.</string>
     <string name="vehicle_speed_fix_not_connected">Ligue o adaptador OBD para ver a velocidade corrigida em direto.</string>
-    <string name="vehicle_clear_confirm_title">Apagar os códigos de avaria?</string>
-    <string name="vehicle_clear_confirm_body">São apagados do carro de vez. Uma oficina precisa deles para encontrar uma avaria.</string>
-    <string name="vehicle_err_unit_bt_aa">O Android Auto sem fios de um telemóvel ocupa o Bluetooth do rádio e %1$s não consegue ligar-se: desligue o Android Auto sem fios no telemóvel</string>
+    <string name="vehicle_clear_confirm_title">Apagar os códigos de falha?</string>
+    <string name="vehicle_clear_confirm_body">São apagados do carro de vez. Uma oficina precisa deles para encontrar uma falha.</string>
+    <string name="vehicle_err_unit_bt_aa">O Android Auto sem fios de um celular ocupa o Bluetooth do rádio e %1$s não consegue ligar-se: desligue o Android Auto sem fios no celular</string>
     <string name="vehicle_err_unit_bt_restarted">O Bluetooth do rádio estava bloqueado e foi reiniciado: %1$s volta a ligar-se dentro de um minuto</string>
 </resources>

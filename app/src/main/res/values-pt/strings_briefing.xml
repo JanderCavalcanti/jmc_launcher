@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- AI mechanic settings: the start-up briefing switch -->
-    <string name="briefing_setting">Resumo ao arrancar</string>
-    <string name="briefing_setting_detail">Ao arrancar: pouco combustível, gelo, avarias do motor e o próximo compromisso</string>
+    <string name="briefing_setting">Resumo ao dar partida</string>
+    <string name="briefing_setting_detail">Ao dar partida: pouco combustível, gelo, falhas do motor e o próximo compromisso</string>
 
     <!-- Spoken when the car starts, in the mechanic's language -->
     <string name="briefing_ice">Cuidado com o gelo na estrada.</string>
-    <string name="briefing_fuel_low">Combustível baixo: cerca de %1$d quilómetros, convém abastecer em breve.</string>
+    <string name="briefing_fuel_low">Combustível baixo: cerca de %1$d quilômetros, convém abastecer em breve.</string>
     <plurals name="briefing_faults">
-        <item quantity="one">%1$d avaria do motor guardada: %2$s. Veja o mosaico Códigos de avaria quando estiver parado.</item>
-        <item quantity="many">%1$d avarias do motor guardadas: %2$s. Veja o mosaico Códigos de avaria quando estiver parado.</item>
-        <item quantity="other">%1$d avarias do motor guardadas: %2$s. Veja o mosaico Códigos de avaria quando estiver parado.</item>
+        <item quantity="one">%1$d falha do motor salva: %2$s. Veja o mosaico Códigos de falha quando estiver parado.</item>
+        <item quantity="many">%1$d falhas do motor salvas: %2$s. Veja o mosaico Códigos de falha quando estiver parado.</item>
+        <item quantity="other">%1$d falhas do motor salvas: %2$s. Veja o mosaico Códigos de falha quando estiver parado.</item>
     </plurals>
     <plurals name="briefing_faults_untitled">
-        <item quantity="one">%1$d avaria do motor guardada. Veja o mosaico Códigos de avaria quando estiver parado.</item>
-        <item quantity="many">%1$d avarias do motor guardadas. Veja o mosaico Códigos de avaria quando estiver parado.</item>
-        <item quantity="other">%1$d avarias do motor guardadas. Veja o mosaico Códigos de avaria quando estiver parado.</item>
+        <item quantity="one">%1$d falha do motor salva. Veja o mosaico Códigos de falha quando estiver parado.</item>
+        <item quantity="many">%1$d falhas do motor salvas. Veja o mosaico Códigos de falha quando estiver parado.</item>
+        <item quantity="other">%1$d falhas do motor salvas. Veja o mosaico Códigos de falha quando estiver parado.</item>
     </plurals>
     <string name="briefing_event">Próximo compromisso: %1$s às %2$s.</string>
 </resources>

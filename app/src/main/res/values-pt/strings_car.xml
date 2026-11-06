@@ -9,7 +9,7 @@
     <string name="car_kind_warmup_blurb">Temp. do líquido, com calma a frio</string>
     <string name="car_kind_battery">Bateria</string>
     <string name="car_kind_battery_blurb">Tensão e carga</string>
-    <string name="car_kind_my_car">O meu carro</string>
+    <string name="car_kind_my_car">Meu carro</string>
     <string name="car_kind_my_car_blurb">Óleo, pneus, revisão e outros dados</string>
     <string name="car_kind_eco">Condução eco</string>
     <string name="car_kind_eco_blurb">Nota de condução, consumo e custo</string>
@@ -27,18 +27,18 @@
 
     <!-- Particle filter -->
     <string name="car_filter_title">FILTRO PARTÍCULAS</string>
-    <string name="car_filter_none">Este carro não tem filtro de partículas. Altere em Definições → Carro → O meu carro.</string>
-    <string name="car_filter_unknown">Indique o seu carro em Definições → Carro → O meu carro.</string>
+    <string name="car_filter_none">Este carro não tem filtro de partículas. Altere em Configurações → Carro → Meu carro.</string>
+    <string name="car_filter_unknown">Indique o seu carro em Configurações → Carro → Meu carro.</string>
     <plurals name="car_filter_short_unit" tools:ignore="ImpliedQuantity">
         <item quantity="one">viagem curta</item>
         <item quantity="other">viagens curtas seguidas</item>
     </plurals>
-    <string name="car_filter_ok">Filtro a limpar normalmente</string>
+    <string name="car_filter_ok">Filtro limpando normalmente</string>
     <string name="car_filter_needs_drive">Faça 20 min acima de 60 km/h</string>
     <string name="car_filter_needs_drive_now">O filtro precisa de uma viagem longa</string>
     <string name="car_filter_this_drive">Esta viagem: %1$d de %2$d min rápido com motor quente</string>
     <string name="car_filter_last_long">Última viagem longa: %1$s</string>
-    <string name="car_filter_last_long_never">Ainda sem viagens longas registadas</string>
+    <string name="car_filter_last_long_never">Ainda sem viagens longas registradas</string>
     <string name="car_filter_additive">Usa aditivo no combustível: verifique o nível em cada revisão</string>
     <string name="car_filter_regen">Limpeza em curso</string>
     <string name="car_filter_additive_low">Aditivo baixo, a %1$d %%. Ateste na próxima revisão</string>
@@ -46,12 +46,12 @@
     <!-- Warm-up -->
     <string name="car_warmup_title">AQUECIMENTO</string>
     <string name="car_warmup_cold">Frio: fique abaixo das %1$d rpm</string>
-    <string name="car_warmup_warming">A aquecer</string>
+    <string name="car_warmup_warming">Aquecendo</string>
     <string name="car_warmup_warm">Quente: potência total OK</string>
 
     <!-- Battery -->
     <string name="car_battery_title">BATERIA</string>
-    <string name="car_battery_charging">A carregar normalmente</string>
+    <string name="car_battery_charging">Carregando normalmente</string>
     <string name="car_battery_charging_low">Carga um pouco baixa</string>
     <string name="car_battery_not_charging">Não carrega: verifique o alternador</string>
     <string name="car_battery_full">Carga completa</string>
@@ -110,23 +110,23 @@
     <string name="car_gearbox_automatic">Automática</string>
     <string name="car_gearbox_dual_clutch">Dupla embraiagem</string>
     <string name="car_gearbox_cvt">CVT</string>
-    <string name="car_fuel_diesel">Gasóleo</string>
+    <string name="car_fuel_diesel">Diesel</string>
     <string name="car_fuel_petrol">Gasolina</string>
     <string name="car_fuel_hybrid">Híbrido</string>
-    <string name="car_fuel_lpg">GPL</string>
+    <string name="car_fuel_lpg">GLP</string>
     <string name="car_fuel_electric">Elétrico</string>
 
     <!-- My car settings -->
-    <string name="car_menu">O meu carro</string>
-    <string name="car_my_car_title_dialog">O meu carro</string>
-    <string name="car_settings_explanation">Indique o carro com precisão e deixe a IA preencher as características. Verifique-as antes de guardar.</string>
+    <string name="car_menu">Meu carro</string>
+    <string name="car_my_car_title_dialog">Meu carro</string>
+    <string name="car_settings_explanation">Indique o carro com precisão e deixe a IA preencher as características. Verifique-as antes de salvar.</string>
     <string name="car_name">Carro</string>
     <string name="car_name_hint">Marca, modelo, motor e ano</string>
     <string name="car_fetch">Obter ficha com IA</string>
-    <string name="car_fetch_ok">Ficha preenchida: verifique-a e depois Guardar</string>
+    <string name="car_fetch_ok">Ficha preenchida: verifique-a e depois Salvar</string>
     <string name="car_fetch_failed">Não foi possível obter a ficha: %1$s</string>
-    <string name="car_fetch_no_key">adicione primeiro uma chave Gemini em Definições → Carro → Mecânico IA</string>
-    <string name="car_fetch_needs_key">Adicione uma chave Gemini em Definições, Diagnóstico, Mecânico IA para preencher a ficha</string>
+    <string name="car_fetch_no_key">adicione primeiro uma chave Gemini em Configurações → Carro → Mecânico IA</string>
+    <string name="car_fetch_needs_key">Adicione uma chave Gemini em Configurações, Diagnóstico, Mecânico IA para preencher a ficha</string>
     <string name="car_section_engine">Motor</string>
     <string name="car_section_gearbox">Caixa de velocidades</string>
     <string name="car_section_upkeep">Manutenção</string>
@@ -144,7 +144,7 @@
     <string name="car_spec_additive_detail">O filtro usa um aditivo no combustível (p. ex. Eolys)</string>
     <string name="car_spec_gearbox_name">Nome da caixa</string>
     <string name="car_spec_gears">Velocidades</string>
-    <string name="car_spec_tank">Depósito (L)</string>
+    <string name="car_spec_tank">Tanque (L)</string>
     <string name="car_spec_consumption">Consumo médio (L/100 km)</string>
     <string name="car_spec_oil_capacity">Óleo (L)</string>
     <string name="car_spec_oil_spec">Tipo de óleo</string>
@@ -159,24 +159,24 @@
     <string name="car_spec_tyre_rear">Trás (bar)</string>
     <string name="car_spec_fuel_price">Preço por litro</string>
     <string name="car_spec_currency">Moeda</string>
-    <string name="car_reset_preset">Repor o predefinido: C4 Picasso 1.6 HDi BMP6</string>
-    <string name="car_save">Guardar</string>
+    <string name="car_reset_preset">Restaurar o predefinido: C4 Picasso 1.6 HDi BMP6</string>
+    <string name="car_save">Salvar</string>
 
     <!-- AI mechanic settings -->
     <string name="car_ai_car">Carro</string>
-    <string name="car_ai_car_detail">%1$s. Altere em Definições → Carro → O meu carro.</string>
+    <string name="car_ai_car_detail">%1$s. Altere em Configurações → Carro → Meu carro.</string>
 
     <!-- Spoken by CarCare, in the mechanic's language -->
     <string name="car_say_cold_revs">O motor ainda está frio. Mantenha-o abaixo das %1$d rotações durante mais alguns minutos.</string>
-    <string name="car_say_clutch_hold">Segure o carro com o travão, não com o acelerador. Isso gasta a embraiagem desta caixa.</string>
-    <string name="car_say_filter">As suas últimas %1$d viagens foram curtas. Quando puder, conduza 15 a 20 minutos acima de 60 quilómetros por hora para o filtro de partículas se limpar.</string>
-    <string name="car_say_filter_regen">O filtro de partículas está a limpar-se. Se puder, continue a conduzir mais uns 10 minutos a velocidade constante.</string>
-    <string name="car_say_filter_regen_standing">O filtro de partículas ainda está a limpar-se. Se puder, conduza mais alguns minutos antes de desligar o motor.</string>
+    <string name="car_say_clutch_hold">Segure o carro com o freio, não com o acelerador. Isso gasta a embraiagem desta caixa.</string>
+    <string name="car_say_filter">Suas últimas %1$d viagens foram curtas. Quando puder, dirija 15 a 20 minutos acima de 60 quilômetros por hora para o filtro de partículas se limpar.</string>
+    <string name="car_say_filter_regen">O filtro de partículas está se limpando. Se puder, continue a dirigir mais uns 10 minutos a velocidade constante.</string>
+    <string name="car_say_filter_regen_standing">O filtro de partículas ainda está se limpando. Se puder, dirija mais alguns minutos antes de desligar o motor.</string>
     <string name="car_say_filter_soot">O filtro de partículas está a %1$d por cento. Tente fazer em breve uma viagem de 20 minutos numa via rápida.</string>
-    <string name="car_say_filter_soot_short">As suas últimas %1$d viagens foram curtas e o filtro de partículas está a %2$d por cento. Tente fazer em breve uma viagem de 20 minutos numa via rápida.</string>
+    <string name="car_say_filter_soot_short">Suas últimas %1$d viagens foram curtas e o filtro de partículas está a %2$d por cento. Tente fazer em breve uma viagem de 20 minutos numa via rápida.</string>
     <string name="car_say_filter_additive">O aditivo do filtro de partículas está baixo, a %1$d por cento. Peça para o atestar na próxima revisão.</string>
-    <string name="car_say_break">Está a conduzir há %1$s. Está na hora de fazer uma pausa.</string>
-    <string name="car_say_fuel_short">A sua autonomia de %1$d quilómetros não chega ao destino, a %2$d quilómetros. Planeie uma paragem para abastecer.</string>
+    <string name="car_say_break">Está dirigindo há %1$s. Está na hora de fazer uma pausa.</string>
+    <string name="car_say_fuel_short">A sua autonomia de %1$d quilômetros não chega ao destino, a %2$d quilômetros. Planeie uma paragem para abastecer.</string>
     <string name="car_hours_minutes">%1$s e %2$s</string>
     <plurals name="car_hours">
         <item quantity="one">%1$d hora</item>
@@ -190,7 +190,7 @@
     </plurals>
 
     <!-- Which side the driver sits on (templates) -->
-    <string name="car_spec_driver_side">Condutor à direita</string>
+    <string name="car_spec_driver_side">Motorista à direita</string>
     <string name="car_spec_driver_side_detail">Volante à direita: os modelos põem os blocos principais à direita</string>
     <string name="car_battery_trip_range">Esta viagem: de %1$s a %2$s V</string>
     <string name="car_kind_status">Estado do carro</string>
@@ -209,7 +209,7 @@
     <string name="car_status_trip">Viagem</string>
     <string name="car_status_consumption">Consumo</string>
     <string name="car_status_range">Autonomia</string>
-    <string name="car_status_parking_brake">Travão de estacionamento</string>
+    <string name="car_status_parking_brake">Freio de estacionamento</string>
     <string name="car_status_on">Puxado</string>
     <string name="car_status_off">Solto</string>
     <string name="car_status_km">km</string>
@@ -217,9 +217,9 @@
     <string name="car_status_message">Mensagem do carro</string>
     <string name="car_warn_code">Mensagem %1$s</string>
     <string name="car_say_car_warning">O carro avisa: %1$s</string>
-    <string name="car_warn_engine_temp">Motor demasiado quente, pare o carro</string>
+    <string name="car_warn_engine_temp">Motor muito quente, pare o carro</string>
     <string name="car_warn_oil_pressure">Falha de pressão do óleo, pare o carro</string>
-    <string name="car_warn_brakes">Falha nos travões</string>
+    <string name="car_warn_brakes">Falha nos freios</string>
     <string name="car_warn_engine_stop">Falha no motor, pare o carro</string>
     <string name="car_warn_coolant">Nível do líquido de refrigeração baixo</string>
     <string name="car_warn_oil_level">Nível do óleo do motor baixo</string>
@@ -231,7 +231,7 @@
     <string name="car_warn_additive">Aditivo do filtro de partículas baixo</string>
     <string name="car_warn_battery">Falha no carregamento da bateria</string>
     <string name="car_warn_airbag">Falha do airbag ou do cinto</string>
-    <string name="car_warn_water_diesel">Água no filtro de gasóleo</string>
+    <string name="car_warn_water_diesel">Água no filtro de diesel</string>
     <string name="car_warn_engine_repair">Falha no motor, mande reparar</string>
     <string name="car_warn_pollution">Falha no sistema antipoluição</string>
     <string name="car_warn_open">Uma porta, a mala, o capô ou a tampa do combustível está aberta</string>
@@ -255,37 +255,37 @@
     <string name="car_belt_fasten">Aperte o cinto de segurança</string>
 
     <!-- Registration certificate (CarProfile.withRegistration, CarSettingsDialog). -->
-    <string name="car_section_registration">Registo</string>
-    <string name="car_spec_plate">Matrícula</string>
-    <string name="car_spec_first_registration">Primeira matrícula</string>
+    <string name="car_section_registration">Registro</string>
+    <string name="car_spec_plate">Placa</string>
+    <string name="car_spec_first_registration">Primeira placa</string>
     <string name="car_spec_vin">VIN</string>
     <string name="car_crit_air">Crit\'Air %1$d</string>
-    <string name="car_crit_air_unclassed">Sem vinheta Crit\'Air: demasiado antigo para ser classificado</string>
+    <string name="car_crit_air_unclassed">Sem vinheta Crit\'Air: muito antigo para ser classificado</string>
     <string name="car_inspection_due">Próxima inspeção até %1$s</string>
     <string name="car_inspection_unknown">Próxima inspeção: ainda não se sabe</string>
-    <string name="car_registration_from_phone">Digitalize o documento do carro na app do telemóvel, separador Carro, para preencher isto.</string>
-    <string name="car_registration_saved_plate">Documento de %1$s guardado</string>
-    <string name="car_registration_saved">Documento guardado</string>
+    <string name="car_registration_from_phone">Digitalize o documento do carro na app do celular, separador Carro, para preencher isto.</string>
+    <string name="car_registration_saved_plate">Documento de %1$s salvo</string>
+    <string name="car_registration_saved">Documento salvo</string>
     <string name="car_warn_puncture">Furo, pare o carro</string>
     <string name="car_warn_suspension">Falha na suspensão</string>
-    <string name="car_warn_brake_pads">Pastilhas de travão gastas</string>
-    <string name="car_warn_parking_brake">Falha no travão de estacionamento</string>
+    <string name="car_warn_brake_pads">Pastilhas de freio gastas</string>
+    <string name="car_warn_parking_brake">Falha no freio de estacionamento</string>
     <string name="car_warn_cruise">Falha no cruise control</string>
     <string name="car_warn_immobiliser">Falha no imobilizador</string>
     <string name="car_warn_steering_lock">Falha no bloqueio da direção</string>
     <string name="car_warn_hybrid">Falha no sistema híbrido</string>
     <string name="car_warn_headlight_levelling">Falha no ajuste dos faróis</string>
     <string name="car_warn_driving_aid">Falha numa ajuda à condução</string>
-    <string name="car_warn_pollution_start">Falha antipoluição: o motor pode não voltar a arrancar</string>
+    <string name="car_warn_pollution_start">Falha antipoluição: o motor pode não voltar a dar partida</string>
     <string name="car_warn_bulb_dipped">Lâmpada de médios fundida</string>
     <string name="car_warn_bulb_main">Lâmpada de máximos fundida</string>
-    <string name="car_warn_bulb_brake">Lâmpada de travão fundida</string>
-    <string name="car_warn_bulb_brake_middle">Terceira luz de travão fundida</string>
-    <string name="car_warn_bulb_brake_right_rear">Lâmpada de travão traseira direita fundida</string>
-    <string name="car_warn_bulb_brake_left_rear">Lâmpada de travão traseira esquerda fundida</string>
+    <string name="car_warn_bulb_brake">Lâmpada de freio fundida</string>
+    <string name="car_warn_bulb_brake_middle">Terceira luz de freio fundida</string>
+    <string name="car_warn_bulb_brake_right_rear">Lâmpada de freio traseira direita fundida</string>
+    <string name="car_warn_bulb_brake_left_rear">Lâmpada de freio traseira esquerda fundida</string>
     <string name="car_warn_bulb_fog">Lâmpada de nevoeiro fundida</string>
     <string name="car_warn_bulb_indicator">Lâmpada do pisca fundida</string>
-    <string name="car_warn_bulb_reversing">Lâmpada de marcha-atrás fundida</string>
+    <string name="car_warn_bulb_reversing">Lâmpada de marcha a ré fundida</string>
     <string name="car_warn_bulb_sidelight">Lâmpada de presença fundida</string>
     <string name="car_warn_tpms">Pressão dos pneus não monitorizada</string>
     <string name="car_warn_key_battery">Pilha da chave fraca</string>
@@ -303,12 +303,12 @@
     <string name="mycar_add_back">Traseira</string>
     <string name="mycar_add_front">Frente</string>
     <string name="car_verdict_stop">Pare assim que possível</string>
-    <string name="car_verdict_drive">Pode conduzir</string>
+    <string name="car_verdict_drive">Pode dirigir</string>
     <string name="car_verdict_fine">Nada a assinalar</string>
     <string name="car_verdict_unread">Ainda não lido</string>
     <string name="car_verdict_stop_hint">Um problema exige parar o carro</string>
     <string name="car_verdict_soon_hint">Mande reparar em breve</string>
-    <string name="car_verdict_fine_hint">Nenhum código de avaria nem aviso do carro</string>
+    <string name="car_verdict_fine_hint">Nenhum código de falha nem aviso do carro</string>
     <string name="car_verdict_unread_hint">Ligue o adaptador OBD para ler o motor</string>
     <string name="car_problem_from_car">O CARRO</string>
     <string name="car_problem_from_code">CÓDIGO MOTOR</string>

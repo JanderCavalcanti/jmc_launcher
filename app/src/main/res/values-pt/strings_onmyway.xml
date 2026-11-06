@@ -3,14 +3,14 @@
 <resources>
     <string name="onmyway_button">A caminho</string>
     <string name="onmyway_title">Enviar a hora de chegada</string>
-    <string name="onmyway_no_contacts">Nenhum favorito com número no telemóvel. Marque um contacto com uma estrela no telemóvel.</string>
+    <string name="onmyway_no_contacts">Nenhum favorito com número no celular. Marque um contato com uma estrela no celular.</string>
     <string name="onmyway_text_to">Vou a caminho de %1$s, chego por volta das %2$s.</string>
     <string name="onmyway_text_eta">Vou a caminho, chego por volta das %1$s.</string>
     <string name="onmyway_text_plain">Vou a caminho.</string>
     <string name="onmyway_sent">Enviado para %1$s</string>
-    <string name="onmyway_sending">A enviar para %1$s</string>
-    <string name="onmyway_failed">O telemóvel não conseguiu enviar o SMS para %1$s</string>
-    <string name="onmyway_no_answer">Sem resposta do telemóvel</string>
+    <string name="onmyway_sending">Enviando para %1$s</string>
+    <string name="onmyway_failed">O celular não conseguiu enviar o SMS para %1$s</string>
+    <string name="onmyway_no_answer">Sem resposta do celular</string>
     <string name="phone_battery_percent">%1$d %%</string>
     <string name="message_alert_read">Ler em voz alta</string>
     <string name="message_alert_reply">Responder</string>

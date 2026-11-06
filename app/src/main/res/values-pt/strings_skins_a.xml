@@ -47,7 +47,7 @@
     <string name="cockpit_clock">Relógio</string>
     <string name="cockpit_loading">A CARREGAR…</string>
     <string name="cockpit_feels_wind">SENSAÇÃO %1$d° · VENTO %2$d KM/H</string>
-    <string name="cockpit_fuel_settings">Definições do sinal de combustível</string>
+    <string name="cockpit_fuel_settings">Configurações do sinal de combustível</string>
     <string name="cockpit_range">AUTONOMIA</string>
 
     <!-- Cockpit skin: app toggles and launch bar -->
@@ -66,7 +66,7 @@
     <string name="orbit_sat_load">carga</string>
     <string name="orbit_rpm_value">%1$s rpm</string>
     <string name="orbit_tap_to_connect">Tocar para ligar</string>
-    <string name="orbit_connecting">A ligar…</string>
+    <string name="orbit_connecting">Ligando…</string>
     <string name="orbit_connect_obd">Ligar OBD</string>
 
     <!-- Orbit skin: media -->
@@ -87,12 +87,12 @@
     <string name="orbit_feels">Sensação %1$d°</string>
     <string name="orbit_wind">Vento %1$d km/h</string>
     <string name="orbit_feels_wind">sensação %1$d° · %2$d km/h</string>
-    <string name="orbit_offline">Sem ligação</string>
-    <string name="orbit_loading">A carregar…</string>
+    <string name="orbit_offline">Sem conexão</string>
+    <string name="orbit_loading">Carregando…</string>
 
     <!-- Orbit skin: fuel and range -->
     <string name="orbit_to_empty">de autonomia</string>
-    <string name="orbit_liters_in_tank">≈ %1$.0f L no depósito</string>
+    <string name="orbit_liters_in_tank">≈ %1$.0f L no tanque</string>
     <string name="orbit_via_source">via %1$s</string>
     <string name="orbit_tap_to_recalibrate">tocar para recalibrar</string>
     <string name="orbit_recalibrate_fuel">Recalibrar combustível</string>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Your API keys (ApiKeys.kt), Settings → System; and the Overpass server on the map servers page -->
-    <string name="api_keys_title">As suas chaves API</string>
+    <string name="api_keys_title">Suas chaves API</string>
     <string name="api_keys_search_detail">Chaves dos serviços que o Dashwheel consulta por si, Gemini primeiro</string>
     <string name="api_keys_none">Sem chave</string>
     <string name="api_keys_explanation">Algumas funções consultam um serviço que precisa de uma chave sua. Cole-a aqui: fica nesta unidade e só vai a esse serviço.</string>
@@ -14,7 +14,7 @@
     <string name="api_keys_gemini_uses">Mecânico IA, respostas faladas e assistente</string>
     <string name="api_keys_tankerkoenig">Chave Tankerkönig</string>
     <string name="api_keys_tankerkoenig_uses">Preços do combustível na Alemanha</string>
-    <string name="fuel_needs_tankerkoenig">Os preços na Alemanha precisam de uma chave Tankerkönig: Definições, Especialista, As suas chaves API</string>
+    <string name="fuel_needs_tankerkoenig">Os preços na Alemanha precisam de uma chave Tankerkönig: Configurações, Especialista, Suas chaves API</string>
     <string name="map_servers_overpass">Servidor Overpass</string>
     <string name="map_servers_overpass_detail">Para limites, radares e nomes de estações. Deixe vazio para os servidores públicos.</string>
     <plurals name="api_keys_set_count">

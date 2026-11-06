@@ -5,9 +5,9 @@
     <string name="shizuku_detail_none">Não instalado. Dá a shell ao Dashwheel sem root</string>
     <string name="shizuku_detail_off">Instalado, não iniciado. Abra o Shizuku para o iniciar</string>
     <string name="shizuku_detail_old">Demasiado antigo. Atualize o Shizuku</string>
-    <string name="shizuku_detail_ask">A correr. Permita o Dashwheel no Shizuku</string>
+    <string name="shizuku_detail_ask">Em execução. Permita o Dashwheel no Shizuku</string>
     <string name="shizuku_detail_on">Em uso: os comandos de shell passam por ele</string>
-    <string name="shizuku_body">O Shizuku executa os comandos de shell que o root faria: mover janelas de apps, os ajustes da app do carro, as teclas de volume. Um rádio com root inicia-o no arranque; outro inicia-o na app Shizuku após cada arranque.</string>
+    <string name="shizuku_body">O Shizuku executa os comandos de shell que o root faria: mover janelas de apps, os ajustes da app do carro, as teclas de volume. Um rádio com root inicia-o no partida; outro inicia-o na app Shizuku após cada partida.</string>
     <string name="shizuku_get">Obter o Shizuku</string>
     <string name="shizuku_open">Abrir o Shizuku</string>
     <string name="shizuku_allow">Permitir</string>

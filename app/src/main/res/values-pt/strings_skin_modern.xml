@@ -10,7 +10,7 @@
     <string name="skin_modern_range_left">Restam %1$s</string>
     <string name="skin_modern_go">Ir</string>
     <string name="skin_modern_recalibrate">Recalibrar combustível</string>
-    <string name="skin_modern_in_tank">%1$d L no depósito</string>
+    <string name="skin_modern_in_tank">%1$d L no tanque</string>
     <string name="skin_modern_open_navigation">Abrir navegação</string>
     <string name="skin_modern_tap_open_navigation">Toque para abrir a navegação</string>
     <string name="skin_modern_allow_access">Permitir acesso às notificações</string>

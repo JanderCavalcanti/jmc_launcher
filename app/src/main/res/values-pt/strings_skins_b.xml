@@ -7,7 +7,7 @@
 
     <!-- Horizon skin: telemetry and speed -->
     <string name="horizon_connect_obd">Ligar OBD</string>
-    <string name="horizon_obd_connecting">A ligar ao OBD…</string>
+    <string name="horizon_obd_connecting">Ligando ao OBD…</string>
     <string name="horizon_obd_error_retry">Erro OBD · toque para repetir</string>
     <string name="horizon_obd_tap_connect">Toque para ligar o OBD</string>
     <string name="horizon_rpm_value">%1$s RPM</string>
@@ -39,7 +39,7 @@
     <string name="horizon_open_clock">Abrir relógio</string>
 
     <!-- Horizon skin: weather and range -->
-    <string name="horizon_loading">A carregar…</string>
+    <string name="horizon_loading">Carregando…</string>
     <string name="horizon_weather_at_car">Meteorologia junto ao carro</string>
     <string name="horizon_feels">sensação %1$d°</string>
     <string name="horizon_wind">vento %1$d km/h</string>
@@ -107,8 +107,8 @@
 
     <!-- In-app updater -->
     <string name="sys_update_check_failed">Não foi possível procurar atualizações</string>
-    <string name="sys_update_download_failed">Falha na transferência</string>
-    <string name="sys_update_downloading">A transferir atualização</string>
+    <string name="sys_update_download_failed">Falha na download</string>
+    <string name="sys_update_downloading">Baixando atualização</string>
 
     <!-- System-app install (shown after "Failed: " in the install dialog) -->
     <string name="sys_install_su_failed">falha na instalação via su</string>

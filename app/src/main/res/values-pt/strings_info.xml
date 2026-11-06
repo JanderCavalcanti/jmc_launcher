@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Shared -->
-    <string name="info_waiting_gps">A aguardar GPS…</string>
+    <string name="info_waiting_gps">Aguardando GPS…</string>
     <string name="info_no_gps">Sem GPS</string>
     <string name="info_open">Abrir</string>
     <string name="info_clear">Limpar</string>
-    <string name="info_reset">Repor</string>
+    <string name="info_reset">Restaurar</string>
     <string name="info_grant_access">Conceder acesso</string>
     <string name="info_connect">Ligar</string>
 
@@ -14,10 +14,10 @@
     <string name="info_weather_refresh">Atualizar meteorologia</string>
     <string name="info_weather_details">Sensação %1$d° · Vento %2$d km/h</string>
     <string name="info_weather_details_range">Sensação %1$d° · Vento %2$d km/h · %3$d° / %4$d°</string>
-    <string name="info_weather_loading">A carregar meteorologia…</string>
+    <string name="info_weather_loading">Carregando meteorologia…</string>
     <string name="info_weather_unavailable">Meteorologia indisponível</string>
     <string name="info_weather_unavailable_detail">Meteorologia indisponível (%1$s)</string>
-    <string name="info_weather_no_internet">sem ligação à internet: verifique o Wi-Fi ou o hotspot do rádio</string>
+    <string name="info_weather_no_internet">sem conexão à internet: verifique o Wi-Fi ou o hotspot do rádio</string>
     <string name="info_weather_no_answer">o serviço meteorológico não respondeu</string>
     <string name="info_as_of">Atualizado: %1$s</string>
 
@@ -49,9 +49,9 @@
     <!-- Quick dial tile -->
     <string name="info_quickdial_title">MARCAÇÃO RÁPIDA</string>
     <string name="info_quickdial_dialer">Teclado</string>
-    <string name="info_quickdial_needs_access">Mostrar aqui os contactos favoritos</string>
-    <string name="info_quickdial_allow">Permitir contactos</string>
-    <string name="info_quickdial_empty">Os contactos favoritos da app Contactos aparecem aqui</string>
+    <string name="info_quickdial_needs_access">Mostrar aqui os contatos favoritos</string>
+    <string name="info_quickdial_allow">Permitir contatos</string>
+    <string name="info_quickdial_empty">Os contatos favoritos da app Contatos aparecem aqui</string>
 
     <!-- Notifications tile -->
     <string name="info_notif_title">NOTIFICAÇÕES</string>
@@ -102,15 +102,15 @@
 
     <!-- G-force tile -->
     <string name="info_gforce_title">FORÇA G</string>
-    <string name="info_gforce_reset_peaks">Repor picos</string>
+    <string name="info_gforce_reset_peaks">Restaurar picos</string>
     <string name="info_gforce_lateral">Lateral</string>
-    <string name="info_gforce_accel_brake">Aceleração / travagem</string>
+    <string name="info_gforce_accel_brake">Aceleração / frenagem</string>
     <string name="info_gforce_peaks">Picos</string>
 
     <!-- Parking tile -->
     <string name="info_parking_title">ESTACIONAMENTO</string>
     <string name="info_parking_prompt">Memorizar onde está o carro</string>
-    <string name="info_parking_save">Guardar lugar</string>
+    <string name="info_parking_save">Salvar lugar</string>
     <string name="info_parking_dir_right">O carro estacionado está a %1$d° à direita</string>
     <string name="info_parking_dir_left">O carro estacionado está a %1$d° à esquerda</string>
     <string name="info_parking_distance_unknown">Distância desconhecida</string>
@@ -168,7 +168,7 @@
     <string name="info_map_duration_min">%1$d min</string>
     <string name="info_map_stop">Parar</string>
     <string name="info_map_arrived">Chegou</string>
-    <string name="info_map_rerouting">A procurar uma nova rota</string>
+    <string name="info_map_rerouting">Procurando uma nova rota</string>
     <string name="info_map_voice_on">Ativar a voz</string>
     <string name="info_map_voice_off">Desativar a voz</string>
     <string name="info_map_other_app">Navegar no Google Maps ou Waze</string>

@@ -35,7 +35,7 @@ enum class AiLanguage(val label: String, val promptName: String, val locale: Loc
     GERMAN("Deutsch", "German", Locale.GERMANY),
     SPANISH("Español", "Spanish", Locale("es", "ES")),
     ITALIAN("Italiano", "Italian", Locale.ITALY),
-    PORTUGUESE("Português", "Portuguese", Locale("pt", "PT")),
+    PORTUGUESE("Português", "Brazilian Portuguese", Locale("pt", "BR")),
     DUTCH("Nederlands", "Dutch", Locale("nl", "NL")),
     POLISH("Polski", "Polish", Locale("pl", "PL")),
     RUSSIAN("Русский", "Russian", Locale("ru", "RU")),
