@@ -162,6 +162,7 @@
     <string name="info_map_gps_not_ready">GPS niet gereed: Start opent toch Google Maps</string>
     <string name="info_map_no_route">Geen route gevonden</string>
     <string name="info_map_routing_failed">Route berekenen mislukt</string>
+    <string name="info_map_route_too_far">Too far for the routing server: Start still opens Google Maps</string>
     <string name="info_map_routing_failed_detail">Route berekenen mislukt (%1$s)</string>
     <string name="info_map_address_not_found">Adres niet gevonden</string>
     <string name="info_map_duration_hm">%1$d u %2$02d min</string>

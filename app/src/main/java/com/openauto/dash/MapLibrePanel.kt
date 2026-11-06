@@ -220,7 +220,11 @@ fun MapLibrePanel(modifier: Modifier = Modifier, wallpaper: Boolean = false) {
                     CameraUpdateFactory.newLatLngZoom(LatLng(dest.latitude(), dest.longitude()), 13.0)
                 )
             }.onFailure {
-                error = it.message?.takeIf { m -> m.isNotBlank() }
+                error = when (it) {
+                    is RouteNoFix -> context.getString(R.string.info_map_gps_not_ready)
+                    is RouteTooFar -> context.getString(R.string.info_map_route_too_far)
+                    else -> null
+                } ?: it.message?.takeIf { m -> m.isNotBlank() }
                     ?.let { m -> context.getString(R.string.info_map_routing_failed_detail, m) }
                     ?: context.getString(R.string.info_map_routing_failed)
             }
@@ -736,7 +740,16 @@ private fun PlaceChips(places: Places, onPick: (Place) -> Unit) {
 }
 
 /** Fetches a driving route from a free Valhalla server (OSRM-format response). */
-internal fun valhallaRoute(origin: Point, dest: Point, language: String): DirectionsResponse {
+/** The router refused: no GPS fix yet (an origin at 0,0), or a trip longer than the server allows. */
+internal class RouteNoFix : IllegalStateException("no GPS fix")
+internal class RouteTooFar : IllegalStateException("too far for the routing server")
+
+internal fun valhallaRoute(origin: Point, dest: Point, languageTag: String): DirectionsResponse {
+    // A location that never got a fix reads 0,0: asking for a route from the
+    // Gulf of Guinea only earns an HTTP 400 from the server.
+    if (kotlin.math.abs(origin.latitude()) < 0.01 && kotlin.math.abs(origin.longitude()) < 0.01) throw RouteNoFix()
+    // Valhalla speaks pt-BR and pt-PT, not bare pt: Brazilian unless the app says otherwise.
+    val language = if (languageTag == "pt") "pt-BR" else languageTag
     val body = mapOf(
         "format" to "osrm",
         "costing" to "auto",
@@ -758,7 +771,11 @@ internal fun valhallaRoute(origin: Point, dest: Point, language: String): Direct
         .post(json.toRequestBody("application/json; charset=utf-8".toMediaType()))
         .build()
     Http.client.newCall(request).execute().use { resp ->
-        if (!resp.isSuccessful) error("HTTP ${resp.code}")
+        if (!resp.isSuccessful) {
+            val text = runCatching { resp.body?.string() }.getOrNull().orEmpty()
+            if (resp.code == 400 && "DistanceExceeded" in text) throw RouteTooFar()
+            error("HTTP ${resp.code}")
+        }
         val rb = resp.body?.string() ?: error("Empty routing response")
         // Valhalla doesn't echo the request back, and the navigation refuses a
         // route without it (its spoken turns need voice and banner instructions).

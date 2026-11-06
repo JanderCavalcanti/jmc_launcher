@@ -162,6 +162,7 @@
     <string name="info_map_gps_not_ready">GPS pas prêt : Démarrer ouvre quand même Google Maps</string>
     <string name="info_map_no_route">Aucun itinéraire trouvé</string>
     <string name="info_map_routing_failed">Échec du calcul d\'itinéraire</string>
+    <string name="info_map_route_too_far">Too far for the routing server: Start still opens Google Maps</string>
     <string name="info_map_routing_failed_detail">Échec du calcul d\'itinéraire (%1$s)</string>
     <string name="info_map_address_not_found">Adresse introuvable</string>
     <string name="info_map_duration_hm">%1$d h %2$02d min</string>

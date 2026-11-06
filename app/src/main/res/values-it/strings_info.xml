@@ -162,6 +162,7 @@
     <string name="info_map_gps_not_ready">GPS non pronto: Avvia apre comunque Google Maps</string>
     <string name="info_map_no_route">Nessun percorso trovato</string>
     <string name="info_map_routing_failed">Calcolo del percorso non riuscito</string>
+    <string name="info_map_route_too_far">Too far for the routing server: Start still opens Google Maps</string>
     <string name="info_map_routing_failed_detail">Calcolo del percorso non riuscito (%1$s)</string>
     <string name="info_map_address_not_found">Indirizzo non trovato</string>
     <string name="info_map_duration_hm">%1$d h %2$02d min</string>
