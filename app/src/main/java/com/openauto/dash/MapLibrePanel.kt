@@ -193,6 +193,15 @@ fun MapLibrePanel(modifier: Modifier = Modifier, wallpaper: Boolean = false) {
         // always works; the in-app route preview below just needs our own fix.
         destination = dest
         info = null
+        // Google Maps or Waze already guiding: theirs is the route, the free
+        // router isn't asked (it is slow on mobile data, and would only disagree).
+        val guiding = NavDirections.running.value
+        if (guiding != null) {
+            loading = false
+            error = null
+            info = context.getString(R.string.info_map_guided_by, if (guiding == "com.waze") "Waze" else "Google Maps")
+            return
+        }
         val map = mapRef
         // The component throws until it's switched on (style loaded, location
         // allowed): a destination picked before that is "GPS not ready", not a crash.

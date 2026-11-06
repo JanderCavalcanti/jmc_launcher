@@ -164,6 +164,7 @@
     <string name="info_map_routing_failed">Route berekenen mislukt</string>
     <string name="info_map_route_too_far">Too far for the routing server: Start still opens Google Maps</string>
     <string name="info_map_route_offline">Can\'t reach the routing server: Start still opens Google Maps</string>
+    <string name="info_map_guided_by">%1$s is already guiding: Start sends this destination to it</string>
     <string name="info_map_routing_failed_detail">Route berekenen mislukt (%1$s)</string>
     <string name="info_map_address_not_found">Adres niet gevonden</string>
     <string name="info_map_duration_hm">%1$d u %2$02d min</string>
