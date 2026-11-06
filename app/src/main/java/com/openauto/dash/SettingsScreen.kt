@@ -196,7 +196,7 @@ internal enum class SettingsTab(@StringRes val titleRes: Int, val icon: ImageVec
 /** The settings that open further into the pane; Lab's open over Lab. */
 internal enum class Deep {
     CAR, CAR_LOOK, REVERSE, SIGNALS, AI, UPKEEP, EXPLORER, WHEEL, PLACES, LANGUAGE, SECOND_SCREEN, LPG, MY_READINGS,
-    OBD, UNITS, ACCESS, ABOUT, LAB, UNIT_TOOLS, MAP_SERVERS, API_KEYS, HEAD_UNIT
+    OBD, UNITS, ACCESS, ABOUT, LAB, UNIT_TOOLS, MAP_SERVERS, API_KEYS, HEAD_UNIT, OBD_SCAN
 }
 
 /** Under this width the categories go along the top: a rail would leave the settings half a screen. */
@@ -280,6 +280,7 @@ internal fun SettingsScreen(
                         Deep.SECOND_SCREEN -> SecondScreenSheet(onDismiss = back)
                         Deep.LPG -> LpgTankSheet(onDismiss = back)
                         Deep.MY_READINGS -> MyReadingsSheet(onDismiss = back)
+                        Deep.OBD_SCAN -> ObdScanSheet(onDismiss = back)
                         Deep.OBD -> ObdSheet(onPickObd = onPickObd, onDismiss = back)
                         Deep.UNITS -> UnitsSheet(onDismiss = back)
                         Deep.ACCESS -> AccessSheet(onPickObd = onPickObd, onDismiss = back)
@@ -518,6 +519,7 @@ private fun DiagnosticsPane(open: (Deep) -> Unit) {
     SettingsSection(stringResource(R.string.settings_section_diagnostics))
     SettingsRow(Icons.Filled.Bluetooth, stringResource(R.string.settings_obd_title), obdSummary()) { open(Deep.OBD) }
     SettingsRow(Icons.Filled.AutoAwesome, stringResource(R.string.ai_title), stringResource(R.string.settings_ai_detail)) { open(Deep.AI) }
+    SettingsRow(Icons.Filled.Checklist, stringResource(R.string.scan_title), stringResource(R.string.scan_settings_detail)) { open(Deep.OBD_SCAN) }
     SettingsRow(Icons.Filled.Calculate, stringResource(R.string.mine_title), stringResource(R.string.mine_settings_detail)) { open(Deep.MY_READINGS) }
     SettingsRow(Icons.Filled.SettingsInputAntenna, stringResource(R.string.signals_title), stringResource(R.string.signals_settings_detail)) { open(Deep.SIGNALS) }
 }
