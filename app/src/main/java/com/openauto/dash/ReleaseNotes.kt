@@ -135,7 +135,7 @@ private fun inline(text: String, codeBackground: Color): AnnotatedString = build
 @Composable
 internal fun ReleaseNotesDialog(info: UpdateInfo, onUpdate: () -> Unit, onDismiss: () -> Unit) {
     val blocks = remember(info.notes) { ReleaseNotes.body(info.notes) }
-    val support = Edition.full
+    val support = Edition.full && KOFI_URL.isNotEmpty()
     val screenHeight = LocalConfiguration.current.screenHeightDp.dp
     // Material's AlertDialog stops at 560 dp: too narrow for the notes and the ask side by side.
     Dialog(onDismissRequest = onDismiss, properties = DialogProperties(usePlatformDefaultWidth = false)) {

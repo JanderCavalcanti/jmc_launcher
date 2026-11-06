@@ -1438,7 +1438,9 @@ private fun MoreWithGithubRow() {
     if (help) WikiHelpDialog(WikiPage.ROOT_PMPATCH) { help = false }
 }
 
-internal const val KOFI_URL = "https://ko-fi.com/deviloufr"
+// JMCAR asks for no donations: the original author's Ko-fi link is gone, and the
+// panels that showed it stay hidden while this is empty.
+internal const val KOFI_URL = ""
 private const val PROJECT_URL = "https://github.com/JanderCavalcanti/jmc_launcher"
 /** A Google Play listing, the package name appended (the Play edition's own, and the companion's). */
 internal const val PLAY_LISTING = "https://play.google.com/store/apps/details?id="
@@ -1482,7 +1484,7 @@ private fun AboutBody(m: TopBarModel) {
     // Google Play allows no donation link in the app: tips go through Play's own billing there.
     if (Edition.play) {
         TipJar(Modifier.padding(horizontal = 12.dp))
-    } else {
+    } else if (KOFI_URL.isNotEmpty()) {
         SettingsSection(stringResource(R.string.about_support_section))
         Row(
             modifier = Modifier.padding(horizontal = 12.dp),
