@@ -163,6 +163,7 @@
     <string name="info_map_no_route">Keine Route gefunden</string>
     <string name="info_map_routing_failed">Routenberechnung fehlgeschlagen</string>
     <string name="info_map_route_too_far">Too far for the routing server: Start still opens Google Maps</string>
+    <string name="info_map_route_offline">Can\'t reach the routing server: Start still opens Google Maps</string>
     <string name="info_map_routing_failed_detail">Routenberechnung fehlgeschlagen (%1$s)</string>
     <string name="info_map_address_not_found">Adresse nicht gefunden</string>
     <string name="info_map_duration_hm">%1$d h %2$02d min</string>

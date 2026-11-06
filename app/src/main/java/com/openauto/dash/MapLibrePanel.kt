@@ -223,6 +223,8 @@ fun MapLibrePanel(modifier: Modifier = Modifier, wallpaper: Boolean = false) {
                 error = when (it) {
                     is RouteNoFix -> context.getString(R.string.info_map_gps_not_ready)
                     is RouteTooFar -> context.getString(R.string.info_map_route_too_far)
+                    // No answer from the router (weak mobile data, server down): say so plainly.
+                    is java.io.IOException -> context.getString(R.string.info_map_route_offline)
                     else -> null
                 } ?: it.message?.takeIf { m -> m.isNotBlank() }
                     ?.let { m -> context.getString(R.string.info_map_routing_failed_detail, m) }
@@ -760,6 +762,10 @@ private fun PlaceChips(places: Places, onPick: (Place) -> Unit) {
 internal class RouteNoFix : IllegalStateException("no GPS fix")
 internal class RouteTooFar : IllegalStateException("too far for the routing server")
 
+private val ROUTING_CLIENT by lazy {
+    Http.client.newBuilder().connectTimeout(20, java.util.concurrent.TimeUnit.SECONDS).readTimeout(30, java.util.concurrent.TimeUnit.SECONDS).build()
+}
+
 internal fun valhallaRoute(origin: Point, dest: Point, languageTag: String): DirectionsResponse {
     // A location that never got a fix reads 0,0: asking for a route from the
     // Gulf of Guinea only earns an HTTP 400 from the server.
@@ -786,7 +792,8 @@ internal fun valhallaRoute(origin: Point, dest: Point, languageTag: String): Dir
         .url(routingUrl)
         .post(json.toRequestBody("application/json; charset=utf-8".toMediaType()))
         .build()
-    Http.client.newCall(request).execute().use { resp ->
+    // A car on mobile data can take longer than the shared client's 10 s to reach the router.
+    ROUTING_CLIENT.newCall(request).execute().use { resp ->
         if (!resp.isSuccessful) {
             val text = runCatching { resp.body?.string() }.getOrNull().orEmpty()
             if (resp.code == 400 && "DistanceExceeded" in text) throw RouteTooFar()

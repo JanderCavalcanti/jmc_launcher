@@ -163,6 +163,7 @@
     <string name="info_map_no_route">Маршрут не найден</string>
     <string name="info_map_routing_failed">Не удалось построить маршрут</string>
     <string name="info_map_route_too_far">Too far for the routing server: Start still opens Google Maps</string>
+    <string name="info_map_route_offline">Can\'t reach the routing server: Start still opens Google Maps</string>
     <string name="info_map_routing_failed_detail">Не удалось построить маршрут (%1$s)</string>
     <string name="info_map_address_not_found">Адрес не найден</string>
     <string name="info_map_duration_hm">%1$d ч %2$02d мин</string>

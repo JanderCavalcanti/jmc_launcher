@@ -163,6 +163,7 @@
     <string name="info_map_no_route">Nenhum percurso encontrado</string>
     <string name="info_map_routing_failed">Falha ao calcular a rota</string>
     <string name="info_map_route_too_far">Destino longe demais para o servidor de rotas: Iniciar abre o Google Maps</string>
+    <string name="info_map_route_offline">Sem conexão com o servidor de rotas: Iniciar abre o Google Maps</string>
     <string name="info_map_routing_failed_detail">Falha ao calcular a rota (%1$s)</string>
     <string name="info_map_address_not_found">Morada não encontrada</string>
     <string name="info_map_duration_hm">%1$d h %2$02d min</string>
