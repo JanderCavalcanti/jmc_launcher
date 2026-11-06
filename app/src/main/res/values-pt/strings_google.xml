@@ -2,7 +2,7 @@
 <resources>
     <string name="google_section">Conta Google</string>
     <string name="google_sign_in">Entrar com o Google</string>
-    <string name="google_sign_in_detail">Salva a configuração do launcher no seu Google Drive e traz de volta em outro aparelho</string>
+    <string name="google_sign_in_detail">Salva a configuração do launcher no seu Google Drive (arquivo jmc-launcher-setup.json) e traz de volta em outro aparelho</string>
     <string name="google_not_configured">Indisponível nesta versão</string>
     <string name="google_last_sync">Salvo em %1$s</string>
     <string name="google_never_synced">Ainda não salvo</string>

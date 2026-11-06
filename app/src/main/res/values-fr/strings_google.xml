@@ -2,7 +2,7 @@
 <resources>
     <string name="google_section">Google account</string>
     <string name="google_sign_in">Sign in with Google</string>
-    <string name="google_sign_in_detail">Saves your launcher setup to your Google Drive and brings it back on another unit</string>
+    <string name="google_sign_in_detail">Saves your launcher setup to your Google Drive (file jmc-launcher-setup.json) and brings it back on another unit</string>
     <string name="google_not_configured">Not available in this build</string>
     <string name="google_last_sync">Saved %1$s</string>
     <string name="google_never_synced">Not saved yet</string>

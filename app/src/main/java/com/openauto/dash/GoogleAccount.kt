@@ -24,8 +24,9 @@ import java.security.MessageDigest
 
 /*
  * jmc_launcher: the driver's Google account, used for one thing only: keeping
- * the setup ([SetupBackup]'s JSON) in the app's hidden folder of their Google
- * Drive (appDataFolder, scope drive.appdata), so it comes back on another unit
+ * the setup ([SetupBackup]'s JSON) in one file of their Google Drive
+ * (scope drive.file: the app sees only the files it made; the device flow
+ * refuses drive.appdata), so it comes back on another unit
  * or after a reset.
  *
  * Sign-in is Google's "TV and limited input" device flow: the unit shows a
@@ -46,7 +47,7 @@ internal object GoogleAccount {
     private const val KEY_LAST_SYNC = "last_sync"
     private const val KEY_LAST_HASH = "last_hash"
 
-    private const val SCOPE = "openid email https://www.googleapis.com/auth/drive.appdata"
+    private const val SCOPE = "openid email https://www.googleapis.com/auth/drive.file"
     private const val DEVICE_URL = "https://oauth2.googleapis.com/device/code"
     private const val TOKEN_URL = "https://oauth2.googleapis.com/token"
     private const val REVOKE_URL = "https://oauth2.googleapis.com/revoke"
@@ -170,11 +171,11 @@ internal object GoogleAccount {
 
     // ---- Drive ----
 
-    /** The id of the setup file in appDataFolder, null when there is none yet. */
+    /** The id of the setup file the app made in Drive, null when there is none yet. */
     private fun findFile(context: Context, token: String): String? {
         prefs(context).getString(KEY_FILE_ID, null)?.let { return it }
-        val q = URLEncoder.encode("name = '$FILE_NAME'", "UTF-8")
-        val (status, body) = request("GET", "$DRIVE_FILES?spaces=appDataFolder&fields=files(id,modifiedTime)&q=$q", token)
+        val q = URLEncoder.encode("name = '$FILE_NAME' and trashed = false", "UTF-8")
+        val (status, body) = request("GET", "$DRIVE_FILES?spaces=drive&orderBy=modifiedTime%20desc&fields=files(id,modifiedTime)&q=$q", token)
         if (status != HttpURLConnection.HTTP_OK) throw IOException("drive list: http $status")
         val files = JSONObject(body).optJSONArray("files")
         val id = if (files != null && files.length() > 0) files.getJSONObject(0).getString("id") else null
@@ -192,7 +193,7 @@ internal object GoogleAccount {
         val id = findFile(context, token)
         val status = if (id == null) {
             val boundary = "jmc" + System.nanoTime()
-            val meta = JSONObject().put("name", FILE_NAME).put("parents", org.json.JSONArray().put("appDataFolder")).toString()
+            val meta = JSONObject().put("name", FILE_NAME).put("description", "jmc_launcher: configuração salva pelo launcher").toString()
             val body = "--$boundary\r\nContent-Type: application/json; charset=UTF-8\r\n\r\n$meta\r\n" +
                 "--$boundary\r\nContent-Type: application/json\r\n\r\n$text\r\n--$boundary--\r\n"
             val (s, resp) = request("POST", "$DRIVE_UPLOAD?uploadType=multipart&fields=id", token, body, "multipart/related; boundary=$boundary")
