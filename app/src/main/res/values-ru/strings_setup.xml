@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- First-run setup (SetupScreen.kt): the car, what the launcher may use, the look -->
-    <string name="setup_title">Настройка Dashwheel</string>
+    <string name="setup_title">Настройка JMCAR</string>
     <string name="setup_step">Шаг %1$d из 3</string>
     <string name="setup_skip">Пропустить</string>
     <string name="setup_back">Назад</string>
@@ -18,7 +18,7 @@
     <string name="setup_driver_side">Место водителя</string>
     <string name="setup_driver_left">Слева</string>
     <string name="setup_driver_right">Справа</string>
-    <string name="setup_access_title">Что может использовать Dashwheel</string>
+    <string name="setup_access_title">Что может использовать JMCAR</string>
     <string name="setup_access_body">Всё по желанию. Разрешите на открывшемся экране и вернитесь.</string>
     <string name="setup_access_notifications">Уведомления</string>
     <string name="setup_access_notifications_detail">Музыка и следующий поворот из приложений на магнитоле</string>
@@ -48,5 +48,5 @@
     <string name="setup_car_tiles_title">Добавить плитки автомобиля?</string>
     <string name="setup_car_tiles_body">Приборы двигателя, коды ошибок, аккумулятор и прогрев на панелях.</string>
     <string name="setup_again">Настроить заново</string>
-    <string name="setup_again_detail">Автомобиль, доступы Dashwheel и оформление, шаг за шагом</string>
+    <string name="setup_again_detail">Автомобиль, доступы JMCAR и оформление, шаг за шагом</string>
 </resources>

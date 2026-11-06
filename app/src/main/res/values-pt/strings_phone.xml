@@ -5,11 +5,11 @@
     <string name="phone_status_connected">Ligado a %1$s</string>
     <string name="phone_status_connected_detail">As notificações e mensagens aparecem no widget Notificações.</string>
     <string name="phone_status_searching">À procura do telefone no Wi-Fi</string>
-    <string name="phone_status_searching_detail">Ative o hotspot do telefone e ligue este autorrádio; o Dashwheel Companheiro trata do resto.</string>
+    <string name="phone_status_searching_detail">Ative o hotspot do telefone e ligue este autorrádio; o JMCAR Companheiro trata do resto.</string>
     <string name="phone_status_unpaired">Nenhum telefone associado</string>
     <string name="phone_status_unpaired_detail">Associe o telefone para ver aqui as mensagens e responder.</string>
     <string name="phone_pair">Associar um telefone</string>
-    <string name="phone_pair_detail">Mostra o código a ler com o Dashwheel Companheiro</string>
+    <string name="phone_pair_detail">Mostra o código a ler com o JMCAR Companheiro</string>
     <string name="phone_gps">Usar o GPS do celular</string>
     <string name="phone_gps_detail">Com o celular ligado, o seu GPS substitui o da unidade: mais satélites, posição em segundos</string>
     <string name="phone_gps_in_use">Em uso: %1$d satélites do celular</string>
@@ -22,7 +22,7 @@
     <string name="phone_forget_title">Esquecer %1$s?</string>
     <string name="phone_forget_body">As mensagens e chamadas deixam de aparecer aqui. Para voltar a associar é preciso um novo código.</string>
     <string name="phone_pair_title">Associar um telefone</string>
-    <string name="phone_pair_step1">1. Instale o Dashwheel Companheiro no telefone: leia este código com a câmera.</string>
+    <string name="phone_pair_step1">1. Instale o JMCAR Companheiro no telefone: leia este código com a câmera.</string>
     <string name="phone_pair_step2">2. Ative o hotspot Wi-Fi do telefone e ligue este autorrádio.</string>
     <string name="phone_pair_step3">3. Na app, toque em Associar um carro e leia este código.</string>
     <string name="phone_pair_waiting">À espera do telefone…</string>
@@ -49,7 +49,7 @@
     <string name="phone_call_answer">Atender</string>
     <string name="phone_call_decline">Recusar</string>
     <string name="phone_call_hang_up">Desligar</string>
-    <string name="phone_call_no_control">Para atender daqui, permita Chamadas no Dashwheel Companheiro.</string>
+    <string name="phone_call_no_control">Para atender daqui, permita Chamadas no JMCAR Companheiro.</string>
     <string name="phone_overlay">Mostrar chamadas sobre outras apps</string>
     <string name="phone_overlay_detail">Assim uma chamada aparece mesmo com outra app em tela inteira.</string>
     <string name="phone_text_copied">Texto do celular copiado: mantenha pressionado um campo para colar</string>
@@ -57,6 +57,6 @@
     <string name="phone_agenda_empty">Associe o telefone em Configurações, Telefone e telas, para ver aqui a agenda</string>
     <string name="phone_call_back">Ligar a %1$s</string>
     <string name="phone_calling">Ligando a %1$s</string>
-    <string name="phone_dial_not_allowed">Para ligar daqui, permita Chamadas no Dashwheel Companheiro.</string>
+    <string name="phone_dial_not_allowed">Para ligar daqui, permita Chamadas no JMCAR Companheiro.</string>
     <string name="phone_guidance_to">Rota para %1$s</string>
 </resources>

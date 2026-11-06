@@ -37,7 +37,7 @@
     <string name="volume_way_android_hint">Android medijos garsumas, kaip telefone</string>
     <string name="volume_way_keys_hint">Spaudžia garsumo mygtukus kaip vairo mygtukai ir rankenėlė. Reikia root arba magnetolos ADB</string>
     <string name="volume_way_keys_locked">Garsumo mygtukams reikia root arba magnetolos ADB</string>
-    <string name="settings_rom_call_detail">Bluetooth skambučiai rodomi tik Dashwheel kortelėje, su atsiliepimu ir padėjimu</string>
+    <string name="settings_rom_call_detail">Bluetooth skambučiai rodomi tik JMCAR kortelėje, su atsiliepimu ir padėjimu</string>
     <string name="settings_rom_doors_detail">Rodo, kurios durys atidarytos, virš bet kurios programos, vietoj magnetolos įspėjimo</string>
     <string name="settings_rom_needs_root">Reikia root arba magnetolos ADB</string>
     <string name="settings_more_github">Daugiau su GitHub versija</string>
@@ -69,9 +69,9 @@
     <string name="alert_with_voice">%1$s, įgarsinama</string>
     <string name="alert_say_call">Skambina %1$s</string>
     <string name="alert_say_doors">Atidarytos durys: %1$s</string>
-    <string name="settings_rom_radar_detail">Rodo parkavimo jutiklius Dashwheel dizainu, vietoj magnetolos</string>
-    <string name="settings_rom_radar_needs_access">Įjunkite Dashwheel pritaikymo neįgaliesiems nustatymuose, kad jis būtų rodomas virš galinio vaizdo kameros</string>
-    <string name="settings_rom_ac_detail">Rodo klimato pakeitimus Dashwheel dizainu, vietoj magnetolos iššokančio lango</string>
+    <string name="settings_rom_radar_detail">Rodo parkavimo jutiklius JMCAR dizainu, vietoj magnetolos</string>
+    <string name="settings_rom_radar_needs_access">Įjunkite JMCAR pritaikymo neįgaliesiems nustatymuose, kad jis būtų rodomas virš galinio vaizdo kameros</string>
+    <string name="settings_rom_ac_detail">Rodo klimato pakeitimus JMCAR dizainu, vietoj magnetolos iššokančio lango</string>
     <string name="alert_kind_radar">Parkavimo radaras</string>
     <string name="alert_kind_ac">Klimatas</string>
     <string name="alert_kind_radar_title">Parkavimo radaro įspėjimas</string>
@@ -85,7 +85,7 @@
     <string name="keys_voice">Balso mygtukas</string>
     <string name="keys_custom">Pasirinktinis mygtukas</string>
     <string name="keys_unit_choice">Magnetolos numatytasis</string>
-    <string name="settings_rom_tyres_detail">Padangų įspėjimai Dashwheel dizainu. Kad liktų tik jie, išjunkite TPMS programos langą jos nustatymuose</string>
+    <string name="settings_rom_tyres_detail">Padangų įspėjimai JMCAR dizainu. Kad liktų tik jie, išjunkite TPMS programos langą jos nustatymuose</string>
     <string name="alert_kind_tyres">Padangos</string>
     <string name="alert_kind_tyres_title">Padangų įspėjimas</string>
     <string name="alert_speak_tyres_detail">Pasako, kuri padanga ir kas negerai</string>
@@ -106,9 +106,9 @@
     <string name="settings_section_display">Ekranas</string>
     <string name="settings_appearance_title">Diena ir naktis</string>
     <string name="settings_appearance_detail">Automatiškai pagal automobilį, saulėtekį ir saulėlydį arba nustatytu laiku</string>
-    <string name="alert_style_section">Iššokantys langai Dashwheel išvaizda</string>
+    <string name="alert_style_section">Iššokantys langai JMCAR išvaizda</string>
     <string name="alert_more_with_permission">Daugiau automobilio įspėjimų reikia root arba vienkartinės komandos iš kompiuterio: žr. wiki, Car settings permission.</string>
-    <string name="alert_more_with_github">Durų, diržo ir radaro įspėjimams reikia Dashwheel GitHub versijos, kuri gali naudoti magnetolos root.</string>
+    <string name="alert_more_with_github">Durų, diržo ir radaro įspėjimams reikia JMCAR GitHub versijos, kuri gali naudoti magnetolos root.</string>
     <string name="alert_copy_command">Kopijuoti komandą</string>
     <string name="alert_command_copied">Komanda nukopijuota</string>
     <string name="settings_section_about">Apie</string>
@@ -119,15 +119,15 @@
     <string name="settings_system_perms">Google Maps plytelėje</string>
     <string name="settings_system_perms_on">Paruošta. Google Maps gali veikti plytelėje.</string>
     <string name="settings_system_perms_off">Neparuošta. Palieskite, kad paruoštumėte: įdiegiamas PMPatch3 modulis, reikia Magisk ir paleidimo iš naujo.</string>
-    <string name="settings_pmpatch_body">Google Maps veikia plytelėje, kai Android suteikia Dashwheel sistemos leidimus.</string>
+    <string name="settings_pmpatch_body">Google Maps veikia plytelėje, kai Android suteikia JMCAR sistemos leidimus.</string>
     <string name="settings_pmpatch_cost">Kaina: PMPatch3 išjungia parašų tikrinimą visoms šios magnetolos programoms.</string>
-    <string name="settings_pmpatch_steps">Trys žingsniai: įdiegti, paleisti iš naujo, iš naujo įdiegti Dashwheel.</string>
+    <string name="settings_pmpatch_steps">Trys žingsniai: įdiegti, paleisti iš naujo, iš naujo įdiegti JMCAR.</string>
     <string name="settings_pmpatch_step">Žingsnis %1$d iš %2$d</string>
     <string name="settings_pmpatch_checking">Tikrinamas Magisk…</string>
     <string name="settings_pmpatch_no_magisk">Šioje magnetoloje Magisk neįdiegtas.</string>
     <string name="settings_pmpatch_old_magisk">Reikia Magisk 24 ar naujesnio.</string>
     <string name="settings_pmpatch_restart">PMPatch3 įdiegtas. Paleiskite magnetolą iš naujo, kad baigtumėte.</string>
-    <string name="settings_pmpatch_running">PMPatch3 veikia. Dashwheel įsidiegia iš naujo, kad gautų leidimus.</string>
+    <string name="settings_pmpatch_running">PMPatch3 veikia. JMCAR įsidiegia iš naujo, kad gautų leidimus.</string>
     <string name="settings_pmpatch_install">Įdiegti PMPatch3</string>
     <string name="settings_pmpatch_reinstall">Įdiegti iš naujo</string>
     <string name="settings_pmpatch_bad_download">Atsisiųstas failas neatitinka PMPatch3 v1.2.0.</string>
@@ -156,9 +156,9 @@
     <string name="settings_backup_restore_detail">Iš failo, išsaugoto šioje ar kitoje magnetoloje</string>
     <string name="settings_backup_saved">Sąranka išsaugota</string>
     <string name="settings_backup_saved_to">Sąranka išsaugota: %1$s</string>
-    <string name="settings_backup_failed">Tai ne Dashwheel sąrankos failas. Pasirinkite failą, išsaugotą per Išsaugoti sąranką.</string>
+    <string name="settings_backup_failed">Tai ne JMCAR sąrankos failas. Pasirinkite failą, išsaugotą per Išsaugoti sąranką.</string>
     <string name="settings_backup_confirm_title">Atkurti šią sąranką?</string>
-    <string name="settings_backup_confirm_body">Jūsų skydeliai ir nustatymai bus pakeisti. Dashwheel pasileis iš naujo.</string>
+    <string name="settings_backup_confirm_body">Jūsų skydeliai ir nustatymai bus pakeisti. JMCAR pasileis iš naujo.</string>
     <string name="settings_backup_confirm">Atkurti</string>
     <string name="settings_resume_music">Tęsti muziką paleidus</string>
     <string name="settings_resume_music_detail">Vėl groja programa, kuri grojo išjungiant. Palikite išjungtą, jei magnetola tai daro pati.</string>
@@ -200,10 +200,10 @@
     <string name="settings_log_no_phone">Neatsakė joks telefonas. Prijunkite telefoną ir atnaujinkite jo Companion programą</string>
     <!-- About tab -->
     <string name="about_author_section">Sukūrė</string>
-    <string name="about_description">Dashwheel yra paleidimo programa Android automobilių magnetoloms: žemėlapis, muzika ir tiesioginiai automobilio duomenys viename ramiame ekrane, su skydeliais, kuriuos išdėstote patys. Nemokama ir atvirojo kodo.</string>
+    <string name="about_description">JMCAR yra paleidimo programa Android automobilių magnetoloms: žemėlapis, muzika ir tiesioginiai automobilio duomenys viename ramiame ekrane, su skydeliais, kuriuos išdėstote patys. Nemokama ir atvirojo kodo.</string>
     <string name="about_author_role">Kūrėjas ir programuotojas</string>
-    <string name="about_support_section">Paremti Dashwheel</string>
-    <string name="about_support_text">Dashwheel nemokamas. Jei jis jums patinka, kava padeda jį tęsti.</string>
+    <string name="about_support_section">Paremti JMCAR</string>
+    <string name="about_support_text">JMCAR nemokamas. Jei jis jums patinka, kava padeda jį tęsti.</string>
     <string name="about_kofi">Nupirkite man kavos Ko-fi</string>
     <string name="about_scan">Nuskenuokite telefonu</string>
     <string name="about_tip_thanks">Ačiū, tai tikrai padeda.</string>
@@ -221,7 +221,7 @@
     <string name="alert_style_icon_detail">Tik animuota piktograma kampe. Palieskite, kad baigtumėte</string>
     <string name="alert_kind_volume">Garsumas</string>
     <string name="alert_kind_volume_title">Garsumo juosta</string>
-    <string name="settings_rom_volume_detail">Rodo garsumą Dashwheel dizainu, vietoj magnetolos juostos</string>
+    <string name="settings_rom_volume_detail">Rodo garsumą JMCAR dizainu, vietoj magnetolos juostos</string>
     <string name="settings_rom_volume_next_start">Įsigalios kitą kartą įjungus magnetolą</string>
     <string name="settings_rom_volume_needs_magisk">Reikia Magisk</string>
     <string name="alert_volume_muted">Nutildyta</string>
@@ -234,12 +234,12 @@
     <string name="settings_side_rail_detail">Juostos mygtukai stovi vairuotojo pusėje, ekrano aukščiu</string>
     <string name="settings_tabs_nav">Skirtukai vietoj braukimo</string>
     <string name="settings_tabs_nav_detail">Skydeliai liečiami šoninėje juostoje; reikia šoninės juostos. Įsijungia pats, kai po skydeliais yra žemėlapio programa.</string>
-    <string name="about_free_open_source">Dashwheel yra nemokamas ir atvirojo kodo.</string>
+    <string name="about_free_open_source">JMCAR yra nemokamas ir atvirojo kodo.</string>
     <string name="about_updates_play">Atnaujinimai gaunami iš Google Play</string>
     <string name="settings_obd_source_label">OBD rodmenys iš</string>
     <string name="settings_obd_source_adapter">Adapteris</string>
     <string name="settings_obd_source_deepobd">Deep OBD</string>
-    <string name="settings_obd_source_adapter_hint">Dashwheel pats bendrauja su OBD adapteriu.</string>
+    <string name="settings_obd_source_adapter_hint">JMCAR pats bendrauja su OBD adapteriu.</string>
     <string name="settings_obd_source_deepobd_hint">Deep OBD skaito automobilį ir dalijasi duomenimis. Įjunkite duomenų transliaciją Deep OBD. Gedimų kodams reikia adapterio.</string>
     <string name="settings_deepobd_waiting">Iš Deep OBD dar nieko. Atidarykite jį ir prisijunkite prie automobilio.</string>
     <string name="settings_deepobd_lines">Deep OBD eilutės. Palieskite vieną, kad pakeistumėte, ką ji rodo.</string>
@@ -273,11 +273,11 @@
     <string name="dead_strip_save">Išsaugoti</string>
     <string name="settings_unit_tools">Magnetolos įrankiai</string>
     <string name="settings_unit_tools_detail">Įkrovos logotipas, Google Maps plytelėje, sistemos programa</string>
-    <string name="home_hand_back_title">Dashwheel yra pradinis ekranas</string>
+    <string name="home_hand_back_title">JMCAR yra pradinis ekranas</string>
     <string name="home_hand_back_detail">Išjungus ekranas grąžinamas magnetolos paleidikliui. Nustatymai lieka.</string>
-    <string name="home_hand_back_off_detail">Pradinis ekranas yra magnetolos paleidiklis. Įjunkite, kad grąžintumėte Dashwheel.</string>
+    <string name="home_hand_back_off_detail">Pradinis ekranas yra magnetolos paleidiklis. Įjunkite, kad grąžintumėte JMCAR.</string>
     <string name="home_hand_back_confirm_title">Grąžinti pradinį ekraną magnetolai?</string>
-    <string name="home_hand_back_confirm">Magnetolos paleidiklis grįš dabar ir kiekvieno paleidimo metu. Dashwheel išsaugo nustatymus: atidarykite jį iš programų sąrašo ir vėl įjunkite.</string>
+    <string name="home_hand_back_confirm">Magnetolos paleidiklis grįš dabar ir kiekvieno paleidimo metu. JMCAR išsaugo nustatymus: atidarykite jį iš programų sąrašo ir vėl įjunkite.</string>
     <string name="home_hand_back_confirm_ok">Grąžinti</string>
     <string name="settings_root_how">Kaip</string>
     <string name="settings_obd_linked">Prijungta: %1$s</string>
@@ -318,10 +318,10 @@
         <item quantity="other">Įgarsinama %1$d iš %2$d</item>
     </plurals>
     <plurals name="settings_sum_popups">
-        <item quantity="one">Dashwheel išvaizda: %d</item>
-        <item quantity="few">Dashwheel išvaizda: %d</item>
-        <item quantity="many">Dashwheel išvaizda: %d</item>
-        <item quantity="other">Dashwheel išvaizda: %d</item>
+        <item quantity="one">JMCAR išvaizda: %d</item>
+        <item quantity="few">JMCAR išvaizda: %d</item>
+        <item quantity="many">JMCAR išvaizda: %d</item>
+        <item quantity="other">JMCAR išvaizda: %d</item>
     </plurals>
     <string name="settings_beta_updates">Beta atnaujinimai</string>
     <string name="settings_beta_updates_detail">Naujos versijos iškart, kai sukuriamos, dar prieš pasiekiant visus</string>
@@ -335,8 +335,8 @@
     <string name="map_servers_reset">Nemokami serveriai</string>
     <string name="report_title">Pranešti, kaip veikia</string>
     <string name="report_row_detail">Jūsų magnetola ir kas joje veikia, kaip GitHub issue</string>
-    <string name="report_compat_intro">Pažymėkite, kas veikia šioje magnetoloje. Ataskaitoje yra magnetolos modelis, programinė įranga ir Dashwheel versija, nieko asmeniško.</string>
-    <string name="report_crash_title">Dashwheel praėjusį kartą sustojo</string>
+    <string name="report_compat_intro">Pažymėkite, kas veikia šioje magnetoloje. Ataskaitoje yra magnetolos modelis, programinė įranga ir JMCAR versija, nieko asmeniško.</string>
+    <string name="report_crash_title">JMCAR praėjusį kartą sustojo</string>
     <string name="report_crash_intro">Nusiųskite klaidą, kad ją būtų galima ištaisyti. Ataskaitoje yra klaida ir magnetolos modelis bei programinė įranga, nieko asmeniško.</string>
     <string name="report_scan">Nuskenuokite telefonu ir nusiųskite</string>
     <string name="report_open">Atidaryti čia</string>
@@ -344,7 +344,7 @@
     <string name="report_later">Ne dabar</string>
     <string name="report_works">Veikia</string>
     <string name="report_fails">Neveikia</string>
-    <string name="report_item_home">Home mygtukas atidaro Dashwheel</string>
+    <string name="report_item_home">Home mygtukas atidaro JMCAR</string>
     <string name="report_item_wheel">Vairo mygtukai</string>
     <string name="report_item_tiles">Programos plytelėse</string>
     <string name="report_item_maps">Google Maps plytelėje</string>
@@ -359,8 +359,8 @@
     <string name="settings_obd_auto_on">Užvedus automobilį ir vėl, jei ryšys nutrūksta</string>
     <string name="settings_obd_auto_off">Išjungta: adapteris lieka susietas ir jungiasi, kai juostoje paliečiate OBD</string>
     <string name="settings_log_save">Išsaugoti magnetolos žurnalą čia</string>
-    <string name="settings_log_save_detail">Aplanke Download, Dashwheel, kad nukopijuotumėte į USB atmintuką</string>
-    <string name="settings_log_saved">Išsaugota Download, Dashwheel: %1$s</string>
+    <string name="settings_log_save_detail">Aplanke Download, JMCAR, kad nukopijuotumėte į USB atmintuką</string>
+    <string name="settings_log_saved">Išsaugota Download, JMCAR: %1$s</string>
     <string name="settings_log_save_failed">Nepavyko išsaugoti žurnalo magnetoloje</string>
     <string name="settings_waze_wake">Paleisti Waze iš naujo pabudus</string>
     <string name="settings_waze_wake_detail">Kai grįžta vietovė ir mobilieji duomenys, kad neliktų neprisijungęs</string>
@@ -383,7 +383,7 @@
     <string name="settings_sum_expert">Laboratorija, API raktai, serveriai</string>
     <string name="alerts_say">Sakyti</string>
     <string name="alerts_show">Rodyti</string>
-    <string name="alerts_intro">Sakyti perskaito garsiai, Rodyti parodo Dashwheel langą ekrane. Palieskite langą, kad pasirinktumėte jo išvaizdą.</string>
+    <string name="alerts_intro">Sakyti perskaito garsiai, Rodyti parodo JMCAR langą ekrane. Palieskite langą, kad pasirinktumėte jo išvaizdą.</string>
     <string name="alerts_group_car">Iš automobilio</string>
     <string name="alerts_group_road">Kelyje</string>
     <string name="alerts_group_start">Pradedant kelionę</string>

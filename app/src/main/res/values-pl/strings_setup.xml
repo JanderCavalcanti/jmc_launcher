@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- First-run setup (SetupScreen.kt): the car, what the launcher may use, the look -->
-    <string name="setup_title">Skonfiguruj Dashwheel</string>
+    <string name="setup_title">Skonfiguruj JMCAR</string>
     <string name="setup_step">Krok %1$d z 3</string>
     <string name="setup_skip">Pomiń</string>
     <string name="setup_back">Wstecz</string>
@@ -18,7 +18,7 @@
     <string name="setup_driver_side">Miejsce kierowcy</string>
     <string name="setup_driver_left">Po lewej</string>
     <string name="setup_driver_right">Po prawej</string>
-    <string name="setup_access_title">Z czego Dashwheel może korzystać</string>
+    <string name="setup_access_title">Z czego JMCAR może korzystać</string>
     <string name="setup_access_body">Każdy jest opcjonalny. Zezwól na ekranie, który się otworzy, i wróć.</string>
     <string name="setup_access_notifications">Powiadomienia</string>
     <string name="setup_access_notifications_detail">Muzyka i następny zakręt z aplikacji na tym urządzeniu</string>

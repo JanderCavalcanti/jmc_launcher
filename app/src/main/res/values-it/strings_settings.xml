@@ -37,7 +37,7 @@
     <string name="volume_way_android_hint">Il volume multimediale di Android, come su un telefono</string>
     <string name="volume_way_keys_hint">Preme i tasti volume come i comandi al volante e la manopola. Richiede root o l\'ADB dell\'autoradio</string>
     <string name="volume_way_keys_locked">I tasti del volume richiedono root o l\'ADB dell\'autoradio</string>
-    <string name="settings_rom_call_detail">Le chiamate Bluetooth appaiono solo nella scheda di Dashwheel, con rispondi e riaggancia</string>
+    <string name="settings_rom_call_detail">Le chiamate Bluetooth appaiono solo nella scheda di JMCAR, con rispondi e riaggancia</string>
     <string name="settings_rom_doors_detail">Indica quale porta è aperta sopra qualsiasi app, al posto dell\'avviso dell\'autoradio</string>
     <string name="settings_rom_needs_root">Richiede root o l\'ADB dell\'autoradio</string>
     <string name="settings_more_github">Di più con l\'edizione GitHub</string>
@@ -69,9 +69,9 @@
     <string name="alert_with_voice">%1$s, ad alta voce</string>
     <string name="alert_say_call">Chiamata da %1$s</string>
     <string name="alert_say_doors">Porta aperta: %1$s</string>
-    <string name="settings_rom_radar_detail">Mostra i sensori di parcheggio nello stile di Dashwheel, al posto di quelli dell\'autoradio</string>
-    <string name="settings_rom_radar_needs_access">Attiva Dashwheel in Accessibilità per mostrarlo sopra la retrocamera</string>
-    <string name="settings_rom_ac_detail">Mostra i cambi del clima nello stile di Dashwheel, al posto della finestra dell\'autoradio</string>
+    <string name="settings_rom_radar_detail">Mostra i sensori di parcheggio nello stile di JMCAR, al posto di quelli dell\'autoradio</string>
+    <string name="settings_rom_radar_needs_access">Attiva JMCAR in Accessibilità per mostrarlo sopra la retrocamera</string>
+    <string name="settings_rom_ac_detail">Mostra i cambi del clima nello stile di JMCAR, al posto della finestra dell\'autoradio</string>
     <string name="alert_kind_radar">Radar di parcheggio</string>
     <string name="alert_kind_ac">Clima</string>
     <string name="alert_kind_radar_title">Avviso radar</string>
@@ -85,7 +85,7 @@
     <string name="keys_voice">Tasto vocale</string>
     <string name="keys_custom">Tasto personalizzato</string>
     <string name="keys_unit_choice">La scelta dell\'autoradio</string>
-    <string name="settings_rom_tyres_detail">Avvisi pneumatici nello stile di Dashwheel. Per avere solo questi, disattiva la finestra dell\'app TPMS nelle sue impostazioni</string>
+    <string name="settings_rom_tyres_detail">Avvisi pneumatici nello stile di JMCAR. Per avere solo questi, disattiva la finestra dell\'app TPMS nelle sue impostazioni</string>
     <string name="alert_kind_tyres">Pneumatici</string>
     <string name="alert_kind_tyres_title">Avviso pneumatici</string>
     <string name="alert_speak_tyres_detail">Dice quale pneumatico e cosa non va</string>
@@ -105,9 +105,9 @@
     <string name="settings_section_display">Display</string>
     <string name="settings_appearance_title">Giorno e notte</string>
     <string name="settings_appearance_detail">Auto secondo l\'auto, l\'alba e il tramonto, o a orari fissi</string>
-    <string name="alert_style_section">Pop-up nello stile di Dashwheel</string>
+    <string name="alert_style_section">Pop-up nello stile di JMCAR</string>
     <string name="alert_more_with_permission">Altri avvisi dell\'auto richiedono root, o un comando una tantum da un PC: vedi il wiki, Car settings permission.</string>
-    <string name="alert_more_with_github">Gli avvisi di porte, cintura e radar richiedono l\'edizione GitHub di Dashwheel, che può usare il root dell\'autoradio.</string>
+    <string name="alert_more_with_github">Gli avvisi di porte, cintura e radar richiedono l\'edizione GitHub di JMCAR, che può usare il root dell\'autoradio.</string>
     <string name="alert_copy_command">Copia il comando</string>
     <string name="alert_command_copied">Comando copiato</string>
     <string name="settings_section_about">Informazioni</string>
@@ -118,15 +118,15 @@
     <string name="settings_system_perms">Google Maps dentro un riquadro</string>
     <string name="settings_system_perms_on">Configurato. Google Maps può girare dentro un riquadro.</string>
     <string name="settings_system_perms_off">Non configurato. Tocca per farlo: installa il modulo PMPatch3, serve Magisk e un riavvio.</string>
-    <string name="settings_pmpatch_body">Google Maps gira dentro un riquadro appena Android concede a Dashwheel i permessi di sistema.</string>
+    <string name="settings_pmpatch_body">Google Maps gira dentro un riquadro appena Android concede a JMCAR i permessi di sistema.</string>
     <string name="settings_pmpatch_cost">Il prezzo: PMPatch3 disattiva il controllo delle firme per ogni app di questa autoradio.</string>
-    <string name="settings_pmpatch_steps">Tre passi: installare, riavviare, reinstallare Dashwheel.</string>
+    <string name="settings_pmpatch_steps">Tre passi: installare, riavviare, reinstallare JMCAR.</string>
     <string name="settings_pmpatch_step">Passo %1$d di %2$d</string>
     <string name="settings_pmpatch_checking">Controllo di Magisk…</string>
     <string name="settings_pmpatch_no_magisk">Magisk non è installato su questa unità.</string>
     <string name="settings_pmpatch_old_magisk">Serve Magisk 24 o successivo.</string>
     <string name="settings_pmpatch_restart">PMPatch3 è installato. Riavvia l\'unità per finire.</string>
-    <string name="settings_pmpatch_running">PMPatch3 è attivo. Dashwheel si reinstalla per ottenere i permessi.</string>
+    <string name="settings_pmpatch_running">PMPatch3 è attivo. JMCAR si reinstalla per ottenere i permessi.</string>
     <string name="settings_pmpatch_install">Installa PMPatch3</string>
     <string name="settings_pmpatch_reinstall">Reinstalla</string>
     <string name="settings_pmpatch_bad_download">Il download non corrisponde a PMPatch3 v1.2.0.</string>
@@ -155,9 +155,9 @@
     <string name="settings_backup_restore_detail">Da un file salvato su questa unità o su un\'altra</string>
     <string name="settings_backup_saved">Configurazione salvata</string>
     <string name="settings_backup_saved_to">Configurazione salvata in %1$s</string>
-    <string name="settings_backup_failed">Questo non è un file di configurazione Dashwheel. Scegli un file salvato con Salva la configurazione.</string>
+    <string name="settings_backup_failed">Questo non è un file di configurazione JMCAR. Scegli un file salvato con Salva la configurazione.</string>
     <string name="settings_backup_confirm_title">Ripristinare questa configurazione?</string>
-    <string name="settings_backup_confirm_body">Cruscotti e impostazioni vengono sostituiti. Dashwheel si riavvia.</string>
+    <string name="settings_backup_confirm_body">Cruscotti e impostazioni vengono sostituiti. JMCAR si riavvia.</string>
     <string name="settings_backup_confirm">Ripristina</string>
     <string name="settings_resume_music">Riprendi la musica all\'avvio</string>
     <string name="settings_resume_music_detail">L\'app che suonava allo spegnimento riprende. Lascia spento se l\'unità lo fa già.</string>
@@ -199,10 +199,10 @@
     <string name="settings_log_no_phone">Nessun telefono ha risposto. Collega il telefono e aggiorna la sua app companion</string>
     <!-- About tab -->
     <string name="about_author_section">Creato da</string>
-    <string name="about_description">Dashwheel è un launcher per autoradio Android: mappa, musica e dati dell\'auto su un unico schermo tranquillo, con cruscotti che organizzi tu. Gratuito e open source.</string>
+    <string name="about_description">JMCAR è un launcher per autoradio Android: mappa, musica e dati dell\'auto su un unico schermo tranquillo, con cruscotti che organizzi tu. Gratuito e open source.</string>
     <string name="about_author_role">Creatore e sviluppatore</string>
-    <string name="about_support_section">Sostieni Dashwheel</string>
-    <string name="about_support_text">Dashwheel è gratuito. Se ti piace, un caffè aiuta a mantenerlo.</string>
+    <string name="about_support_section">Sostieni JMCAR</string>
+    <string name="about_support_text">JMCAR è gratuito. Se ti piace, un caffè aiuta a mantenerlo.</string>
     <string name="about_kofi">Offrimi un caffè su Ko-fi</string>
     <string name="about_scan">Inquadra con il telefono</string>
     <string name="about_tip_thanks">Grazie, aiuta davvero.</string>
@@ -220,7 +220,7 @@
     <string name="alert_style_icon_detail">Solo un\'icona animata nell\'angolo. Toccala per terminare</string>
     <string name="alert_kind_volume">Volume</string>
     <string name="alert_kind_volume_title">Barra del volume</string>
-    <string name="settings_rom_volume_detail">Mostra il volume nello stile di Dashwheel, al posto della barra dell\'autoradio</string>
+    <string name="settings_rom_volume_detail">Mostra il volume nello stile di JMCAR, al posto della barra dell\'autoradio</string>
     <string name="settings_rom_volume_next_start">Subentra al prossimo avvio dell\'autoradio</string>
     <string name="settings_rom_volume_needs_magisk">Richiede Magisk</string>
     <string name="alert_volume_muted">Muto</string>
@@ -233,12 +233,12 @@
     <string name="settings_side_rail_detail">I pulsanti della barra stanno dal lato del guidatore, lungo lo schermo</string>
     <string name="settings_tabs_nav">Schede al posto dello scorrimento</string>
     <string name="settings_tabs_nav_detail">I pannelli si toccano nella barra laterale; serve la barra. Si attiva da solo quando un\'app di mappe sta sotto i pannelli.</string>
-    <string name="about_free_open_source">Dashwheel è gratuito e open source.</string>
+    <string name="about_free_open_source">JMCAR è gratuito e open source.</string>
     <string name="about_updates_play">Gli aggiornamenti arrivano da Google Play</string>
     <string name="settings_obd_source_label">Dati OBD da</string>
     <string name="settings_obd_source_adapter">Adattatore</string>
     <string name="settings_obd_source_deepobd">Deep OBD</string>
-    <string name="settings_obd_source_adapter_hint">Dashwheel parla da solo con l\'adattatore OBD.</string>
+    <string name="settings_obd_source_adapter_hint">JMCAR parla da solo con l\'adattatore OBD.</string>
     <string name="settings_obd_source_deepobd_hint">Deep OBD legge l\'auto e condivide i dati. Attiva l\'invio dei dati in Deep OBD. I codici guasto richiedono l\'adattatore.</string>
     <string name="settings_deepobd_waiting">Ancora niente da Deep OBD. Aprilo e collegalo all\'auto.</string>
     <string name="settings_deepobd_lines">Righe di Deep OBD. Tocca una per cambiare cosa mostra.</string>
@@ -271,11 +271,11 @@
     <string name="dead_strip_save">Salva</string>
     <string name="settings_unit_tools">Strumenti dell\'unità</string>
     <string name="settings_unit_tools_detail">Logo di avvio, Google Maps in un riquadro, app di sistema</string>
-    <string name="home_hand_back_title">Dashwheel è la schermata Home</string>
+    <string name="home_hand_back_title">JMCAR è la schermata Home</string>
     <string name="home_hand_back_detail">Spento, lo schermo torna al launcher dell\'autoradio. Le impostazioni restano.</string>
-    <string name="home_hand_back_off_detail">Il launcher dell\'autoradio è la Home. Accendi per riavere Dashwheel.</string>
+    <string name="home_hand_back_off_detail">Il launcher dell\'autoradio è la Home. Accendi per riavere JMCAR.</string>
     <string name="home_hand_back_confirm_title">Restituire la Home all\'autoradio?</string>
-    <string name="home_hand_back_confirm">Il launcher dell\'autoradio torna subito e a ogni avvio. Dashwheel tiene le impostazioni: aprilo dall\'elenco app e riaccendi questa opzione.</string>
+    <string name="home_hand_back_confirm">Il launcher dell\'autoradio torna subito e a ogni avvio. JMCAR tiene le impostazioni: aprilo dall\'elenco app e riaccendi questa opzione.</string>
     <string name="home_hand_back_confirm_ok">Restituisci</string>
     <string name="settings_root_how">Come</string>
     <string name="settings_obd_linked">Collegato: %1$s</string>
@@ -313,9 +313,9 @@
         <item quantity="other">%1$d su %2$d detti a voce</item>
     </plurals>
     <plurals name="settings_sum_popups">
-        <item quantity="one">%d nello stile di Dashwheel</item>
-        <item quantity="many">%d nello stile di Dashwheel</item>
-        <item quantity="other">%d nello stile di Dashwheel</item>
+        <item quantity="one">%d nello stile di JMCAR</item>
+        <item quantity="many">%d nello stile di JMCAR</item>
+        <item quantity="other">%d nello stile di JMCAR</item>
     </plurals>
     <string name="settings_beta_updates">Aggiornamenti beta</string>
     <string name="settings_beta_updates_detail">Le nuove versioni appena pronte, prima di tutti</string>
@@ -329,8 +329,8 @@
     <string name="map_servers_reset">Server gratuiti</string>
     <string name="report_title">Segnala come funziona</string>
     <string name="report_row_detail">La tua autoradio e cosa funziona, come issue su GitHub</string>
-    <string name="report_compat_intro">Segna cosa funziona su questa autoradio. Il rapporto contiene modello, firmware e versione di Dashwheel, niente di personale.</string>
-    <string name="report_crash_title">Dashwheel si è chiuso l\'ultima volta</string>
+    <string name="report_compat_intro">Segna cosa funziona su questa autoradio. Il rapporto contiene modello, firmware e versione di JMCAR, niente di personale.</string>
+    <string name="report_crash_title">JMCAR si è chiuso l\'ultima volta</string>
     <string name="report_crash_intro">Invia l\'errore perché venga corretto. Il rapporto contiene l\'errore, il modello e il firmware, niente di personale.</string>
     <string name="report_scan">Scansiona col telefono per inviarlo</string>
     <string name="report_open">Apri qui</string>
@@ -338,7 +338,7 @@
     <string name="report_later">Non ora</string>
     <string name="report_works">Funziona</string>
     <string name="report_fails">Non funziona</string>
-    <string name="report_item_home">Il tasto Home apre Dashwheel</string>
+    <string name="report_item_home">Il tasto Home apre JMCAR</string>
     <string name="report_item_wheel">Tasti al volante</string>
     <string name="report_item_tiles">App nei riquadri</string>
     <string name="report_item_maps">Google Maps in un riquadro</string>
@@ -353,8 +353,8 @@
     <string name="settings_obd_auto_on">All\'avvio dell\'auto, e di nuovo se il collegamento cade</string>
     <string name="settings_obd_auto_off">Disattivato: l\'adattatore resta associato e si connette quando tocchi OBD nella barra</string>
     <string name="settings_log_save">Salva il registro sull\'unità</string>
-    <string name="settings_log_save_detail">Nella cartella Download, Dashwheel, da copiare su una chiavetta USB</string>
-    <string name="settings_log_saved">Salvato in Download, Dashwheel: %1$s</string>
+    <string name="settings_log_save_detail">Nella cartella Download, JMCAR, da copiare su una chiavetta USB</string>
+    <string name="settings_log_saved">Salvato in Download, JMCAR: %1$s</string>
     <string name="settings_log_save_failed">Impossibile salvare il registro sull\'unità</string>
     <string name="settings_waze_wake">Riavvia Waze al risveglio</string>
     <string name="settings_waze_wake_detail">Quando tornano posizione e dati mobili, così non resta offline</string>
@@ -377,7 +377,7 @@
     <string name="settings_sum_expert">Laboratorio, chiavi API, server</string>
     <string name="alerts_say">Dire</string>
     <string name="alerts_show">Mostra</string>
-    <string name="alerts_intro">Dire lo annuncia a voce, Mostra mette sullo schermo la finestra di Dashwheel. Tocca una finestra per il suo stile.</string>
+    <string name="alerts_intro">Dire lo annuncia a voce, Mostra mette sullo schermo la finestra di JMCAR. Tocca una finestra per il suo stile.</string>
     <string name="alerts_group_car">Dall\'auto</string>
     <string name="alerts_group_road">Sulla strada</string>
     <string name="alerts_group_start">Alla partenza</string>

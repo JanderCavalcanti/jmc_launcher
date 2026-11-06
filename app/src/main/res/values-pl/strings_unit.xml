@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- The head unit firmware family and what it lets Dashwheel do (UnitPlatform, Settings, System, Head unit). -->
+<!-- The head unit firmware family and what it lets JMCAR do (UnitPlatform, Settings, System, Head unit). -->
 <resources>
     <string name="unit_fyt_keys_note">Wymaga powłoki; aplikacje radia tracą w tym czasie przyciski kierownicy</string>
-    <string name="unit_mtc_whitelist_title">Nie usypiaj Dashwheel</string>
-    <string name="unit_mtc_whitelist_detail">Dodaj Dashwheel do białej listy uśpienia radia (jego aplikacja BootControl lub ustawienia zmodyfikowanego ROM-u). Inaczej firmware zatrzyma go po wyłączeniu zapłonu.</string>
+    <string name="unit_mtc_whitelist_title">Nie usypiaj JMCAR</string>
+    <string name="unit_mtc_whitelist_detail">Dodaj JMCAR do białej listy uśpienia radia (jego aplikacja BootControl lub ustawienia zmodyfikowanego ROM-u). Inaczej firmware zatrzyma go po wyłączeniu zapłonu.</string>
     <string name="unit_reglink_duraspeed_title">Wyłącz DuraSpeed</string>
-    <string name="unit_reglink_duraspeed_detail">Oszczędzacz MediaTek zatrzymuje Dashwheel po wyłączeniu zapłonu. Dashwheel sam go wyłącza przy każdym uruchomieniu, gdy tylko może zapisywać ustawienia bezpieczne.</string>
+    <string name="unit_reglink_duraspeed_detail">Oszczędzacz MediaTek zatrzymuje JMCAR po wyłączeniu zapłonu. JMCAR sam go wyłącza przy każdym uruchomieniu, gdy tylko może zapisywać ustawienia bezpieczne.</string>
     <string name="unit_reglink_quickboot_title">Wyłącz Quick Boot</string>
     <string name="unit_reglink_quickboot_detail">W ustawieniach fabrycznych radia. Uruchamia się wtedy normalnie zamiast zabijać aplikacje przed szybkim uśpieniem.</string>
-    <string name="unit_reglink_whitelist_title">Dodaj Dashwheel do białej listy</string>
-    <string name="unit_reglink_whitelist_detail">Firmware prowadzi trzy listy aplikacji, które mogą się uruchamiać, działać w tle i przetrwać uśpienie. Dashwheel dopisuje się do nich z rootem.</string>
+    <string name="unit_reglink_whitelist_title">Dodaj JMCAR do białej listy</string>
+    <string name="unit_reglink_whitelist_detail">Firmware prowadzi trzy listy aplikacji, które mogą się uruchamiać, działać w tle i przetrwać uśpienie. JMCAR dopisuje się do nich z rootem.</string>
 </resources>

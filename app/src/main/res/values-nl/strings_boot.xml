@@ -26,7 +26,7 @@
     <string name="boot_restore_confirm_body">De originele opstartanimatie en het originele vaste logo worden teruggezet.</string>
     <string name="boot_play_failed">Afspelen mislukt: %1$s</string>
     <string name="boot_current">Huidig opstartlogo: %1$s</string>
-    <string name="boot_hint">Wijzigt wat de radio bij het starten toont, met het logo van dit merk: de Android-animatie en, als het aan staat, het vaste logo. Gebruikt de interne root-ADB van de radio en komt nooit aan /system. Originelen worden bewaard (ook in Dashwheel/boot_backup in het interne geheugen) en Terugzetten zet ze terug. Logo\'s uit de vrije car-logos-dataset.</string>
+    <string name="boot_hint">Wijzigt wat de radio bij het starten toont, met het logo van dit merk: de Android-animatie en, als het aan staat, het vaste logo. Gebruikt de interne root-ADB van de radio en komt nooit aan /system. Originelen worden bewaard (ook in JMCAR/boot_backup in het interne geheugen) en Terugzetten zet ze terug. Logo\'s uit de vrije car-logos-dataset.</string>
     <string name="boot_usb">Opslaan op USB</string>
     <string name="boot_saving_usb">Schrijven naar de USB-stick…</string>
     <string name="boot_saved_usb">Opgeslagen op %1$s. Haal de stick eruit en steek hem terug: de radio importeert de animatie. Voor het vaste logo: Instellingen → Fabrieksinstellingen (8888) → Logo set → kies %2$s → Update logo.</string>
@@ -39,5 +39,5 @@
     <string name="boot_still_failed">Vast logo niet gewijzigd: %1$s</string>
     <string name="boot_still_unsupported">deze radio heeft geen gereedschap voor het vaste logo</string>
     <string name="boot_not_qf">Installeren werkt alleen op de bedoelde QF001 / K706-firmware. Gebruik Opslaan op USB.</string>
-    <string name="boot_no_adb">De interne ADB van de radio reageert niet (poort %1$d) en Dashwheel heeft geen root. Zet USB-foutopsporing aan (Instellingen → Over → tik 7 keer op Buildnummer, dan Ontwikkelaarsopties → USB-foutopsporing) of geef root, en probeer opnieuw.</string>
+    <string name="boot_no_adb">De interne ADB van de radio reageert niet (poort %1$d) en JMCAR heeft geen root. Zet USB-foutopsporing aan (Instellingen → Over → tik 7 keer op Buildnummer, dan Ontwikkelaarsopties → USB-foutopsporing) of geef root, en probeer opnieuw.</string>
 </resources>

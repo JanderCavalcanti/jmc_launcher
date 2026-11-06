@@ -38,7 +38,7 @@
     <string name="share_use">Utiliser un tableau de bord partagé</string>
     <string name="share_paste_hint">Code DW1:</string>
     <string name="share_open_file">Ouvrir un fichier</string>
-    <string name="share_use_hint">Tapez ou collez un code, ouvrez un fichier, ou scannez un QR code avec l\'appli Dashwheel Companion.</string>
+    <string name="share_use_hint">Tapez ou collez un code, ouvrez un fichier, ou scannez un QR code avec l\'appli JMCAR Companion.</string>
     <string name="share_missing_apps">Applis absentes de cet autoradio : %1$d. Leurs tuiles restent jusqu\'à ce que vous les changiez.</string>
     <string name="share_take_look">Prendre aussi son apparence</string>
     <string name="share_replace">Le mettre ici</string>

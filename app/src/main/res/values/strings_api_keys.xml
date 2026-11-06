@@ -2,7 +2,7 @@
 <resources>
     <!-- Your API keys (ApiKeys.kt), Settings → System; and the Overpass server on the map servers page -->
     <string name="api_keys_title">Your API keys</string>
-    <string name="api_keys_search_detail">Keys for the services Dashwheel asks for you, Gemini first</string>
+    <string name="api_keys_search_detail">Keys for the services JMCAR asks for you, Gemini first</string>
     <string name="api_keys_none">No key set</string>
     <string name="api_keys_explanation">Some features ask a service that needs a key of your own. Paste it here: it stays on this unit and goes only to that service.</string>
     <string name="api_keys_paste">Paste the key</string>

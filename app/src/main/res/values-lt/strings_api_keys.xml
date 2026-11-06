@@ -2,7 +2,7 @@
 <resources>
     <!-- Your API keys (ApiKeys.kt), Settings → System; and the Overpass server on the map servers page -->
     <string name="api_keys_title">Jūsų API raktai</string>
-    <string name="api_keys_search_detail">Raktai paslaugoms, į kurias Dashwheel kreipiasi už jus, pirmiausia Gemini</string>
+    <string name="api_keys_search_detail">Raktai paslaugoms, į kurias JMCAR kreipiasi už jus, pirmiausia Gemini</string>
     <string name="api_keys_none">Raktas nenustatytas</string>
     <string name="api_keys_explanation">Kai kurios funkcijos kreipiasi į paslaugą, kuriai reikia jūsų rakto. Įklijuokite jį čia: jis lieka šioje magnetoloje ir siunčiamas tik tai paslaugai.</string>
     <string name="api_keys_paste">Įklijuoti raktą</string>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- The head unit firmware family and what it lets Dashwheel do (UnitPlatform, Settings, System, Head unit). -->
+<!-- The head unit firmware family and what it lets JMCAR do (UnitPlatform, Settings, System, Head unit). -->
 <resources>
     <string name="unit_fyt_keys_note">Needs a shell; the firmware\'s own apps lose the wheel keys meanwhile</string>
-    <string name="unit_mtc_whitelist_title">Keep Dashwheel awake</string>
-    <string name="unit_mtc_whitelist_detail">Add Dashwheel to the sleep whitelist of the unit (its BootControl app, or the ROM mod settings). Otherwise the firmware stops it when the ignition goes off.</string>
+    <string name="unit_mtc_whitelist_title">Keep JMCAR awake</string>
+    <string name="unit_mtc_whitelist_detail">Add JMCAR to the sleep whitelist of the unit (its BootControl app, or the ROM mod settings). Otherwise the firmware stops it when the ignition goes off.</string>
     <string name="unit_reglink_duraspeed_title">Turn DuraSpeed off</string>
-    <string name="unit_reglink_duraspeed_detail">The MediaTek background saver stops Dashwheel at ignition off. Dashwheel turns it off itself, at each boot, once it may write secure settings.</string>
+    <string name="unit_reglink_duraspeed_detail">The MediaTek background saver stops JMCAR at ignition off. JMCAR turns it off itself, at each boot, once it may write secure settings.</string>
     <string name="unit_reglink_quickboot_title">Turn Quick Boot off</string>
     <string name="unit_reglink_quickboot_detail">In the factory settings of the unit. The unit then starts normally instead of killing apps before its fast sleep.</string>
-    <string name="unit_reglink_whitelist_title">Whitelist Dashwheel on the unit</string>
-    <string name="unit_reglink_whitelist_detail">The firmware keeps three lists of apps allowed to start, run behind and survive the sleep. Dashwheel adds itself to them with root.</string>
+    <string name="unit_reglink_whitelist_title">Whitelist JMCAR on the unit</string>
+    <string name="unit_reglink_whitelist_detail">The firmware keeps three lists of apps allowed to start, run behind and survive the sleep. JMCAR adds itself to them with root.</string>
 </resources>

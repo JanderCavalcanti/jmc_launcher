@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Dashwheel Companion</string>
+    <string name="app_name">JMCAR Companion</string>
     <string name="service_channel">Verbinding met de auto</string>
     <string name="status_off">Delen staat uit</string>
     <string name="status_waiting">Wachten op de auto via je hotspot</string>
@@ -23,7 +23,7 @@
     <string name="done">Klaar</string>
     <string name="cars_title">Gekoppelde auto\'s</string>
     <string name="pair_car">Auto koppelen</string>
-    <string name="pair_hint">Open in Dashwheel Instellingen → Telefoon → Telefoon koppelen en scan de getoonde code.</string>
+    <string name="pair_hint">Open in JMCAR Instellingen → Telefoon → Telefoon koppelen en scan de getoonde code.</string>
     <string name="remove">Verwijderen</string>
     <string name="confirm_title">%1$s toestaan?</string>
     <string name="confirm_body">Deze auto toont je meldingen en berichten en kan namens jou antwoorden. Hij verbindt alleen via je hotspot.</string>
@@ -33,7 +33,7 @@
     <string name="remove_body">De auto ontvangt niets meer van deze telefoon. Opnieuw koppelen vraagt een nieuwe code.</string>
     <string name="paired_since">Gekoppeld op %1$s</string>
     <string name="scanned_download_code">Die code downloadt de app. Scan nu de andere op het scherm van de autoradio, met als titel Koppelcode.</string>
-    <string name="invalid_code_read">Dit is geen Dashwheel-koppelcode (gelezen: %1$s).</string>
+    <string name="invalid_code_read">Dit is geen JMCAR-koppelcode (gelezen: %1$s).</string>
     <string name="step_calls">Oproepen</string>
     <string name="step_calls_detail">Toont op het scherm van de auto wie er belt, om daar op te nemen of op te hangen, en je favorieten om vanuit de auto te bellen. Het geluid blijft op de bluetooth van de auto.</string>
     <string name="car_spot_title">Waar staat mijn auto</string>
@@ -69,13 +69,13 @@
     <string name="keyboard_typed">Op het autoscherm</string>
     <string name="keyboard_copied">Geen veld gekozen op het autoscherm: de tekst staat op het klembord daar.</string>
     <string name="keyboard_failed">Het autoscherm nam de tekst niet aan.</string>
-    <string name="keyboard_no_answer">Geen antwoord: werk Dashwheel in de auto bij.</string>
+    <string name="keyboard_no_answer">Geen antwoord: werk JMCAR in de auto bij.</string>
     <string name="keyboard_not_connected">De auto is niet verbonden.</string>
     <string name="keyboard_typing_off">Typen in velden staat uit in de auto.</string>
     <string name="keyboard_turn_on">Inschakelen</string>
     <string name="keyboard_turning_on">Wordt ingeschakeld in de auto…</string>
     <string name="keyboard_typing_on">Typen staat aan: kies een veld op het autoscherm en typ hier.</string>
-    <string name="keyboard_turn_on_failed">De auto kon het niet inschakelen: open in de auto Instellingen, Toegankelijkheid, en zet Dashwheel aan.</string>
+    <string name="keyboard_turn_on_failed">De auto kon het niet inschakelen: open in de auto Instellingen, Toegankelijkheid, en zet JMCAR aan.</string>
     <string name="send_to_car">Naar auto sturen</string>
     <string name="sent_to_car">Naar het autoscherm gestuurd</string>
     <string name="place_sent">Route naar de auto gestuurd: %1$s</string>
@@ -264,12 +264,12 @@
     <string name="rescue_split">Gesplitst scherm verlaten</string>
     <string name="rescue_split_body">Het autoscherm wordt niet meer gedeeld met een andere app.</string>
     <string name="rescue_home_back">Startscherm terug naar toestel</string>
-    <string name="rescue_home_back_body">De eigen launcher van het toestel wordt weer het startscherm. Dashwheel blijft in de app-lijst.</string>
-    <string name="rescue_home_take">Dashwheel weer als start</string>
-    <string name="rescue_home_take_body">Dashwheel wordt weer het startscherm van de auto.</string>
+    <string name="rescue_home_back_body">De eigen launcher van het toestel wordt weer het startscherm. JMCAR blijft in de app-lijst.</string>
+    <string name="rescue_home_take">JMCAR weer als start</string>
+    <string name="rescue_home_take_body">JMCAR wordt weer het startscherm van de auto.</string>
     <string name="rescue_send">Uitvoeren</string>
     <string name="rescue_sending">Naar de auto sturen</string>
     <string name="rescue_done">Gedaan in de auto</string>
     <string name="rescue_failed">De auto kon het niet</string>
-    <string name="rescue_no_answer">Geen antwoord: werk Dashwheel in de auto bij.</string>
+    <string name="rescue_no_answer">Geen antwoord: werk JMCAR in de auto bij.</string>
 </resources>

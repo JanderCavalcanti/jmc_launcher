@@ -5,11 +5,11 @@
     <string name="phone_status_connected">Connecté à %1$s</string>
     <string name="phone_status_connected_detail">Ses notifications et messages s\'affichent dans le widget Notifications.</string>
     <string name="phone_status_searching">Recherche du téléphone sur le Wi-Fi</string>
-    <string name="phone_status_searching_detail">Activez le partage de connexion du téléphone et connectez-y l\'autoradio ; Dashwheel Compagnon fait le reste.</string>
+    <string name="phone_status_searching_detail">Activez le partage de connexion du téléphone et connectez-y l\'autoradio ; JMCAR Compagnon fait le reste.</string>
     <string name="phone_status_unpaired">Aucun téléphone associé</string>
     <string name="phone_status_unpaired_detail">Associez votre téléphone pour voir ses messages ici et y répondre.</string>
     <string name="phone_pair">Associer un téléphone</string>
-    <string name="phone_pair_detail">Affiche le code à scanner avec Dashwheel Compagnon</string>
+    <string name="phone_pair_detail">Affiche le code à scanner avec JMCAR Compagnon</string>
     <string name="phone_gps">Utiliser le GPS du téléphone</string>
     <string name="phone_gps_detail">Quand le téléphone est relié, son GPS remplace celui de l\'unité : plus de satellites, une position en quelques secondes</string>
     <string name="phone_gps_in_use">Utilisé : %1$d satellites du téléphone</string>
@@ -22,7 +22,7 @@
     <string name="phone_forget_title">Oublier %1$s ?</string>
     <string name="phone_forget_body">Ses messages et ses appels ne s\'afficheront plus ici. Il faudra un nouveau code pour l\'associer à nouveau.</string>
     <string name="phone_pair_title">Associer un téléphone</string>
-    <string name="phone_pair_step1">1. Installez Dashwheel Compagnon sur le téléphone : scannez ce code avec son appareil photo.</string>
+    <string name="phone_pair_step1">1. Installez JMCAR Compagnon sur le téléphone : scannez ce code avec son appareil photo.</string>
     <string name="phone_pair_step2">2. Activez le partage de connexion Wi-Fi du téléphone et connectez-y cet autoradio.</string>
     <string name="phone_pair_step3">3. Dans l\'appli, touchez Associer une voiture et scannez ce code.</string>
     <string name="phone_pair_waiting">En attente du téléphone…</string>
@@ -49,7 +49,7 @@
     <string name="phone_call_answer">Décrocher</string>
     <string name="phone_call_decline">Refuser</string>
     <string name="phone_call_hang_up">Raccrocher</string>
-    <string name="phone_call_no_control">Pour décrocher d\'ici, autorisez les Appels dans Dashwheel Compagnon.</string>
+    <string name="phone_call_no_control">Pour décrocher d\'ici, autorisez les Appels dans JMCAR Compagnon.</string>
     <string name="phone_overlay">Afficher les appels par-dessus les applis</string>
     <string name="phone_overlay_detail">Un appel entrant s\'affiche alors même quand une autre appli occupe tout l\'écran.</string>
     <string name="phone_text_copied">Texte du téléphone copié : appuyez longuement sur un champ pour le coller</string>
@@ -57,6 +57,6 @@
     <string name="phone_agenda_empty">Associez votre téléphone dans Réglages, Téléphone et écrans, pour voir son agenda ici</string>
     <string name="phone_call_back">Rappeler %1$s</string>
     <string name="phone_calling">Appel : %1$s</string>
-    <string name="phone_dial_not_allowed">Pour appeler d\'ici, autorisez les Appels dans Dashwheel Compagnon.</string>
+    <string name="phone_dial_not_allowed">Pour appeler d\'ici, autorisez les Appels dans JMCAR Compagnon.</string>
     <string name="phone_guidance_to">Itinéraire vers %1$s</string>
 </resources>

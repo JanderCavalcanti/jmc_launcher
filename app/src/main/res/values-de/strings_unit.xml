@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- The head unit firmware family and what it lets Dashwheel do (UnitPlatform, Settings, System, Head unit). -->
+<!-- The head unit firmware family and what it lets JMCAR do (UnitPlatform, Settings, System, Head unit). -->
 <resources>
     <string name="unit_fyt_keys_note">Braucht eine Shell; die eigenen Apps des Radios verlieren derweil die Lenkradtasten</string>
-    <string name="unit_mtc_whitelist_title">Dashwheel wach halten</string>
-    <string name="unit_mtc_whitelist_detail">Nehmen Sie Dashwheel in die Schlaf-Whitelist des Radios auf (seine BootControl-App oder die Einstellungen der Mod-ROM). Sonst beendet die Firmware es beim Ausschalten der Zündung.</string>
+    <string name="unit_mtc_whitelist_title">JMCAR wach halten</string>
+    <string name="unit_mtc_whitelist_detail">Nehmen Sie JMCAR in die Schlaf-Whitelist des Radios auf (seine BootControl-App oder die Einstellungen der Mod-ROM). Sonst beendet die Firmware es beim Ausschalten der Zündung.</string>
     <string name="unit_reglink_duraspeed_title">DuraSpeed ausschalten</string>
-    <string name="unit_reglink_duraspeed_detail">Der MediaTek-Hintergrundsparer beendet Dashwheel beim Ausschalten der Zündung. Dashwheel schaltet ihn bei jedem Start selbst aus, sobald es sichere Einstellungen schreiben darf.</string>
+    <string name="unit_reglink_duraspeed_detail">Der MediaTek-Hintergrundsparer beendet JMCAR beim Ausschalten der Zündung. JMCAR schaltet ihn bei jedem Start selbst aus, sobald es sichere Einstellungen schreiben darf.</string>
     <string name="unit_reglink_quickboot_title">Quick Boot ausschalten</string>
     <string name="unit_reglink_quickboot_detail">In den Werkseinstellungen des Radios. Es startet dann normal, statt vor seinem Schnellschlaf Apps zu beenden.</string>
-    <string name="unit_reglink_whitelist_title">Dashwheel auf dem Radio freigeben</string>
-    <string name="unit_reglink_whitelist_detail">Die Firmware führt drei Listen von Apps, die starten, im Hintergrund laufen und den Schlaf überstehen dürfen. Dashwheel trägt sich mit Root dort ein.</string>
+    <string name="unit_reglink_whitelist_title">JMCAR auf dem Radio freigeben</string>
+    <string name="unit_reglink_whitelist_detail">Die Firmware führt drei Listen von Apps, die starten, im Hintergrund laufen und den Schlaf überstehen dürfen. JMCAR trägt sich mit Root dort ein.</string>
 </resources>

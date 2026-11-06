@@ -36,7 +36,7 @@
     <string name="dash_update_installing">Paleidžiama diegimo programa…</string>
     <string name="dash_menu_check_updates">Ieškoti naujinių</string>
     <string name="dash_update_checking">Ieškoma naujinių…</string>
-    <string name="dash_update_up_to_date">Dashwheel naujausias, v%1$s</string>
+    <string name="dash_update_up_to_date">JMCAR naujausias, v%1$s</string>
     <string name="dash_update">Atnaujinti</string>
 
     <!-- Tiles while arranging -->
@@ -65,12 +65,12 @@
     <string name="dash_swap_split">Sukeisti padalyto ekrano programas</string>
     <string name="dash_split_with">Padalyti ekraną su…</string>
     <string name="dash_enable_split_title">Įjungti padalytą ekraną</string>
-    <string name="dash_enable_split_body">Dashwheel naudoja sistemos padalytą ekraną, tą patį kaip naujausiuose. Vieną kartą įjunkite Dashwheel skiltyje Nustatymai, Pritaikymas neįgaliesiems.</string>
+    <string name="dash_enable_split_body">JMCAR naudoja sistemos padalytą ekraną, tą patį kaip naujausiuose. Vieną kartą įjunkite JMCAR skiltyje Nustatymai, Pritaikymas neįgaliesiems.</string>
     <string name="dash_open_settings">Atidaryti nustatymus</string>
 
     <!-- System app install (root) -->
     <string name="dash_system_app_title">Sistemos programa</string>
-    <string name="dash_system_app_body">Įdiegia Dashwheel kaip sistemos programą, kad Android valdikliai būtų pridedami be klausimų kaskart. Reikia root arba magnetolos vidinio ADB prievade %1$d, tada paleidimo iš naujo.</string>
+    <string name="dash_system_app_body">Įdiegia JMCAR kaip sistemos programą, kad Android valdikliai būtų pridedami be klausimų kaskart. Reikia root arba magnetolos vidinio ADB prievade %1$d, tada paleidimo iš naujo.</string>
     <string name="dash_root_checking">Tikrinama root…</string>
     <string name="dash_root_available">Root yra. Įdiegiama kaip Magisk modulis, jei yra Magisk.</string>
     <string name="dash_root_missing">Root nėra. Bus bandomas vidinis ADB prievade %1$d.</string>
@@ -193,13 +193,13 @@
     <string name="dash_empty_body">Užpildykite iš šablono arba pridėkite plyteles po vieną.</string>
     <!-- Updates without a strip (⋮ dot, Settings row, ready prompt); edit-mode confirms; tile options; theme gallery -->
     <string name="dash_update_to">Atnaujinti į %1$s</string>
-    <string name="dash_update_available_detail">Naujesnė versija nei v%1$s. Diegiant Dashwheel pasileis iš naujo.</string>
+    <string name="dash_update_available_detail">Naujesnė versija nei v%1$s. Diegiant JMCAR pasileis iš naujo.</string>
     <string name="dash_update_ready_detail">Atsisiųsta ir paruošta diegti</string>
     <string name="dash_update_ready_title">Naujinys paruoštas</string>
-    <string name="dash_update_ready_body">%1$s atsisiųstas. Diegimas trunka pusę minutės ir paleidžia Dashwheel iš naujo.</string>
+    <string name="dash_update_ready_body">%1$s atsisiųstas. Diegimas trunka pusę minutės ir paleidžia JMCAR iš naujo.</string>
     <string name="dash_update_now">Atnaujinti dabar</string>
     <string name="dash_update_not_this_version">Ne šią versiją</string>
-    <string name="dash_update_allow_installs">Leiskite Dashwheel diegti naujinius, tada vėl palieskite Atnaujinti</string>
+    <string name="dash_update_allow_installs">Leiskite JMCAR diegti naujinius, tada vėl palieskite Atnaujinti</string>
     <string name="dash_dashboard_options">Skydelio parinktys</string>
     <string name="dash_remove_dashboard_title">Pašalinti %1$s?</string>
     <string name="dash_remove_dashboard_body">Ištuštinkite jį arba išimkite iš perbraukimų su plytelėmis. Anuliavus jos grįš.</string>
@@ -208,13 +208,13 @@
     <string name="dash_tile_restart_app">Paleisti programą iš naujo</string>
     <!-- The bar's Apps button, labelled -->
     <string name="dash_apps">Programos</string>
-    <!-- Tiles on the dashboard that live on root or the unit's ADB, where Dashwheel has neither -->
+    <!-- Tiles on the dashboard that live on root or the unit's ADB, where JMCAR has neither -->
     <string name="dash_rootless_title">Reikia root prieigos</string>
     <plurals name="dash_rootless_body">
-        <item quantity="one">%1$s reikia root prieigos, kurios Dashwheel šioje magnetoloje neturi. Ji bus pašalinta iš skydelio.</item>
-        <item quantity="few">%1$s reikia root prieigos, kurios Dashwheel šioje magnetoloje neturi. Jos bus pašalintos iš skydelio.</item>
-        <item quantity="many">%1$s reikia root prieigos, kurios Dashwheel šioje magnetoloje neturi. Jos bus pašalintos iš skydelio.</item>
-        <item quantity="other">%1$s reikia root prieigos, kurios Dashwheel šioje magnetoloje neturi. Jos bus pašalintos iš skydelio.</item>
+        <item quantity="one">%1$s reikia root prieigos, kurios JMCAR šioje magnetoloje neturi. Ji bus pašalinta iš skydelio.</item>
+        <item quantity="few">%1$s reikia root prieigos, kurios JMCAR šioje magnetoloje neturi. Jos bus pašalintos iš skydelio.</item>
+        <item quantity="many">%1$s reikia root prieigos, kurios JMCAR šioje magnetoloje neturi. Jos bus pašalintos iš skydelio.</item>
+        <item quantity="other">%1$s reikia root prieigos, kurios JMCAR šioje magnetoloje neturi. Jos bus pašalintos iš skydelio.</item>
     </plurals>
     <!-- The bar's position chip (PagePosition.kt) -->
     <string name="dash_position_chip">Skydelis: %1$s</string>

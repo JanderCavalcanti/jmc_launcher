@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- First-run setup (SetupScreen.kt): the car, what the launcher may use, the look -->
-    <string name="setup_title">Dashwheel instellen</string>
+    <string name="setup_title">JMCAR instellen</string>
     <string name="setup_step">Stap %1$d van 3</string>
     <string name="setup_skip">Overslaan</string>
     <string name="setup_back">Terug</string>
@@ -18,7 +18,7 @@
     <string name="setup_driver_side">Bestuurdersstoel</string>
     <string name="setup_driver_left">Links</string>
     <string name="setup_driver_right">Rechts</string>
-    <string name="setup_access_title">Wat Dashwheel mag gebruiken</string>
+    <string name="setup_access_title">Wat JMCAR mag gebruiken</string>
     <string name="setup_access_body">Elk is optioneel. Sta het toe op het scherm dat opent en kom terug.</string>
     <string name="setup_access_notifications">Meldingen</string>
     <string name="setup_access_notifications_detail">Muziek en de volgende afslag uit apps op dit toestel</string>
@@ -48,5 +48,5 @@
     <string name="setup_car_tiles_title">Autotegels toevoegen?</string>
     <string name="setup_car_tiles_body">Motormeters, foutcodes, accu en opwarmen op de dashboards.</string>
     <string name="setup_again">Opnieuw instellen</string>
-    <string name="setup_again_detail">De auto, wat Dashwheel mag gebruiken en het uiterlijk, stap voor stap</string>
+    <string name="setup_again_detail">De auto, wat JMCAR mag gebruiken en het uiterlijk, stap voor stap</string>
 </resources>

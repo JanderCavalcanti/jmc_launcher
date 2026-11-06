@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- The Signal Finder: teach Dashwheel the car's signals (SignalFinderSheet.kt, SignalFinder.kt, LearnedSignals.kt) -->
+    <!-- The Signal Finder: teach JMCAR the car's signals (SignalFinderSheet.kt, SignalFinder.kt, LearnedSignals.kt) -->
     <string name="signals_title">Сигналы автомобиля</string>
-    <string name="signals_settings_detail">Научите Dashwheel распознавать двери, задний ход и фары</string>
-    <string name="signals_intro">Dashwheel сам считывает всё, что может. Нажмите «Найти», чтобы обучить его остальному, выполнив действие.</string>
+    <string name="signals_settings_detail">Научите JMCAR распознавать двери, задний ход и фары</string>
+    <string name="signals_intro">JMCAR сам считывает всё, что может. Нажмите «Найти», чтобы обучить его остальному, выполнив действие.</string>
     <string name="signals_sources">Источники</string>
     <string name="signals_needs_root">Нужен root</string>
     <string name="signals_values">Значений: %1$d</string>
     <string name="signals_section">Сигналы</string>
     <string name="signals_learned">Изучено: %1$s</string>
-    <string name="signals_builtin">Dashwheel уже считывает</string>
+    <string name="signals_builtin">JMCAR уже считывает</string>
     <string name="signals_missing">Пока не найден</string>
     <string name="signals_forget">Забыть</string>
     <string name="signals_find">Найти</string>

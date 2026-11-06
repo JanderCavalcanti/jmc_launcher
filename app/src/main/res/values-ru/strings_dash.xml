@@ -36,7 +36,7 @@
     <string name="dash_update_installing">Запуск установки…</string>
     <string name="dash_menu_check_updates">Проверить обновления</string>
     <string name="dash_update_checking">Проверка обновлений…</string>
-    <string name="dash_update_up_to_date">Dashwheel обновлён, v%1$s</string>
+    <string name="dash_update_up_to_date">JMCAR обновлён, v%1$s</string>
     <string name="dash_update">Обновить</string>
 
     <!-- Tiles while arranging -->
@@ -65,12 +65,12 @@
     <string name="dash_swap_split">Поменять приложения местами</string>
     <string name="dash_split_with">Разделить экран с…</string>
     <string name="dash_enable_split_title">Включить разделение экрана</string>
-    <string name="dash_enable_split_body">Dashwheel использует системное разделение экрана, то же, что в недавних приложениях. Один раз включите Dashwheel в Настройки, Спец. возможности.</string>
+    <string name="dash_enable_split_body">JMCAR использует системное разделение экрана, то же, что в недавних приложениях. Один раз включите JMCAR в Настройки, Спец. возможности.</string>
     <string name="dash_open_settings">Открыть настройки</string>
 
     <!-- System app install (root) -->
     <string name="dash_system_app_title">Системное приложение</string>
-    <string name="dash_system_app_body">Устанавливает Dashwheel как системное приложение, чтобы виджеты Android добавлялись без запроса каждый раз. Нужен root или внутренний ADB магнитолы на порту %1$d, затем перезагрузка.</string>
+    <string name="dash_system_app_body">Устанавливает JMCAR как системное приложение, чтобы виджеты Android добавлялись без запроса каждый раз. Нужен root или внутренний ADB магнитолы на порту %1$d, затем перезагрузка.</string>
     <string name="dash_root_checking">Проверка root…</string>
     <string name="dash_root_available">Root доступен. Если есть Magisk, установка пройдёт как модуль Magisk.</string>
     <string name="dash_root_missing">Нет root. Попробуем внутренний ADB на порту %1$d.</string>
@@ -193,13 +193,13 @@
     <string name="dash_empty_body">Заполните из шаблона или добавляйте плитки по одной.</string>
     <!-- Updates without a strip (⋮ dot, Settings row, ready prompt); edit-mode confirms; tile options; theme gallery -->
     <string name="dash_update_to">Обновить до %1$s</string>
-    <string name="dash_update_available_detail">Есть сборка новее v%1$s. Установка перезапустит Dashwheel.</string>
+    <string name="dash_update_available_detail">Есть сборка новее v%1$s. Установка перезапустит JMCAR.</string>
     <string name="dash_update_ready_detail">Загружено и готово к установке</string>
     <string name="dash_update_ready_title">Обновление готово</string>
-    <string name="dash_update_ready_body">%1$s загружено. Установка займёт полминуты и перезапустит Dashwheel.</string>
+    <string name="dash_update_ready_body">%1$s загружено. Установка займёт полминуты и перезапустит JMCAR.</string>
     <string name="dash_update_now">Обновить сейчас</string>
     <string name="dash_update_not_this_version">Пропустить версию</string>
-    <string name="dash_update_allow_installs">Разрешите Dashwheel устанавливать обновления, затем снова нажмите «Обновить»</string>
+    <string name="dash_update_allow_installs">Разрешите JMCAR устанавливать обновления, затем снова нажмите «Обновить»</string>
     <string name="dash_dashboard_options">Настройки панели</string>
     <string name="dash_remove_dashboard_title">Удалить «%1$s»?</string>
     <string name="dash_remove_dashboard_body">Очистите её или уберите из пролистывания вместе с плитками. «Отменить» вернёт их.</string>
@@ -208,13 +208,13 @@
     <string name="dash_tile_restart_app">Перезапустить приложение</string>
     <!-- The bar's Apps button, labelled -->
     <string name="dash_apps">Приложения</string>
-    <!-- Tiles on the dashboard that live on root or the unit's ADB, where Dashwheel has neither -->
+    <!-- Tiles on the dashboard that live on root or the unit's ADB, where JMCAR has neither -->
     <string name="dash_rootless_title">Нужен root-доступ</string>
     <plurals name="dash_rootless_body">
-        <item quantity="one">%1$s требует root-доступ, которого у Dashwheel нет на этой магнитоле. Плитка будет удалена с панели.</item>
-        <item quantity="few">%1$s требуют root-доступ, которого у Dashwheel нет на этой магнитоле. Плитки будут удалены с панели.</item>
-        <item quantity="many">%1$s требуют root-доступ, которого у Dashwheel нет на этой магнитоле. Плитки будут удалены с панели.</item>
-        <item quantity="other">%1$s требуют root-доступ, которого у Dashwheel нет на этой магнитоле. Плитки будут удалены с панели.</item>
+        <item quantity="one">%1$s требует root-доступ, которого у JMCAR нет на этой магнитоле. Плитка будет удалена с панели.</item>
+        <item quantity="few">%1$s требуют root-доступ, которого у JMCAR нет на этой магнитоле. Плитки будут удалены с панели.</item>
+        <item quantity="many">%1$s требуют root-доступ, которого у JMCAR нет на этой магнитоле. Плитки будут удалены с панели.</item>
+        <item quantity="other">%1$s требуют root-доступ, которого у JMCAR нет на этой магнитоле. Плитки будут удалены с панели.</item>
     </plurals>
     <!-- The bar's position chip (PagePosition.kt) -->
     <string name="dash_position_chip">Панель: %1$s</string>

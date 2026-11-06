@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- The head unit firmware family and what it lets Dashwheel do (UnitPlatform, Settings, System, Head unit). -->
+<!-- The head unit firmware family and what it lets JMCAR do (UnitPlatform, Settings, System, Head unit). -->
 <resources>
     <string name="unit_fyt_keys_note">Necesita un shell; las apps de la radio pierden las teclas del volante mientras tanto</string>
-    <string name="unit_mtc_whitelist_title">Mantener Dashwheel despierto</string>
-    <string name="unit_mtc_whitelist_detail">Añada Dashwheel a la lista blanca de reposo de la radio (su app BootControl, o los ajustes de la ROM modificada). Si no, el firmware lo detiene al quitar el contacto.</string>
+    <string name="unit_mtc_whitelist_title">Mantener JMCAR despierto</string>
+    <string name="unit_mtc_whitelist_detail">Añada JMCAR a la lista blanca de reposo de la radio (su app BootControl, o los ajustes de la ROM modificada). Si no, el firmware lo detiene al quitar el contacto.</string>
     <string name="unit_reglink_duraspeed_title">Desactivar DuraSpeed</string>
-    <string name="unit_reglink_duraspeed_detail">El ahorrador MediaTek detiene Dashwheel al quitar el contacto. Dashwheel lo desactiva por sí mismo en cada arranque, en cuanto puede escribir los ajustes seguros.</string>
+    <string name="unit_reglink_duraspeed_detail">El ahorrador MediaTek detiene JMCAR al quitar el contacto. JMCAR lo desactiva por sí mismo en cada arranque, en cuanto puede escribir los ajustes seguros.</string>
     <string name="unit_reglink_quickboot_title">Desactivar Quick Boot</string>
     <string name="unit_reglink_quickboot_detail">En los ajustes de fábrica de la radio. Arranca entonces con normalidad en vez de matar las apps antes de su reposo rápido.</string>
-    <string name="unit_reglink_whitelist_title">Poner Dashwheel en la lista blanca</string>
-    <string name="unit_reglink_whitelist_detail">El firmware guarda tres listas de apps que pueden arrancar, seguir en segundo plano y sobrevivir al reposo. Dashwheel se añade a ellas con root.</string>
+    <string name="unit_reglink_whitelist_title">Poner JMCAR en la lista blanca</string>
+    <string name="unit_reglink_whitelist_detail">El firmware guarda tres listas de apps que pueden arrancar, seguir en segundo plano y sobrevivir al reposo. JMCAR se añade a ellas con root.</string>
 </resources>

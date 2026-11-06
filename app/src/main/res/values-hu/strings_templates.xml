@@ -38,7 +38,7 @@
     <string name="share_use">Megosztott műszerfal használata</string>
     <string name="share_paste_hint">DW1: kód</string>
     <string name="share_open_file">Fájl megnyitása</string>
-    <string name="share_use_hint">Írjon be vagy illesszen be egy kódot, nyisson meg egy fájlt, vagy olvasson be QR-kódot a Dashwheel Companion alkalmazással.</string>
+    <string name="share_use_hint">Írjon be vagy illesszen be egy kódot, nyisson meg egy fájlt, vagy olvasson be QR-kódot a JMCAR Companion alkalmazással.</string>
     <string name="share_missing_apps">Ezen az egységen hiányzó alkalmazások: %1$d. A csempéik megmaradnak, amíg nem módosítja őket.</string>
     <string name="share_take_look">A megjelenését is</string>
     <string name="share_replace">Elhelyezés itt</string>

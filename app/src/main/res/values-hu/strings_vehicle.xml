@@ -205,10 +205,10 @@
     <string name="vehicle_err_refused">%1$s elutasította a kapcsolatot: egy telefon vagy másik alkalmazás foglalja, nincs tápja, vagy hatótávon kívül van</string>
     <string name="vehicle_err_silent">%1$s csatlakozott, de nem válaszolt: adja rá a gyújtást, majd koppintson az OBD-re</string>
     <string name="vehicle_usb_cable">USB-kábel</string>
-    <string name="vehicle_obd_usb_allow">A párbeszédablakban engedélyezze, hogy a Dashwheel használja az adaptert</string>
+    <string name="vehicle_obd_usb_allow">A párbeszédablakban engedélyezze, hogy a JMCAR használja az adaptert</string>
     <string name="vehicle_err_usb_none">Nincs bedugva USB-adapter</string>
-    <string name="vehicle_err_usb_tap">Koppintson az OBD-re, hogy a Dashwheel használhassa a(z) %1$s eszközt</string>
-    <string name="vehicle_err_usb_denied">A Dashwheel nem kapott engedélyt a(z) %1$s használatára</string>
+    <string name="vehicle_err_usb_tap">Koppintson az OBD-re, hogy a JMCAR használhassa a(z) %1$s eszközt</string>
+    <string name="vehicle_err_usb_denied">A JMCAR nem kapott engedélyt a(z) %1$s használatára</string>
     <string name="vehicle_err_usb_open">%1$s nem nyitható meg: húzza ki, és dugja be újra</string>
     <string name="vehicle_err_usb_silent">%1$s nem válaszolt úgy, mint egy OBD-adapter</string>
     <string name="vehicle_err_phone_not_linked">Az OBD a telefonon keresztül megy: előbb csatlakoztassa a telefont</string>

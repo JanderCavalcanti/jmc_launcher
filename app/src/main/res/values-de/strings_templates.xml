@@ -38,7 +38,7 @@
     <string name="share_use">Ein geteiltes Dashboard nutzen</string>
     <string name="share_paste_hint">DW1:-Code</string>
     <string name="share_open_file">Datei öffnen</string>
-    <string name="share_use_hint">Code eintippen oder einfügen, Datei öffnen oder einen QR-Code mit der Dashwheel Companion-App scannen.</string>
+    <string name="share_use_hint">Code eintippen oder einfügen, Datei öffnen oder einen QR-Code mit der JMCAR Companion-App scannen.</string>
     <string name="share_missing_apps">Apps fehlen auf diesem Gerät: %1$d. Ihre Kacheln bleiben, bis du sie änderst.</string>
     <string name="share_take_look">Auch sein Aussehen nehmen</string>
     <string name="share_replace">Hier einsetzen</string>

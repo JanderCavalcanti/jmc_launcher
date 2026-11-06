@@ -6,8 +6,8 @@
     <string name="unit_chosen">%1$s, Ihre Wahl</string>
     <string name="unit_choose_title">Mein Radio ist</string>
     <string name="unit_auto">Automatisch</string>
-    <string name="unit_restart">Dashwheel neu starten</string>
-    <string name="unit_restart_hint">Die Wahl gilt ab dem nächsten Start von Dashwheel.</string>
+    <string name="unit_restart">JMCAR neu starten</string>
+    <string name="unit_restart_hint">Die Wahl gilt ab dem nächsten Start von JMCAR.</string>
     <string name="unit_caps_section">Was diese Firmware bietet</string>
     <string name="unit_state_live">Funktioniert</string>
     <string name="unit_state_ready">Bereit</string>
@@ -19,7 +19,7 @@
     <string name="unit_applied">Erledigt</string>
     <string name="unit_open_whitelist">Whitelist-App öffnen</string>
     <string name="unit_fyt_keys_title">Lenkradtasten übernehmen</string>
-    <string name="unit_fyt_keys_detail">Nach einem Neustart übergibt die Firmware ihre Lenkrad- und Bedientasten an Dashwheel. Ihre eigenen Apps verlieren sie derweil.</string>
+    <string name="unit_fyt_keys_detail">Nach einem Neustart übergibt die Firmware ihre Lenkrad- und Bedientasten an JMCAR. Ihre eigenen Apps verlieren sie derweil.</string>
     <string name="unit_needs_firmware">Braucht die %1$s-Firmware</string>
     <string name="unit_family_qf">QF (Hizpo, ROCO K706)</string>
     <string name="unit_family_fyt">FYT (Joying, Atoto, Mekede)</string>

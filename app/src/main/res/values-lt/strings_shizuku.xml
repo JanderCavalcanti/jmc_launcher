@@ -2,10 +2,10 @@
 <resources>
     <!-- Shizuku: the shell without root (ShizukuSettings.kt, ShizukuShell.kt), Settings → System → More tools -->
     <string name="shizuku_search_detail">Apvalkalo komandos be root</string>
-    <string name="shizuku_detail_none">Neįdiegta. Suteikia Dashwheel apvalkalą be root</string>
+    <string name="shizuku_detail_none">Neįdiegta. Suteikia JMCAR apvalkalą be root</string>
     <string name="shizuku_detail_off">Įdiegta, nepaleista. Atidarykite Shizuku ir paleiskite</string>
     <string name="shizuku_detail_old">Per sena. Atnaujinkite Shizuku</string>
-    <string name="shizuku_detail_ask">Veikia. Leiskite Dashwheel per Shizuku</string>
+    <string name="shizuku_detail_ask">Veikia. Leiskite JMCAR per Shizuku</string>
     <string name="shizuku_detail_on">Naudojama: apvalkalo komandos vykdomos per ją</string>
     <string name="shizuku_body">Shizuku vykdo apvalkalo komandas, kurias vykdytų root: programų langų perkėlimą, automobilio programos jungiklius, garsumo mygtukus. Magnetola su root ją paleidžia įsijungdama; kitose ją reikia paleisti Shizuku programoje po kiekvieno įsijungimo.</string>
     <string name="shizuku_get">Gauti Shizuku</string>

@@ -26,7 +26,7 @@
     <string name="boot_restore_confirm_body">Die originale Startanimation und das originale feste Logo werden zurückgeschrieben.</string>
     <string name="boot_play_failed">Abspielen fehlgeschlagen: %1$s</string>
     <string name="boot_current">Aktuelles Startlogo: %1$s</string>
-    <string name="boot_hint">Ändert, was das Radio beim Start zeigt, mit dem Logo dieser Marke: die Android-Animation und, falls eingeschaltet, das feste Logo. Nutzt das interne Root-ADB des Radios und ändert nie /system. Originale werden gesichert (auch in Dashwheel/boot_backup im internen Speicher), Wiederherstellen setzt sie zurück. Logos aus dem freien car-logos-dataset.</string>
+    <string name="boot_hint">Ändert, was das Radio beim Start zeigt, mit dem Logo dieser Marke: die Android-Animation und, falls eingeschaltet, das feste Logo. Nutzt das interne Root-ADB des Radios und ändert nie /system. Originale werden gesichert (auch in JMCAR/boot_backup im internen Speicher), Wiederherstellen setzt sie zurück. Logos aus dem freien car-logos-dataset.</string>
     <string name="boot_usb">Auf USB speichern</string>
     <string name="boot_saving_usb">Schreibe auf den USB-Stick…</string>
     <string name="boot_saved_usb">Gespeichert auf %1$s. Stick ab- und wieder anstecken: Das Radio importiert die Animation. Für das feste Logo: Einstellungen → Werkseinstellungen (8888) → Logo set → %2$s wählen → Update logo.</string>
@@ -39,5 +39,5 @@
     <string name="boot_still_failed">Festes Logo nicht geändert: %1$s</string>
     <string name="boot_still_unsupported">dieses Radio hat kein Werkzeug für das feste Logo</string>
     <string name="boot_not_qf">Installieren funktioniert nur auf der vorgesehenen QF001-/K706-Firmware. Nutze Auf USB speichern.</string>
-    <string name="boot_no_adb">Das interne ADB des Radios antwortet nicht (Port %1$d) und Dashwheel hat kein Root. Schalte USB-Debugging ein (Einstellungen → Über das Gerät → 7-mal auf Build-Nummer tippen, dann Entwickleroptionen → USB-Debugging) oder gewähre Root und versuche es erneut.</string>
+    <string name="boot_no_adb">Das interne ADB des Radios antwortet nicht (Port %1$d) und JMCAR hat kein Root. Schalte USB-Debugging ein (Einstellungen → Über das Gerät → 7-mal auf Build-Nummer tippen, dann Entwickleroptionen → USB-Debugging) oder gewähre Root und versuche es erneut.</string>
 </resources>

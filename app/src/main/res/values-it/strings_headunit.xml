@@ -6,8 +6,8 @@
     <string name="unit_chosen">%1$s, la vostra scelta</string>
     <string name="unit_choose_title">La mia autoradio è</string>
     <string name="unit_auto">Automatico</string>
-    <string name="unit_restart">Riavviare Dashwheel</string>
-    <string name="unit_restart_hint">La scelta vale dal prossimo avvio di Dashwheel.</string>
+    <string name="unit_restart">Riavviare JMCAR</string>
+    <string name="unit_restart_hint">La scelta vale dal prossimo avvio di JMCAR.</string>
     <string name="unit_caps_section">Cosa offre questo firmware</string>
     <string name="unit_state_live">Funziona</string>
     <string name="unit_state_ready">Pronto</string>
@@ -19,7 +19,7 @@
     <string name="unit_applied">Fatto</string>
     <string name="unit_open_whitelist">Apri l\'app della lista bianca</string>
     <string name="unit_fyt_keys_title">Prendere i tasti al volante</string>
-    <string name="unit_fyt_keys_detail">Dopo un riavvio il firmware passa i tasti al volante e del frontalino a Dashwheel. Le sue app li perdono intanto.</string>
+    <string name="unit_fyt_keys_detail">Dopo un riavvio il firmware passa i tasti al volante e del frontalino a JMCAR. Le sue app li perdono intanto.</string>
     <string name="unit_needs_firmware">Serve il firmware %1$s</string>
     <string name="unit_family_qf">QF (Hizpo, ROCO K706)</string>
     <string name="unit_family_fyt">FYT (Joying, Atoto, Mekede)</string>

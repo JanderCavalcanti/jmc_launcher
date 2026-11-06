@@ -4,7 +4,7 @@
     <string name="settings_section_second_screen">Tweede scherm</string>
     <string name="second_screen_experimental">Experimenteel: een Raspberry Pi stuurt een tweede scherm in de auto aan. Nog niet in een auto getest.</string>
     <string name="second_screen_status_unpaired">Geen tweede scherm gekoppeld</string>
-    <string name="second_screen_status_unpaired_detail">Scan de code op het tweede scherm met de Dashwheel-app op je telefoon terwijl de telefoon met deze auto verbonden is.</string>
+    <string name="second_screen_status_unpaired_detail">Scan de code op het tweede scherm met de JMCAR-app op je telefoon terwijl de telefoon met deze auto verbonden is.</string>
     <string name="second_screen_status_searching">Tweede scherm zoeken</string>
     <string name="second_screen_status_searching_detail">Het scherm en deze radio moeten allebei met de hotspot van de telefoon verbonden zijn.</string>
     <string name="second_screen_status_connected">Verbonden met %1$s</string>
@@ -37,7 +37,7 @@
     <string name="second_screen_by_cable">via kabel</string>
     <string name="second_screen_by_wifi">via wifi</string>
     <string name="second_screen_program_older">Het programma van het scherm is ouder dan deze app: schrijf zijn kaart opnieuw.</string>
-    <string name="second_screen_program_newer">Het programma van het scherm is nieuwer dan deze app: werk Dashwheel bij.</string>
+    <string name="second_screen_program_newer">Het programma van het scherm is nieuwer dan deze app: werk JMCAR bij.</string>
     <string name="second_screen_health_under_powered">De printplaat van het scherm krijgt te weinig stroom en vertraagt: gebruik een voeding van 5 V en 2,5 A en een korte, dikke kabel.</string>
     <string name="second_screen_health_hot">De printplaat van het scherm is heet (%1$d °C) en vertraagt: geef hem lucht of een koellichaam.</string>
     <string name="second_screen_health_throttled">De printplaat van het scherm wordt door zijn firmware afgeremd: controleer de voeding.</string>
@@ -119,10 +119,10 @@
     <string name="second_screen_mapview_distance_far">Ver</string>
     <string name="second_screen_mapview_buildings">Gebouwen in 3D</string>
     <string name="second_screen_mapview_buildings_detail">Waar de kaartleverancier hun hoogte kent.</string>
-    <string name="second_screen_pi_waiting">Wachten op Dashwheel…</string>
-    <string name="second_screen_pi_no_signal">Geen signaal van Dashwheel</string>
+    <string name="second_screen_pi_waiting">Wachten op JMCAR…</string>
+    <string name="second_screen_pi_no_signal">Geen signaal van JMCAR</string>
     <string name="second_screen_pi_connected">Verbonden</string>
-    <string name="second_screen_pi_scan">Scan met de Dashwheel-app op je telefoon</string>
+    <string name="second_screen_pi_scan">Scan met de JMCAR-app op je telefoon</string>
     <string name="second_screen_board_full">Volledige weergave</string>
     <string name="second_screen_board_in_use">Deze pagina\'s staan nu op het scherm.</string>
     <string name="second_screen_board_not_in_use">Nu niet in gebruik: deze pagina\'s verschijnen als u naar deze weergave overschakelt.</string>

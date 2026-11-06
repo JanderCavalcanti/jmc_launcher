@@ -37,7 +37,7 @@
     <string name="volume_way_android_hint">Громкость медиа Android, как на телефоне</string>
     <string name="volume_way_keys_hint">Нажимает кнопки громкости, как кнопки руля и ручка. Нужен root или ADB магнитолы</string>
     <string name="volume_way_keys_locked">Для кнопок громкости нужен root или ADB магнитолы</string>
-    <string name="settings_rom_call_detail">Звонки по Bluetooth показываются только в карточке Dashwheel, с ответом и сбросом</string>
+    <string name="settings_rom_call_detail">Звонки по Bluetooth показываются только в карточке JMCAR, с ответом и сбросом</string>
     <string name="settings_rom_doors_detail">Показывает открытую дверь поверх любого приложения вместо оповещения магнитолы</string>
     <string name="settings_rom_needs_root">Нужен root или ADB магнитолы</string>
     <string name="settings_more_github">Больше в версии с GitHub</string>
@@ -69,9 +69,9 @@
     <string name="alert_with_voice">%1$s, с озвучкой</string>
     <string name="alert_say_call">Звонит %1$s</string>
     <string name="alert_say_doors">Открыта дверь: %1$s</string>
-    <string name="settings_rom_radar_detail">Показывает парктроник в стиле Dashwheel вместо окна магнитолы</string>
-    <string name="settings_rom_radar_needs_access">Включите Dashwheel в Спец. возможностях, чтобы показывать его поверх камеры заднего вида</string>
-    <string name="settings_rom_ac_detail">Показывает изменения климата в стиле Dashwheel вместо окна магнитолы</string>
+    <string name="settings_rom_radar_detail">Показывает парктроник в стиле JMCAR вместо окна магнитолы</string>
+    <string name="settings_rom_radar_needs_access">Включите JMCAR в Спец. возможностях, чтобы показывать его поверх камеры заднего вида</string>
+    <string name="settings_rom_ac_detail">Показывает изменения климата в стиле JMCAR вместо окна магнитолы</string>
     <string name="alert_kind_radar">Парктроник</string>
     <string name="alert_kind_ac">Климат</string>
     <string name="alert_kind_radar_title">Оповещение парктроника</string>
@@ -85,7 +85,7 @@
     <string name="keys_voice">Кнопка голоса</string>
     <string name="keys_custom">Своя кнопка</string>
     <string name="keys_unit_choice">Как задано в магнитоле</string>
-    <string name="settings_rom_tyres_detail">Предупреждения о шинах в стиле Dashwheel. Чтобы видеть только их, отключите окно в настройках приложения TPMS</string>
+    <string name="settings_rom_tyres_detail">Предупреждения о шинах в стиле JMCAR. Чтобы видеть только их, отключите окно в настройках приложения TPMS</string>
     <string name="alert_kind_tyres">Шины</string>
     <string name="alert_kind_tyres_title">Оповещение о шинах</string>
     <string name="alert_speak_tyres_detail">Называет шину и что с ней не так</string>
@@ -106,9 +106,9 @@
     <string name="settings_section_display">Дисплей</string>
     <string name="settings_appearance_title">День и ночь</string>
     <string name="settings_appearance_detail">Авто по автомобилю, по восходу и закату или в заданное время</string>
-    <string name="alert_style_section">Окна в стиле Dashwheel</string>
+    <string name="alert_style_section">Окна в стиле JMCAR</string>
     <string name="alert_more_with_permission">Для других оповещений нужен root или одна команда с ПК: см. вики, раздел Car settings permission.</string>
-    <string name="alert_more_with_github">Оповещения о дверях, ремне и парктронике есть в версии Dashwheel с GitHub, которая использует root магнитолы.</string>
+    <string name="alert_more_with_github">Оповещения о дверях, ремне и парктронике есть в версии JMCAR с GitHub, которая использует root магнитолы.</string>
     <string name="alert_copy_command">Копировать команду</string>
     <string name="alert_command_copied">Команда скопирована</string>
     <string name="settings_section_about">О приложении</string>
@@ -119,15 +119,15 @@
     <string name="settings_system_perms">Google Maps в плитке</string>
     <string name="settings_system_perms_on">Настроено. Google Maps может работать в плитке.</string>
     <string name="settings_system_perms_off">Не настроено. Нажмите для настройки: ставится модуль PMPatch3, нужны Magisk и перезапуск.</string>
-    <string name="settings_pmpatch_body">Google Maps работает в плитке, когда Android выдаёт Dashwheel системные разрешения.</string>
+    <string name="settings_pmpatch_body">Google Maps работает в плитке, когда Android выдаёт JMCAR системные разрешения.</string>
     <string name="settings_pmpatch_cost">Цена: PMPatch3 отключает проверку подписи для всех приложений на магнитоле.</string>
-    <string name="settings_pmpatch_steps">Три шага: установка, перезапуск, переустановка Dashwheel.</string>
+    <string name="settings_pmpatch_steps">Три шага: установка, перезапуск, переустановка JMCAR.</string>
     <string name="settings_pmpatch_step">Шаг %1$d из %2$d</string>
     <string name="settings_pmpatch_checking">Проверка Magisk…</string>
     <string name="settings_pmpatch_no_magisk">Magisk не установлен на этой магнитоле.</string>
     <string name="settings_pmpatch_old_magisk">Нужен Magisk 24 или новее.</string>
     <string name="settings_pmpatch_restart">PMPatch3 установлен. Перезапустите магнитолу для завершения.</string>
-    <string name="settings_pmpatch_running">PMPatch3 работает. Dashwheel переустановится, чтобы получить разрешения.</string>
+    <string name="settings_pmpatch_running">PMPatch3 работает. JMCAR переустановится, чтобы получить разрешения.</string>
     <string name="settings_pmpatch_install">Установить PMPatch3</string>
     <string name="settings_pmpatch_reinstall">Переустановить</string>
     <string name="settings_pmpatch_bad_download">Загруженный файл не совпадает с PMPatch3 v1.2.0.</string>
@@ -156,9 +156,9 @@
     <string name="settings_backup_restore_detail">Из файла, сохранённого на этой или другой магнитоле</string>
     <string name="settings_backup_saved">Настройка сохранена</string>
     <string name="settings_backup_saved_to">Настройка сохранена в %1$s</string>
-    <string name="settings_backup_failed">Это не файл настройки Dashwheel. Выберите файл, сохранённый через Сохранить настройку.</string>
+    <string name="settings_backup_failed">Это не файл настройки JMCAR. Выберите файл, сохранённый через Сохранить настройку.</string>
     <string name="settings_backup_confirm_title">Восстановить эту настройку?</string>
-    <string name="settings_backup_confirm_body">Ваши панели и настройки будут заменены. Dashwheel перезапустится.</string>
+    <string name="settings_backup_confirm_body">Ваши панели и настройки будут заменены. JMCAR перезапустится.</string>
     <string name="settings_backup_confirm">Восстановить</string>
     <string name="settings_resume_music">Продолжать музыку при запуске</string>
     <string name="settings_resume_music_detail">Приложение, игравшее при выключении, снова начнёт играть. Не включайте, если магнитола делает это сама.</string>
@@ -200,10 +200,10 @@
     <string name="settings_log_no_phone">Телефон не ответил. Подключите телефон и обновите приложение-компаньон</string>
     <!-- About tab -->
     <string name="about_author_section">Автор</string>
-    <string name="about_description">Dashwheel: лаунчер для автомагнитол на Android. Карта, музыка и данные автомобиля на одном спокойном экране, с панелями, которые вы настраиваете сами. Бесплатный, с открытым кодом.</string>
+    <string name="about_description">JMCAR: лаунчер для автомагнитол на Android. Карта, музыка и данные автомобиля на одном спокойном экране, с панелями, которые вы настраиваете сами. Бесплатный, с открытым кодом.</string>
     <string name="about_author_role">Создатель и разработчик</string>
-    <string name="about_support_section">Поддержать Dashwheel</string>
-    <string name="about_support_text">Dashwheel бесплатен. Если он вам нравится, чашка кофе помогает его развивать.</string>
+    <string name="about_support_section">Поддержать JMCAR</string>
+    <string name="about_support_text">JMCAR бесплатен. Если он вам нравится, чашка кофе помогает его развивать.</string>
     <string name="about_kofi">Угостить кофе на Ko-fi</string>
     <string name="about_scan">Отсканируйте телефоном</string>
     <string name="about_tip_thanks">Спасибо, это правда помогает.</string>
@@ -221,7 +221,7 @@
     <string name="alert_style_icon_detail">Только анимированный значок в углу. Нажмите, чтобы завершить</string>
     <string name="alert_kind_volume">Громкость</string>
     <string name="alert_kind_volume_title">Шкала громкости</string>
-    <string name="settings_rom_volume_detail">Показывает громкость в стиле Dashwheel вместо шкалы магнитолы</string>
+    <string name="settings_rom_volume_detail">Показывает громкость в стиле JMCAR вместо шкалы магнитолы</string>
     <string name="settings_rom_volume_next_start">Заработает при следующем запуске магнитолы</string>
     <string name="settings_rom_volume_needs_magisk">Нужен Magisk</string>
     <string name="alert_volume_muted">Без звука</string>
@@ -234,12 +234,12 @@
     <string name="settings_side_rail_detail">Кнопки панели стоят со стороны водителя, сверху вниз</string>
     <string name="settings_tabs_nav">Вкладки вместо пролистывания</string>
     <string name="settings_tabs_nav_detail">Панели выбираются нажатием на боковой панели; нужна боковая панель. Включается сама, если под панелями карта.</string>
-    <string name="about_free_open_source">Dashwheel бесплатен и с открытым кодом.</string>
+    <string name="about_free_open_source">JMCAR бесплатен и с открытым кодом.</string>
     <string name="about_updates_play">Обновления приходят из Google Play</string>
     <string name="settings_obd_source_label">Данные OBD из</string>
     <string name="settings_obd_source_adapter">Адаптер</string>
     <string name="settings_obd_source_deepobd">Deep OBD</string>
-    <string name="settings_obd_source_adapter_hint">Dashwheel сам связывается с адаптером OBD.</string>
+    <string name="settings_obd_source_adapter_hint">JMCAR сам связывается с адаптером OBD.</string>
     <string name="settings_obd_source_deepobd_hint">Deep OBD читает машину и делится данными. Включите отправку данных в Deep OBD. Коды ошибок требуют адаптера.</string>
     <string name="settings_deepobd_waiting">От Deep OBD пока ничего. Откройте его и подключитесь к машине.</string>
     <string name="settings_deepobd_lines">Строки Deep OBD. Нажмите, чтобы изменить, что она показывает.</string>
@@ -272,11 +272,11 @@
     <string name="dead_strip_save">Сохранить</string>
     <string name="settings_unit_tools">Инструменты устройства</string>
     <string name="settings_unit_tools_detail">Логотип загрузки, Google Карты в плитке, системное приложение</string>
-    <string name="home_hand_back_title">Dashwheel — главный экран</string>
+    <string name="home_hand_back_title">JMCAR — главный экран</string>
     <string name="home_hand_back_detail">Выключено: экран возвращается к лаунчеру магнитолы. Настройки сохраняются.</string>
-    <string name="home_hand_back_off_detail">Главный экран — лаунчер магнитолы. Включите, чтобы вернуть Dashwheel.</string>
+    <string name="home_hand_back_off_detail">Главный экран — лаунчер магнитолы. Включите, чтобы вернуть JMCAR.</string>
     <string name="home_hand_back_confirm_title">Вернуть главный экран магнитоле?</string>
-    <string name="home_hand_back_confirm">Лаунчер магнитолы вернётся сейчас и при каждом запуске. Dashwheel сохранит настройки: откройте его из списка приложений и снова включите это.</string>
+    <string name="home_hand_back_confirm">Лаунчер магнитолы вернётся сейчас и при каждом запуске. JMCAR сохранит настройки: откройте его из списка приложений и снова включите это.</string>
     <string name="home_hand_back_confirm_ok">Вернуть</string>
     <string name="settings_root_how">Как</string>
     <string name="settings_obd_linked">Подключён: %1$s</string>
@@ -317,10 +317,10 @@
         <item quantity="other">Озвучено %1$d из %2$d</item>
     </plurals>
     <plurals name="settings_sum_popups">
-        <item quantity="one">%d в стиле Dashwheel</item>
-        <item quantity="few">%d в стиле Dashwheel</item>
-        <item quantity="many">%d в стиле Dashwheel</item>
-        <item quantity="other">%d в стиле Dashwheel</item>
+        <item quantity="one">%d в стиле JMCAR</item>
+        <item quantity="few">%d в стиле JMCAR</item>
+        <item quantity="many">%d в стиле JMCAR</item>
+        <item quantity="other">%d в стиле JMCAR</item>
     </plurals>
     <string name="settings_beta_updates">Бета-обновления</string>
     <string name="settings_beta_updates_detail">Новые версии сразу после сборки, раньше всех</string>
@@ -334,8 +334,8 @@
     <string name="map_servers_reset">Бесплатные серверы</string>
     <string name="report_title">Сообщить, как работает</string>
     <string name="report_row_detail">Ваша магнитола и что на ней работает, в виде задачи на GitHub</string>
-    <string name="report_compat_intro">Отметьте, что работает на этой магнитоле. В отчёте модель, прошивка и версия Dashwheel, ничего личного.</string>
-    <string name="report_crash_title">В прошлый раз Dashwheel закрылся</string>
+    <string name="report_compat_intro">Отметьте, что работает на этой магнитоле. В отчёте модель, прошивка и версия JMCAR, ничего личного.</string>
+    <string name="report_crash_title">В прошлый раз JMCAR закрылся</string>
     <string name="report_crash_intro">Отправьте ошибку, чтобы её исправили. В отчёте ошибка, модель и прошивка, ничего личного.</string>
     <string name="report_scan">Отсканируйте телефоном, чтобы отправить</string>
     <string name="report_open">Открыть здесь</string>
@@ -343,7 +343,7 @@
     <string name="report_later">Не сейчас</string>
     <string name="report_works">Работает</string>
     <string name="report_fails">Не работает</string>
-    <string name="report_item_home">Кнопка «Домой» открывает Dashwheel</string>
+    <string name="report_item_home">Кнопка «Домой» открывает JMCAR</string>
     <string name="report_item_wheel">Кнопки на руле</string>
     <string name="report_item_tiles">Приложения в плитках</string>
     <string name="report_item_maps">Google Карты в плитке</string>
@@ -358,8 +358,8 @@
     <string name="settings_obd_auto_on">При запуске машины и снова, если связь пропадёт</string>
     <string name="settings_obd_auto_off">Выкл.: адаптер остаётся сопряжённым и подключается, когда вы нажимаете OBD на панели</string>
     <string name="settings_log_save">Сохранить журнал на магнитоле</string>
-    <string name="settings_log_save_detail">В папке Download, Dashwheel, чтобы скопировать на флешку</string>
-    <string name="settings_log_saved">Сохранено в Download, Dashwheel: %1$s</string>
+    <string name="settings_log_save_detail">В папке Download, JMCAR, чтобы скопировать на флешку</string>
+    <string name="settings_log_saved">Сохранено в Download, JMCAR: %1$s</string>
     <string name="settings_log_save_failed">Не удалось сохранить журнал</string>
     <string name="settings_waze_wake">Перезапускать Waze после пробуждения</string>
     <string name="settings_waze_wake_detail">Когда вернутся геолокация и мобильные данные, чтобы он не остался офлайн</string>
@@ -382,7 +382,7 @@
     <string name="settings_sum_expert">Лаборатория, API-ключи, серверы</string>
     <string name="alerts_say">Сказать</string>
     <string name="alerts_show">Показать</string>
-    <string name="alerts_intro">«Сказать» произносит вслух, «Показать» выводит окно Dashwheel на экран. Нажмите на окно, чтобы выбрать его вид.</string>
+    <string name="alerts_intro">«Сказать» произносит вслух, «Показать» выводит окно JMCAR на экран. Нажмите на окно, чтобы выбрать его вид.</string>
     <string name="alerts_group_car">От автомобиля</string>
     <string name="alerts_group_road">В дороге</string>
     <string name="alerts_group_start">При старте</string>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- First-run setup (SetupScreen.kt): the car, what the launcher may use, the look -->
-    <string name="setup_title">Set up Dashwheel</string>
+    <string name="setup_title">Set up JMCAR</string>
     <string name="setup_step">Step %1$d of 3</string>
     <string name="setup_skip">Skip</string>
     <string name="setup_back">Back</string>
@@ -18,7 +18,7 @@
     <string name="setup_driver_side">Driver\'s seat</string>
     <string name="setup_driver_left">Left</string>
     <string name="setup_driver_right">Right</string>
-    <string name="setup_access_title">What Dashwheel may use</string>
+    <string name="setup_access_title">What JMCAR may use</string>
     <string name="setup_access_body">Each one is optional. Allow it on the screen that opens, then come back.</string>
     <string name="setup_access_notifications">Notifications</string>
     <string name="setup_access_notifications_detail">Music and the next turn from apps on this unit</string>
@@ -48,5 +48,5 @@
     <string name="setup_car_tiles_title">Add the car tiles?</string>
     <string name="setup_car_tiles_body">Engine gauges, fault codes, battery and warm-up on the dashboards.</string>
     <string name="setup_again">Set up again</string>
-    <string name="setup_again_detail">The car, what Dashwheel may use and the look, step by step</string>
+    <string name="setup_again_detail">The car, what JMCAR may use and the look, step by step</string>
 </resources>

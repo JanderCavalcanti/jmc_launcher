@@ -2,9 +2,9 @@
 <resources>
     <string name="reverse_title">Widok cofania</string>
     <string name="reverse_settings_detail">Linie pomocnicze i radar parkowania na kamerze cofania</string>
-    <string name="reverse_switch">Widok cofania Dashwheel</string>
+    <string name="reverse_switch">Widok cofania JMCAR</string>
     <string name="reverse_switch_detail">Linie podążające za kierownicą, radar parkowania i Twój samochód na obrazie z kamery cofania.</string>
-    <string name="reverse_needs_access">Włącz usługę ułatwień dostępu Dashwheel: tylko tak można rysować na obrazie kamery.</string>
+    <string name="reverse_needs_access">Włącz usługę ułatwień dostępu JMCAR: tylko tak można rysować na obrazie kamery.</string>
     <string name="reverse_layout_title">Na ekranie</string>
     <string name="reverse_layout_both">Kamera i radar</string>
     <string name="reverse_layout_camera">Kamera</string>
@@ -13,8 +13,8 @@
     <string name="reverse_stock_title">Linie aplikacji auta</string>
     <string name="reverse_stock_keep">Zostaw</string>
     <string name="reverse_stock_hide">Ukryj</string>
-    <string name="reverse_stock_hint_keep">Linie aplikacji auta zostają pod liniami Dashwheel. Linie skrętu przesuwają się co około 12°.</string>
-    <string name="reverse_stock_hint_hide">Tylko linie Dashwheel, płynniejsze. Wymaga roota.</string>
+    <string name="reverse_stock_hint_keep">Linie aplikacji auta zostają pod liniami JMCAR. Linie skrętu przesuwają się co około 12°.</string>
+    <string name="reverse_stock_hint_hide">Tylko linie JMCAR, płynniejsze. Wymaga roota.</string>
     <string name="reverse_stock_failed">Nie udało się ich zmienić. Wymaga roota.</string>
     <string name="reverse_lines_title">Wyrównaj je</string>
     <string name="reverse_lines_hint">Wrzuć wsteczny i dotknij Dopasuj na ekranie cofania, aby ułożyć linie na drodze.</string>
@@ -34,11 +34,11 @@
     <string name="reverse_near_far">Coś z tyłu</string>
     <string name="reverse_picture_title">Obraz z kamery</string>
     <string name="reverse_picture_rom">Aplikacja auta</string>
-    <string name="reverse_picture_own">Dashwheel</string>
-    <string name="reverse_picture_hint_rom">Aplikacja auta pokazuje kamerę, a Dashwheel rysuje na niej.</string>
-    <string name="reverse_picture_hint_own">Eksperymentalne: Dashwheel sam pokazuje obraz z kamery. Jeśli obraz nie przyjdzie, obraz aplikacji auta wraca po kilku sekundach.</string>
-    <string name="reverse_picture_denied">Dashwheel potrzebuje do tego uprawnienia do kamery.</string>
-    <string name="reverse_picture_failed">Dashwheel nie dostał kamery: obraz z aplikacji auta</string>
+    <string name="reverse_picture_own">JMCAR</string>
+    <string name="reverse_picture_hint_rom">Aplikacja auta pokazuje kamerę, a JMCAR rysuje na niej.</string>
+    <string name="reverse_picture_hint_own">Eksperymentalne: JMCAR sam pokazuje obraz z kamery. Jeśli obraz nie przyjdzie, obraz aplikacji auta wraca po kilku sekundach.</string>
+    <string name="reverse_picture_denied">JMCAR potrzebuje do tego uprawnienia do kamery.</string>
+    <string name="reverse_picture_failed">JMCAR nie dostał kamery: obraz z aplikacji auta</string>
     <string name="reverse_side_left">Lewa strona: %1$d cm</string>
     <string name="reverse_side_right">Prawa strona: %1$d cm</string>
     <string name="reverse_boot_blocked">Bagażnik nie otworzy się tu do końca</string>
@@ -49,7 +49,7 @@
     <string name="reverse_second_title">Drugi ekran</string>
     <string name="reverse_second_off">Wył.</string>
     <string name="reverse_second_hint">Sam przejmuje drugi ekran na biegu wstecznym.</string>
-    <string name="reverse_second_hint_rom">Kamera wymaga włączonego widoku cofania z obrazem Dashwheel: do tego czasu drugi ekran pokazuje radar.</string>
+    <string name="reverse_second_hint_rom">Kamera wymaga włączonego widoku cofania z obrazem JMCAR: do tego czasu drugi ekran pokazuje radar.</string>
     <string name="reverse_second_hint_video">Wymaga wyłączenia opcji Prosty widok w ustawieniach drugiego ekranu.</string>
     <string name="reverse_near_ahead">Coś z przodu</string>
     <string name="reverse_steer">Linie skrętu</string>

@@ -37,7 +37,7 @@
     <string name="volume_way_android_hint">Het mediavolume van Android, zoals op een telefoon</string>
     <string name="volume_way_keys_hint">Drukt de volumetoetsen in zoals de stuurknoppen en de draaiknop. Vereist root of de ADB van de radio</string>
     <string name="volume_way_keys_locked">De volumetoetsen vereisen root of de ADB van de radio</string>
-    <string name="settings_rom_call_detail">Bluetooth-oproepen verschijnen alleen in de Dashwheel-kaart, met opnemen en ophangen</string>
+    <string name="settings_rom_call_detail">Bluetooth-oproepen verschijnen alleen in de JMCAR-kaart, met opnemen en ophangen</string>
     <string name="settings_rom_doors_detail">Toont boven elke app welke deur open is, in plaats van de melding van de radio</string>
     <string name="settings_rom_needs_root">Vereist root of de ADB van de radio</string>
     <string name="settings_more_github">Meer met de GitHub-editie</string>
@@ -69,9 +69,9 @@
     <string name="alert_with_voice">%1$s, uitgesproken</string>
     <string name="alert_say_call">Oproep van %1$s</string>
     <string name="alert_say_doors">Deur open: %1$s</string>
-    <string name="settings_rom_radar_detail">Toont de parkeersensoren in de stijl van Dashwheel, in plaats van die van de radio</string>
-    <string name="settings_rom_radar_needs_access">Zet Dashwheel aan in Toegankelijkheid om het over de achteruitrijcamera te tonen</string>
-    <string name="settings_rom_ac_detail">Toont klimaatwijzigingen in de stijl van Dashwheel, in plaats van het venster van de radio</string>
+    <string name="settings_rom_radar_detail">Toont de parkeersensoren in de stijl van JMCAR, in plaats van die van de radio</string>
+    <string name="settings_rom_radar_needs_access">Zet JMCAR aan in Toegankelijkheid om het over de achteruitrijcamera te tonen</string>
+    <string name="settings_rom_ac_detail">Toont klimaatwijzigingen in de stijl van JMCAR, in plaats van het venster van de radio</string>
     <string name="alert_kind_radar">Parkeerradar</string>
     <string name="alert_kind_ac">Klimaat</string>
     <string name="alert_kind_radar_title">Radarmelding</string>
@@ -85,7 +85,7 @@
     <string name="keys_voice">Spraaktoets</string>
     <string name="keys_custom">Eigen toets</string>
     <string name="keys_unit_choice">De keuze van de radio</string>
-    <string name="settings_rom_tyres_detail">Bandenmeldingen in de stijl van Dashwheel. Voor alleen deze, zet het venster van de TPMS-app uit in de instellingen ervan</string>
+    <string name="settings_rom_tyres_detail">Bandenmeldingen in de stijl van JMCAR. Voor alleen deze, zet het venster van de TPMS-app uit in de instellingen ervan</string>
     <string name="alert_kind_tyres">Banden</string>
     <string name="alert_kind_tyres_title">Bandenmelding</string>
     <string name="alert_speak_tyres_detail">Zegt welke band en wat er mis is</string>
@@ -105,9 +105,9 @@
     <string name="settings_section_display">Weergave</string>
     <string name="settings_appearance_title">Dag en nacht</string>
     <string name="settings_appearance_detail">Auto volgens de auto, zonsopkomst en zonsondergang, of op vaste tijden</string>
-    <string name="alert_style_section">Pop-ups in de stijl van Dashwheel</string>
+    <string name="alert_style_section">Pop-ups in de stijl van JMCAR</string>
     <string name="alert_more_with_permission">Meer automeldingen vragen root, of eenmalig een opdracht vanaf een pc: zie de wiki, Car settings permission.</string>
-    <string name="alert_more_with_github">Meldingen voor deuren, gordel en radar vragen de GitHub-editie van Dashwheel, die de root van de radio kan gebruiken.</string>
+    <string name="alert_more_with_github">Meldingen voor deuren, gordel en radar vragen de GitHub-editie van JMCAR, die de root van de radio kan gebruiken.</string>
     <string name="alert_copy_command">Opdracht kopiëren</string>
     <string name="alert_command_copied">Opdracht gekopieerd</string>
     <string name="settings_section_about">Over</string>
@@ -118,15 +118,15 @@
     <string name="settings_system_perms">Google Maps in een tegel</string>
     <string name="settings_system_perms_on">Ingesteld. Google Maps kan in een tegel draaien.</string>
     <string name="settings_system_perms_off">Niet ingesteld. Tik om het in te stellen: installeert de module PMPatch3, vereist Magisk en een herstart.</string>
-    <string name="settings_pmpatch_body">Google Maps draait in een tegel zodra Android Dashwheel de systeemrechten geeft.</string>
+    <string name="settings_pmpatch_body">Google Maps draait in een tegel zodra Android JMCAR de systeemrechten geeft.</string>
     <string name="settings_pmpatch_cost">De prijs: PMPatch3 schakelt de handtekeningcontrole uit voor elke app op deze radio.</string>
-    <string name="settings_pmpatch_steps">Drie stappen: installeren, herstarten, Dashwheel opnieuw installeren.</string>
+    <string name="settings_pmpatch_steps">Drie stappen: installeren, herstarten, JMCAR opnieuw installeren.</string>
     <string name="settings_pmpatch_step">Stap %1$d van %2$d</string>
     <string name="settings_pmpatch_checking">Magisk controleren…</string>
     <string name="settings_pmpatch_no_magisk">Magisk is niet geïnstalleerd op dit toestel.</string>
     <string name="settings_pmpatch_old_magisk">Magisk 24 of nieuwer is nodig.</string>
     <string name="settings_pmpatch_restart">PMPatch3 is geïnstalleerd. Herstart het toestel om af te ronden.</string>
-    <string name="settings_pmpatch_running">PMPatch3 draait. Dashwheel installeert zichzelf opnieuw om de machtigingen te krijgen.</string>
+    <string name="settings_pmpatch_running">PMPatch3 draait. JMCAR installeert zichzelf opnieuw om de machtigingen te krijgen.</string>
     <string name="settings_pmpatch_install">PMPatch3 installeren</string>
     <string name="settings_pmpatch_reinstall">Opnieuw installeren</string>
     <string name="settings_pmpatch_bad_download">De download komt niet overeen met PMPatch3 v1.2.0.</string>
@@ -155,9 +155,9 @@
     <string name="settings_backup_restore_detail">Uit een bestand van dit apparaat of een ander</string>
     <string name="settings_backup_saved">Instellingen bewaard</string>
     <string name="settings_backup_saved_to">Instellingen bewaard in %1$s</string>
-    <string name="settings_backup_failed">Dit is geen Dashwheel-instellingenbestand. Kies een bestand dat met Instellingen bewaren is gemaakt.</string>
+    <string name="settings_backup_failed">Dit is geen JMCAR-instellingenbestand. Kies een bestand dat met Instellingen bewaren is gemaakt.</string>
     <string name="settings_backup_confirm_title">Deze instellingen terugzetten?</string>
-    <string name="settings_backup_confirm_body">Je dashboards en instellingen worden vervangen. Dashwheel start opnieuw.</string>
+    <string name="settings_backup_confirm_body">Je dashboards en instellingen worden vervangen. JMCAR start opnieuw.</string>
     <string name="settings_backup_confirm">Terugzetten</string>
     <string name="settings_resume_music">Muziek hervatten bij het starten</string>
     <string name="settings_resume_music_detail">De app die speelde bij het uitzetten speelt verder. Laat uit als het apparaat dat al doet.</string>
@@ -199,10 +199,10 @@
     <string name="settings_log_no_phone">Geen telefoon antwoordde. Koppel de telefoon en werk de companion-app bij</string>
     <!-- About tab -->
     <string name="about_author_section">Gemaakt door</string>
-    <string name="about_description">Dashwheel is een launcher voor Android-autoradio\'s: kaart, muziek en autogegevens op één rustig scherm, met dashboards die je zelf indeelt. Gratis en open source.</string>
+    <string name="about_description">JMCAR is een launcher voor Android-autoradio\'s: kaart, muziek en autogegevens op één rustig scherm, met dashboards die je zelf indeelt. Gratis en open source.</string>
     <string name="about_author_role">Maker en ontwikkelaar</string>
-    <string name="about_support_section">Steun Dashwheel</string>
-    <string name="about_support_text">Dashwheel is gratis. Vind je het fijn, dan helpt een kop koffie om het draaiende te houden.</string>
+    <string name="about_support_section">Steun JMCAR</string>
+    <string name="about_support_text">JMCAR is gratis. Vind je het fijn, dan helpt een kop koffie om het draaiende te houden.</string>
     <string name="about_kofi">Trakteer me op koffie via Ko-fi</string>
     <string name="about_scan">Scan met je telefoon</string>
     <string name="about_tip_thanks">Bedankt, dat helpt echt.</string>
@@ -220,7 +220,7 @@
     <string name="alert_style_icon_detail">Alleen een bewegend pictogram in de hoek. Tik erop om te stoppen</string>
     <string name="alert_kind_volume">Volume</string>
     <string name="alert_kind_volume_title">Volumebalk</string>
-    <string name="settings_rom_volume_detail">Toont het volume in de stijl van Dashwheel, in plaats van de balk van de radio</string>
+    <string name="settings_rom_volume_detail">Toont het volume in de stijl van JMCAR, in plaats van de balk van de radio</string>
     <string name="settings_rom_volume_next_start">Neemt het over bij de volgende start van de radio</string>
     <string name="settings_rom_volume_needs_magisk">Vereist Magisk</string>
     <string name="alert_volume_muted">Gedempt</string>
@@ -233,12 +233,12 @@
     <string name="settings_side_rail_detail">De knoppen van de balk staan aan de bestuurderskant, langs het scherm</string>
     <string name="settings_tabs_nav">Tabbladen in plaats van vegen</string>
     <string name="settings_tabs_nav_detail">Dashboards tik je aan in de zijbalk; vereist de zijbalk. Gaat vanzelf aan als een kaart-app onder de dashboards staat.</string>
-    <string name="about_free_open_source">Dashwheel is gratis en open source.</string>
+    <string name="about_free_open_source">JMCAR is gratis en open source.</string>
     <string name="about_updates_play">Updates komen van Google Play</string>
     <string name="settings_obd_source_label">OBD-gegevens van</string>
     <string name="settings_obd_source_adapter">Adapter</string>
     <string name="settings_obd_source_deepobd">Deep OBD</string>
-    <string name="settings_obd_source_adapter_hint">Dashwheel praat zelf met de OBD-adapter.</string>
+    <string name="settings_obd_source_adapter_hint">JMCAR praat zelf met de OBD-adapter.</string>
     <string name="settings_obd_source_deepobd_hint">Deep OBD leest de auto en deelt de gegevens. Zet het verzenden van gegevens aan in Deep OBD. Foutcodes hebben de adapter nodig.</string>
     <string name="settings_deepobd_waiting">Nog niets van Deep OBD. Open het en verbind met de auto.</string>
     <string name="settings_deepobd_lines">Regels van Deep OBD. Tik er een om te wijzigen wat die toont.</string>
@@ -271,11 +271,11 @@
     <string name="dead_strip_save">Opslaan</string>
     <string name="settings_unit_tools">Toestelhulpmiddelen</string>
     <string name="settings_unit_tools_detail">Opstartlogo, Google Maps in een tegel, systeemapp</string>
-    <string name="home_hand_back_title">Dashwheel is het startscherm</string>
+    <string name="home_hand_back_title">JMCAR is het startscherm</string>
     <string name="home_hand_back_detail">Uit geeft het scherm terug aan de eigen launcher van de radio. Je instellingen blijven.</string>
-    <string name="home_hand_back_off_detail">De eigen launcher van de radio is het startscherm. Zet aan om Dashwheel terug te krijgen.</string>
+    <string name="home_hand_back_off_detail">De eigen launcher van de radio is het startscherm. Zet aan om JMCAR terug te krijgen.</string>
     <string name="home_hand_back_confirm_title">Startscherm teruggeven aan de radio?</string>
-    <string name="home_hand_back_confirm">De eigen launcher van de radio komt nu en bij elke start terug. Dashwheel bewaart je instellingen: open het vanuit de app-lijst en zet dit weer aan.</string>
+    <string name="home_hand_back_confirm">De eigen launcher van de radio komt nu en bij elke start terug. JMCAR bewaart je instellingen: open het vanuit de app-lijst en zet dit weer aan.</string>
     <string name="home_hand_back_confirm_ok">Teruggeven</string>
     <string name="settings_root_how">Hoe</string>
     <string name="settings_obd_linked">Verbonden: %1$s</string>
@@ -310,8 +310,8 @@
         <item quantity="other">%1$d van %2$d uitgesproken</item>
     </plurals>
     <plurals name="settings_sum_popups">
-        <item quantity="one">%d in de stijl van Dashwheel</item>
-        <item quantity="other">%d in de stijl van Dashwheel</item>
+        <item quantity="one">%d in de stijl van JMCAR</item>
+        <item quantity="other">%d in de stijl van JMCAR</item>
     </plurals>
     <string name="settings_beta_updates">Bèta-updates</string>
     <string name="settings_beta_updates_detail">Nieuwe versies zodra ze klaar zijn, voor iedereen anders</string>
@@ -325,8 +325,8 @@
     <string name="map_servers_reset">Gratis servers</string>
     <string name="report_title">Melden hoe het werkt</string>
     <string name="report_row_detail">Je toestel en wat erop werkt, als GitHub-issue</string>
-    <string name="report_compat_intro">Geef aan wat werkt op dit toestel. Het rapport bevat het model, de firmware en de Dashwheel-versie, niets persoonlijks.</string>
-    <string name="report_crash_title">Dashwheel stopte de vorige keer</string>
+    <string name="report_compat_intro">Geef aan wat werkt op dit toestel. Het rapport bevat het model, de firmware en de JMCAR-versie, niets persoonlijks.</string>
+    <string name="report_crash_title">JMCAR stopte de vorige keer</string>
     <string name="report_crash_intro">Stuur de fout op zodat die opgelost kan worden. Het rapport bevat de fout, het model en de firmware, niets persoonlijks.</string>
     <string name="report_scan">Scan met je telefoon om te versturen</string>
     <string name="report_open">Hier openen</string>
@@ -334,7 +334,7 @@
     <string name="report_later">Niet nu</string>
     <string name="report_works">Werkt</string>
     <string name="report_fails">Werkt niet</string>
-    <string name="report_item_home">Thuisknop opent Dashwheel</string>
+    <string name="report_item_home">Thuisknop opent JMCAR</string>
     <string name="report_item_wheel">Stuurwielknoppen</string>
     <string name="report_item_tiles">Apps in tegels</string>
     <string name="report_item_maps">Google Maps in een tegel</string>
@@ -349,8 +349,8 @@
     <string name="settings_obd_auto_on">Bij het starten van de auto, en opnieuw als de verbinding wegvalt</string>
     <string name="settings_obd_auto_off">Uit: de adapter blijft gekoppeld en verbindt als u op OBD in de balk tikt</string>
     <string name="settings_log_save">Logboek op het toestel bewaren</string>
-    <string name="settings_log_save_detail">In de map Download, Dashwheel, om naar een USB-stick te kopiëren</string>
-    <string name="settings_log_saved">Bewaard in Download, Dashwheel: %1$s</string>
+    <string name="settings_log_save_detail">In de map Download, JMCAR, om naar een USB-stick te kopiëren</string>
+    <string name="settings_log_saved">Bewaard in Download, JMCAR: %1$s</string>
     <string name="settings_log_save_failed">Logboek kon niet worden bewaard</string>
     <string name="settings_waze_wake">Waze herstarten na het ontwaken</string>
     <string name="settings_waze_wake_detail">Zodra locatie en mobiele data terug zijn, zodat het niet offline blijft</string>
@@ -373,7 +373,7 @@
     <string name="settings_sum_expert">Lab, API-sleutels, servers</string>
     <string name="alerts_say">Zeggen</string>
     <string name="alerts_show">Tonen</string>
-    <string name="alerts_intro">Zeggen spreekt het uit, Tonen zet het venster van Dashwheel op het scherm. Tik op een venster voor de stijl.</string>
+    <string name="alerts_intro">Zeggen spreekt het uit, Tonen zet het venster van JMCAR op het scherm. Tik op een venster voor de stijl.</string>
     <string name="alerts_group_car">Van de auto</string>
     <string name="alerts_group_road">Onderweg</string>
     <string name="alerts_group_start">Bij vertrek</string>

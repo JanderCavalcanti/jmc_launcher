@@ -26,7 +26,7 @@
     <string name="boot_restore_confirm_body">A animação de inicialização e o logotipo fixo originais são restaurados.</string>
     <string name="boot_play_failed">Não foi possível reproduzir: %1$s</string>
     <string name="boot_current">Logotipo de inicialização atual: %1$s</string>
-    <string name="boot_hint">Muda o que o rádio mostra ao iniciar, com o logotipo desta marca: a animação do Android e, se ligado, o logotipo fixo. Usa o ADB root interno do rádio e nunca mexe em /system. Os originais são salvos (também em Dashwheel/boot_backup na memória interna) e Restaurar volta a colocá-los. Logotipos do conjunto livre car-logos-dataset.</string>
+    <string name="boot_hint">Muda o que o rádio mostra ao iniciar, com o logotipo desta marca: a animação do Android e, se ligado, o logotipo fixo. Usa o ADB root interno do rádio e nunca mexe em /system. Os originais são salvos (também em JMCAR/boot_backup na memória interna) e Restaurar volta a colocá-los. Logotipos do conjunto livre car-logos-dataset.</string>
     <string name="boot_usb">Salvar em USB</string>
     <string name="boot_saving_usb">Escrevendo na pendrive USB…</string>
     <string name="boot_saved_usb">Salvo em %1$s. Desligue e volte a ligar a pendrive: o rádio importa a animação. Para o logotipo fixo: Configurações → Configurações de fábrica (8888) → Logo set → escolha %2$s → Update logo.</string>
@@ -39,5 +39,5 @@
     <string name="boot_still_failed">Logotipo fixo não alterado: %1$s</string>
     <string name="boot_still_unsupported">este rádio não tem ferramenta de logotipo fixo</string>
     <string name="boot_not_qf">Instalar só funciona no firmware QF001 / K706 previsto. Use Salvar em USB.</string>
-    <string name="boot_no_adb">O ADB interno do rádio não responde (porta %1$d) e o Dashwheel não tem root. Ative a depuração USB (Configurações → Sobre → toque 7 vezes em Número de compilação, depois Opções do desenvolvedor → Depuração USB) ou conceda root, e tente de novo.</string>
+    <string name="boot_no_adb">O ADB interno do rádio não responde (porta %1$d) e o JMCAR não tem root. Ative a depuração USB (Configurações → Sobre → toque 7 vezes em Número de compilação, depois Opções do desenvolvedor → Depuração USB) ou conceda root, e tente de novo.</string>
 </resources>

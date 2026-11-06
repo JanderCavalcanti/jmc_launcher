@@ -28,7 +28,7 @@
     <string name="canvas_tab_when_hint">Parcheggiata: all\'avvio, o ferma da 2 minuti. Tocca di nuovo una scelta per toglierla.</string>
     <string name="canvas_map_title">Sotto il cruscotto</string>
     <string name="canvas_map_builtin">Mappa interna</string>
-    <string name="canvas_map_builtin_hint">La mappa di Dashwheel, con cruscotti da scorrere.</string>
+    <string name="canvas_map_builtin_hint">La mappa di JMCAR, con cruscotti da scorrere.</string>
     <string name="canvas_map_app_hint">L\'app gira sotto i riquadri e riceve ogni tocco che loro non prendono. Le schede nella barra sostituiscono lo scorrimento: tienine premuta una per darle un nome.</string>
     <string name="canvas_bar_add_title">Aggiungi alla barra</string>
     <string name="canvas_bar_add_dashboard">Cruscotto</string>

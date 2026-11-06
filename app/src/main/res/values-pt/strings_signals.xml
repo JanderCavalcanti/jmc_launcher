@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="signals_title">Sinais do carro</string>
-    <string name="signals_settings_detail">Ensine ao Dashwheel as portas, a marcha a ré e as luzes</string>
-    <string name="signals_intro">O Dashwheel lê sozinho o que consegue. Toque em Procurar para lhe ensinar o resto fazendo a ação.</string>
+    <string name="signals_settings_detail">Ensine ao JMCAR as portas, a marcha a ré e as luzes</string>
+    <string name="signals_intro">O JMCAR lê sozinho o que consegue. Toque em Procurar para lhe ensinar o resto fazendo a ação.</string>
     <string name="signals_sources">Ouvindo</string>
     <string name="signals_needs_root">Precisa de root</string>
     <string name="signals_values">Valores: %1$d</string>
     <string name="signals_section">Sinais</string>
     <string name="signals_learned">Aprendido: %1$s</string>
-    <string name="signals_builtin">O Dashwheel já lê</string>
+    <string name="signals_builtin">O JMCAR já lê</string>
     <string name="signals_missing">Ainda não encontrado</string>
     <string name="signals_forget">Esquecer</string>
     <string name="signals_find">Procurar</string>

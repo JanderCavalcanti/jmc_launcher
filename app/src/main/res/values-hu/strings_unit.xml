@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- The head unit firmware family and what it lets Dashwheel do (UnitPlatform, Settings, System, Head unit). -->
+<!-- The head unit firmware family and what it lets JMCAR do (UnitPlatform, Settings, System, Head unit). -->
 <resources>
     <string name="unit_fyt_keys_note">Shell kell hozzá; a fejegység saját alkalmazásai addig elveszítik a kormánygombokat</string>
-    <string name="unit_mtc_whitelist_title">Dashwheel ébren tartása</string>
-    <string name="unit_mtc_whitelist_detail">Vegye fel a Dashwheelt a fejegység alvási engedélylistájára (a BootControl alkalmazásába vagy a módosított ROM beállításaiba). Különben a firmware leállítja a gyújtás levételekor.</string>
+    <string name="unit_mtc_whitelist_title">JMCAR ébren tartása</string>
+    <string name="unit_mtc_whitelist_detail">Vegye fel a JMCARt a fejegység alvási engedélylistájára (a BootControl alkalmazásába vagy a módosított ROM beállításaiba). Különben a firmware leállítja a gyújtás levételekor.</string>
     <string name="unit_reglink_duraspeed_title">DuraSpeed kikapcsolása</string>
-    <string name="unit_reglink_duraspeed_detail">A MediaTek háttértakarékos leállítja a Dashwheelt a gyújtás levételekor. A Dashwheel minden indításkor maga kapcsolja ki, amint írhatja a biztonságos beállításokat.</string>
+    <string name="unit_reglink_duraspeed_detail">A MediaTek háttértakarékos leállítja a JMCARt a gyújtás levételekor. A JMCAR minden indításkor maga kapcsolja ki, amint írhatja a biztonságos beállításokat.</string>
     <string name="unit_reglink_quickboot_title">Quick Boot kikapcsolása</string>
     <string name="unit_reglink_quickboot_detail">A fejegység gyári beállításaiban. Ekkor rendesen indul, ahelyett hogy a gyors alvás előtt leállítaná az alkalmazásokat.</string>
-    <string name="unit_reglink_whitelist_title">Dashwheel engedélylistára vétele</string>
-    <string name="unit_reglink_whitelist_detail">A firmware három listát vezet az indulni, háttérben futni és az alvást túlélni engedett alkalmazásokról. A Dashwheel roottal felveszi magát rájuk.</string>
+    <string name="unit_reglink_whitelist_title">JMCAR engedélylistára vétele</string>
+    <string name="unit_reglink_whitelist_detail">A firmware három listát vezet az indulni, háttérben futni és az alvást túlélni engedett alkalmazásokról. A JMCAR roottal felveszi magát rájuk.</string>
 </resources>

@@ -38,7 +38,7 @@
     <string name="share_use">Usar un panel compartido</string>
     <string name="share_paste_hint">Código DW1:</string>
     <string name="share_open_file">Abrir un archivo</string>
-    <string name="share_use_hint">Escribe o pega un código, abre un archivo o escanea un código QR con la app Dashwheel Companion.</string>
+    <string name="share_use_hint">Escribe o pega un código, abre un archivo o escanea un código QR con la app JMCAR Companion.</string>
     <string name="share_missing_apps">Apps que no están en este equipo: %1$d. Sus mosaicos se quedan hasta que los cambies.</string>
     <string name="share_take_look">Usar también su aspecto</string>
     <string name="share_replace">Ponerlo aquí</string>

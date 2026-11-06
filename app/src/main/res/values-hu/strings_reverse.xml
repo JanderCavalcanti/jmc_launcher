@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Dashwheel's reverse view over the reversing camera (ReverseView.kt, ReverseViewSheet.kt) -->
+    <!-- JMCAR's reverse view over the reversing camera (ReverseView.kt, ReverseViewSheet.kt) -->
     <string name="reverse_title">Tolatási nézet</string>
     <string name="reverse_settings_detail">Segédvonalak és parkolóradar a tolatókamera képén</string>
-    <string name="reverse_switch">A Dashwheel tolatási nézete</string>
+    <string name="reverse_switch">A JMCAR tolatási nézete</string>
     <string name="reverse_switch_detail">A kormányt követő vonalak, a parkolóradar és az autója a tolatókamera képén.</string>
-    <string name="reverse_needs_access">Kapcsolja be a Dashwheel kisegítő szolgáltatását: csak így lehet a kamera képére rajzolni.</string>
+    <string name="reverse_needs_access">Kapcsolja be a JMCAR kisegítő szolgáltatását: csak így lehet a kamera képére rajzolni.</string>
     <string name="reverse_layout_title">A képernyőn</string>
     <string name="reverse_layout_both">Kamera és radar</string>
     <string name="reverse_layout_camera">Kamera</string>
@@ -14,8 +14,8 @@
     <string name="reverse_stock_title">Az autó alkalmazásának vonalai</string>
     <string name="reverse_stock_keep">Megtartás</string>
     <string name="reverse_stock_hide">Elrejtés</string>
-    <string name="reverse_stock_hint_keep">Az autó alkalmazásának vonalai a Dashwheel vonalai alatt maradnak. A kormányvonalak kb. 12°-os lépésekben mozognak.</string>
-    <string name="reverse_stock_hint_hide">Csak a Dashwheel vonalai, simábban. Root szükséges.</string>
+    <string name="reverse_stock_hint_keep">Az autó alkalmazásának vonalai a JMCAR vonalai alatt maradnak. A kormányvonalak kb. 12°-os lépésekben mozognak.</string>
+    <string name="reverse_stock_hint_hide">Csak a JMCAR vonalai, simábban. Root szükséges.</string>
     <string name="reverse_stock_failed">Nem sikerült módosítani őket. Ehhez root kell.</string>
     <string name="reverse_lines_title">Vonalak beigazítása</string>
     <string name="reverse_lines_hint">Kapcsoljon R-be, majd a tolatási képernyőn koppintson a Beállítás gombra, hogy a vonalakat az úthoz igazítsa.</string>
@@ -35,11 +35,11 @@
     <string name="reverse_near_far">Valami van mögötte</string>
     <string name="reverse_picture_title">Kamerakép</string>
     <string name="reverse_picture_rom">Autó alkalmazása</string>
-    <string name="reverse_picture_own">Dashwheel</string>
-    <string name="reverse_picture_hint_rom">Az autó alkalmazása mutatja a kamerát, a Dashwheel pedig rárajzol.</string>
-    <string name="reverse_picture_hint_own">Kísérleti: a Dashwheel maga mutatja a kamerát. Ha nem jön kép, másodperceken belül visszatér az autó alkalmazásának képe.</string>
-    <string name="reverse_picture_denied">Ehhez a Dashwheelnek kameraengedély kell.</string>
-    <string name="reverse_picture_failed">A Dashwheel nem érte el a kamerát: ez az autó alkalmazásának képe</string>
+    <string name="reverse_picture_own">JMCAR</string>
+    <string name="reverse_picture_hint_rom">Az autó alkalmazása mutatja a kamerát, a JMCAR pedig rárajzol.</string>
+    <string name="reverse_picture_hint_own">Kísérleti: a JMCAR maga mutatja a kamerát. Ha nem jön kép, másodperceken belül visszatér az autó alkalmazásának képe.</string>
+    <string name="reverse_picture_denied">Ehhez a JMCARnek kameraengedély kell.</string>
+    <string name="reverse_picture_failed">A JMCAR nem érte el a kamerát: ez az autó alkalmazásának képe</string>
     <string name="reverse_side_left">Bal oldal: %1$d cm</string>
     <string name="reverse_side_right">Jobb oldal: %1$d cm</string>
     <string name="reverse_boot_blocked">Itt a csomagtartó nem nyílik ki teljesen</string>
@@ -50,7 +50,7 @@
     <string name="reverse_second_title">Második kijelző</string>
     <string name="reverse_second_off">Ki</string>
     <string name="reverse_second_hint">Hátramenetben magától átveszi a második kijelzőt.</string>
-    <string name="reverse_second_hint_rom">A kamerához a tolatási nézetnek bekapcsolva kell lennie a Dashwheel képével: addig a második kijelző a radart mutatja.</string>
+    <string name="reverse_second_hint_rom">A kamerához a tolatási nézetnek bekapcsolva kell lennie a JMCAR képével: addig a második kijelző a radart mutatja.</string>
     <string name="reverse_second_hint_video">A második kijelző beállításaiban ki kell kapcsolni az Egyszerű kijelzőt.</string>
     <string name="reverse_near_ahead">Valami van előtte</string>
     <string name="reverse_steer">Kormányvonalak</string>

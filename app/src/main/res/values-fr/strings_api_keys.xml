@@ -2,7 +2,7 @@
 <resources>
     <!-- Your API keys (ApiKeys.kt), Settings → System; and the Overpass server on the map servers page -->
     <string name="api_keys_title">Vos clés API</string>
-    <string name="api_keys_search_detail">Clés des services que Dashwheel interroge pour vous, Gemini d’abord</string>
+    <string name="api_keys_search_detail">Clés des services que JMCAR interroge pour vous, Gemini d’abord</string>
     <string name="api_keys_none">Aucune clé</string>
     <string name="api_keys_explanation">Certaines fonctions interrogent un service qui demande une clé à vous. Collez-la ici : elle reste sur cette unité et ne va qu’à ce service.</string>
     <string name="api_keys_paste">Collez la clé</string>

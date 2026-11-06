@@ -4,7 +4,7 @@
     <string name="settings_section_second_screen">Second screen</string>
     <string name="second_screen_experimental">Experimental: a Raspberry Pi drives a second screen in the car. Not yet tested in a car.</string>
     <string name="second_screen_status_unpaired">No second screen paired</string>
-    <string name="second_screen_status_unpaired_detail">Scan the code on the second screen with the Dashwheel phone app while the phone is connected to this car.</string>
+    <string name="second_screen_status_unpaired_detail">Scan the code on the second screen with the JMCAR phone app while the phone is connected to this car.</string>
     <string name="second_screen_status_searching">Looking for the second screen</string>
     <string name="second_screen_status_searching_detail">The screen and this head unit must both be on the phone\'s hotspot.</string>
     <string name="second_screen_status_connected">Connected to %1$s</string>
@@ -37,7 +37,7 @@
     <string name="second_screen_by_cable">by cable</string>
     <string name="second_screen_by_wifi">over Wi-Fi</string>
     <string name="second_screen_program_older">The screen\'s program is older than this app: write a new card for it.</string>
-    <string name="second_screen_program_newer">The screen\'s program is newer than this app: update Dashwheel.</string>
+    <string name="second_screen_program_newer">The screen\'s program is newer than this app: update JMCAR.</string>
     <string name="second_screen_health_under_powered">The screen\'s board is under-powered and slows down: use a 5 V, 2.5 A supply and a short, thick cable.</string>
     <string name="second_screen_health_hot">The screen\'s board is hot (%1$d °C) and slows down: give it air or a heatsink.</string>
     <string name="second_screen_health_throttled">The screen\'s board is slowed down by its firmware: check its power supply.</string>
@@ -119,10 +119,10 @@
     <string name="second_screen_mapview_distance_far">Far</string>
     <string name="second_screen_mapview_buildings">Buildings in 3D</string>
     <string name="second_screen_mapview_buildings_detail">Where the map\'s provider knows their height.</string>
-    <string name="second_screen_pi_waiting">Waiting for Dashwheel…</string>
-    <string name="second_screen_pi_no_signal">No signal from Dashwheel</string>
+    <string name="second_screen_pi_waiting">Waiting for JMCAR…</string>
+    <string name="second_screen_pi_no_signal">No signal from JMCAR</string>
     <string name="second_screen_pi_connected">Connected</string>
-    <string name="second_screen_pi_scan">Scan with the Dashwheel phone app</string>
+    <string name="second_screen_pi_scan">Scan with the JMCAR phone app</string>
     <string name="second_screen_board_full">Full display</string>
     <string name="second_screen_board_in_use">These pages are on the screen now.</string>
     <string name="second_screen_board_not_in_use">Not in use now: these pages show when you switch to it.</string>

@@ -205,10 +205,10 @@
     <string name="vehicle_err_refused">%1$s weigerde de verbinding: in gebruik door een telefoon of andere app, zonder stroom, of buiten bereik</string>
     <string name="vehicle_err_silent">%1$s is verbonden maar heeft nooit geantwoord: zet het contact aan en tik dan op OBD</string>
     <string name="vehicle_usb_cable">USB-kabel</string>
-    <string name="vehicle_obd_usb_allow">Sta in het venster toe dat Dashwheel de adapter gebruikt</string>
+    <string name="vehicle_obd_usb_allow">Sta in het venster toe dat JMCAR de adapter gebruikt</string>
     <string name="vehicle_err_usb_none">Geen USB-adapter aangesloten</string>
-    <string name="vehicle_err_usb_tap">Tik op OBD zodat Dashwheel %1$s mag gebruiken</string>
-    <string name="vehicle_err_usb_denied">Dashwheel mocht %1$s niet gebruiken</string>
+    <string name="vehicle_err_usb_tap">Tik op OBD zodat JMCAR %1$s mag gebruiken</string>
+    <string name="vehicle_err_usb_denied">JMCAR mocht %1$s niet gebruiken</string>
     <string name="vehicle_err_usb_open">%1$s kon niet worden geopend: koppel hem los en sluit hem opnieuw aan</string>
     <string name="vehicle_err_usb_silent">%1$s antwoordde nooit als een OBD-adapter</string>
     <string name="vehicle_err_phone_not_linked">OBD loopt via de telefoon: verbind eerst de telefoon</string>

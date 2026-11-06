@@ -28,7 +28,7 @@
     <string name="canvas_tab_when_hint">À l\'arrêt : au démarrage, ou arrêté depuis 2 minutes. Touchez à nouveau un choix pour l\'enlever.</string>
     <string name="canvas_map_title">Sous le tableau de bord</string>
     <string name="canvas_map_builtin">Carte intégrée</string>
-    <string name="canvas_map_builtin_hint">La carte de Dashwheel, avec des tableaux de bord à faire glisser.</string>
+    <string name="canvas_map_builtin_hint">La carte de JMCAR, avec des tableaux de bord à faire glisser.</string>
     <string name="canvas_map_app_hint">L\'appli tourne sous les tuiles et reçoit chaque toucher qu\'elles ne prennent pas. Des onglets dans la barre remplacent le glissement : maintenez-en un pour le nommer.</string>
     <string name="canvas_bar_add_title">Ajouter à la barre</string>
     <string name="canvas_bar_add_dashboard">Tableau de bord</string>

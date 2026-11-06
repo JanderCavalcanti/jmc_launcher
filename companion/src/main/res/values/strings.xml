@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Dashwheel Companion</string>
+    <string name="app_name">JMCAR Companion</string>
     <string name="service_channel">Car connection</string>
     <string name="status_off">Sharing is off</string>
     <string name="status_waiting">Waiting for the car on your hotspot</string>
@@ -23,7 +23,7 @@
     <string name="done">Done</string>
     <string name="cars_title">Paired cars</string>
     <string name="pair_car">Pair a car</string>
-    <string name="pair_hint">In Dashwheel, open Settings → Phone → Pair a phone, then scan the code it shows.</string>
+    <string name="pair_hint">In JMCAR, open Settings → Phone → Pair a phone, then scan the code it shows.</string>
     <string name="remove">Remove</string>
     <string name="confirm_title">Allow %1$s?</string>
     <string name="confirm_body">This car will show your notifications and messages, and can reply on your behalf. It only connects over your hotspot.</string>
@@ -33,7 +33,7 @@
     <string name="remove_body">The car will no longer receive anything from this phone. Pairing again needs a new code.</string>
     <string name="paired_since">Paired on %1$s</string>
     <string name="scanned_download_code">That code downloads the app. Now scan the other one on the head unit\'s screen, labelled Pairing code.</string>
-    <string name="invalid_code_read">This is not a Dashwheel pairing code (read: %1$s).</string>
+    <string name="invalid_code_read">This is not a JMCAR pairing code (read: %1$s).</string>
     <string name="step_calls">Calls</string>
     <string name="step_calls_detail">Shows who is calling on the car\'s screen, to answer or hang up there, and your favourites to call from the car. The sound stays on the car\'s Bluetooth.</string>
     <string name="car_spot_title">Where\'s my car</string>
@@ -70,13 +70,13 @@
     <string name="keyboard_typed">On the car screen</string>
     <string name="keyboard_copied">No field selected on the car screen: the text is on its clipboard.</string>
     <string name="keyboard_failed">The car screen did not take the text.</string>
-    <string name="keyboard_no_answer">No answer: update Dashwheel on the car.</string>
+    <string name="keyboard_no_answer">No answer: update JMCAR on the car.</string>
     <string name="keyboard_not_connected">The car is not connected.</string>
     <string name="keyboard_typing_off">Typing into fields is off on the car.</string>
     <string name="keyboard_turn_on">Turn on</string>
     <string name="keyboard_turning_on">Turning it on on the car…</string>
     <string name="keyboard_typing_on">Typing is on: select a field on the car screen, then type here.</string>
-    <string name="keyboard_turn_on_failed">The car could not turn it on: on the car, open Settings, Accessibility, and turn on Dashwheel.</string>
+    <string name="keyboard_turn_on_failed">The car could not turn it on: on the car, open Settings, Accessibility, and turn on JMCAR.</string>
     <string name="send_to_car">Send to car</string>
     <string name="sent_to_car">Sent to the car screen</string>
     <string name="place_sent">Guidance sent to the car: %1$s</string>
@@ -266,12 +266,12 @@
     <string name="rescue_split">Leave split screen</string>
     <string name="rescue_split_body">The car\'s screen stops sharing with another app.</string>
     <string name="rescue_home_back">Give Home to the unit</string>
-    <string name="rescue_home_back_body">The unit\'s own launcher becomes the Home screen. Dashwheel stays in the app list.</string>
-    <string name="rescue_home_take">Make Dashwheel Home again</string>
-    <string name="rescue_home_take_body">Dashwheel becomes the car\'s Home screen again.</string>
+    <string name="rescue_home_back_body">The unit\'s own launcher becomes the Home screen. JMCAR stays in the app list.</string>
+    <string name="rescue_home_take">Make JMCAR Home again</string>
+    <string name="rescue_home_take_body">JMCAR becomes the car\'s Home screen again.</string>
     <string name="rescue_send">Do it</string>
     <string name="rescue_sending">Sending to the car</string>
     <string name="rescue_done">Done on the car</string>
     <string name="rescue_failed">The car could not do it</string>
-    <string name="rescue_no_answer">No answer: update Dashwheel on the car.</string>
+    <string name="rescue_no_answer">No answer: update JMCAR on the car.</string>
 </resources>

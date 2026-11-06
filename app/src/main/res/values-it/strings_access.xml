@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="access_a11y_title">Accesso all\'accessibilità</string>
-    <string name="access_a11y_body">Dashwheel usa il servizio di accessibilità di Android per affiancare due app, far fare ai tasti del volante ciò che hai scelto, come Indietro, e scrivere nel campo selezionato ciò che detti sul telefono.\n\nPer farlo vede quali app sono aperte e dove, i tasti premuti e il campo in cui scrivi. Non legge nient\'altro sullo schermo. Niente viene salvato, inviato o condiviso: tutto resta su questa unità.</string>
+    <string name="access_a11y_body">JMCAR usa il servizio di accessibilità di Android per affiancare due app, far fare ai tasti del volante ciò che hai scelto, come Indietro, e scrivere nel campo selezionato ciò che detti sul telefono.\n\nPer farlo vede quali app sono aperte e dove, i tasti premuti e il campo in cui scrivi. Non legge nient\'altro sullo schermo. Niente viene salvato, inviato o condiviso: tutto resta su questa unità.</string>
     <string name="access_notif_title">Accesso alle notifiche</string>
-    <string name="access_notif_body">Dashwheel legge le notifiche per mostrare cosa è in riproduzione, la prossima svolta e i nuovi messaggi sul cruscotto. Restano su questa unità.</string>
+    <string name="access_notif_body">JMCAR legge le notifiche per mostrare cosa è in riproduzione, la prossima svolta e i nuovi messaggi sul cruscotto. Restano su questa unità.</string>
     <string name="access_open_settings">Apri impostazioni</string>
     <string name="access_agree">Accetto</string>
     <string name="access_not_now">Non ora</string>
     <string name="access_restricted_title">Bloccato da Android</string>
-    <string name="access_restricted_body">Android lo blocca per le app installate da un file. Apri le impostazioni e tocca Dashwheel una volta, poi Info app, ⋮, Consenti impostazioni con limitazioni, e riprova.</string>
+    <string name="access_restricted_body">Android lo blocca per le app installate da un file. Apri le impostazioni e tocca JMCAR una volta, poi Info app, ⋮, Consenti impostazioni con limitazioni, e riprova.</string>
     <string name="access_app_info">Info app</string>
 </resources>

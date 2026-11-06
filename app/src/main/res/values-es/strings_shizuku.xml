@@ -2,10 +2,10 @@
 <resources>
     <!-- Shizuku: the shell without root (ShizukuSettings.kt, ShizukuShell.kt), Settings → System → More tools -->
     <string name="shizuku_search_detail">Comandos de shell sin root</string>
-    <string name="shizuku_detail_none">No instalado. Da a Dashwheel la shell sin root</string>
+    <string name="shizuku_detail_none">No instalado. Da a JMCAR la shell sin root</string>
     <string name="shizuku_detail_off">Instalado, sin iniciar. Abre Shizuku para iniciarlo</string>
     <string name="shizuku_detail_old">Demasiado antiguo. Actualiza Shizuku</string>
-    <string name="shizuku_detail_ask">En marcha. Permite Dashwheel en Shizuku</string>
+    <string name="shizuku_detail_ask">En marcha. Permite JMCAR en Shizuku</string>
     <string name="shizuku_detail_on">En uso: los comandos de shell pasan por él</string>
     <string name="shizuku_body">Shizuku ejecuta los comandos de shell que haría el root: mover ventanas de apps, los ajustes de la app del coche, las teclas de volumen. Una radio con root lo inicia al arrancar; otra lo inicia desde la app Shizuku tras cada arranque.</string>
     <string name="shizuku_get">Obtener Shizuku</string>

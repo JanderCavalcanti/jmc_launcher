@@ -2,9 +2,9 @@
 <resources>
     <string name="reverse_title">Achteruitzicht</string>
     <string name="reverse_settings_detail">Hulplijnen en parkeerradar over de achteruitrijcamera</string>
-    <string name="reverse_switch">Dashwheels achteruitzicht</string>
+    <string name="reverse_switch">JMCARs achteruitzicht</string>
     <string name="reverse_switch_detail">Lijnen die het stuur volgen, de parkeerradar en je auto, over de achteruitrijcamera.</string>
-    <string name="reverse_needs_access">Zet de toegankelijkheidsdienst van Dashwheel aan: alleen zo kan er over de camera worden getekend.</string>
+    <string name="reverse_needs_access">Zet de toegankelijkheidsdienst van JMCAR aan: alleen zo kan er over de camera worden getekend.</string>
     <string name="reverse_layout_title">Op het scherm</string>
     <string name="reverse_layout_both">Camera en radar</string>
     <string name="reverse_layout_camera">Camera</string>
@@ -13,8 +13,8 @@
     <string name="reverse_stock_title">Lijnen van de auto-app</string>
     <string name="reverse_stock_keep">Houden</string>
     <string name="reverse_stock_hide">Verbergen</string>
-    <string name="reverse_stock_hint_keep">De lijnen van de auto-app blijven onder die van Dashwheel. De stuurlijnen verspringen in stappen van ongeveer 12°.</string>
-    <string name="reverse_stock_hint_hide">Alleen de lijnen van Dashwheel, vloeiender. Root nodig.</string>
+    <string name="reverse_stock_hint_keep">De lijnen van de auto-app blijven onder die van JMCAR. De stuurlijnen verspringen in stappen van ongeveer 12°.</string>
+    <string name="reverse_stock_hint_hide">Alleen de lijnen van JMCAR, vloeiender. Root nodig.</string>
     <string name="reverse_stock_failed">Kon ze niet wijzigen. Hiervoor is root nodig.</string>
     <string name="reverse_lines_title">Uitlijnen</string>
     <string name="reverse_lines_hint">Zet hem in R en tik op Afstellen op het achteruitrijscherm om de lijnen op de weg te leggen.</string>
@@ -34,11 +34,11 @@
     <string name="reverse_near_far">Iets erachter</string>
     <string name="reverse_picture_title">Camerabeeld</string>
     <string name="reverse_picture_rom">Auto-app</string>
-    <string name="reverse_picture_own">Dashwheel</string>
-    <string name="reverse_picture_hint_rom">De auto-app toont de camera en Dashwheel tekent eroverheen.</string>
-    <string name="reverse_picture_hint_own">Experimenteel: Dashwheel toont de camera zelf. Komt er geen beeld, dan is dat van de auto-app binnen enkele seconden terug.</string>
-    <string name="reverse_picture_denied">Dashwheel heeft hiervoor cameratoegang nodig.</string>
-    <string name="reverse_picture_failed">Dashwheel kreeg de camera niet: beeld van de auto-app</string>
+    <string name="reverse_picture_own">JMCAR</string>
+    <string name="reverse_picture_hint_rom">De auto-app toont de camera en JMCAR tekent eroverheen.</string>
+    <string name="reverse_picture_hint_own">Experimenteel: JMCAR toont de camera zelf. Komt er geen beeld, dan is dat van de auto-app binnen enkele seconden terug.</string>
+    <string name="reverse_picture_denied">JMCAR heeft hiervoor cameratoegang nodig.</string>
+    <string name="reverse_picture_failed">JMCAR kreeg de camera niet: beeld van de auto-app</string>
     <string name="reverse_side_left">Links: %1$d cm</string>
     <string name="reverse_side_right">Rechts: %1$d cm</string>
     <string name="reverse_boot_blocked">De achterklep gaat hier niet helemaal open</string>
@@ -49,7 +49,7 @@
     <string name="reverse_second_title">Tweede scherm</string>
     <string name="reverse_second_off">Uit</string>
     <string name="reverse_second_hint">Neemt het tweede scherm vanzelf over in de achteruit.</string>
-    <string name="reverse_second_hint_rom">De camera heeft het achteruitrijbeeld aan nodig met het beeld van Dashwheel: tot dan toont het tweede scherm de radar.</string>
+    <string name="reverse_second_hint_rom">De camera heeft het achteruitrijbeeld aan nodig met het beeld van JMCAR: tot dan toont het tweede scherm de radar.</string>
     <string name="reverse_second_hint_video">Vereist Eenvoudige weergave uit in de instellingen van het tweede scherm.</string>
     <string name="reverse_near_ahead">Iets ervoor</string>
     <string name="reverse_steer">Stuurlijnen</string>

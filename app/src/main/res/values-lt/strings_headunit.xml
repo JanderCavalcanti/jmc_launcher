@@ -6,8 +6,8 @@
     <string name="unit_chosen">%1$s, jūsų pasirinkimas</string>
     <string name="unit_choose_title">Mano magnetola yra</string>
     <string name="unit_auto">Automatiškai</string>
-    <string name="unit_restart">Paleisti Dashwheel iš naujo</string>
-    <string name="unit_restart_hint">Pasirinkimas įsigalioja kitą kartą paleidus Dashwheel.</string>
+    <string name="unit_restart">Paleisti JMCAR iš naujo</string>
+    <string name="unit_restart_hint">Pasirinkimas įsigalioja kitą kartą paleidus JMCAR.</string>
     <string name="unit_caps_section">Ką siūlo ši programinė įranga</string>
     <string name="unit_state_live">Veikia</string>
     <string name="unit_state_ready">Paruošta</string>
@@ -19,7 +19,7 @@
     <string name="unit_applied">Atlikta</string>
     <string name="unit_open_whitelist">Atidaryti baltojo sąrašo programą</string>
     <string name="unit_fyt_keys_title">Perimti vairo mygtukus</string>
-    <string name="unit_fyt_keys_detail">Po paleidimo iš naujo programinė įranga perduoda vairo ir skydelio mygtukus Dashwheel. Jos pačios programos tuo metu juos praranda.</string>
+    <string name="unit_fyt_keys_detail">Po paleidimo iš naujo programinė įranga perduoda vairo ir skydelio mygtukus JMCAR. Jos pačios programos tuo metu juos praranda.</string>
     <string name="unit_needs_firmware">Reikia %1$s programinės įrangos</string>
     <string name="unit_family_qf">QF (Hizpo, ROCO K706)</string>
     <string name="unit_family_fyt">FYT (Joying, Atoto, Mekede)</string>

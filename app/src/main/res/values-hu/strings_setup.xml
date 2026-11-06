@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- First-run setup (SetupScreen.kt): the car, what the launcher may use, the look -->
-    <string name="setup_title">Dashwheel beállítása</string>
+    <string name="setup_title">JMCAR beállítása</string>
     <string name="setup_step">%1$d/3. lépés</string>
     <string name="setup_skip">Kihagyás</string>
     <string name="setup_back">Vissza</string>
@@ -18,7 +18,7 @@
     <string name="setup_driver_side">Vezetőülés</string>
     <string name="setup_driver_left">Bal oldalt</string>
     <string name="setup_driver_right">Jobb oldalt</string>
-    <string name="setup_access_title">Mit használhat a Dashwheel</string>
+    <string name="setup_access_title">Mit használhat a JMCAR</string>
     <string name="setup_access_body">Mindegyik nem kötelező. Engedélyezze a megnyíló képernyőn, majd térjen vissza.</string>
     <string name="setup_access_notifications">Értesítések</string>
     <string name="setup_access_notifications_detail">Zene és a következő kanyar a fejegység alkalmazásaiból</string>
@@ -48,5 +48,5 @@
     <string name="setup_car_tiles_title">Hozzáadja az autós csempéket?</string>
     <string name="setup_car_tiles_body">Motorműszerek, hibakódok, akkumulátor és bemelegedés a műszerfalakon.</string>
     <string name="setup_again">Újrabeállítás</string>
-    <string name="setup_again_detail">Az autó, amit a Dashwheel használhat, és a megjelenés, lépésről lépésre</string>
+    <string name="setup_again_detail">Az autó, amit a JMCAR használhat, és a megjelenés, lépésről lépésre</string>
 </resources>

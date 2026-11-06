@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- First-run tour (TourScreen.kt): six tips over the real dashboard -->
-    <string name="tour_welcome_kicker">Bienvenue dans Dashwheel</string>
+    <string name="tour_welcome_kicker">Bienvenue dans JMCAR</string>
     <string name="tour_welcome_title">Petit tour des bases</string>
     <string name="tour_welcome_body">Quelques conseils courts. Environ une minute. Vous pouvez arrêter à tout moment.</string>
     <string name="tour_topic_swipe">Changer de tableau de bord</string>
@@ -30,12 +30,12 @@
     <string name="tour_look_title">À votre goût</string>
     <string name="tour_look_body">Ouvrez le menu, puis Réglages, puis Apparence. Choisissez un thème et les couleurs de jour ou de nuit.</string>
     <string name="tour_obd_title">Branchez l\'adaptateur OBD</string>
-    <string name="tour_obd_body">Il se branche dans la prise sous le volant. Associez-le une fois dans les réglages Bluetooth d\'Android, puis Dashwheel se reconnecte tout seul.</string>
+    <string name="tour_obd_body">Il se branche dans la prise sous le volant. Associez-le une fois dans les réglages Bluetooth d\'Android, puis JMCAR se reconnecte tout seul.</string>
     <string name="tour_obd_off">Non branché</string>
     <string name="tour_obd_looking">Recherche</string>
     <string name="tour_obd_connected">Connecté</string>
     <string name="tour_hands_title">Les yeux sur la route</string>
-    <string name="tour_hands_body">Les boutons du volant peuvent changer de tableau de bord, passer un morceau ou lancer l\'assistant vocal. Dashwheel prend la parole tout seul quand c\'est important.</string>
+    <string name="tour_hands_body">Les boutons du volant peuvent changer de tableau de bord, passer un morceau ou lancer l\'assistant vocal. JMCAR prend la parole tout seul quand c\'est important.</string>
     <string name="tour_hands_hint">Réglez les boutons dans Réglages, Conduite, Commandes au volant.</string>
     <string name="tour_wheel_dashboard">Tableau de bord suivant</string>
     <string name="tour_wheel_music">Musique</string>

@@ -2,9 +2,9 @@
 <resources>
     <string name="reverse_title">Rückfahransicht</string>
     <string name="reverse_settings_detail">Hilfslinien und Parkradar über der Rückfahrkamera</string>
-    <string name="reverse_switch">Dashwheels Rückfahransicht</string>
+    <string name="reverse_switch">JMCARs Rückfahransicht</string>
     <string name="reverse_switch_detail">Linien, die dem Lenkrad folgen, das Parkradar und dein Auto über der Rückfahrkamera.</string>
-    <string name="reverse_needs_access">Schalte Dashwheels Bedienungshilfe ein: nur so kann über der Kamera gezeichnet werden.</string>
+    <string name="reverse_needs_access">Schalte JMCARs Bedienungshilfe ein: nur so kann über der Kamera gezeichnet werden.</string>
     <string name="reverse_layout_title">Anzeige</string>
     <string name="reverse_layout_both">Kamera und Radar</string>
     <string name="reverse_layout_camera">Kamera</string>
@@ -13,8 +13,8 @@
     <string name="reverse_stock_title">Linien der Auto-App</string>
     <string name="reverse_stock_keep">Behalten</string>
     <string name="reverse_stock_hide">Ausblenden</string>
-    <string name="reverse_stock_hint_keep">Die Linien der Auto-App bleiben unter denen von Dashwheel. Die Lenklinien springen in Schritten von etwa 12°.</string>
-    <string name="reverse_stock_hint_hide">Nur Dashwheels Linien, flüssiger. Root nötig.</string>
+    <string name="reverse_stock_hint_keep">Die Linien der Auto-App bleiben unter denen von JMCAR. Die Lenklinien springen in Schritten von etwa 12°.</string>
+    <string name="reverse_stock_hint_hide">Nur JMCARs Linien, flüssiger. Root nötig.</string>
     <string name="reverse_stock_failed">Konnte sie nicht ändern. Dafür ist Root nötig.</string>
     <string name="reverse_lines_title">Ausrichten</string>
     <string name="reverse_lines_hint">Lege R ein und tippe auf dem Rückfahrbild auf Anpassen, um die Linien an die Straße anzupassen.</string>
@@ -34,11 +34,11 @@
     <string name="reverse_near_far">Etwas dahinter</string>
     <string name="reverse_picture_title">Kamerabild</string>
     <string name="reverse_picture_rom">Auto-App</string>
-    <string name="reverse_picture_own">Dashwheel</string>
-    <string name="reverse_picture_hint_rom">Die Auto-App zeigt die Kamera, Dashwheel zeichnet darüber.</string>
-    <string name="reverse_picture_hint_own">Experimentell: Dashwheel zeigt die Kamera selbst. Kommt kein Bild, ist das der Auto-App nach Sekunden zurück.</string>
-    <string name="reverse_picture_denied">Dashwheel braucht dafür die Kamera-Berechtigung.</string>
-    <string name="reverse_picture_failed">Dashwheel bekam die Kamera nicht: Bild der Auto-App</string>
+    <string name="reverse_picture_own">JMCAR</string>
+    <string name="reverse_picture_hint_rom">Die Auto-App zeigt die Kamera, JMCAR zeichnet darüber.</string>
+    <string name="reverse_picture_hint_own">Experimentell: JMCAR zeigt die Kamera selbst. Kommt kein Bild, ist das der Auto-App nach Sekunden zurück.</string>
+    <string name="reverse_picture_denied">JMCAR braucht dafür die Kamera-Berechtigung.</string>
+    <string name="reverse_picture_failed">JMCAR bekam die Kamera nicht: Bild der Auto-App</string>
     <string name="reverse_side_left">Links: %1$d cm</string>
     <string name="reverse_side_right">Rechts: %1$d cm</string>
     <string name="reverse_boot_blocked">Die Heckklappe geht hier nicht ganz auf</string>
@@ -49,7 +49,7 @@
     <string name="reverse_second_title">Zweiter Bildschirm</string>
     <string name="reverse_second_off">Aus</string>
     <string name="reverse_second_hint">Übernimmt den zweiten Bildschirm von selbst im Rückwärtsgang.</string>
-    <string name="reverse_second_hint_rom">Die Kamera braucht die Rückfahransicht mit dem Bild von Dashwheel: bis dahin zeigt der zweite Bildschirm das Radar.</string>
+    <string name="reverse_second_hint_rom">Die Kamera braucht die Rückfahransicht mit dem Bild von JMCAR: bis dahin zeigt der zweite Bildschirm das Radar.</string>
     <string name="reverse_second_hint_video">Braucht Einfache Anzeige aus in den Einstellungen des zweiten Bildschirms.</string>
     <string name="reverse_near_ahead">Etwas davor</string>
     <string name="reverse_steer">Lenklinien</string>

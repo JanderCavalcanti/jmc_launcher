@@ -2,10 +2,10 @@
 <resources>
     <!-- Shizuku: the shell without root (ShizukuSettings.kt, ShizukuShell.kt), Settings → System → More tools -->
     <string name="shizuku_search_detail">Shell-opdrachten zonder root</string>
-    <string name="shizuku_detail_none">Niet geïnstalleerd. Geeft Dashwheel de shell zonder root</string>
+    <string name="shizuku_detail_none">Niet geïnstalleerd. Geeft JMCAR de shell zonder root</string>
     <string name="shizuku_detail_off">Geïnstalleerd, niet gestart. Open Shizuku om het te starten</string>
     <string name="shizuku_detail_old">Te oud. Werk Shizuku bij</string>
-    <string name="shizuku_detail_ask">Actief. Sta Dashwheel toe in Shizuku</string>
+    <string name="shizuku_detail_ask">Actief. Sta JMCAR toe in Shizuku</string>
     <string name="shizuku_detail_on">In gebruik: shell-opdrachten lopen erdoor</string>
     <string name="shizuku_body">Shizuku voert de shell-opdrachten uit die root zou doen: app-vensters verplaatsen, de schakelaars van de auto-app, de volumetoetsen. Een geroot toestel start het bij het opstarten; een ander start het na elke start vanuit de Shizuku-app.</string>
     <string name="shizuku_get">Shizuku halen</string>

@@ -2,10 +2,10 @@
 <resources>
     <!-- Shizuku: the shell without root (ShizukuSettings.kt, ShizukuShell.kt), Settings → System → More tools -->
     <string name="shizuku_search_detail">Shell-parancsok root nélkül</string>
-    <string name="shizuku_detail_none">Nincs telepítve. Shellt ad a Dashwheelnek root nélkül</string>
+    <string name="shizuku_detail_none">Nincs telepítve. Shellt ad a JMCARnek root nélkül</string>
     <string name="shizuku_detail_off">Telepítve, nincs elindítva. Nyissa meg a Shizukut az indításhoz</string>
     <string name="shizuku_detail_old">Túl régi. Frissítse a Shizukut</string>
-    <string name="shizuku_detail_ask">Fut. Engedélyezze a Dashwheelt a Shizukuban</string>
+    <string name="shizuku_detail_ask">Fut. Engedélyezze a JMCARt a Shizukuban</string>
     <string name="shizuku_detail_on">Használatban: a shell-parancsok rajta keresztül futnak</string>
     <string name="shizuku_body">A Shizuku azokat a shell-parancsokat futtatja, amelyeket a root tenne: alkalmazásablakok mozgatása, az autóalkalmazás kapcsolói, a hangerőgombok. A rootolt fejegység indításkor elindítja; a többi a Shizuku alkalmazásból indítja minden indítás után.</string>
     <string name="shizuku_get">Shizuku letöltése</string>

@@ -29,7 +29,7 @@
     <string name="canvas_tab_when_hint">Stovint reiškia paleidus arba stovint 2 minutes. Palieskite pasirinktą dar kartą, kad išjungtumėte.</string>
     <string name="canvas_map_title">Po skydeliu</string>
     <string name="canvas_map_builtin">Integruotas žemėlapis</string>
-    <string name="canvas_map_builtin_hint">Paties Dashwheel žemėlapis su perbraukiamais skydeliais.</string>
+    <string name="canvas_map_builtin_hint">Paties JMCAR žemėlapis su perbraukiamais skydeliais.</string>
     <string name="canvas_map_app_hint">Programa veikia po plytelėmis ir gauna visus jų nepriimtus palietimus. Skirtukai juostoje pakeičia perbraukimą: laikykite, kad pavadintumėte.</string>
     <string name="canvas_bar_add_title">Pridėti į juostą</string>
     <string name="canvas_bar_add_dashboard">Skydelis</string>

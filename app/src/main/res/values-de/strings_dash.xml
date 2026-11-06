@@ -36,7 +36,7 @@
     <string name="dash_update_installing">Installation wird gestartet…</string>
     <string name="dash_menu_check_updates">Nach Updates suchen</string>
     <string name="dash_update_checking">Suche nach Updates…</string>
-    <string name="dash_update_up_to_date">Dashwheel ist aktuell, v%1$s</string>
+    <string name="dash_update_up_to_date">JMCAR ist aktuell, v%1$s</string>
     <string name="dash_update">Aktualisieren</string>
 
     <!-- Tiles while arranging -->
@@ -65,12 +65,12 @@
     <string name="dash_swap_split">Geteilte Apps links/rechts tauschen</string>
     <string name="dash_split_with">Geteilter Bildschirm mit…</string>
     <string name="dash_enable_split_title">Geteilten Bildschirm aktivieren</string>
-    <string name="dash_enable_split_body">Dashwheel nutzt den geteilten Bildschirm des Systems, den aus der Übersicht. Dashwheel einmal unter Einstellungen, Bedienungshilfen einschalten.</string>
+    <string name="dash_enable_split_body">JMCAR nutzt den geteilten Bildschirm des Systems, den aus der Übersicht. JMCAR einmal unter Einstellungen, Bedienungshilfen einschalten.</string>
     <string name="dash_open_settings">Einstellungen öffnen</string>
 
     <!-- System app install (root) -->
     <string name="dash_system_app_title">System-App</string>
-    <string name="dash_system_app_body">Installiert Dashwheel als System-App: Android-Widgets lassen sich dann ohne Rückfrage hinzufügen. Benötigt Root oder das interne ADB auf Port %1$d, danach einen Neustart.</string>
+    <string name="dash_system_app_body">Installiert JMCAR als System-App: Android-Widgets lassen sich dann ohne Rückfrage hinzufügen. Benötigt Root oder das interne ADB auf Port %1$d, danach einen Neustart.</string>
     <string name="dash_root_checking">Root wird geprüft…</string>
     <string name="dash_root_available">Root verfügbar. Mit Magisk wird als Magisk-Modul installiert.</string>
     <string name="dash_root_missing">Kein Root. Versucht das interne ADB auf Port %1$d.</string>
@@ -189,13 +189,13 @@
     <string name="dash_theme_canvas_desc">Die Karte füllt den Bildschirm, die Fahrt auf einer Zeile. Standardmäßig mit Seitenleiste; in Anzeige änderbar.</string>
     <!-- Updates without a strip (⋮ dot, Settings row, ready prompt); edit-mode confirms; tile options; theme gallery -->
     <string name="dash_update_to">Auf %1$s aktualisieren</string>
-    <string name="dash_update_available_detail">Neuer als v%1$s. Die Installation startet Dashwheel neu.</string>
+    <string name="dash_update_available_detail">Neuer als v%1$s. Die Installation startet JMCAR neu.</string>
     <string name="dash_update_ready_detail">Heruntergeladen und bereit zur Installation</string>
     <string name="dash_update_ready_title">Update bereit</string>
-    <string name="dash_update_ready_body">%1$s ist heruntergeladen. Die Installation dauert eine halbe Minute und startet Dashwheel neu.</string>
+    <string name="dash_update_ready_body">%1$s ist heruntergeladen. Die Installation dauert eine halbe Minute und startet JMCAR neu.</string>
     <string name="dash_update_now">Jetzt aktualisieren</string>
     <string name="dash_update_not_this_version">Nicht diese Version</string>
-    <string name="dash_update_allow_installs">Erlaube Dashwheel, Updates zu installieren, und tippe dann erneut auf Aktualisieren</string>
+    <string name="dash_update_allow_installs">Erlaube JMCAR, Updates zu installieren, und tippe dann erneut auf Aktualisieren</string>
     <string name="dash_dashboard_options">Dashboard-Optionen</string>
     <string name="dash_remove_dashboard_title">%1$s entfernen?</string>
     <string name="dash_remove_dashboard_body">Leeren, oder mit seinen Kacheln aus dem Wischen nehmen. Rückgängig holt sie zurück.</string>
@@ -205,8 +205,8 @@
     <string name="dash_apps">Apps</string>
     <string name="dash_rootless_title">Root-Zugriff nötig</string>
     <plurals name="dash_rootless_body">
-        <item quantity="one">%1$s braucht Root-Zugriff, den Dashwheel auf diesem Radio nicht hat. Die Kachel wird vom Dashboard entfernt.</item>
-        <item quantity="other">%1$s brauchen Root-Zugriff, den Dashwheel auf diesem Radio nicht hat. Die Kacheln werden vom Dashboard entfernt.</item>
+        <item quantity="one">%1$s braucht Root-Zugriff, den JMCAR auf diesem Radio nicht hat. Die Kachel wird vom Dashboard entfernt.</item>
+        <item quantity="other">%1$s brauchen Root-Zugriff, den JMCAR auf diesem Radio nicht hat. Die Kacheln werden vom Dashboard entfernt.</item>
     </plurals>
     <!-- The bar's position chip (PagePosition.kt) -->
     <string name="dash_position_chip">Dashboard: %1$s</string>

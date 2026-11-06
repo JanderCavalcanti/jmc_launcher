@@ -26,7 +26,7 @@
     <string name="boot_restore_confirm_body">Oryginalna animacja startowa i nieruchome logo zostaną przywrócone.</string>
     <string name="boot_play_failed">Nie udało się odtworzyć: %1$s</string>
     <string name="boot_current">Obecne logo startowe: %1$s</string>
-    <string name="boot_hint">Zmienia to, co radio pokazuje przy starcie, z logo tej marki: animację Androida oraz, jeśli włączone, nieruchome logo. Korzysta z wewnętrznego root ADB radia i nigdy nie rusza /system. Oryginały są zapisywane (także w Dashwheel/boot_backup w pamięci wewnętrznej), a Przywróć je przywraca. Loga z otwartego zbioru car-logos-dataset.</string>
+    <string name="boot_hint">Zmienia to, co radio pokazuje przy starcie, z logo tej marki: animację Androida oraz, jeśli włączone, nieruchome logo. Korzysta z wewnętrznego root ADB radia i nigdy nie rusza /system. Oryginały są zapisywane (także w JMCAR/boot_backup w pamięci wewnętrznej), a Przywróć je przywraca. Loga z otwartego zbioru car-logos-dataset.</string>
     <string name="boot_usb">Zapisz na USB</string>
     <string name="boot_saving_usb">Zapisywanie na pendrive…</string>
     <string name="boot_saved_usb">Zapisano na %1$s. Odłącz i podłącz pendrive ponownie: radio zaimportuje animację. Dla nieruchomego logo: Ustawienia → Ustawienia fabryczne (8888) → Logo set → wybierz %2$s → Update logo.</string>
@@ -39,5 +39,5 @@
     <string name="boot_still_failed">Nieruchome logo bez zmian: %1$s</string>
     <string name="boot_still_unsupported">to radio nie ma narzędzia do nieruchomego logo</string>
     <string name="boot_not_qf">Instalacja działa tylko na przewidzianym firmware QF001 / K706. Użyj Zapisz na USB.</string>
-    <string name="boot_no_adb">Wewnętrzne ADB radia nie odpowiada (port %1$d), a Dashwheel nie ma roota. Włącz debugowanie USB (Ustawienia → Informacje → dotknij 7 razy Numer kompilacji, potem Opcje programisty → Debugowanie USB) lub przyznaj root i spróbuj ponownie.</string>
+    <string name="boot_no_adb">Wewnętrzne ADB radia nie odpowiada (port %1$d), a JMCAR nie ma roota. Włącz debugowanie USB (Ustawienia → Informacje → dotknij 7 razy Numer kompilacji, potem Opcje programisty → Debugowanie USB) lub przyznaj root i spróbuj ponownie.</string>
 </resources>

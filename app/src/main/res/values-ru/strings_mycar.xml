@@ -8,7 +8,7 @@
     <string name="mycar_working">Подготовка</string>
     <string name="mycar_ready">Изображение вашего автомобиля загружено</string>
     <string name="mycar_failed">Не удалось прочитать изображение. Попробуйте JPG или PNG.</string>
-    <string name="mycar_model_on_phone">3D-модель превращается в ваш автомобиль на телефоне: в Dashwheel Companion, вкладка Автомобиль, Из 3D-модели.</string>
+    <string name="mycar_model_on_phone">3D-модель превращается в ваш автомобиль на телефоне: в JMCAR Companion, вкладка Автомобиль, Из 3D-модели.</string>
     <string name="mycar_no_picker">На магнитоле нет выбора файлов. Положите файл сюда: %1$s</string>
     <string name="mycar_pick">Выбрать файл</string>
     <string name="mycar_remove">Удалить</string>
@@ -31,7 +31,7 @@
     <string name="mycar_style_outline">Контур</string>
     <string name="mycar_style_outline_hint">Только линии, в цвете оформления</string>
     <string name="mycar_where">Показывается в дизайнах «Карта шин» и «Контур автомобиля» и на плитке «Мой автомобиль».</string>
-    <string name="mycar_phone_hint">С телефона: в приложении Dashwheel Companion откройте «Изображение автомобиля», затем «Выбрать файл».</string>
+    <string name="mycar_phone_hint">С телефона: в приложении JMCAR Companion откройте «Изображение автомобиля», затем «Выбрать файл».</string>
     <string name="mycar_photos">3 фото</string>
     <string name="mycar_photos_hint">Или выберите сразу все снимки автомобиля: сбоку, спереди и сзади, а также сверху и сверху с открытыми дверями, если они есть. С именами side, front, back, top и open они никогда не перепутаются.</string>
     <string name="mycar_photos_no_car">На этих фото автомобиль не найден. Используйте снимки всего автомобиля на однотонном фоне.</string>

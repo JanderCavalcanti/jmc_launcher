@@ -4,7 +4,7 @@
     <string name="settings_section_second_screen">Antrasis ekranas</string>
     <string name="second_screen_experimental">Eksperimentinė funkcija: Raspberry Pi valdo antrąjį ekraną automobilyje. Automobilyje dar neišbandyta.</string>
     <string name="second_screen_status_unpaired">Antrasis ekranas nesusietas</string>
-    <string name="second_screen_status_unpaired_detail">Nuskenuokite kodą antrajame ekrane Dashwheel telefono programa, kai telefonas prijungtas prie šio automobilio.</string>
+    <string name="second_screen_status_unpaired_detail">Nuskenuokite kodą antrajame ekrane JMCAR telefono programa, kai telefonas prijungtas prie šio automobilio.</string>
     <string name="second_screen_status_searching">Ieškomas antrasis ekranas</string>
     <string name="second_screen_status_searching_detail">Ekranas ir ši magnetola turi būti prisijungę prie telefono prieigos taško.</string>
     <string name="second_screen_status_connected">Prisijungta prie %1$s</string>
@@ -37,7 +37,7 @@
     <string name="second_screen_by_cable">kabeliu</string>
     <string name="second_screen_by_wifi">per Wi-Fi</string>
     <string name="second_screen_program_older">Ekrano programa senesnė už šią programą: įrašykite jam naują kortelę.</string>
-    <string name="second_screen_program_newer">Ekrano programa naujesnė už šią programą: atnaujinkite Dashwheel.</string>
+    <string name="second_screen_program_newer">Ekrano programa naujesnė už šią programą: atnaujinkite JMCAR.</string>
     <string name="second_screen_health_under_powered">Ekrano plokštei trūksta maitinimo ir ji lėtėja: naudokite 5 V, 2,5 A maitinimą ir trumpą, storą kabelį.</string>
     <string name="second_screen_health_hot">Ekrano plokštė įkaitusi (%1$d °C) ir lėtėja: suteikite jai oro arba radiatorių.</string>
     <string name="second_screen_health_throttled">Ekrano plokštę sulėtino jos programinė įranga: patikrinkite maitinimą.</string>
@@ -119,10 +119,10 @@
     <string name="second_screen_mapview_distance_far">Toli</string>
     <string name="second_screen_mapview_buildings">Pastatai 3D</string>
     <string name="second_screen_mapview_buildings_detail">Kur žemėlapio tiekėjas žino jų aukštį.</string>
-    <string name="second_screen_pi_waiting">Laukiama Dashwheel…</string>
-    <string name="second_screen_pi_no_signal">Nėra signalo iš Dashwheel</string>
+    <string name="second_screen_pi_waiting">Laukiama JMCAR…</string>
+    <string name="second_screen_pi_no_signal">Nėra signalo iš JMCAR</string>
     <string name="second_screen_pi_connected">Prisijungta</string>
-    <string name="second_screen_pi_scan">Nuskenuokite Dashwheel telefono programa</string>
+    <string name="second_screen_pi_scan">Nuskenuokite JMCAR telefono programa</string>
     <string name="second_screen_board_full">Visas vaizdas</string>
     <string name="second_screen_board_in_use">Šie puslapiai dabar rodomi ekrane.</string>
     <string name="second_screen_board_not_in_use">Dabar nenaudojama: šie puslapiai bus rodomi, kai jį įjungsite.</string>

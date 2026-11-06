@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- The Signal Finder: teach Dashwheel the car's signals (SignalFinderSheet.kt, SignalFinder.kt, LearnedSignals.kt) -->
+    <!-- The Signal Finder: teach JMCAR the car's signals (SignalFinderSheet.kt, SignalFinder.kt, LearnedSignals.kt) -->
     <string name="signals_title">Car signals</string>
-    <string name="signals_settings_detail">Teach Dashwheel your car\'s doors, reverse and lights</string>
-    <string name="signals_intro">Dashwheel reads what it can by itself. Tap Find to teach it the rest by doing the action.</string>
+    <string name="signals_settings_detail">Teach JMCAR your car\'s doors, reverse and lights</string>
+    <string name="signals_intro">JMCAR reads what it can by itself. Tap Find to teach it the rest by doing the action.</string>
     <string name="signals_sources">Listening to</string>
     <string name="signals_needs_root">Needs root</string>
     <string name="signals_values">Values: %1$d</string>
     <string name="signals_section">Signals</string>
     <string name="signals_learned">Learned: %1$s</string>
-    <string name="signals_builtin">Read by Dashwheel already</string>
+    <string name="signals_builtin">Read by JMCAR already</string>
     <string name="signals_missing">Not found yet</string>
     <string name="signals_forget">Forget</string>
     <string name="signals_find">Find</string>

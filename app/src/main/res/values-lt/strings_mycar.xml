@@ -8,7 +8,7 @@
     <string name="mycar_working">Ruošiama</string>
     <string name="mycar_ready">Jūsų automobilio vaizdas įkeltas</string>
     <string name="mycar_failed">Šio vaizdo nepavyko perskaityti. Pabandykite JPG arba PNG.</string>
-    <string name="mycar_model_on_phone">3D modelis paverčiamas jūsų automobiliu telefone: Dashwheel Companion, skirtukas Automobilis, Iš 3D modelio.</string>
+    <string name="mycar_model_on_phone">3D modelis paverčiamas jūsų automobiliu telefone: JMCAR Companion, skirtukas Automobilis, Iš 3D modelio.</string>
     <string name="mycar_no_picker">Šioje magnetoloje nėra failų parinkiklio. Įdėkite failą čia: %1$s</string>
     <string name="mycar_pick">Pasirinkti failą</string>
     <string name="mycar_remove">Pašalinti</string>
@@ -31,7 +31,7 @@
     <string name="mycar_style_outline">Kontūras</string>
     <string name="mycar_style_outline_hint">Tik linijos, išvaizdos spalva</string>
     <string name="mycar_where">Rodoma dizainuose „Padangų žemėlapis“ ir „Automobilio kontūras“ bei plytelėje „Mano automobilis“.</string>
-    <string name="mycar_phone_hint">Iš telefono: Dashwheel Companion programoje Automobilio vaizdas, tada Pasirinkti failą.</string>
+    <string name="mycar_phone_hint">Iš telefono: JMCAR Companion programoje Automobilio vaizdas, tada Pasirinkti failą.</string>
     <string name="mycar_photos">3 nuotraukos</string>
     <string name="mycar_photos_hint">Arba pasirinkite automobilio nuotraukas iš karto: šonas, priekis ir galas, taip pat viena iš viršaus ir viena iš viršaus su atvertomis durimis, jei turite. Pavadintos side, front, back, top ir open, jos niekada nesusimaišys.</string>
     <string name="mycar_photos_no_car">Šiose nuotraukose automobilio nerasta. Naudokite nuotraukas su visu automobiliu vienspalviame fone.</string>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Dashwheel's reverse view over the reversing camera (ReverseView.kt, ReverseViewSheet.kt) -->
+    <!-- JMCAR's reverse view over the reversing camera (ReverseView.kt, ReverseViewSheet.kt) -->
     <string name="reverse_title">Atbulinės vaizdas</string>
     <string name="reverse_settings_detail">Kreipiamosios linijos ir parkavimo radaras ant galinio vaizdo kameros</string>
-    <string name="reverse_switch">Dashwheel atbulinės vaizdas</string>
+    <string name="reverse_switch">JMCAR atbulinės vaizdas</string>
     <string name="reverse_switch_detail">Vairą sekančios linijos, parkavimo radaras ir jūsų automobilis ant galinio vaizdo kameros.</string>
-    <string name="reverse_needs_access">Įjunkite Dashwheel pritaikymo neįgaliesiems paslaugą: tik taip galima piešti ant kameros vaizdo.</string>
+    <string name="reverse_needs_access">Įjunkite JMCAR pritaikymo neįgaliesiems paslaugą: tik taip galima piešti ant kameros vaizdo.</string>
     <string name="reverse_layout_title">Ekrane</string>
     <string name="reverse_layout_both">Kamera ir radaras</string>
     <string name="reverse_layout_camera">Kamera</string>
@@ -14,8 +14,8 @@
     <string name="reverse_stock_title">Automobilio programos linijos</string>
     <string name="reverse_stock_keep">Palikti</string>
     <string name="reverse_stock_hide">Slėpti</string>
-    <string name="reverse_stock_hint_keep">Automobilio programos linijos lieka po Dashwheel linijomis. Vairo linijos juda maždaug 12° žingsniais.</string>
-    <string name="reverse_stock_hint_hide">Tik Dashwheel linijos, sklandesnės. Reikia root.</string>
+    <string name="reverse_stock_hint_keep">Automobilio programos linijos lieka po JMCAR linijomis. Vairo linijos juda maždaug 12° žingsniais.</string>
+    <string name="reverse_stock_hint_hide">Tik JMCAR linijos, sklandesnės. Reikia root.</string>
     <string name="reverse_stock_failed">Nepavyko jų pakeisti. Tam reikia root.</string>
     <string name="reverse_lines_title">Sulygiuokite linijas</string>
     <string name="reverse_lines_hint">Įjunkite R, tada atbulinės ekrane palieskite Reguliuoti ir priderinkite linijas prie kelio.</string>
@@ -35,11 +35,11 @@
     <string name="reverse_near_far">Kažkas už jūsų</string>
     <string name="reverse_picture_title">Kameros vaizdas</string>
     <string name="reverse_picture_rom">Automobilio programa</string>
-    <string name="reverse_picture_own">Dashwheel</string>
-    <string name="reverse_picture_hint_rom">Automobilio programa rodo kamerą, o Dashwheel piešia ant jos.</string>
-    <string name="reverse_picture_hint_own">Eksperimentinė: Dashwheel pats rodo kamerą. Jei vaizdo nėra, per kelias sekundes grįžta automobilio programos vaizdas.</string>
-    <string name="reverse_picture_denied">Tam Dashwheel reikia leidimo naudoti kamerą.</string>
-    <string name="reverse_picture_failed">Dashwheel negavo kameros: tai automobilio programos vaizdas</string>
+    <string name="reverse_picture_own">JMCAR</string>
+    <string name="reverse_picture_hint_rom">Automobilio programa rodo kamerą, o JMCAR piešia ant jos.</string>
+    <string name="reverse_picture_hint_own">Eksperimentinė: JMCAR pats rodo kamerą. Jei vaizdo nėra, per kelias sekundes grįžta automobilio programos vaizdas.</string>
+    <string name="reverse_picture_denied">Tam JMCAR reikia leidimo naudoti kamerą.</string>
+    <string name="reverse_picture_failed">JMCAR negavo kameros: tai automobilio programos vaizdas</string>
     <string name="reverse_side_left">Kairė pusė: %1$d cm</string>
     <string name="reverse_side_right">Dešinė pusė: %1$d cm</string>
     <string name="reverse_boot_blocked">Čia bagažinė iki galo neatsidarys</string>
@@ -50,7 +50,7 @@
     <string name="reverse_second_title">Antrasis ekranas</string>
     <string name="reverse_second_off">Išjungta</string>
     <string name="reverse_second_hint">Įjungus atbulinę pavarą, savaime užima antrąjį ekraną.</string>
-    <string name="reverse_second_hint_rom">Kamerai reikia įjungto atbulinės vaizdo su Dashwheel vaizdu: iki tol antrajame ekrane rodomas radaras.</string>
+    <string name="reverse_second_hint_rom">Kamerai reikia įjungto atbulinės vaizdo su JMCAR vaizdu: iki tol antrajame ekrane rodomas radaras.</string>
     <string name="reverse_second_hint_video">Antrojo ekrano nustatymuose turi būti išjungtas Paprastas rodinys.</string>
     <string name="reverse_near_ahead">Kažkas priekyje</string>
     <string name="reverse_steer">Vairo linijos</string>

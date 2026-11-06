@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Phone link: the driver's phone over its hotspot, with the Dashwheel Companion app. -->
+    <!-- Phone link: the driver's phone over its hotspot, with the JMCAR Companion app. -->
     <string name="settings_section_phone">Phone</string>
     <string name="phone_from_phone">From your phone</string>
     <string name="phone_status_connected">Connected to %1$s</string>
     <string name="phone_status_connected_detail">Its notifications and messages show in the Notifications widget.</string>
     <string name="phone_status_searching">Looking for your phone on Wi-Fi</string>
-    <string name="phone_status_searching_detail">Turn on the phone\'s hotspot and connect this head unit to it; Dashwheel Companion does the rest.</string>
+    <string name="phone_status_searching_detail">Turn on the phone\'s hotspot and connect this head unit to it; JMCAR Companion does the rest.</string>
     <string name="phone_status_unpaired">No phone paired</string>
     <string name="phone_status_unpaired_detail">Pair your phone to see its messages here and answer them.</string>
     <string name="phone_pair">Pair a phone</string>
-    <string name="phone_pair_detail">Shows the code to scan with Dashwheel Companion</string>
+    <string name="phone_pair_detail">Shows the code to scan with JMCAR Companion</string>
     <string name="phone_gps">Use the phone\'s GPS</string>
     <string name="phone_gps_detail">When the phone is linked, its GPS stands in for this unit\'s: more satellites, a position in seconds</string>
     <string name="phone_gps_in_use">In use: %1$d satellites from the phone</string>
@@ -23,7 +23,7 @@
     <string name="phone_forget_title">Forget %1$s?</string>
     <string name="phone_forget_body">Its messages and calls stop showing here. Pairing again needs a new code.</string>
     <string name="phone_pair_title">Pair a phone</string>
-    <string name="phone_pair_step1">1. Install Dashwheel Companion on the phone: scan this code with its camera.</string>
+    <string name="phone_pair_step1">1. Install JMCAR Companion on the phone: scan this code with its camera.</string>
     <string name="phone_pair_step2">2. Turn on the phone\'s Wi-Fi hotspot and connect this head unit to it.</string>
     <string name="phone_pair_step3">3. In the app, tap Pair a car and scan this code.</string>
     <string name="phone_pair_waiting">Waiting for the phone…</string>
@@ -50,7 +50,7 @@
     <string name="phone_call_answer">Answer</string>
     <string name="phone_call_decline">Decline</string>
     <string name="phone_call_hang_up">Hang up</string>
-    <string name="phone_call_no_control">To answer from here, allow Calls in Dashwheel Companion.</string>
+    <string name="phone_call_no_control">To answer from here, allow Calls in JMCAR Companion.</string>
     <string name="phone_overlay">Show calls over other apps</string>
     <string name="phone_overlay_detail">An incoming call then shows even with another app on the whole screen.</string>
     <!-- Text typed on the phone, for the field selected on the car screen (PhoneKeyboard). -->
@@ -60,6 +60,6 @@
     <string name="phone_agenda_empty">Pair your phone in Settings, Phone and screens, to see its agenda here</string>
     <string name="phone_call_back">Call back %1$s</string>
     <string name="phone_calling">Calling %1$s</string>
-    <string name="phone_dial_not_allowed">To call from here, allow Calls in Dashwheel Companion.</string>
+    <string name="phone_dial_not_allowed">To call from here, allow Calls in JMCAR Companion.</string>
     <string name="phone_guidance_to">Directions to %1$s</string>
 </resources>

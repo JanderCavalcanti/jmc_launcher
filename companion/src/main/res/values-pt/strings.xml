@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Dashwheel Companheiro</string>
+    <string name="app_name">JMCAR Companheiro</string>
     <string name="service_channel">Conexão ao carro</string>
     <string name="status_off">Compartilha desativada</string>
     <string name="status_waiting">À espera do carro no seu hotspot</string>
@@ -23,7 +23,7 @@
     <string name="done">Feito</string>
     <string name="cars_title">Carros associados</string>
     <string name="pair_car">Associar um carro</string>
-    <string name="pair_hint">No Dashwheel, abra Configurações → Telefone → Associar um telefone e leia o código apresentado.</string>
+    <string name="pair_hint">No JMCAR, abra Configurações → Telefone → Associar um telefone e leia o código apresentado.</string>
     <string name="remove">Remover</string>
     <string name="confirm_title">Permitir %1$s?</string>
     <string name="confirm_body">Este carro vai mostrar as suas notificações e mensagens e pode responder em seu nome. Só se liga através do seu hotspot.</string>
@@ -33,7 +33,7 @@
     <string name="remove_body">O carro deixa de receber o que quer que seja deste telefone. Para voltar a associar é preciso um novo código.</string>
     <string name="paired_since">Associado em %1$s</string>
     <string name="scanned_download_code">Esse código transfere a app. Leia agora o outro na tela do autorrádio, com o título Código de associação.</string>
-    <string name="invalid_code_read">Não é um código de associação Dashwheel (lido: %1$s).</string>
+    <string name="invalid_code_read">Não é um código de associação JMCAR (lido: %1$s).</string>
     <string name="step_calls">Chamadas</string>
     <string name="step_calls_detail">Mostra quem liga na tela do carro, para atender ou desligar a partir dele, e os seus favoritos para ligar a partir do carro. O som continua no Bluetooth do carro.</string>
     <string name="car_spot_title">Onde está o meu carro</string>
@@ -69,13 +69,13 @@
     <string name="keyboard_typed">No tela do carro</string>
     <string name="keyboard_copied">Nenhum campo selecionado na tela do carro: o texto está na área de download dele.</string>
     <string name="keyboard_failed">A tela do carro não aceitou o texto.</string>
-    <string name="keyboard_no_answer">Sem resposta: atualize o Dashwheel no carro.</string>
+    <string name="keyboard_no_answer">Sem resposta: atualize o JMCAR no carro.</string>
     <string name="keyboard_not_connected">O carro não está ligado.</string>
     <string name="keyboard_typing_off">A escrita em campos está desligada no carro.</string>
     <string name="keyboard_turn_on">Ligar</string>
     <string name="keyboard_turning_on">Ligando no carro…</string>
     <string name="keyboard_typing_on">Escrita ligada: selecione um campo na tela do carro e escreva aqui.</string>
-    <string name="keyboard_turn_on_failed">O carro não conseguiu ligá-la: no carro, abra Configurações, Acessibilidade, e ligue o Dashwheel.</string>
+    <string name="keyboard_turn_on_failed">O carro não conseguiu ligá-la: no carro, abra Configurações, Acessibilidade, e ligue o JMCAR.</string>
     <string name="send_to_car">Enviar para o carro</string>
     <string name="sent_to_car">Enviado para a tela do carro</string>
     <string name="place_sent">Rota enviada para o carro: %1$s</string>
@@ -265,12 +265,12 @@
     <string name="rescue_split">Sair do tela dividida</string>
     <string name="rescue_split_body">A tela do carro deixa de ser compartilhado com outra app.</string>
     <string name="rescue_home_back">Devolver o Início à unidade</string>
-    <string name="rescue_home_back_body">O launcher da unidade volta a ser o tela inicial. O Dashwheel fica na lista de apps.</string>
-    <string name="rescue_home_take">Dashwheel como Início de novo</string>
-    <string name="rescue_home_take_body">O Dashwheel volta a ser o tela inicial do carro.</string>
+    <string name="rescue_home_back_body">O launcher da unidade volta a ser o tela inicial. O JMCAR fica na lista de apps.</string>
+    <string name="rescue_home_take">JMCAR como Início de novo</string>
+    <string name="rescue_home_take_body">O JMCAR volta a ser o tela inicial do carro.</string>
     <string name="rescue_send">Fazer</string>
     <string name="rescue_sending">Enviando para o carro</string>
     <string name="rescue_done">Feito no carro</string>
     <string name="rescue_failed">O carro não conseguiu</string>
-    <string name="rescue_no_answer">Sem resposta: atualize o Dashwheel no carro.</string>
+    <string name="rescue_no_answer">Sem resposta: atualize o JMCAR no carro.</string>
 </resources>

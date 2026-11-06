@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Dashwheel Compañero</string>
+    <string name="app_name">JMCAR Compañero</string>
     <string name="service_channel">Conexión con el coche</string>
     <string name="status_off">Compartir está desactivado</string>
     <string name="status_waiting">Esperando al coche en tu punto de acceso</string>
@@ -23,7 +23,7 @@
     <string name="done">Hecho</string>
     <string name="cars_title">Coches vinculados</string>
     <string name="pair_car">Vincular un coche</string>
-    <string name="pair_hint">En Dashwheel, abre Ajustes → Teléfono → Vincular un teléfono y escanea el código que aparece.</string>
+    <string name="pair_hint">En JMCAR, abre Ajustes → Teléfono → Vincular un teléfono y escanea el código que aparece.</string>
     <string name="remove">Quitar</string>
     <string name="confirm_title">¿Permitir %1$s?</string>
     <string name="confirm_body">Este coche mostrará tus notificaciones y mensajes, y podrá responder en tu nombre. Solo se conecta a través de tu punto de acceso.</string>
@@ -33,7 +33,7 @@
     <string name="remove_body">El coche ya no recibirá nada de este teléfono. Para volver a vincularlo hará falta un código nuevo.</string>
     <string name="paired_since">Vinculado el %1$s</string>
     <string name="scanned_download_code">Ese código descarga la app. Escanea ahora el otro en la pantalla de la radio, el titulado Código de vinculación.</string>
-    <string name="invalid_code_read">No es un código de vinculación de Dashwheel (leído: %1$s).</string>
+    <string name="invalid_code_read">No es un código de vinculación de JMCAR (leído: %1$s).</string>
     <string name="step_calls">Llamadas</string>
     <string name="step_calls_detail">Muestra quién llama en la pantalla del coche, para contestar o colgar desde ahí, y tus favoritos para llamar desde el coche. El sonido sigue en el Bluetooth del coche.</string>
     <string name="car_spot_title">Dónde está mi coche</string>
@@ -69,13 +69,13 @@
     <string name="keyboard_typed">En la pantalla del coche</string>
     <string name="keyboard_copied">Ningún campo seleccionado en la pantalla del coche: el texto está en su portapapeles.</string>
     <string name="keyboard_failed">La pantalla del coche no aceptó el texto.</string>
-    <string name="keyboard_no_answer">Sin respuesta: actualiza Dashwheel en el coche.</string>
+    <string name="keyboard_no_answer">Sin respuesta: actualiza JMCAR en el coche.</string>
     <string name="keyboard_not_connected">El coche no está conectado.</string>
     <string name="keyboard_typing_off">La escritura en campos está desactivada en el coche.</string>
     <string name="keyboard_turn_on">Activar</string>
     <string name="keyboard_turning_on">Activando en el coche…</string>
     <string name="keyboard_typing_on">Escritura activada: selecciona un campo en la pantalla del coche y escribe aquí.</string>
-    <string name="keyboard_turn_on_failed">El coche no pudo activarla: en el coche, abre Ajustes, Accesibilidad, y activa Dashwheel.</string>
+    <string name="keyboard_turn_on_failed">El coche no pudo activarla: en el coche, abre Ajustes, Accesibilidad, y activa JMCAR.</string>
     <string name="send_to_car">Enviar al coche</string>
     <string name="sent_to_car">Enviado a la pantalla del coche</string>
     <string name="place_sent">Ruta enviada al coche: %1$s</string>
@@ -265,12 +265,12 @@
     <string name="rescue_split">Salir de pantalla dividida</string>
     <string name="rescue_split_body">La pantalla del coche deja de compartirse con otra app.</string>
     <string name="rescue_home_back">Devolver Inicio a la unidad</string>
-    <string name="rescue_home_back_body">El launcher propio de la unidad vuelve a ser la pantalla de inicio. Dashwheel sigue en la lista de apps.</string>
-    <string name="rescue_home_take">Dashwheel como Inicio otra vez</string>
-    <string name="rescue_home_take_body">Dashwheel vuelve a ser la pantalla de inicio del coche.</string>
+    <string name="rescue_home_back_body">El launcher propio de la unidad vuelve a ser la pantalla de inicio. JMCAR sigue en la lista de apps.</string>
+    <string name="rescue_home_take">JMCAR como Inicio otra vez</string>
+    <string name="rescue_home_take_body">JMCAR vuelve a ser la pantalla de inicio del coche.</string>
     <string name="rescue_send">Hacerlo</string>
     <string name="rescue_sending">Enviando al coche</string>
     <string name="rescue_done">Hecho en el coche</string>
     <string name="rescue_failed">El coche no pudo hacerlo</string>
-    <string name="rescue_no_answer">Sin respuesta: actualiza Dashwheel en el coche.</string>
+    <string name="rescue_no_answer">Sin respuesta: actualiza JMCAR en el coche.</string>
 </resources>

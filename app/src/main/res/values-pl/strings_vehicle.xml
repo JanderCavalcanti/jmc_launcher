@@ -205,10 +205,10 @@
     <string name="vehicle_err_refused">%1$s odrzucił połączenie: zajęty przez telefon lub inną aplikację, bez zasilania albo poza zasięgiem</string>
     <string name="vehicle_err_silent">%1$s połączył się, ale nigdy nie odpowiedział: włącz zapłon, potem dotknij OBD</string>
     <string name="vehicle_usb_cable">Kabel USB</string>
-    <string name="vehicle_obd_usb_allow">Zezwól w oknie, aby Dashwheel używał adaptera</string>
+    <string name="vehicle_obd_usb_allow">Zezwól w oknie, aby JMCAR używał adaptera</string>
     <string name="vehicle_err_usb_none">Nie podłączono adaptera USB</string>
-    <string name="vehicle_err_usb_tap">Dotknij OBD, aby Dashwheel mógł używać %1$s</string>
-    <string name="vehicle_err_usb_denied">Dashwheel nie otrzymał zgody na użycie %1$s</string>
+    <string name="vehicle_err_usb_tap">Dotknij OBD, aby JMCAR mógł używać %1$s</string>
+    <string name="vehicle_err_usb_denied">JMCAR nie otrzymał zgody na użycie %1$s</string>
     <string name="vehicle_err_usb_open">Nie udało się otworzyć %1$s: odłącz go i podłącz ponownie</string>
     <string name="vehicle_err_usb_silent">%1$s nie odpowiedział jak adapter OBD</string>
     <string name="vehicle_err_phone_not_linked">OBD idzie przez telefon: najpierw połącz telefon</string>

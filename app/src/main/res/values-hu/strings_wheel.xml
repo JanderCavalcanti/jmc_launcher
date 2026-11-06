@@ -9,7 +9,7 @@
     </plurals>
     <string name="wheel_explanation">Nyomja meg egyenként a kormány gombjait: az új gomb felkerül a térképre, az ismert zölden felvillan.</string>
     <string name="wheel_explanation_tap">Koppintson egy gombra, hogy elnevezze, elhelyezze, és kiválassza, mit csináljon.</string>
-    <string name="wheel_confirm_detail">%1$s észlelve. Nyomja meg még egyszer, hogy a Dashwheel tudja, hogy Ön volt: egy magától változó autóadat nem jön vissza pont a jelre.</string>
+    <string name="wheel_confirm_detail">%1$s észlelve. Nyomja meg még egyszer, hogy a JMCAR tudja, hogy Ön volt: egy magától változó autóadat nem jön vissza pont a jelre.</string>
     <string name="wheel_assign_prompt">%1$s: mit csináljon?</string>
     <string name="wheel_choose_app">Alkalmazás indítása…</string>
     <string name="wheel_raw_button">%1$d. gomb</string>
@@ -24,9 +24,9 @@
     <string name="wheel_group_system">Rendszer</string>
     <string name="wheel_group_phone">Telefon</string>
     <string name="wheel_needs_accessibility">Be kell kapcsolni a Kisegítő lehetőségeket</string>
-    <string name="wheel_accessibility_hint">A Vissza, a legutóbbi alkalmazások, az értesítések és az osztott képernyő működéséhez kapcsolja be a Dashwheelt a Beállítások, Kisegítő lehetőségek alatt.</string>
+    <string name="wheel_accessibility_hint">A Vissza, a legutóbbi alkalmazások, az értesítések és az osztott képernyő működéséhez kapcsolja be a JMCARt a Beállítások, Kisegítő lehetőségek alatt.</string>
     <string name="wheel_accessibility_enable">Bekapcsolás</string>
-    <string name="wheel_accessibility_anywhere">A betanított gombok csak akkor működnek, ha a Dashwheel van előtérben, kivéve ha a Dashwheel be van kapcsolva a Beállítások, Kisegítő lehetőségek alatt.</string>
+    <string name="wheel_accessibility_anywhere">A betanított gombok csak akkor működnek, ha a JMCAR van előtérben, kivéve ha a JMCAR be van kapcsolva a Beállítások, Kisegítő lehetőségek alatt.</string>
     <string name="wheel_no_voice_assistant">Nincs hangsegéd ezen az egységen</string>
     <string name="wheel_action_back">Vissza</string>
     <string name="wheel_action_recents">Legutóbbi alkalmazások</string>

@@ -4,7 +4,7 @@
     <string name="settings_section_second_screen">Második kijelző</string>
     <string name="second_screen_experimental">Kísérleti: egy Raspberry Pi második kijelzőt működtet az autóban. Autóban még nem tesztelték.</string>
     <string name="second_screen_status_unpaired">Nincs párosított második kijelző</string>
-    <string name="second_screen_status_unpaired_detail">Olvassa be a második kijelzőn látható kódot a Dashwheel telefonos alkalmazással, miközben a telefon ehhez az autóhoz csatlakozik.</string>
+    <string name="second_screen_status_unpaired_detail">Olvassa be a második kijelzőn látható kódot a JMCAR telefonos alkalmazással, miközben a telefon ehhez az autóhoz csatlakozik.</string>
     <string name="second_screen_status_searching">A második kijelző keresése</string>
     <string name="second_screen_status_searching_detail">A kijelzőnek és ennek a fejegységnek is a telefon hotspotjára kell csatlakoznia.</string>
     <string name="second_screen_status_connected">Csatlakozva: %1$s</string>
@@ -37,7 +37,7 @@
     <string name="second_screen_by_cable">kábelen</string>
     <string name="second_screen_by_wifi">Wi-Fi-n</string>
     <string name="second_screen_program_older">A kijelző programja régebbi ennél az alkalmazásnál: írjon neki új kártyát.</string>
-    <string name="second_screen_program_newer">A kijelző programja újabb ennél az alkalmazásnál: frissítse a Dashwheelt.</string>
+    <string name="second_screen_program_newer">A kijelző programja újabb ennél az alkalmazásnál: frissítse a JMCARt.</string>
     <string name="second_screen_health_under_powered">A kijelző számítógépe kevés áramot kap, ezért lelassul: használjon 5 V-os, 2,5 A-es tápot és rövid, vastag kábelt.</string>
     <string name="second_screen_health_hot">A kijelző számítógépe forró (%1$d °C), ezért lelassul: biztosítson neki levegőt vagy hűtőbordát.</string>
     <string name="second_screen_health_throttled">A kijelző számítógépét a saját firmware-e lassítja: ellenőrizze a tápellátását.</string>
@@ -119,10 +119,10 @@
     <string name="second_screen_mapview_distance_far">Távol</string>
     <string name="second_screen_mapview_buildings">3D épületek</string>
     <string name="second_screen_mapview_buildings_detail">Ahol a térkép szolgáltatója ismeri a magasságukat.</string>
-    <string name="second_screen_pi_waiting">Várakozás a Dashwheelre…</string>
-    <string name="second_screen_pi_no_signal">Nincs jel a Dashwheeltől</string>
+    <string name="second_screen_pi_waiting">Várakozás a JMCARre…</string>
+    <string name="second_screen_pi_no_signal">Nincs jel a JMCARtől</string>
     <string name="second_screen_pi_connected">Csatlakozva</string>
-    <string name="second_screen_pi_scan">Olvassa be a Dashwheel telefonos alkalmazással</string>
+    <string name="second_screen_pi_scan">Olvassa be a JMCAR telefonos alkalmazással</string>
     <string name="second_screen_board_full">Teljes kijelzés</string>
     <string name="second_screen_board_in_use">Most ezek az oldalak vannak a kijelzőn.</string>
     <string name="second_screen_board_not_in_use">Most nincs használatban: ezek az oldalak akkor jelennek meg, amikor erre vált.</string>

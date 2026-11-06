@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- First-run tour (TourScreen.kt): six tips over the real dashboard -->
-    <string name="tour_welcome_kicker">Bienvenido a Dashwheel</string>
+    <string name="tour_welcome_kicker">Bienvenido a JMCAR</string>
     <string name="tour_welcome_title">Un repaso rápido</string>
     <string name="tour_welcome_body">Unos consejos cortos. Un minuto más o menos. Puedes parar cuando quieras.</string>
     <string name="tour_topic_swipe">Cambiar de panel</string>
@@ -30,12 +30,12 @@
     <string name="tour_look_title">A tu gusto</string>
     <string name="tour_look_body">Abre el menú, luego Ajustes y luego Aspecto. Elige un tema y colores de día o de noche.</string>
     <string name="tour_obd_title">Conecta el adaptador OBD</string>
-    <string name="tour_obd_body">Va en la toma bajo el volante. Vincúlalo una vez en los ajustes Bluetooth de Android y Dashwheel se reconecta solo.</string>
+    <string name="tour_obd_body">Va en la toma bajo el volante. Vincúlalo una vez en los ajustes Bluetooth de Android y JMCAR se reconecta solo.</string>
     <string name="tour_obd_off">Sin conectar</string>
     <string name="tour_obd_looking">Buscando</string>
     <string name="tour_obd_connected">Conectado</string>
     <string name="tour_hands_title">La vista en la carretera</string>
-    <string name="tour_hands_body">Los botones del volante pueden cambiar de panel, saltar canciones o abrir el asistente de voz. Dashwheel avisa solo cuando algo importa.</string>
+    <string name="tour_hands_body">Los botones del volante pueden cambiar de panel, saltar canciones o abrir el asistente de voz. JMCAR avisa solo cuando algo importa.</string>
     <string name="tour_hands_hint">Configura los botones en Ajustes, Conducción, Botones del volante.</string>
     <string name="tour_wheel_dashboard">Panel siguiente</string>
     <string name="tour_wheel_music">Música</string>

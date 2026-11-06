@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- First-run tour (TourScreen.kt): six tips over the real dashboard -->
-    <string name="tour_welcome_kicker">Willkommen bei Dashwheel</string>
+    <string name="tour_welcome_kicker">Willkommen bei JMCAR</string>
     <string name="tour_welcome_title">Eine kurze Tour</string>
     <string name="tour_welcome_body">Ein paar kurze Tipps. Etwa eine Minute. Du kannst jederzeit aufhören.</string>
     <string name="tour_topic_swipe">Dashboard wechseln</string>
@@ -30,12 +30,12 @@
     <string name="tour_look_title">Mach es zu deinem</string>
     <string name="tour_look_body">Öffne das Menü, dann Einstellungen, dann Aussehen. Wähle ein Design und Tag- oder Nachtfarben.</string>
     <string name="tour_obd_title">OBD-Adapter einstecken</string>
-    <string name="tour_obd_body">Er kommt in die Buchse unter dem Lenkrad. Kopple ihn einmal in den Bluetooth-Einstellungen von Android, danach verbindet sich Dashwheel von selbst.</string>
+    <string name="tour_obd_body">Er kommt in die Buchse unter dem Lenkrad. Kopple ihn einmal in den Bluetooth-Einstellungen von Android, danach verbindet sich JMCAR von selbst.</string>
     <string name="tour_obd_off">Nicht gesteckt</string>
     <string name="tour_obd_looking">Suche</string>
     <string name="tour_obd_connected">Verbunden</string>
     <string name="tour_hands_title">Augen auf die Straße</string>
-    <string name="tour_hands_body">Die Lenkradtasten können das Dashboard wechseln, Titel überspringen oder den Sprachassistenten starten. Dashwheel meldet sich von selbst, wenn etwas wichtig ist.</string>
+    <string name="tour_hands_body">Die Lenkradtasten können das Dashboard wechseln, Titel überspringen oder den Sprachassistenten starten. JMCAR meldet sich von selbst, wenn etwas wichtig ist.</string>
     <string name="tour_hands_hint">Die Tasten stellst du unter Einstellungen, Fahren, Lenkradtasten ein.</string>
     <string name="tour_wheel_dashboard">Nächstes Dashboard</string>
     <string name="tour_wheel_music">Musik</string>

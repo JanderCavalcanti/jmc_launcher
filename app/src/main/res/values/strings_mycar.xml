@@ -8,7 +8,7 @@
     <string name="mycar_working">Getting it ready</string>
     <string name="mycar_ready">Your car\'s picture is in</string>
     <string name="mycar_failed">That picture could not be read. Try a JPG or PNG.</string>
-    <string name="mycar_model_on_phone">A 3D model becomes your car on the phone: in Dashwheel Companion, Car tab, From a 3D model.</string>
+    <string name="mycar_model_on_phone">A 3D model becomes your car on the phone: in JMCAR Companion, Car tab, From a 3D model.</string>
     <string name="mycar_no_picker">No file picker on this unit. Put the file here: %1$s</string>
     <string name="mycar_pick">Pick a file</string>
     <string name="mycar_remove">Remove</string>
@@ -31,7 +31,7 @@
     <string name="mycar_style_outline">Outline</string>
     <string name="mycar_style_outline_hint">Its lines only, in the look\'s colour</string>
     <string name="mycar_where">Shown on the Tyre map and Car outline designs and on the My car tile.</string>
-    <string name="mycar_phone_hint">From the phone: in the Dashwheel companion app, Car picture, then Choose a file.</string>
+    <string name="mycar_phone_hint">From the phone: in the JMCAR companion app, Car picture, then Choose a file.</string>
     <string name="mycar_photos">3 photos</string>
     <string name="mycar_photos_hint">Or pick the photos of the car at once: side, front and back, plus one from above and one from above with the doors open if you have them. Named side, front, back, top and open, they never get mixed up.</string>
     <string name="mycar_photos_no_car">No car found in those photos. Use ones with the whole car on a plain background.</string>

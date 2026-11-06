@@ -38,7 +38,7 @@
     <string name="share_use">Użyj udostępnionego pulpitu</string>
     <string name="share_paste_hint">Kod DW1:</string>
     <string name="share_open_file">Otwórz plik</string>
-    <string name="share_use_hint">Wpisz lub wklej kod, otwórz plik albo zeskanuj kod QR aplikacją Dashwheel Companion.</string>
+    <string name="share_use_hint">Wpisz lub wklej kod, otwórz plik albo zeskanuj kod QR aplikacją JMCAR Companion.</string>
     <string name="share_missing_apps">Brakujące aplikacje: %1$d. Ich kafelki zostaną, dopóki ich nie zmienisz.</string>
     <string name="share_take_look">Użyj też wyglądu</string>
     <string name="share_replace">Wstaw tutaj</string>

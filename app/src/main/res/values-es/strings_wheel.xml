@@ -9,7 +9,7 @@
     </plurals>
     <string name="wheel_explanation">Pulsa cada botón del volante: uno nuevo se añade al mapa, uno conocido se ilumina en verde.</string>
     <string name="wheel_explanation_tap">Toca un botón para nombrarlo, colocarlo y elegir qué hace.</string>
-    <string name="wheel_confirm_detail">Se ha detectado %1$s. Púlsalo una vez más para que Dashwheel sepa que has sido tú: un dato del coche que cambia solo no vuelve a aparecer a la orden.</string>
+    <string name="wheel_confirm_detail">Se ha detectado %1$s. Púlsalo una vez más para que JMCAR sepa que has sido tú: un dato del coche que cambia solo no vuelve a aparecer a la orden.</string>
     <string name="wheel_assign_prompt">¿Qué debe hacer %1$s?</string>
     <string name="wheel_choose_app">Abrir una app…</string>
     <string name="wheel_raw_button">Botón n.º %1$d</string>
@@ -24,9 +24,9 @@
     <string name="wheel_group_system">Sistema</string>
     <string name="wheel_group_phone">Teléfono</string>
     <string name="wheel_needs_accessibility">Necesita Accesibilidad activada</string>
-    <string name="wheel_accessibility_hint">Atrás, apps recientes, notificaciones y pantalla dividida necesitan Dashwheel activado en Ajustes, Accesibilidad.</string>
+    <string name="wheel_accessibility_hint">Atrás, apps recientes, notificaciones y pantalla dividida necesitan JMCAR activado en Ajustes, Accesibilidad.</string>
     <string name="wheel_accessibility_enable">Activar</string>
-    <string name="wheel_accessibility_anywhere">Los botones aprendidos solo actúan mientras Dashwheel está delante, salvo que Dashwheel esté activado en Ajustes, Accesibilidad.</string>
+    <string name="wheel_accessibility_anywhere">Los botones aprendidos solo actúan mientras JMCAR está delante, salvo que JMCAR esté activado en Ajustes, Accesibilidad.</string>
     <string name="wheel_no_voice_assistant">No hay asistente de voz en esta unidad</string>
     <string name="wheel_action_back">Atrás</string>
     <string name="wheel_action_recents">Apps recientes</string>

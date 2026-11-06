@@ -11,7 +11,7 @@
     </plurals>
     <string name="wheel_explanation">Naciśnij każdy przycisk na kierownicy: nowy trafia na mapę, znany świeci na zielono.</string>
     <string name="wheel_explanation_tap">Dotknij przycisku, aby go nazwać, umieścić i wybrać, co robi.</string>
-    <string name="wheel_confirm_detail">Wykryto %1$s. Naciśnij go ponownie, aby Dashwheel wiedział, że to Ty: wartość z samochodu, która zmienia się sama, nie powtórzy się na zawołanie.</string>
+    <string name="wheel_confirm_detail">Wykryto %1$s. Naciśnij go ponownie, aby JMCAR wiedział, że to Ty: wartość z samochodu, która zmienia się sama, nie powtórzy się na zawołanie.</string>
     <string name="wheel_assign_prompt">Co ma robić %1$s?</string>
     <string name="wheel_choose_app">Uruchom aplikację…</string>
     <string name="wheel_raw_button">Przycisk nr %1$d</string>
@@ -26,9 +26,9 @@
     <string name="wheel_group_system">System</string>
     <string name="wheel_group_phone">Telefon</string>
     <string name="wheel_needs_accessibility">Wymaga włączonych Ułatwień dostępu</string>
-    <string name="wheel_accessibility_hint">Wstecz, ostatnie aplikacje, powiadomienia i podzielony ekran wymagają włączenia Dashwheel w Ustawienia, Ułatwienia dostępu.</string>
+    <string name="wheel_accessibility_hint">Wstecz, ostatnie aplikacje, powiadomienia i podzielony ekran wymagają włączenia JMCAR w Ustawienia, Ułatwienia dostępu.</string>
     <string name="wheel_accessibility_enable">Włącz</string>
-    <string name="wheel_accessibility_anywhere">Nauczone przyciski działają tylko, gdy Dashwheel jest na wierzchu, chyba że Dashwheel jest włączony w Ustawieniach, Ułatwienia dostępu.</string>
+    <string name="wheel_accessibility_anywhere">Nauczone przyciski działają tylko, gdy JMCAR jest na wierzchu, chyba że JMCAR jest włączony w Ustawieniach, Ułatwienia dostępu.</string>
     <string name="wheel_no_voice_assistant">Brak asystenta głosowego w tym radiu</string>
     <string name="wheel_action_back">Wstecz</string>
     <string name="wheel_action_recents">Ostatnie aplikacje</string>

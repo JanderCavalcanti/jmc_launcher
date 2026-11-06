@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- First-run setup (SetupScreen.kt): the car, what the launcher may use, the look -->
-    <string name="setup_title">Dashwheel sąranka</string>
+    <string name="setup_title">JMCAR sąranka</string>
     <string name="setup_step">%1$d žingsnis iš 3</string>
     <string name="setup_skip">Praleisti</string>
     <string name="setup_back">Atgal</string>
@@ -18,7 +18,7 @@
     <string name="setup_driver_side">Vairuotojo vieta</string>
     <string name="setup_driver_left">Kairėje</string>
     <string name="setup_driver_right">Dešinėje</string>
-    <string name="setup_access_title">Ką Dashwheel gali naudoti</string>
+    <string name="setup_access_title">Ką JMCAR gali naudoti</string>
     <string name="setup_access_body">Visa tai neprivaloma. Leiskite atsidariusiame ekrane ir grįžkite.</string>
     <string name="setup_access_notifications">Pranešimai</string>
     <string name="setup_access_notifications_detail">Muzika ir kitas posūkis iš šio įrenginio programų</string>
@@ -48,5 +48,5 @@
     <string name="setup_car_tiles_title">Pridėti automobilio plyteles?</string>
     <string name="setup_car_tiles_body">Variklio rodikliai, klaidų kodai, akumuliatorius ir įšilimas skydeliuose.</string>
     <string name="setup_again">Sąranka iš naujo</string>
-    <string name="setup_again_detail">Automobilis, ką Dashwheel gali naudoti ir išvaizda, žingsnis po žingsnio</string>
+    <string name="setup_again_detail">Automobilis, ką JMCAR gali naudoti ir išvaizda, žingsnis po žingsnio</string>
 </resources>

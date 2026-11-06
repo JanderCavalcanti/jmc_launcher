@@ -38,7 +38,7 @@
     <string name="share_use">Use a shared dashboard</string>
     <string name="share_paste_hint">DW1: code</string>
     <string name="share_open_file">Open a file</string>
-    <string name="share_use_hint">Type or paste a code, open a file, or scan a QR code with the Dashwheel Companion app.</string>
+    <string name="share_use_hint">Type or paste a code, open a file, or scan a QR code with the JMCAR Companion app.</string>
     <string name="share_missing_apps">Apps not on this unit: %1$d. Their tiles stay until you change them.</string>
     <string name="share_take_look">Use its look too</string>
     <string name="share_replace">Put it here</string>

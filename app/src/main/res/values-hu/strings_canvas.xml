@@ -29,7 +29,7 @@
     <string name="canvas_tab_when_hint">Parkolva: indításkor vagy 2 perc állás után. A kiválasztott elemre újra koppintva kikapcsolja.</string>
     <string name="canvas_map_title">A műszerfal alatt</string>
     <string name="canvas_map_builtin">Beépített térkép</string>
-    <string name="canvas_map_builtin_hint">A Dashwheel saját térképe, lapozható műszerfalakkal.</string>
+    <string name="canvas_map_builtin_hint">A JMCAR saját térképe, lapozható műszerfalakkal.</string>
     <string name="canvas_map_app_hint">Az alkalmazás a csempék alatt fut, és megkap minden érintést, amelyet azok nem. A sáv fülei helyettesítik a lapozást: az elnevezéshez tartson nyomva egyet.</string>
     <string name="canvas_bar_add_title">Hozzáadás a sávhoz</string>
     <string name="canvas_bar_add_dashboard">Műszerfal</string>

@@ -4,7 +4,7 @@
     <string name="settings_section_second_screen">Segunda pantalla</string>
     <string name="second_screen_experimental">Experimental: una Raspberry Pi controla una segunda pantalla en el coche. Aún no probado en un coche.</string>
     <string name="second_screen_status_unpaired">Ninguna segunda pantalla vinculada</string>
-    <string name="second_screen_status_unpaired_detail">Escanea el código de la segunda pantalla con la app Dashwheel del teléfono mientras el teléfono está conectado a este coche.</string>
+    <string name="second_screen_status_unpaired_detail">Escanea el código de la segunda pantalla con la app JMCAR del teléfono mientras el teléfono está conectado a este coche.</string>
     <string name="second_screen_status_searching">Buscando la segunda pantalla</string>
     <string name="second_screen_status_searching_detail">La pantalla y esta radio deben estar conectadas al punto de acceso del teléfono.</string>
     <string name="second_screen_status_connected">Conectado a %1$s</string>
@@ -37,7 +37,7 @@
     <string name="second_screen_by_cable">por cable</string>
     <string name="second_screen_by_wifi">por Wi-Fi</string>
     <string name="second_screen_program_older">El programa de la pantalla es más antiguo que esta app: vuelva a escribir su tarjeta.</string>
-    <string name="second_screen_program_newer">El programa de la pantalla es más reciente que esta app: actualice Dashwheel.</string>
+    <string name="second_screen_program_newer">El programa de la pantalla es más reciente que esta app: actualice JMCAR.</string>
     <string name="second_screen_health_under_powered">La placa de la pantalla no recibe suficiente corriente y se ralentiza: use una fuente de 5 V y 2,5 A y un cable corto y grueso.</string>
     <string name="second_screen_health_hot">La placa de la pantalla está caliente (%1$d °C) y se ralentiza: dele aire o un disipador.</string>
     <string name="second_screen_health_throttled">La placa de la pantalla está limitada por su firmware: revise su alimentación.</string>
@@ -119,10 +119,10 @@
     <string name="second_screen_mapview_distance_far">Lejos</string>
     <string name="second_screen_mapview_buildings">Edificios en 3D</string>
     <string name="second_screen_mapview_buildings_detail">Donde el proveedor del mapa conoce su altura.</string>
-    <string name="second_screen_pi_waiting">Esperando a Dashwheel…</string>
-    <string name="second_screen_pi_no_signal">Sin señal de Dashwheel</string>
+    <string name="second_screen_pi_waiting">Esperando a JMCAR…</string>
+    <string name="second_screen_pi_no_signal">Sin señal de JMCAR</string>
     <string name="second_screen_pi_connected">Conectado</string>
-    <string name="second_screen_pi_scan">Escanea con la app Dashwheel del móvil</string>
+    <string name="second_screen_pi_scan">Escanea con la app JMCAR del móvil</string>
     <string name="second_screen_board_full">Pantalla completa</string>
     <string name="second_screen_board_in_use">Estas páginas están ahora en la pantalla.</string>
     <string name="second_screen_board_not_in_use">No se usa ahora: estas páginas aparecen al cambiar a esta pantalla.</string>

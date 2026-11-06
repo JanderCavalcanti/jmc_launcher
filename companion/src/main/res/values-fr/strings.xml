@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Dashwheel Compagnon</string>
+    <string name="app_name">JMCAR Compagnon</string>
     <string name="service_channel">Connexion à la voiture</string>
     <string name="status_off">Partage désactivé</string>
     <string name="status_waiting">En attente de la voiture sur votre partage de connexion</string>
@@ -23,7 +23,7 @@
     <string name="done">Fait</string>
     <string name="cars_title">Voitures associées</string>
     <string name="pair_car">Associer une voiture</string>
-    <string name="pair_hint">Dans Dashwheel, ouvrez Réglages → Téléphone → Associer un téléphone, puis scannez le code affiché.</string>
+    <string name="pair_hint">Dans JMCAR, ouvrez Réglages → Téléphone → Associer un téléphone, puis scannez le code affiché.</string>
     <string name="remove">Retirer</string>
     <string name="confirm_title">Autoriser %1$s ?</string>
     <string name="confirm_body">Cette voiture affichera vos notifications et vos messages, et pourra répondre en votre nom. Elle ne se connecte que via votre partage de connexion.</string>
@@ -33,7 +33,7 @@
     <string name="remove_body">La voiture ne recevra plus rien de ce téléphone. Il faudra un nouveau code pour l\'associer à nouveau.</string>
     <string name="paired_since">Associée le %1$s</string>
     <string name="scanned_download_code">Ce code sert à télécharger l\'appli. Scannez maintenant l\'autre, sur l\'écran de l\'autoradio, intitulé Code d\'association.</string>
-    <string name="invalid_code_read">Ce n\'est pas un code d\'association Dashwheel (lu : %1$s).</string>
+    <string name="invalid_code_read">Ce n\'est pas un code d\'association JMCAR (lu : %1$s).</string>
     <string name="step_calls">Appels</string>
     <string name="step_calls_detail">Affiche qui appelle sur l\'écran de la voiture, pour décrocher ou raccrocher depuis celui-ci, et vos favoris à appeler depuis la voiture. Le son reste sur le Bluetooth de la voiture.</string>
     <string name="car_spot_title">Où est ma voiture</string>
@@ -69,13 +69,13 @@
     <string name="keyboard_typed">Sur l\'écran de la voiture</string>
     <string name="keyboard_copied">Aucun champ sélectionné sur l\'écran de la voiture : le texte est dans son presse-papiers.</string>
     <string name="keyboard_failed">L\'écran de la voiture n\'a pas pris le texte.</string>
-    <string name="keyboard_no_answer">Pas de réponse : mettez à jour Dashwheel dans la voiture.</string>
+    <string name="keyboard_no_answer">Pas de réponse : mettez à jour JMCAR dans la voiture.</string>
     <string name="keyboard_not_connected">La voiture n\'est pas connectée.</string>
     <string name="keyboard_typing_off">La saisie dans les champs est coupée sur la voiture.</string>
     <string name="keyboard_turn_on">Activer</string>
     <string name="keyboard_turning_on">Activation sur la voiture…</string>
     <string name="keyboard_typing_on">Saisie activée : sélectionnez un champ sur l\'écran de la voiture, puis tapez ici.</string>
-    <string name="keyboard_turn_on_failed">La voiture n\'a pas pu l\'activer : sur la voiture, ouvrez Paramètres, Accessibilité, et activez Dashwheel.</string>
+    <string name="keyboard_turn_on_failed">La voiture n\'a pas pu l\'activer : sur la voiture, ouvrez Paramètres, Accessibilité, et activez JMCAR.</string>
     <string name="send_to_car">Envoyer à la voiture</string>
     <string name="sent_to_car">Envoyé à l\'écran de la voiture</string>
     <string name="place_sent">Guidage envoyé à la voiture : %1$s</string>
@@ -265,12 +265,12 @@
     <string name="rescue_split">Quitter l\'écran partagé</string>
     <string name="rescue_split_body">L\'écran de la voiture n\'est plus partagé avec une autre appli.</string>
     <string name="rescue_home_back">Rendre l\'accueil à l\'autoradio</string>
-    <string name="rescue_home_back_body">Le lanceur de l\'autoradio redevient l\'écran d\'accueil. Dashwheel reste dans les applis.</string>
-    <string name="rescue_home_take">Remettre Dashwheel en accueil</string>
-    <string name="rescue_home_take_body">Dashwheel redevient l\'écran d\'accueil de la voiture.</string>
+    <string name="rescue_home_back_body">Le lanceur de l\'autoradio redevient l\'écran d\'accueil. JMCAR reste dans les applis.</string>
+    <string name="rescue_home_take">Remettre JMCAR en accueil</string>
+    <string name="rescue_home_take_body">JMCAR redevient l\'écran d\'accueil de la voiture.</string>
     <string name="rescue_send">Valider</string>
     <string name="rescue_sending">Envoi à la voiture</string>
     <string name="rescue_done">Fait dans la voiture</string>
     <string name="rescue_failed">La voiture n\'a pas pu le faire</string>
-    <string name="rescue_no_answer">Pas de réponse : mettez à jour Dashwheel dans la voiture.</string>
+    <string name="rescue_no_answer">Pas de réponse : mettez à jour JMCAR dans la voiture.</string>
 </resources>

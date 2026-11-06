@@ -29,7 +29,7 @@
     <string name="canvas_tab_when_hint">«На стоянке» значит при запуске или после 2 минут без движения. Нажмите выбранный пункт ещё раз, чтобы отключить его.</string>
     <string name="canvas_map_title">Под панелью</string>
     <string name="canvas_map_builtin">Встроенная карта</string>
-    <string name="canvas_map_builtin_hint">Собственная карта Dashwheel с панелями, которые листаются.</string>
+    <string name="canvas_map_builtin_hint">Собственная карта JMCAR с панелями, которые листаются.</string>
     <string name="canvas_map_app_hint">Приложение работает под плитками и получает все касания мимо них. Вкладки в боковой полосе заменяют пролистывание: удерживайте вкладку, чтобы её назвать.</string>
     <string name="canvas_bar_add_title">Добавить в полосу</string>
     <string name="canvas_bar_add_dashboard">Панель</string>

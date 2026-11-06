@@ -37,7 +37,7 @@
     <string name="volume_way_android_hint">Az Android médiahangereje, mint egy telefonon</string>
     <string name="volume_way_keys_hint">Megnyomja a hangerőgombokat, mint a kormánygombok és a forgatógomb. Root vagy a fejegység ADB-je szükséges</string>
     <string name="volume_way_keys_locked">A hangerőgombokhoz root vagy a fejegység ADB-je szükséges</string>
-    <string name="settings_rom_call_detail">A Bluetooth-hívások csak a Dashwheel kártyáján jelennek meg, fogadással és bontással</string>
+    <string name="settings_rom_call_detail">A Bluetooth-hívások csak a JMCAR kártyáján jelennek meg, fogadással és bontással</string>
     <string name="settings_rom_doors_detail">Bármely alkalmazás felett mutatja, melyik ajtó van nyitva, a fejegység saját riasztása helyett</string>
     <string name="settings_rom_needs_root">Root vagy a fejegység ADB-je szükséges</string>
     <string name="settings_more_github">Több a GitHub kiadással</string>
@@ -69,9 +69,9 @@
     <string name="alert_with_voice">%1$s, hanggal</string>
     <string name="alert_say_call">Hívás: %1$s</string>
     <string name="alert_say_doors">Nyitott ajtó: %1$s</string>
-    <string name="settings_rom_radar_detail">A parkolóérzékelőket a Dashwheel stílusában mutatja, a fejegységé helyett</string>
-    <string name="settings_rom_radar_needs_access">Kapcsolja be a Dashwheelt a Kisegítő lehetőségekben, hogy a tolatókamera felett látszódjon</string>
-    <string name="settings_rom_ac_detail">A klíma változásait a Dashwheel stílusában mutatja, a fejegység felugró ablaka helyett</string>
+    <string name="settings_rom_radar_detail">A parkolóérzékelőket a JMCAR stílusában mutatja, a fejegységé helyett</string>
+    <string name="settings_rom_radar_needs_access">Kapcsolja be a JMCARt a Kisegítő lehetőségekben, hogy a tolatókamera felett látszódjon</string>
+    <string name="settings_rom_ac_detail">A klíma változásait a JMCAR stílusában mutatja, a fejegység felugró ablaka helyett</string>
     <string name="alert_kind_radar">Parkolóradar</string>
     <string name="alert_kind_ac">Klíma</string>
     <string name="alert_kind_radar_title">Parkolóradar-riasztás</string>
@@ -85,7 +85,7 @@
     <string name="keys_voice">Hang gomb</string>
     <string name="keys_custom">Egyéni gomb</string>
     <string name="keys_unit_choice">A fejegység saját választása</string>
-    <string name="settings_rom_tyres_detail">Gumiabroncs-figyelmeztetések a Dashwheel stílusában. Ha csak ezeket szeretné, kapcsolja ki a TPMS alkalmazás saját ablakát annak beállításaiban</string>
+    <string name="settings_rom_tyres_detail">Gumiabroncs-figyelmeztetések a JMCAR stílusában. Ha csak ezeket szeretné, kapcsolja ki a TPMS alkalmazás saját ablakát annak beállításaiban</string>
     <string name="alert_kind_tyres">Gumik</string>
     <string name="alert_kind_tyres_title">Gumiabroncs-riasztás</string>
     <string name="alert_speak_tyres_detail">Bemondja, melyik gumival mi a baj</string>
@@ -106,9 +106,9 @@
     <string name="settings_section_display">Kijelző</string>
     <string name="settings_appearance_title">Nappal és éjszaka</string>
     <string name="settings_appearance_detail">Automatikusan az autó szerint, napkeltéhez és napnyugtához, vagy megadott időpontokban</string>
-    <string name="alert_style_section">Felugró ablakok Dashwheel stílusban</string>
+    <string name="alert_style_section">Felugró ablakok JMCAR stílusban</string>
     <string name="alert_more_with_permission">További autós riasztásokhoz root vagy egy egyszeri PC-s parancs kell: lásd a wikiben az Autóbeállítási engedély részt.</string>
-    <string name="alert_more_with_github">Az ajtó-, öv- és radarriasztásokhoz a Dashwheel GitHub kiadása kell, amely használni tudja a fejegység rootját.</string>
+    <string name="alert_more_with_github">Az ajtó-, öv- és radarriasztásokhoz a JMCAR GitHub kiadása kell, amely használni tudja a fejegység rootját.</string>
     <string name="alert_copy_command">Parancs másolása</string>
     <string name="alert_command_copied">Parancs másolva</string>
     <string name="settings_section_about">Névjegy</string>
@@ -119,15 +119,15 @@
     <string name="settings_system_perms">Google Maps csempében</string>
     <string name="settings_system_perms_on">Beállítva. A Google Maps futhat csempében.</string>
     <string name="settings_system_perms_off">Nincs beállítva. Koppintson a beállításhoz: telepíti a PMPatch3 modult, Magisk és újraindítás szükséges.</string>
-    <string name="settings_pmpatch_body">A Google Maps csempében fut, miután az Android megadja a Dashwheelnek a rendszerengedélyeket.</string>
+    <string name="settings_pmpatch_body">A Google Maps csempében fut, miután az Android megadja a JMCARnek a rendszerengedélyeket.</string>
     <string name="settings_pmpatch_cost">Az ára: a PMPatch3 kikapcsolja az aláírás-ellenőrzést a fejegység minden alkalmazásánál.</string>
-    <string name="settings_pmpatch_steps">Három lépés: telepítés, újraindítás, a Dashwheel újratelepítése.</string>
+    <string name="settings_pmpatch_steps">Három lépés: telepítés, újraindítás, a JMCAR újratelepítése.</string>
     <string name="settings_pmpatch_step">%1$d./%2$d. lépés</string>
     <string name="settings_pmpatch_checking">Magisk ellenőrzése…</string>
     <string name="settings_pmpatch_no_magisk">A Magisk nincs telepítve ezen a fejegységen.</string>
     <string name="settings_pmpatch_old_magisk">Magisk 24 vagy újabb szükséges.</string>
     <string name="settings_pmpatch_restart">A PMPatch3 telepítve. A befejezéshez indítsa újra a fejegységet.</string>
-    <string name="settings_pmpatch_running">A PMPatch3 fut. A Dashwheel újratelepíti magát az engedélyekért.</string>
+    <string name="settings_pmpatch_running">A PMPatch3 fut. A JMCAR újratelepíti magát az engedélyekért.</string>
     <string name="settings_pmpatch_install">PMPatch3 telepítése</string>
     <string name="settings_pmpatch_reinstall">Újratelepítés</string>
     <string name="settings_pmpatch_bad_download">A letöltés nem egyezik a PMPatch3 v1.2.0-val.</string>
@@ -156,9 +156,9 @@
     <string name="settings_backup_restore_detail">Ezen vagy egy másik fejegységen mentett fájlból</string>
     <string name="settings_backup_saved">Beállítások mentve</string>
     <string name="settings_backup_saved_to">Beállítások mentve ide: %1$s</string>
-    <string name="settings_backup_failed">Ez nem Dashwheel beállításfájl. Válasszon a Beállításaim mentése funkcióval mentett fájlt.</string>
+    <string name="settings_backup_failed">Ez nem JMCAR beállításfájl. Válasszon a Beállításaim mentése funkcióval mentett fájlt.</string>
     <string name="settings_backup_confirm_title">Visszaállítja ezeket a beállításokat?</string>
-    <string name="settings_backup_confirm_body">A műszerfalai és beállításai lecserélődnek. A Dashwheel újraindul.</string>
+    <string name="settings_backup_confirm_body">A műszerfalai és beállításai lecserélődnek. A JMCAR újraindul.</string>
     <string name="settings_backup_confirm">Visszaállítás</string>
     <string name="settings_resume_music">Zene folytatása induláskor</string>
     <string name="settings_resume_music_detail">Az alkalmazás, amely kikapcsoláskor szólt, újra lejátszik. Hagyja kikapcsolva, ha a fejegység már megteszi.</string>
@@ -200,10 +200,10 @@
     <string name="settings_log_no_phone">Egy telefon sem válaszolt. Csatlakoztassa a telefont, és frissítse a Companion alkalmazást</string>
     <!-- About tab -->
     <string name="about_author_section">Készítette</string>
-    <string name="about_description">A Dashwheel indítóalkalmazás Android autós fejegységekhez: térkép, zene és élő autóadatok egyetlen nyugodt képernyőn, saját kezűleg elrendezett műszerfalakkal. Ingyenes és nyílt forráskódú.</string>
+    <string name="about_description">A JMCAR indítóalkalmazás Android autós fejegységekhez: térkép, zene és élő autóadatok egyetlen nyugodt képernyőn, saját kezűleg elrendezett műszerfalakkal. Ingyenes és nyílt forráskódú.</string>
     <string name="about_author_role">Alkotó és fejlesztő</string>
-    <string name="about_support_section">A Dashwheel támogatása</string>
-    <string name="about_support_text">A Dashwheel ingyenes. Ha tetszik, egy kávé segít a folytatásban.</string>
+    <string name="about_support_section">A JMCAR támogatása</string>
+    <string name="about_support_text">A JMCAR ingyenes. Ha tetszik, egy kávé segít a folytatásban.</string>
     <string name="about_kofi">Hívjon meg egy kávéra a Ko-fin</string>
     <string name="about_scan">Olvassa be a telefonjával</string>
     <string name="about_tip_thanks">Köszönöm, sokat segít.</string>
@@ -221,7 +221,7 @@
     <string name="alert_style_icon_detail">Csak egy animált ikon a sarokban. Koppintson rá a befejezéshez</string>
     <string name="alert_kind_volume">Hangerő</string>
     <string name="alert_kind_volume_title">Hangerősáv</string>
-    <string name="settings_rom_volume_detail">A hangerőt a Dashwheel stílusában mutatja, a fejegység sávja helyett</string>
+    <string name="settings_rom_volume_detail">A hangerőt a JMCAR stílusában mutatja, a fejegység sávja helyett</string>
     <string name="settings_rom_volume_next_start">A fejegység következő indításakor veszi át</string>
     <string name="settings_rom_volume_needs_magisk">Magisk szükséges</string>
     <string name="alert_volume_muted">Némítva</string>
@@ -234,12 +234,12 @@
     <string name="settings_side_rail_detail">A sáv gombjai a vezető oldalán, a képernyő mentén lefelé állnak</string>
     <string name="settings_tabs_nav">Fülek húzás helyett</string>
     <string name="settings_tabs_nav_detail">A műszerfalakat az oldalsávban kell koppintani; ehhez oldalsáv kell. Magától megjelenik, ha térképalkalmazás van a műszerfalak alatt.</string>
-    <string name="about_free_open_source">A Dashwheel ingyenes és nyílt forráskódú.</string>
+    <string name="about_free_open_source">A JMCAR ingyenes és nyílt forráskódú.</string>
     <string name="about_updates_play">A frissítések a Google Playről érkeznek</string>
     <string name="settings_obd_source_label">OBD-adatok forrása</string>
     <string name="settings_obd_source_adapter">Adapter</string>
     <string name="settings_obd_source_deepobd">Deep OBD</string>
-    <string name="settings_obd_source_adapter_hint">A Dashwheel maga kommunikál az OBD adapterrel.</string>
+    <string name="settings_obd_source_adapter_hint">A JMCAR maga kommunikál az OBD adapterrel.</string>
     <string name="settings_obd_source_deepobd_hint">A Deep OBD olvassa az autót és megosztja az adatokat. Kapcsolja be az adatszórást a Deep OBD-ben. A hibakódokhoz az adapter kell.</string>
     <string name="settings_deepobd_waiting">Még semmi sem jött a Deep OBD-től. Nyissa meg, és csatlakozzon az autóhoz.</string>
     <string name="settings_deepobd_lines">Deep OBD sorok. Koppintson egyre, hogy megváltoztassa, mit mutat.</string>
@@ -272,11 +272,11 @@
     <string name="dead_strip_save">Mentés</string>
     <string name="settings_unit_tools">Fejegység eszközei</string>
     <string name="settings_unit_tools_detail">Rendszerindító logó, Google Maps csempében, rendszeralkalmazás</string>
-    <string name="home_hand_back_title">A Dashwheel a kezdőképernyő</string>
+    <string name="home_hand_back_title">A JMCAR a kezdőképernyő</string>
     <string name="home_hand_back_detail">Kikapcsolva a képernyő visszakerül a fejegység saját indítójához. A beállítások megmaradnak.</string>
-    <string name="home_hand_back_off_detail">A fejegység saját indítója a kezdőképernyő. Kapcsolja be a Dashwheel visszaállításához.</string>
+    <string name="home_hand_back_off_detail">A fejegység saját indítója a kezdőképernyő. Kapcsolja be a JMCAR visszaállításához.</string>
     <string name="home_hand_back_confirm_title">Visszaadja a kezdőképernyőt a fejegységnek?</string>
-    <string name="home_hand_back_confirm">A fejegység indítója most és minden induláskor visszajön. A Dashwheel megtartja a beállításokat: nyissa meg az alkalmazáslistából, és kapcsolja be újra.</string>
+    <string name="home_hand_back_confirm">A fejegység indítója most és minden induláskor visszajön. A JMCAR megtartja a beállításokat: nyissa meg az alkalmazáslistából, és kapcsolja be újra.</string>
     <string name="home_hand_back_confirm_ok">Visszaadás</string>
     <string name="settings_root_how">Hogyan</string>
     <string name="settings_obd_linked">Csatlakoztatva: %1$s</string>
@@ -311,8 +311,8 @@
         <item quantity="other">%1$d/%2$d felolvasva</item>
     </plurals>
     <plurals name="settings_sum_popups">
-        <item quantity="one">%d Dashwheel stílusban</item>
-        <item quantity="other">%d Dashwheel stílusban</item>
+        <item quantity="one">%d JMCAR stílusban</item>
+        <item quantity="other">%d JMCAR stílusban</item>
     </plurals>
     <string name="settings_beta_updates">Béta frissítések</string>
     <string name="settings_beta_updates_detail">Új verziók azonnal, ahogy elkészülnek, mielőtt mindenkihez eljutnak</string>
@@ -326,8 +326,8 @@
     <string name="map_servers_reset">Ingyenes szerverek</string>
     <string name="report_title">Működési jelentés</string>
     <string name="report_row_detail">A fejegysége és ami működik rajta, GitHub issue-ként</string>
-    <string name="report_compat_intro">Jelölje meg, mi működik ezen a fejegységen. A jelentés a fejegység típusát és firmware-ét, valamint a Dashwheel verzióját tartalmazza, semmi személyeset.</string>
-    <string name="report_crash_title">A Dashwheel legutóbb leállt</string>
+    <string name="report_compat_intro">Jelölje meg, mi működik ezen a fejegységen. A jelentés a fejegység típusát és firmware-ét, valamint a JMCAR verzióját tartalmazza, semmi személyeset.</string>
+    <string name="report_crash_title">A JMCAR legutóbb leállt</string>
     <string name="report_crash_intro">Küldje el a hibát, hogy javítani lehessen. A jelentés a hibát és a fejegység típusát és firmware-ét tartalmazza, semmi személyeset.</string>
     <string name="report_scan">Olvassa be a telefonjával a küldéshez</string>
     <string name="report_open">Megnyitás itt</string>
@@ -335,7 +335,7 @@
     <string name="report_later">Most nem</string>
     <string name="report_works">Működik</string>
     <string name="report_fails">Nem megy</string>
-    <string name="report_item_home">A Kezdőképernyő gomb a Dashwheelt nyitja</string>
+    <string name="report_item_home">A Kezdőképernyő gomb a JMCARt nyitja</string>
     <string name="report_item_wheel">Kormánygombok</string>
     <string name="report_item_tiles">Alkalmazások csempében</string>
     <string name="report_item_maps">Google Maps csempében</string>
@@ -350,8 +350,8 @@
     <string name="settings_obd_auto_on">Az autó indulásakor, és újra, ha a kapcsolat megszakad</string>
     <string name="settings_obd_auto_off">Ki: az adapter párosítva marad, és akkor csatlakozik, amikor a sávban az OBD-re koppint</string>
     <string name="settings_log_save">A fejegység naplójának mentése ide</string>
-    <string name="settings_log_save_detail">A Download, Dashwheel mappába, hogy USB-meghajtóra másolhassa</string>
-    <string name="settings_log_saved">Mentve ide: Download, Dashwheel: %1$s</string>
+    <string name="settings_log_save_detail">A Download, JMCAR mappába, hogy USB-meghajtóra másolhassa</string>
+    <string name="settings_log_saved">Mentve ide: Download, JMCAR: %1$s</string>
     <string name="settings_log_save_failed">Nem sikerült menteni a naplót a fejegységre</string>
     <string name="settings_waze_wake">Waze újraindítása ébredés után</string>
     <string name="settings_waze_wake_detail">Amint a helyadatok és a mobiladat visszatérnek, hogy ne maradjon offline</string>
@@ -374,7 +374,7 @@
     <string name="settings_sum_expert">Labor, API-kulcsok, szerverek</string>
     <string name="alerts_say">Mondja</string>
     <string name="alerts_show">Mutassa</string>
-    <string name="alerts_intro">A Mondja felolvassa, a Mutassa megjeleníti a Dashwheel ablakát. Koppintson egy ablakra a kinézetéért.</string>
+    <string name="alerts_intro">A Mondja felolvassa, a Mutassa megjeleníti a JMCAR ablakát. Koppintson egy ablakra a kinézetéért.</string>
     <string name="alerts_group_car">Az autóból</string>
     <string name="alerts_group_road">Útközben</string>
     <string name="alerts_group_start">Induláskor</string>

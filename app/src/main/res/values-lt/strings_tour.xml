@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- First-run tour (TourScreen.kt): six tips over the real dashboard -->
-    <string name="tour_welcome_kicker">Sveiki atvykę į Dashwheel</string>
+    <string name="tour_welcome_kicker">Sveiki atvykę į JMCAR</string>
     <string name="tour_welcome_title">Trumpa pagrindų apžvalga</string>
     <string name="tour_welcome_body">Keli trumpi patarimai. Maždaug viena minutė. Galite bet kada sustoti.</string>
     <string name="tour_topic_swipe">Keisti skydelį</string>
@@ -30,12 +30,12 @@
     <string name="tour_look_title">Pritaikykite sau</string>
     <string name="tour_look_body">Atidarykite meniu, tada Nustatymai, tada Išvaizda. Pasirinkite temą ir dienos ar nakties spalvas.</string>
     <string name="tour_obd_title">Prijunkite OBD adapterį</string>
-    <string name="tour_obd_body">Jis jungiamas į lizdą po vairu. Vieną kartą susiekite jį Android Bluetooth nustatymuose, o toliau Dashwheel prisijungs pats.</string>
+    <string name="tour_obd_body">Jis jungiamas į lizdą po vairu. Vieną kartą susiekite jį Android Bluetooth nustatymuose, o toliau JMCAR prisijungs pats.</string>
     <string name="tour_obd_off">Neprijungtas</string>
     <string name="tour_obd_looking">Ieškoma</string>
     <string name="tour_obd_connected">Prijungtas</string>
     <string name="tour_hands_title">Žiūrėkite į kelią</string>
-    <string name="tour_hands_body">Vairo mygtukais galite keisti skydelį, perjungti dainas ar paleisti balso asistentą. Dashwheel pats prabyla, kai kas nors svarbu.</string>
+    <string name="tour_hands_body">Vairo mygtukais galite keisti skydelį, perjungti dainas ar paleisti balso asistentą. JMCAR pats prabyla, kai kas nors svarbu.</string>
     <string name="tour_hands_hint">Mygtukus nustatykite: Nustatymai, Vairavimas, Vairo mygtukai.</string>
     <string name="tour_wheel_dashboard">Kitas skydelis</string>
     <string name="tour_wheel_music">Muzika</string>

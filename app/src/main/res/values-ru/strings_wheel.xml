@@ -11,7 +11,7 @@
     </plurals>
     <string name="wheel_explanation">Нажимайте каждую кнопку на руле: новая появится на схеме, известная загорится зелёным.</string>
     <string name="wheel_explanation_tap">Нажмите на кнопку, чтобы назвать её, разместить и выбрать действие.</string>
-    <string name="wheel_confirm_detail">Обнаружено: %1$s. Нажмите ещё раз, чтобы Dashwheel убедился, что это были вы: данные автомобиля, меняющиеся сами по себе, не повторятся по команде.</string>
+    <string name="wheel_confirm_detail">Обнаружено: %1$s. Нажмите ещё раз, чтобы JMCAR убедился, что это были вы: данные автомобиля, меняющиеся сами по себе, не повторятся по команде.</string>
     <string name="wheel_assign_prompt">Что должна делать кнопка %1$s?</string>
     <string name="wheel_choose_app">Запустить приложение…</string>
     <string name="wheel_raw_button">Кнопка №%1$d</string>
@@ -26,9 +26,9 @@
     <string name="wheel_group_system">Система</string>
     <string name="wheel_group_phone">Телефон</string>
     <string name="wheel_needs_accessibility">Нужны Спец. возможности</string>
-    <string name="wheel_accessibility_hint">Для кнопок «Назад», недавних приложений, уведомлений и разделённого экрана включите Dashwheel в Настройки, Спец. возможности.</string>
+    <string name="wheel_accessibility_hint">Для кнопок «Назад», недавних приложений, уведомлений и разделённого экрана включите JMCAR в Настройки, Спец. возможности.</string>
     <string name="wheel_accessibility_enable">Включить</string>
-    <string name="wheel_accessibility_anywhere">Обученные кнопки работают, только когда Dashwheel на экране, если не включить Dashwheel в Настройки, Спец. возможности.</string>
+    <string name="wheel_accessibility_anywhere">Обученные кнопки работают, только когда JMCAR на экране, если не включить JMCAR в Настройки, Спец. возможности.</string>
     <string name="wheel_no_voice_assistant">На этой магнитоле нет голосового ассистента</string>
     <string name="wheel_action_back">Назад</string>
     <string name="wheel_action_recents">Недавние приложения</string>

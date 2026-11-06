@@ -6,8 +6,8 @@
     <string name="unit_chosen">%1$s, Twój wybór</string>
     <string name="unit_choose_title">Moje radio to</string>
     <string name="unit_auto">Automatycznie</string>
-    <string name="unit_restart">Uruchom Dashwheel ponownie</string>
-    <string name="unit_restart_hint">Wybór zadziała po ponownym uruchomieniu Dashwheel.</string>
+    <string name="unit_restart">Uruchom JMCAR ponownie</string>
+    <string name="unit_restart_hint">Wybór zadziała po ponownym uruchomieniu JMCAR.</string>
     <string name="unit_caps_section">Co oferuje ten firmware</string>
     <string name="unit_state_live">Działa</string>
     <string name="unit_state_ready">Gotowe</string>
@@ -19,7 +19,7 @@
     <string name="unit_applied">Gotowe</string>
     <string name="unit_open_whitelist">Otwórz aplikację białej listy</string>
     <string name="unit_fyt_keys_title">Przejmij przyciski kierownicy</string>
-    <string name="unit_fyt_keys_detail">Po ponownym uruchomieniu firmware przekazuje przyciski kierownicy i panelu do Dashwheel. Jego własne aplikacje tracą je w tym czasie.</string>
+    <string name="unit_fyt_keys_detail">Po ponownym uruchomieniu firmware przekazuje przyciski kierownicy i panelu do JMCAR. Jego własne aplikacje tracą je w tym czasie.</string>
     <string name="unit_needs_firmware">Wymaga firmware %1$s</string>
     <string name="unit_family_qf">QF (Hizpo, ROCO K706)</string>
     <string name="unit_family_fyt">FYT (Joying, Atoto, Mekede)</string>

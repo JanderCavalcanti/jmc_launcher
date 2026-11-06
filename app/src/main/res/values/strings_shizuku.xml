@@ -3,10 +3,10 @@
     <!-- Shizuku: the shell without root (ShizukuSettings.kt, ShizukuShell.kt), Settings → System → More tools -->
     <string name="shizuku_title" translatable="false">Shizuku</string>
     <string name="shizuku_search_detail">Shell commands without root</string>
-    <string name="shizuku_detail_none">Not installed. Gives Dashwheel the shell without root</string>
+    <string name="shizuku_detail_none">Not installed. Gives JMCAR the shell without root</string>
     <string name="shizuku_detail_off">Installed, not started. Open Shizuku to start it</string>
     <string name="shizuku_detail_old">Too old. Update Shizuku</string>
-    <string name="shizuku_detail_ask">Running. Allow Dashwheel in Shizuku</string>
+    <string name="shizuku_detail_ask">Running. Allow JMCAR in Shizuku</string>
     <string name="shizuku_detail_on">In use: shell commands run through it</string>
     <string name="shizuku_body">Shizuku runs the shell commands root would: moving app windows, the car app\'s switches, the volume keys. A rooted unit starts it at boot; another one starts it from the Shizuku app after each boot.</string>
     <string name="shizuku_get">Get Shizuku</string>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- First-run tour (TourScreen.kt): six tips over the real dashboard -->
-    <string name="tour_welcome_kicker">Welkom bij Dashwheel</string>
+    <string name="tour_welcome_kicker">Welkom bij JMCAR</string>
     <string name="tour_welcome_title">Een korte rondleiding</string>
     <string name="tour_welcome_body">Een paar korte tips. Ongeveer een minuut. Je kunt altijd stoppen.</string>
     <string name="tour_topic_swipe">Dashboard wisselen</string>
@@ -30,12 +30,12 @@
     <string name="tour_look_title">Maak het van jou</string>
     <string name="tour_look_body">Open het menu, dan Instellingen, dan Uiterlijk. Kies een thema en dag- of nachtkleuren.</string>
     <string name="tour_obd_title">Steek de OBD-adapter in</string>
-    <string name="tour_obd_body">Hij gaat in de aansluiting onder het stuur. Koppel hem één keer in de Bluetooth-instellingen van Android, daarna maakt Dashwheel vanzelf weer verbinding.</string>
+    <string name="tour_obd_body">Hij gaat in de aansluiting onder het stuur. Koppel hem één keer in de Bluetooth-instellingen van Android, daarna maakt JMCAR vanzelf weer verbinding.</string>
     <string name="tour_obd_off">Niet ingestoken</string>
     <string name="tour_obd_looking">Zoeken</string>
     <string name="tour_obd_connected">Verbonden</string>
     <string name="tour_hands_title">Ogen op de weg</string>
-    <string name="tour_hands_body">De stuurknoppen kunnen van dashboard wisselen, nummers overslaan of de spraakassistent starten. Dashwheel meldt zich vanzelf als iets belangrijk is.</string>
+    <string name="tour_hands_body">De stuurknoppen kunnen van dashboard wisselen, nummers overslaan of de spraakassistent starten. JMCAR meldt zich vanzelf als iets belangrijk is.</string>
     <string name="tour_hands_hint">Stel de knoppen in via Instellingen, Rijden, Stuurwielknoppen.</string>
     <string name="tour_wheel_dashboard">Volgend dashboard</string>
     <string name="tour_wheel_music">Muziek</string>

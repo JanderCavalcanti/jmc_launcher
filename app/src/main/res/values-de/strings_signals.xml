@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="signals_title">Fahrzeugsignale</string>
-    <string name="signals_settings_detail">Bringe Dashwheel Türen, Rückwärtsgang und Licht deines Autos bei</string>
-    <string name="signals_intro">Dashwheel liest selbst, was es kann. Tippe auf Finden, um ihm den Rest durch die Handlung beizubringen.</string>
+    <string name="signals_settings_detail">Bringe JMCAR Türen, Rückwärtsgang und Licht deines Autos bei</string>
+    <string name="signals_intro">JMCAR liest selbst, was es kann. Tippe auf Finden, um ihm den Rest durch die Handlung beizubringen.</string>
     <string name="signals_sources">Hört auf</string>
     <string name="signals_needs_root">Root nötig</string>
     <string name="signals_values">Werte: %1$d</string>
     <string name="signals_section">Signale</string>
     <string name="signals_learned">Gelernt: %1$s</string>
-    <string name="signals_builtin">Liest Dashwheel schon</string>
+    <string name="signals_builtin">Liest JMCAR schon</string>
     <string name="signals_missing">Noch nicht gefunden</string>
     <string name="signals_forget">Vergessen</string>
     <string name="signals_find">Finden</string>

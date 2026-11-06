@@ -205,10 +205,10 @@
     <string name="vehicle_err_refused">%1$s atmetė ryšį: užimtas telefono ar kitos programėlės, be maitinimo arba per toli</string>
     <string name="vehicle_err_silent">%1$s prisijungė, bet neatsako: įjunkite degimą ir palieskite OBD</string>
     <string name="vehicle_usb_cable">USB kabelis</string>
-    <string name="vehicle_obd_usb_allow">Lange leiskite Dashwheel naudoti adapterį</string>
+    <string name="vehicle_obd_usb_allow">Lange leiskite JMCAR naudoti adapterį</string>
     <string name="vehicle_err_usb_none">USB adapteris neprijungtas</string>
-    <string name="vehicle_err_usb_tap">Palieskite OBD, kad Dashwheel galėtų naudoti %1$s</string>
-    <string name="vehicle_err_usb_denied">Dashwheel neleista naudoti %1$s</string>
+    <string name="vehicle_err_usb_tap">Palieskite OBD, kad JMCAR galėtų naudoti %1$s</string>
+    <string name="vehicle_err_usb_denied">JMCAR neleista naudoti %1$s</string>
     <string name="vehicle_err_usb_open">Nepavyko atidaryti %1$s: atjunkite ir prijunkite iš naujo</string>
     <string name="vehicle_err_usb_silent">%1$s neatsakė kaip OBD adapteris</string>
     <string name="vehicle_err_phone_not_linked">OBD veikia per telefoną: pirmiausia prijunkite telefoną</string>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- First-run tour (TourScreen.kt): six tips over the real dashboard -->
-    <string name="tour_welcome_kicker">Üdvözli a Dashwheel</string>
+    <string name="tour_welcome_kicker">Üdvözli a JMCAR</string>
     <string name="tour_welcome_title">Gyors bemutató az alapokról</string>
     <string name="tour_welcome_body">Néhány rövid tipp. Körülbelül egy perc. Bármikor abbahagyhatja.</string>
     <string name="tour_topic_swipe">Műszerfalváltás</string>
@@ -30,12 +30,12 @@
     <string name="tour_look_title">Tegye a sajátjává</string>
     <string name="tour_look_body">Nyissa meg a menüt, majd a Beállításokat, aztán a Megjelenést. Válasszon témát és nappali vagy éjszakai színeket.</string>
     <string name="tour_obd_title">Csatlakoztassa az OBD-adaptert</string>
-    <string name="tour_obd_body">A kormány alatti aljzatba kell dugni. Egyszer párosítsa az Android Bluetooth-beállításaiban, utána a Dashwheel magától újracsatlakozik.</string>
+    <string name="tour_obd_body">A kormány alatti aljzatba kell dugni. Egyszer párosítsa az Android Bluetooth-beállításaiban, utána a JMCAR magától újracsatlakozik.</string>
     <string name="tour_obd_off">Nincs bedugva</string>
     <string name="tour_obd_looking">Keresés</string>
     <string name="tour_obd_connected">Csatlakozva</string>
     <string name="tour_hands_title">Figyeljen az útra</string>
-    <string name="tour_hands_body">A kormánygombokkal műszerfalat válthat, számot léptethet vagy elindíthatja a hangsegédet. A Dashwheel magától megszólal, ha valami fontos történik.</string>
+    <string name="tour_hands_body">A kormánygombokkal műszerfalat válthat, számot léptethet vagy elindíthatja a hangsegédet. A JMCAR magától megszólal, ha valami fontos történik.</string>
     <string name="tour_hands_hint">A gombokat a Beállítások, Vezetés, Kormánygombok alatt állíthatja be.</string>
     <string name="tour_wheel_dashboard">Következő műszerfal</string>
     <string name="tour_wheel_music">Zene</string>

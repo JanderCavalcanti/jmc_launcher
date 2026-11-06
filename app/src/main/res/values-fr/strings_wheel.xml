@@ -9,7 +9,7 @@
     </plurals>
     <string name="wheel_explanation">Appuyez sur chaque bouton du volant : un nouveau rejoint la carte, un bouton connu s\'allume en vert.</string>
     <string name="wheel_explanation_tap">Touchez un bouton pour le nommer, le placer et choisir son action.</string>
-    <string name="wheel_confirm_detail">%1$s a été détecté. Appuyez une seconde fois pour que Dashwheel sache que c\'est bien vous : une donnée de la voiture qui change toute seule ne revient pas sur commande.</string>
+    <string name="wheel_confirm_detail">%1$s a été détecté. Appuyez une seconde fois pour que JMCAR sache que c\'est bien vous : une donnée de la voiture qui change toute seule ne revient pas sur commande.</string>
     <string name="wheel_assign_prompt">Que doit faire %1$s ?</string>
     <string name="wheel_choose_app">Lancer une appli…</string>
     <string name="wheel_raw_button">Bouton n° %1$d</string>
@@ -24,9 +24,9 @@
     <string name="wheel_group_system">Système</string>
     <string name="wheel_group_phone">Téléphone</string>
     <string name="wheel_needs_accessibility">Nécessite l\'Accessibilité activée</string>
-    <string name="wheel_accessibility_hint">Retour, applis récentes, notifications et écran partagé nécessitent Dashwheel activé dans Paramètres, Accessibilité.</string>
+    <string name="wheel_accessibility_hint">Retour, applis récentes, notifications et écran partagé nécessitent JMCAR activé dans Paramètres, Accessibilité.</string>
     <string name="wheel_accessibility_enable">Activer</string>
-    <string name="wheel_accessibility_anywhere">Les boutons appris n\'agissent que quand Dashwheel est devant, sauf si Dashwheel est activé dans Paramètres, Accessibilité.</string>
+    <string name="wheel_accessibility_anywhere">Les boutons appris n\'agissent que quand JMCAR est devant, sauf si JMCAR est activé dans Paramètres, Accessibilité.</string>
     <string name="wheel_no_voice_assistant">Aucun assistant vocal sur cet autoradio</string>
     <string name="wheel_action_back">Retour</string>
     <string name="wheel_action_recents">Applis récentes</string>

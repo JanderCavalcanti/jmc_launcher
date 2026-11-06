@@ -205,10 +205,10 @@
     <string name="vehicle_err_refused">%1$s hat die Verbindung abgelehnt: von einem Handy oder einer anderen App belegt, ohne Strom oder außer Reichweite</string>
     <string name="vehicle_err_silent">%1$s hat sich verbunden, aber nie geantwortet: Zündung einschalten, dann OBD antippen</string>
     <string name="vehicle_usb_cable">USB-Kabel</string>
-    <string name="vehicle_obd_usb_allow">Im Dialog erlauben, dass Dashwheel den Adapter nutzt</string>
+    <string name="vehicle_obd_usb_allow">Im Dialog erlauben, dass JMCAR den Adapter nutzt</string>
     <string name="vehicle_err_usb_none">Kein USB-Adapter eingesteckt</string>
-    <string name="vehicle_err_usb_tap">OBD antippen, damit Dashwheel %1$s nutzen darf</string>
-    <string name="vehicle_err_usb_denied">Dashwheel durfte %1$s nicht nutzen</string>
+    <string name="vehicle_err_usb_tap">OBD antippen, damit JMCAR %1$s nutzen darf</string>
+    <string name="vehicle_err_usb_denied">JMCAR durfte %1$s nicht nutzen</string>
     <string name="vehicle_err_usb_open">%1$s ließ sich nicht öffnen: abziehen und wieder einstecken</string>
     <string name="vehicle_err_usb_silent">%1$s hat nie wie ein OBD-Adapter geantwortet</string>
     <string name="vehicle_err_phone_not_linked">OBD läuft über das Handy: zuerst das Handy verbinden</string>

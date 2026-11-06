@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Dashwheel's reverse view over the reversing camera (ReverseView.kt, ReverseViewSheet.kt) -->
+    <!-- JMCAR's reverse view over the reversing camera (ReverseView.kt, ReverseViewSheet.kt) -->
     <string name="reverse_title">Reverse view</string>
     <string name="reverse_settings_detail">Guide lines and parking radar over the reversing camera</string>
-    <string name="reverse_switch">Dashwheel\'s reverse view</string>
+    <string name="reverse_switch">JMCAR\'s reverse view</string>
     <string name="reverse_switch_detail">Lines that follow the steering wheel, the parking radar and your car, over the reversing camera.</string>
-    <string name="reverse_needs_access">Turn on Dashwheel\'s accessibility service: it is the only way to draw over the camera.</string>
+    <string name="reverse_needs_access">Turn on JMCAR\'s accessibility service: it is the only way to draw over the camera.</string>
     <string name="reverse_layout_title">On screen</string>
     <string name="reverse_layout_both">Camera and radar</string>
     <string name="reverse_layout_camera">Camera</string>
@@ -14,8 +14,8 @@
     <string name="reverse_stock_title">Car app\'s lines</string>
     <string name="reverse_stock_keep">Keep</string>
     <string name="reverse_stock_hide">Hide</string>
-    <string name="reverse_stock_hint_keep">The car app\'s lines stay under Dashwheel\'s. The steering lines move in steps of about 12°.</string>
-    <string name="reverse_stock_hint_hide">Only Dashwheel\'s lines, smoother. Needs root.</string>
+    <string name="reverse_stock_hint_keep">The car app\'s lines stay under JMCAR\'s. The steering lines move in steps of about 12°.</string>
+    <string name="reverse_stock_hint_hide">Only JMCAR\'s lines, smoother. Needs root.</string>
     <string name="reverse_stock_failed">Couldn\'t change them. This needs root.</string>
     <string name="reverse_lines_title">Line them up</string>
     <string name="reverse_lines_hint">Select R, then tap Adjust on the reverse screen to match the lines to the road.</string>
@@ -35,11 +35,11 @@
     <string name="reverse_near_far">Something behind</string>
     <string name="reverse_picture_title">Camera picture</string>
     <string name="reverse_picture_rom">Car app</string>
-    <string name="reverse_picture_own">Dashwheel</string>
-    <string name="reverse_picture_hint_rom">The car app shows the camera and Dashwheel draws over it.</string>
-    <string name="reverse_picture_hint_own">Experimental: Dashwheel shows the camera itself. If no picture comes, the car app\'s is back within seconds.</string>
-    <string name="reverse_picture_denied">Dashwheel needs the camera permission for this.</string>
-    <string name="reverse_picture_failed">Dashwheel couldn\'t get the camera: this is the car app\'s picture</string>
+    <string name="reverse_picture_own">JMCAR</string>
+    <string name="reverse_picture_hint_rom">The car app shows the camera and JMCAR draws over it.</string>
+    <string name="reverse_picture_hint_own">Experimental: JMCAR shows the camera itself. If no picture comes, the car app\'s is back within seconds.</string>
+    <string name="reverse_picture_denied">JMCAR needs the camera permission for this.</string>
+    <string name="reverse_picture_failed">JMCAR couldn\'t get the camera: this is the car app\'s picture</string>
     <string name="reverse_side_left">Left side: %1$d cm</string>
     <string name="reverse_side_right">Right side: %1$d cm</string>
     <string name="reverse_boot_blocked">The boot won\'t open fully here</string>
@@ -50,7 +50,7 @@
     <string name="reverse_second_title">Second screen</string>
     <string name="reverse_second_off">Off</string>
     <string name="reverse_second_hint">Takes over the second screen by itself in reverse gear.</string>
-    <string name="reverse_second_hint_rom">The camera needs the reverse view on with Dashwheel\'s picture: until then the second screen shows the radar.</string>
+    <string name="reverse_second_hint_rom">The camera needs the reverse view on with JMCAR\'s picture: until then the second screen shows the radar.</string>
     <string name="reverse_second_hint_video">Needs Simple display off in the second screen\'s settings.</string>
     <string name="reverse_near_ahead">Something in front</string>
     <string name="reverse_steer">Steering lines</string>

@@ -9,7 +9,7 @@
     </plurals>
     <string name="wheel_explanation">Druk op elke knop van het stuur: een nieuwe komt op de kaart, een bekende licht groen op.</string>
     <string name="wheel_explanation_tap">Tik op een knop om hem een naam en plaats te geven en te kiezen wat hij doet.</string>
-    <string name="wheel_confirm_detail">%1$s is gezien. Druk er nog eens op zodat Dashwheel weet dat jij het was: een autowaarde die vanzelf verandert, komt niet op commando terug.</string>
+    <string name="wheel_confirm_detail">%1$s is gezien. Druk er nog eens op zodat JMCAR weet dat jij het was: een autowaarde die vanzelf verandert, komt niet op commando terug.</string>
     <string name="wheel_assign_prompt">Wat moet %1$s doen?</string>
     <string name="wheel_choose_app">Een app openen…</string>
     <string name="wheel_raw_button">Knop #%1$d</string>
@@ -24,9 +24,9 @@
     <string name="wheel_group_system">Systeem</string>
     <string name="wheel_group_phone">Telefoon</string>
     <string name="wheel_needs_accessibility">Toegankelijkheid moet aan staan</string>
-    <string name="wheel_accessibility_hint">Terug, recente apps, meldingen en gesplitst scherm werken pas als Dashwheel aan staat onder Instellingen, Toegankelijkheid.</string>
+    <string name="wheel_accessibility_hint">Terug, recente apps, meldingen en gesplitst scherm werken pas als JMCAR aan staat onder Instellingen, Toegankelijkheid.</string>
     <string name="wheel_accessibility_enable">Aanzetten</string>
-    <string name="wheel_accessibility_anywhere">Aangeleerde knoppen werken alleen zolang Dashwheel vooraan staat, tenzij Dashwheel is ingeschakeld onder Instellingen, Toegankelijkheid.</string>
+    <string name="wheel_accessibility_anywhere">Aangeleerde knoppen werken alleen zolang JMCAR vooraan staat, tenzij JMCAR is ingeschakeld onder Instellingen, Toegankelijkheid.</string>
     <string name="wheel_no_voice_assistant">Geen spraakassistent op deze radio</string>
     <string name="wheel_action_back">Terug</string>
     <string name="wheel_action_recents">Recente apps</string>

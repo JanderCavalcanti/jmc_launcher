@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Phone link: the driver's phone over its hotspot, with the Dashwheel Companion app. -->
+    <!-- Phone link: the driver's phone over its hotspot, with the JMCAR Companion app. -->
     <string name="settings_section_phone">Telefonas</string>
     <string name="phone_from_phone">Iš jūsų telefono</string>
     <string name="phone_status_connected">Prijungta prie %1$s</string>
     <string name="phone_status_connected_detail">Jo pranešimai ir žinutės rodomi Pranešimų valdiklyje.</string>
     <string name="phone_status_searching">Ieškoma jūsų telefono per Wi-Fi</string>
-    <string name="phone_status_searching_detail">Įjunkite telefono interneto prieigos tašką ir prijunkite prie jo šią magnetolą; Dashwheel Companion padarys likusį darbą.</string>
+    <string name="phone_status_searching_detail">Įjunkite telefono interneto prieigos tašką ir prijunkite prie jo šią magnetolą; JMCAR Companion padarys likusį darbą.</string>
     <string name="phone_status_unpaired">Nesusietas joks telefonas</string>
     <string name="phone_status_unpaired_detail">Susiekite telefoną, kad matytumėte jo žinutes čia ir galėtumėte į jas atsakyti.</string>
     <string name="phone_pair">Susieti telefoną</string>
-    <string name="phone_pair_detail">Rodo kodą, kurį reikia nuskaityti su Dashwheel Companion</string>
+    <string name="phone_pair_detail">Rodo kodą, kurį reikia nuskaityti su JMCAR Companion</string>
     <string name="phone_gps">Naudoti telefono GPS</string>
     <string name="phone_gps_detail">Kai telefonas susietas, jo GPS pakeičia šio įrenginio GPS: daugiau palydovų, padėtis per kelias sekundes</string>
     <string name="phone_gps_in_use">Naudojama, palydovų iš telefono: %1$d</string>
@@ -23,7 +23,7 @@
     <string name="phone_forget_title">Pamiršti %1$s?</string>
     <string name="phone_forget_body">Jo žinutės ir skambučiai čia nebebus rodomi. Norint susieti iš naujo, reikės naujo kodo.</string>
     <string name="phone_pair_title">Susieti telefoną</string>
-    <string name="phone_pair_step1">1. Įdiekite Dashwheel Companion telefone: nuskaitykite šį kodą jo kamera.</string>
+    <string name="phone_pair_step1">1. Įdiekite JMCAR Companion telefone: nuskaitykite šį kodą jo kamera.</string>
     <string name="phone_pair_step2">2. Įjunkite telefono Wi-Fi prieigos tašką ir prijunkite prie jo šią magnetolą.</string>
     <string name="phone_pair_step3">3. Programoje palieskite Susieti automobilį ir nuskaitykite šį kodą.</string>
     <string name="phone_pair_waiting">Laukiama telefono…</string>
@@ -50,7 +50,7 @@
     <string name="phone_call_answer">Atsiliepti</string>
     <string name="phone_call_decline">Atmesti</string>
     <string name="phone_call_hang_up">Padėti</string>
-    <string name="phone_call_no_control">Kad galėtumėte atsiliepti čia, Dashwheel Companion leiskite Skambučius.</string>
+    <string name="phone_call_no_control">Kad galėtumėte atsiliepti čia, JMCAR Companion leiskite Skambučius.</string>
     <string name="phone_overlay">Rodyti skambučius virš kitų programų</string>
     <string name="phone_overlay_detail">Tada įeinantis skambutis rodomas net kai kita programa užima visą ekraną.</string>
     <!-- Text typed on the phone, for the field selected on the car screen (PhoneKeyboard). -->
@@ -60,6 +60,6 @@
     <string name="phone_agenda_empty">Susiekite telefoną skiltyje Nustatymai, Telefonas ir ekranai, kad matytumėte čia jo darbotvarkę</string>
     <string name="phone_call_back">Perskambinti: %1$s</string>
     <string name="phone_calling">Skambinama: %1$s</string>
-    <string name="phone_dial_not_allowed">Kad galėtumėte skambinti iš čia, Dashwheel Companion leiskite Skambučius.</string>
+    <string name="phone_dial_not_allowed">Kad galėtumėte skambinti iš čia, JMCAR Companion leiskite Skambučius.</string>
     <string name="phone_guidance_to">Maršrutas: %1$s</string>
 </resources>

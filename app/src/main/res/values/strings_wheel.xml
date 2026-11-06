@@ -9,7 +9,7 @@
     </plurals>
     <string name="wheel_explanation">Press each button on the wheel: a new one joins the map, a known one lights up green.</string>
     <string name="wheel_explanation_tap">Tap a button to name it, place it and choose what it does.</string>
-    <string name="wheel_confirm_detail">%1$s was seen. Press it once more so Dashwheel knows it was you: a car value that changes on its own won\'t come back on cue.</string>
+    <string name="wheel_confirm_detail">%1$s was seen. Press it once more so JMCAR knows it was you: a car value that changes on its own won\'t come back on cue.</string>
     <string name="wheel_assign_prompt">What should %1$s do?</string>
     <string name="wheel_choose_app">Launch an app…</string>
     <string name="wheel_raw_button">Button #%1$d</string>
@@ -24,9 +24,9 @@
     <string name="wheel_group_system">System</string>
     <string name="wheel_group_phone">Phone</string>
     <string name="wheel_needs_accessibility">Needs Accessibility turned on</string>
-    <string name="wheel_accessibility_hint">Back, recent apps, notifications and split screen need Dashwheel turned on under Settings, Accessibility.</string>
+    <string name="wheel_accessibility_hint">Back, recent apps, notifications and split screen need JMCAR turned on under Settings, Accessibility.</string>
     <string name="wheel_accessibility_enable">Turn on</string>
-    <string name="wheel_accessibility_anywhere">Learned buttons only work while Dashwheel is in front, unless Dashwheel is turned on under Settings, Accessibility.</string>
+    <string name="wheel_accessibility_anywhere">Learned buttons only work while JMCAR is in front, unless JMCAR is turned on under Settings, Accessibility.</string>
     <string name="wheel_no_voice_assistant">No voice assistant on this unit</string>
     <string name="wheel_action_back">Back</string>
     <string name="wheel_action_recents">Recent apps</string>

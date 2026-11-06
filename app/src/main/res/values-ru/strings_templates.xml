@@ -38,7 +38,7 @@
     <string name="share_use">Использовать чужую панель</string>
     <string name="share_paste_hint">Код DW1:</string>
     <string name="share_open_file">Открыть файл</string>
-    <string name="share_use_hint">Введите или вставьте код, откройте файл или отсканируйте QR-код в приложении Dashwheel Companion.</string>
+    <string name="share_use_hint">Введите или вставьте код, откройте файл или отсканируйте QR-код в приложении JMCAR Companion.</string>
     <string name="share_missing_apps">Приложений нет на магнитоле: %1$d. Их плитки останутся, пока вы их не замените.</string>
     <string name="share_take_look">Взять и оформление</string>
     <string name="share_replace">Поставить сюда</string>

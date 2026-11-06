@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- The head unit firmware family and what it lets Dashwheel do (UnitPlatform, Settings, System, Head unit). -->
+<!-- The head unit firmware family and what it lets JMCAR do (UnitPlatform, Settings, System, Head unit). -->
 <resources>
     <string name="unit_fyt_keys_note">Нужна оболочка; приложения магнитолы на это время теряют кнопки руля</string>
-    <string name="unit_mtc_whitelist_title">Не усыплять Dashwheel</string>
-    <string name="unit_mtc_whitelist_detail">Добавьте Dashwheel в белый список сна магнитолы (её приложение BootControl или настройки модифицированной прошивки). Иначе прошивка остановит его при выключении зажигания.</string>
+    <string name="unit_mtc_whitelist_title">Не усыплять JMCAR</string>
+    <string name="unit_mtc_whitelist_detail">Добавьте JMCAR в белый список сна магнитолы (её приложение BootControl или настройки модифицированной прошивки). Иначе прошивка остановит его при выключении зажигания.</string>
     <string name="unit_reglink_duraspeed_title">Выключить DuraSpeed</string>
-    <string name="unit_reglink_duraspeed_detail">Фоновый экономайзер MediaTek останавливает Dashwheel при выключении зажигания. Dashwheel сам выключает его при каждой загрузке, как только может писать защищённые настройки.</string>
+    <string name="unit_reglink_duraspeed_detail">Фоновый экономайзер MediaTek останавливает JMCAR при выключении зажигания. JMCAR сам выключает его при каждой загрузке, как только может писать защищённые настройки.</string>
     <string name="unit_reglink_quickboot_title">Выключить Quick Boot</string>
     <string name="unit_reglink_quickboot_detail">В заводских настройках магнитолы. Тогда она загружается обычно, а не убивает приложения перед быстрым сном.</string>
-    <string name="unit_reglink_whitelist_title">Внести Dashwheel в белый список</string>
-    <string name="unit_reglink_whitelist_detail">Прошивка хранит три списка приложений, которым можно запускаться, работать в фоне и переживать сон. Dashwheel добавляет себя в них с root.</string>
+    <string name="unit_reglink_whitelist_title">Внести JMCAR в белый список</string>
+    <string name="unit_reglink_whitelist_detail">Прошивка хранит три списка приложений, которым можно запускаться, работать в фоне и переживать сон. JMCAR добавляет себя в них с root.</string>
 </resources>

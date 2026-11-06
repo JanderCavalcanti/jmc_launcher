@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Dashwheel Companion</string>
+    <string name="app_name">JMCAR Companion</string>
     <string name="service_channel">Ryšys su automobiliu</string>
     <string name="status_off">Bendrinimas išjungtas</string>
     <string name="status_waiting">Laukiama automobilio jūsų viešosios prieigos taške</string>
@@ -23,7 +23,7 @@
     <string name="done">Atlikta</string>
     <string name="cars_title">Susieti automobiliai</string>
     <string name="pair_car">Susieti automobilį</string>
-    <string name="pair_hint">Dashwheel atidarykite Nustatymai → Telefonas → Susieti telefoną, tada nuskenuokite rodomą kodą.</string>
+    <string name="pair_hint">JMCAR atidarykite Nustatymai → Telefonas → Susieti telefoną, tada nuskenuokite rodomą kodą.</string>
     <string name="remove">Pašalinti</string>
     <string name="confirm_title">Leisti %1$s?</string>
     <string name="confirm_body">Šis automobilis rodys jūsų pranešimus ir žinutes ir galės atsakyti jūsų vardu. Jis jungiasi tik per jūsų viešosios prieigos tašką.</string>
@@ -33,7 +33,7 @@
     <string name="remove_body">Automobilis nebegaus nieko iš šio telefono. Norint susieti iš naujo, reikės naujo kodo.</string>
     <string name="paired_since">Susieta %1$s</string>
     <string name="scanned_download_code">Šis kodas atsisiunčia programą. Dabar nuskenuokite kitą kodą magnetolos ekrane, pažymėtą „Susiejimo kodas“.</string>
-    <string name="invalid_code_read">Tai ne Dashwheel susiejimo kodas (nuskaityta: %1$s).</string>
+    <string name="invalid_code_read">Tai ne JMCAR susiejimo kodas (nuskaityta: %1$s).</string>
     <string name="step_calls">Skambučiai</string>
     <string name="step_calls_detail">Automobilio ekrane rodo, kas skambina, kad ten galėtumėte atsiliepti ar padėti ragelį, ir jūsų mėgstamus kontaktus skambinti iš automobilio. Garsas lieka automobilio Bluetooth.</string>
     <string name="car_spot_title">Kur mano automobilis</string>
@@ -70,13 +70,13 @@
     <string name="keyboard_typed">Automobilio ekrane</string>
     <string name="keyboard_copied">Automobilio ekrane nepasirinktas joks laukas: tekstas yra jo iškarpinėje.</string>
     <string name="keyboard_failed">Automobilio ekranas nepriėmė teksto.</string>
-    <string name="keyboard_no_answer">Nėra atsakymo: atnaujinkite Dashwheel automobilyje.</string>
+    <string name="keyboard_no_answer">Nėra atsakymo: atnaujinkite JMCAR automobilyje.</string>
     <string name="keyboard_not_connected">Automobilis neprijungtas.</string>
     <string name="keyboard_typing_off">Rašymas į laukus automobilyje išjungtas.</string>
     <string name="keyboard_turn_on">Įjungti</string>
     <string name="keyboard_turning_on">Įjungiama automobilyje…</string>
     <string name="keyboard_typing_on">Rašymas įjungtas: pasirinkite lauką automobilio ekrane, tada rašykite čia.</string>
-    <string name="keyboard_turn_on_failed">Automobiliui nepavyko to įjungti: automobilyje atidarykite Nustatymai, Pritaikymas neįgaliesiems ir įjunkite Dashwheel.</string>
+    <string name="keyboard_turn_on_failed">Automobiliui nepavyko to įjungti: automobilyje atidarykite Nustatymai, Pritaikymas neįgaliesiems ir įjunkite JMCAR.</string>
     <string name="send_to_car">Siųsti į automobilį</string>
     <string name="sent_to_car">Išsiųsta į automobilio ekraną</string>
     <string name="place_sent">Maršrutas išsiųstas į automobilį: %1$s</string>
@@ -268,12 +268,12 @@
     <string name="rescue_split">Išeiti iš padalinto ekrano</string>
     <string name="rescue_split_body">Automobilio ekranas nebebendrinamas su kita programa.</string>
     <string name="rescue_home_back">Grąžinti pradžią įrenginiui</string>
-    <string name="rescue_home_back_body">Įrenginio paleidyklė vėl tampa pradžios ekranu. Dashwheel lieka programų sąraše.</string>
-    <string name="rescue_home_take">Dashwheel vėl pradžios ekranas</string>
-    <string name="rescue_home_take_body">Dashwheel vėl tampa automobilio pradžios ekranu.</string>
+    <string name="rescue_home_back_body">Įrenginio paleidyklė vėl tampa pradžios ekranu. JMCAR lieka programų sąraše.</string>
+    <string name="rescue_home_take">JMCAR vėl pradžios ekranas</string>
+    <string name="rescue_home_take_body">JMCAR vėl tampa automobilio pradžios ekranu.</string>
     <string name="rescue_send">Vykdyti</string>
     <string name="rescue_sending">Siunčiama į automobilį</string>
     <string name="rescue_done">Atlikta automobilyje</string>
     <string name="rescue_failed">Automobiliui nepavyko</string>
-    <string name="rescue_no_answer">Nėra atsakymo: atnaujinkite Dashwheel automobilyje.</string>
+    <string name="rescue_no_answer">Nėra atsakymo: atnaujinkite JMCAR automobilyje.</string>
 </resources>

@@ -8,7 +8,7 @@
     <string name="mycar_working">Előkészítés</string>
     <string name="mycar_ready">Az autó képe betöltve</string>
     <string name="mycar_failed">A kép nem olvasható be. Próbálja JPG vagy PNG formátumban.</string>
-    <string name="mycar_model_on_phone">A 3D-modellből a telefonon lesz autó: a Dashwheel Companion Autó lapján, 3D-modellből.</string>
+    <string name="mycar_model_on_phone">A 3D-modellből a telefonon lesz autó: a JMCAR Companion Autó lapján, 3D-modellből.</string>
     <string name="mycar_no_picker">Ezen az egységen nincs fájlválasztó. Tegye ide a fájlt: %1$s</string>
     <string name="mycar_pick">Fájl kiválasztása</string>
     <string name="mycar_remove">Eltávolítás</string>
@@ -31,7 +31,7 @@
     <string name="mycar_style_outline">Körvonal</string>
     <string name="mycar_style_outline_hint">Csak a vonalai, a téma színében</string>
     <string name="mycar_where">A Gumitérkép és az Autókörvonal dizájnon, valamint a Saját autó csempén látható.</string>
-    <string name="mycar_phone_hint">A telefonról: a Dashwheel Companion alkalmazásban Autókép, majd Fájl kiválasztása.</string>
+    <string name="mycar_phone_hint">A telefonról: a JMCAR Companion alkalmazásban Autókép, majd Fájl kiválasztása.</string>
     <string name="mycar_photos">3 fotó</string>
     <string name="mycar_photos_hint">Vagy válassza ki egyszerre az autó fotóit: oldalról, elölről és hátulról, valamint egyet felülről és egyet felülről nyitott ajtókkal, ha vannak. Ha a fájlnevük oldal, elöl, hátul, felül és nyitott, sosem keverednek össze.</string>
     <string name="mycar_photos_no_car">Ezeken a fotókon nem található autó. Olyanokat használjon, amelyeken az egész autó egyszínű háttér előtt látszik.</string>

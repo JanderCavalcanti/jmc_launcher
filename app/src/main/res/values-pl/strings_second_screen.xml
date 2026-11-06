@@ -4,7 +4,7 @@
     <string name="settings_section_second_screen">Drugi ekran</string>
     <string name="second_screen_experimental">Eksperymentalne: Raspberry Pi obsługuje drugi ekran w aucie. Jeszcze nie testowane w aucie.</string>
     <string name="second_screen_status_unpaired">Brak sparowanego drugiego ekranu</string>
-    <string name="second_screen_status_unpaired_detail">Zeskanuj kod z drugiego ekranu aplikacją Dashwheel na telefonie, gdy telefon jest połączony z tym autem.</string>
+    <string name="second_screen_status_unpaired_detail">Zeskanuj kod z drugiego ekranu aplikacją JMCAR na telefonie, gdy telefon jest połączony z tym autem.</string>
     <string name="second_screen_status_searching">Szukanie drugiego ekranu</string>
     <string name="second_screen_status_searching_detail">Ekran i to radio muszą być połączone z hotspotem telefonu.</string>
     <string name="second_screen_status_connected">Połączono z %1$s</string>
@@ -37,7 +37,7 @@
     <string name="second_screen_by_cable">przez kabel</string>
     <string name="second_screen_by_wifi">przez Wi-Fi</string>
     <string name="second_screen_program_older">Program ekranu jest starszy niż ta aplikacja: zapisz jego kartę na nowo.</string>
-    <string name="second_screen_program_newer">Program ekranu jest nowszy niż ta aplikacja: zaktualizuj Dashwheel.</string>
+    <string name="second_screen_program_newer">Program ekranu jest nowszy niż ta aplikacja: zaktualizuj JMCAR.</string>
     <string name="second_screen_health_under_powered">Płytka ekranu ma za mało prądu i zwalnia: użyj zasilacza 5 V 2,5 A i krótkiego, grubego kabla.</string>
     <string name="second_screen_health_hot">Płytka ekranu jest gorąca (%1$d °C) i zwalnia: zapewnij jej powietrze lub radiator.</string>
     <string name="second_screen_health_throttled">Płytka ekranu jest spowalniana przez firmware: sprawdź zasilanie.</string>
@@ -119,10 +119,10 @@
     <string name="second_screen_mapview_distance_far">Daleko</string>
     <string name="second_screen_mapview_buildings">Budynki w 3D</string>
     <string name="second_screen_mapview_buildings_detail">Tam, gdzie dostawca mapy zna ich wysokość.</string>
-    <string name="second_screen_pi_waiting">Czekam na Dashwheel…</string>
-    <string name="second_screen_pi_no_signal">Brak sygnału z Dashwheel</string>
+    <string name="second_screen_pi_waiting">Czekam na JMCAR…</string>
+    <string name="second_screen_pi_no_signal">Brak sygnału z JMCAR</string>
     <string name="second_screen_pi_connected">Połączono</string>
-    <string name="second_screen_pi_scan">Zeskanuj aplikacją Dashwheel w telefonie</string>
+    <string name="second_screen_pi_scan">Zeskanuj aplikacją JMCAR w telefonie</string>
     <string name="second_screen_board_full">Pełny widok</string>
     <string name="second_screen_board_in_use">Te strony są teraz na ekranie.</string>
     <string name="second_screen_board_not_in_use">Teraz nieużywany: te strony pojawią się po przełączeniu na ten widok.</string>

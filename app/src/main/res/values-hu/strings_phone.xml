@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Phone link: the driver's phone over its hotspot, with the Dashwheel Companion app. -->
+    <!-- Phone link: the driver's phone over its hotspot, with the JMCAR Companion app. -->
     <string name="settings_section_phone">Telefon</string>
     <string name="phone_from_phone">A telefonjáról</string>
     <string name="phone_status_connected">Csatlakozva: %1$s</string>
     <string name="phone_status_connected_detail">Értesítései és üzenetei az Értesítések widgetben jelennek meg.</string>
     <string name="phone_status_searching">Telefon keresése Wi-Fin</string>
-    <string name="phone_status_searching_detail">Kapcsolja be a telefon hotspotját, és csatlakoztassa hozzá ezt a fejegységet; a többit a Dashwheel Companion intézi.</string>
+    <string name="phone_status_searching_detail">Kapcsolja be a telefon hotspotját, és csatlakoztassa hozzá ezt a fejegységet; a többit a JMCAR Companion intézi.</string>
     <string name="phone_status_unpaired">Nincs párosított telefon</string>
     <string name="phone_status_unpaired_detail">Párosítsa a telefonját, hogy itt lássa és megválaszolhassa az üzeneteit.</string>
     <string name="phone_pair">Telefon párosítása</string>
-    <string name="phone_pair_detail">Megjeleníti a Dashwheel Companionnel beolvasandó kódot</string>
+    <string name="phone_pair_detail">Megjeleníti a JMCAR Companionnel beolvasandó kódot</string>
     <string name="phone_gps">A telefon GPS-ének használata</string>
     <string name="phone_gps_detail">Ha a telefon csatlakozik, annak GPS-e helyettesíti az egységét: több műhold, pozíció másodpercek alatt</string>
     <string name="phone_gps_in_use">Használatban: %1$d műhold a telefonról</string>
@@ -23,7 +23,7 @@
     <string name="phone_forget_title">Elfelejti ezt: %1$s?</string>
     <string name="phone_forget_body">Üzenetei és hívásai nem jelennek meg többé itt. Az újbóli párosításhoz új kód kell.</string>
     <string name="phone_pair_title">Telefon párosítása</string>
-    <string name="phone_pair_step1">1. Telepítse a Dashwheel Companiont a telefonra: olvassa be ezt a kódot a kamerájával.</string>
+    <string name="phone_pair_step1">1. Telepítse a JMCAR Companiont a telefonra: olvassa be ezt a kódot a kamerájával.</string>
     <string name="phone_pair_step2">2. Kapcsolja be a telefon Wi-Fi-hotspotját, és csatlakoztassa hozzá ezt a fejegységet.</string>
     <string name="phone_pair_step3">3. Az alkalmazásban koppintson az Autó párosítása elemre, és olvassa be ezt a kódot.</string>
     <string name="phone_pair_waiting">Várakozás a telefonra…</string>
@@ -50,7 +50,7 @@
     <string name="phone_call_answer">Fogadás</string>
     <string name="phone_call_decline">Elutasítás</string>
     <string name="phone_call_hang_up">Bontás</string>
-    <string name="phone_call_no_control">Az innen történő fogadáshoz engedélyezze a Hívásokat a Dashwheel Companionben.</string>
+    <string name="phone_call_no_control">Az innen történő fogadáshoz engedélyezze a Hívásokat a JMCAR Companionben.</string>
     <string name="phone_overlay">Hívások megjelenítése más alkalmazások felett</string>
     <string name="phone_overlay_detail">Így a bejövő hívás akkor is megjelenik, ha egy másik alkalmazás tölti ki a teljes képernyőt.</string>
     <!-- Text typed on the phone, for the field selected on the car screen (PhoneKeyboard). -->
@@ -60,6 +60,6 @@
     <string name="phone_agenda_empty">Párosítsa a telefonját a Beállítások, Telefon és kijelzők részben, hogy itt lássa a naptárát</string>
     <string name="phone_call_back">Visszahívás: %1$s</string>
     <string name="phone_calling">Hívás: %1$s</string>
-    <string name="phone_dial_not_allowed">Az innen történő híváshoz engedélyezze a Hívásokat a Dashwheel Companionben.</string>
+    <string name="phone_dial_not_allowed">Az innen történő híváshoz engedélyezze a Hívásokat a JMCAR Companionben.</string>
     <string name="phone_guidance_to">Útvonal ide: %1$s</string>
 </resources>

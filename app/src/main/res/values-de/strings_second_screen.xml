@@ -4,7 +4,7 @@
     <string name="settings_section_second_screen">Zweiter Bildschirm</string>
     <string name="second_screen_experimental">Experimentell: ein Raspberry Pi steuert einen zweiten Bildschirm im Auto. Noch nicht im Auto getestet.</string>
     <string name="second_screen_status_unpaired">Kein zweiter Bildschirm gekoppelt</string>
-    <string name="second_screen_status_unpaired_detail">Scanne den Code auf dem zweiten Bildschirm mit der Dashwheel-App auf dem Handy, während das Handy mit diesem Auto verbunden ist.</string>
+    <string name="second_screen_status_unpaired_detail">Scanne den Code auf dem zweiten Bildschirm mit der JMCAR-App auf dem Handy, während das Handy mit diesem Auto verbunden ist.</string>
     <string name="second_screen_status_searching">Zweiter Bildschirm wird gesucht</string>
     <string name="second_screen_status_searching_detail">Der Bildschirm und dieses Radio müssen beide mit dem Hotspot des Handys verbunden sein.</string>
     <string name="second_screen_status_connected">Verbunden mit %1$s</string>
@@ -37,7 +37,7 @@
     <string name="second_screen_by_cable">per Kabel</string>
     <string name="second_screen_by_wifi">über WLAN</string>
     <string name="second_screen_program_older">Das Programm des Bildschirms ist älter als diese App: Schreiben Sie seine Karte neu.</string>
-    <string name="second_screen_program_newer">Das Programm des Bildschirms ist neuer als diese App: Aktualisieren Sie Dashwheel.</string>
+    <string name="second_screen_program_newer">Das Programm des Bildschirms ist neuer als diese App: Aktualisieren Sie JMCAR.</string>
     <string name="second_screen_health_under_powered">Die Platine des Bildschirms bekommt zu wenig Strom und wird langsamer: Verwenden Sie ein 5-V-Netzteil mit 2,5 A und ein kurzes, dickes Kabel.</string>
     <string name="second_screen_health_hot">Die Platine des Bildschirms ist heiß (%1$d °C) und wird langsamer: Sorgen Sie für Luft oder einen Kühlkörper.</string>
     <string name="second_screen_health_throttled">Die Platine des Bildschirms wird von ihrer Firmware gedrosselt: Prüfen Sie die Stromversorgung.</string>
@@ -119,10 +119,10 @@
     <string name="second_screen_mapview_distance_far">Weit</string>
     <string name="second_screen_mapview_buildings">Gebäude in 3D</string>
     <string name="second_screen_mapview_buildings_detail">Wo der Kartenanbieter ihre Höhe kennt.</string>
-    <string name="second_screen_pi_waiting">Warten auf Dashwheel…</string>
-    <string name="second_screen_pi_no_signal">Kein Signal von Dashwheel</string>
+    <string name="second_screen_pi_waiting">Warten auf JMCAR…</string>
+    <string name="second_screen_pi_no_signal">Kein Signal von JMCAR</string>
     <string name="second_screen_pi_connected">Verbunden</string>
-    <string name="second_screen_pi_scan">Mit der Dashwheel-App auf dem Handy scannen</string>
+    <string name="second_screen_pi_scan">Mit der JMCAR-App auf dem Handy scannen</string>
     <string name="second_screen_board_full">Volle Anzeige</string>
     <string name="second_screen_board_in_use">Diese Seiten sind gerade auf dem Bildschirm.</string>
     <string name="second_screen_board_not_in_use">Gerade nicht in Gebrauch: Diese Seiten erscheinen, wenn Sie zu dieser Anzeige wechseln.</string>

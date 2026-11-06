@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- First-run setup (SetupScreen.kt): the car, what the launcher may use, the look -->
-    <string name="setup_title">Configurar o Dashwheel</string>
+    <string name="setup_title">Configurar o JMCAR</string>
     <string name="setup_step">Passo %1$d de 3</string>
     <string name="setup_skip">Pular</string>
     <string name="setup_back">Anterior</string>
@@ -18,7 +18,7 @@
     <string name="setup_driver_side">Lado do motorista</string>
     <string name="setup_driver_left">À esquerda</string>
     <string name="setup_driver_right">À direita</string>
-    <string name="setup_access_title">O que o Dashwheel pode usar</string>
+    <string name="setup_access_title">O que o JMCAR pode usar</string>
     <string name="setup_access_body">Cada um é opcional. Permita-o na tela que se abre e volte.</string>
     <string name="setup_access_notifications">Notificações</string>
     <string name="setup_access_notifications_detail">A música e a próxima curva das apps desta unidade</string>
@@ -48,5 +48,5 @@
     <string name="setup_car_tiles_title">Adicionar os mosaicos do carro?</string>
     <string name="setup_car_tiles_body">Indicadores do motor, códigos de falha, bateria e aquecimento nos painéis.</string>
     <string name="setup_again">Configurar de novo</string>
-    <string name="setup_again_detail">O carro, o que o Dashwheel pode usar e o aspeto, passo a passo</string>
+    <string name="setup_again_detail">O carro, o que o JMCAR pode usar e o aspeto, passo a passo</string>
 </resources>

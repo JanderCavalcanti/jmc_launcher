@@ -5,11 +5,11 @@
     <string name="phone_status_connected">Conectado a %1$s</string>
     <string name="phone_status_connected_detail">Sus notificaciones y mensajes aparecen en el widget Notificaciones.</string>
     <string name="phone_status_searching">Buscando el teléfono en el Wi-Fi</string>
-    <string name="phone_status_searching_detail">Activa el punto de acceso del teléfono y conecta esta radio; Dashwheel Compañero hace el resto.</string>
+    <string name="phone_status_searching_detail">Activa el punto de acceso del teléfono y conecta esta radio; JMCAR Compañero hace el resto.</string>
     <string name="phone_status_unpaired">Ningún teléfono vinculado</string>
     <string name="phone_status_unpaired_detail">Vincula tu teléfono para ver aquí sus mensajes y responderlos.</string>
     <string name="phone_pair">Vincular un teléfono</string>
-    <string name="phone_pair_detail">Muestra el código para escanear con Dashwheel Compañero</string>
+    <string name="phone_pair_detail">Muestra el código para escanear con JMCAR Compañero</string>
     <string name="phone_gps">Usar el GPS del teléfono</string>
     <string name="phone_gps_detail">Con el teléfono enlazado, su GPS sustituye al de la unidad: más satélites, posición en segundos</string>
     <string name="phone_gps_in_use">En uso: %1$d satélites del teléfono</string>
@@ -22,7 +22,7 @@
     <string name="phone_forget_title">¿Olvidar %1$s?</string>
     <string name="phone_forget_body">Sus mensajes y llamadas dejarán de mostrarse aquí. Para volver a vincularlo hará falta un código nuevo.</string>
     <string name="phone_pair_title">Vincular un teléfono</string>
-    <string name="phone_pair_step1">1. Instala Dashwheel Compañero en el teléfono: escanea este código con la cámara.</string>
+    <string name="phone_pair_step1">1. Instala JMCAR Compañero en el teléfono: escanea este código con la cámara.</string>
     <string name="phone_pair_step2">2. Activa el punto de acceso Wi-Fi del teléfono y conecta esta radio.</string>
     <string name="phone_pair_step3">3. En la app, toca Vincular un coche y escanea este código.</string>
     <string name="phone_pair_waiting">Esperando al teléfono…</string>
@@ -49,7 +49,7 @@
     <string name="phone_call_answer">Contestar</string>
     <string name="phone_call_decline">Rechazar</string>
     <string name="phone_call_hang_up">Colgar</string>
-    <string name="phone_call_no_control">Para contestar desde aquí, permite Llamadas en Dashwheel Compañero.</string>
+    <string name="phone_call_no_control">Para contestar desde aquí, permite Llamadas en JMCAR Compañero.</string>
     <string name="phone_overlay">Mostrar llamadas sobre otras apps</string>
     <string name="phone_overlay_detail">Así una llamada aparece aunque otra app ocupe toda la pantalla.</string>
     <string name="phone_text_copied">Texto del teléfono copiado: mantén pulsado un campo para pegarlo</string>
@@ -57,6 +57,6 @@
     <string name="phone_agenda_empty">Vincula tu teléfono en Ajustes, Teléfono y pantallas, para ver aquí su agenda</string>
     <string name="phone_call_back">Llamar a %1$s</string>
     <string name="phone_calling">Llamando a %1$s</string>
-    <string name="phone_dial_not_allowed">Para llamar desde aquí, permite Llamadas en Dashwheel Compañero.</string>
+    <string name="phone_dial_not_allowed">Para llamar desde aquí, permite Llamadas en JMCAR Compañero.</string>
     <string name="phone_guidance_to">Ruta a %1$s</string>
 </resources>

@@ -11,7 +11,7 @@
     </plurals>
     <string name="wheel_explanation">Paspauskite kiekvieną vairo mygtuką: naujas atsiras žemėlapyje, žinomas užsidegs žaliai.</string>
     <string name="wheel_explanation_tap">Palieskite mygtuką, kad jį pavadintumėte, padėtumėte ir pasirinktumėte, ką jis daro.</string>
-    <string name="wheel_confirm_detail">Pastebėtas %1$s. Paspauskite jį dar kartą, kad Dashwheel žinotų, jog tai jūs: savaime kintanti automobilio reikšmė nepasikartos pagal komandą.</string>
+    <string name="wheel_confirm_detail">Pastebėtas %1$s. Paspauskite jį dar kartą, kad JMCAR žinotų, jog tai jūs: savaime kintanti automobilio reikšmė nepasikartos pagal komandą.</string>
     <string name="wheel_assign_prompt">Ką turi daryti %1$s?</string>
     <string name="wheel_choose_app">Paleisti programą…</string>
     <string name="wheel_raw_button">Mygtukas #%1$d</string>
@@ -26,9 +26,9 @@
     <string name="wheel_group_system">Sistema</string>
     <string name="wheel_group_phone">Telefonas</string>
     <string name="wheel_needs_accessibility">Reikia įjungti pritaikymą neįgaliesiems</string>
-    <string name="wheel_accessibility_hint">Atgal, naujausioms programoms, pranešimams ir padalytam ekranui reikia įjungti Dashwheel: Nustatymai, Pritaikymas neįgaliesiems.</string>
+    <string name="wheel_accessibility_hint">Atgal, naujausioms programoms, pranešimams ir padalytam ekranui reikia įjungti JMCAR: Nustatymai, Pritaikymas neįgaliesiems.</string>
     <string name="wheel_accessibility_enable">Įjungti</string>
-    <string name="wheel_accessibility_anywhere">Išmokti mygtukai veikia tik kai Dashwheel priekyje, nebent Dashwheel įjungta: Nustatymai, Pritaikymas neįgaliesiems.</string>
+    <string name="wheel_accessibility_anywhere">Išmokti mygtukai veikia tik kai JMCAR priekyje, nebent JMCAR įjungta: Nustatymai, Pritaikymas neįgaliesiems.</string>
     <string name="wheel_no_voice_assistant">Šioje magnetoloje nėra balso asistento</string>
     <string name="wheel_action_back">Atgal</string>
     <string name="wheel_action_recents">Naujausios programos</string>

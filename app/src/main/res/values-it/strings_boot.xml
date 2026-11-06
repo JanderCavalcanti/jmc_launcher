@@ -26,7 +26,7 @@
     <string name="boot_restore_confirm_body">L\'animazione di avvio e il logo fisso originali vengono ripristinati.</string>
     <string name="boot_play_failed">Riproduzione non riuscita: %1$s</string>
     <string name="boot_current">Logo di avvio attuale: %1$s</string>
-    <string name="boot_hint">Cambia ciò che l\'autoradio mostra all\'avvio, con il logo di questa marca: l\'animazione di Android e, se attivo, il logo fisso. Usa l\'ADB root interno dell\'autoradio e non tocca mai /system. Gli originali vengono salvati (anche in Dashwheel/boot_backup nella memoria interna) e Ripristina li rimette. Loghi dal dataset libero car-logos-dataset.</string>
+    <string name="boot_hint">Cambia ciò che l\'autoradio mostra all\'avvio, con il logo di questa marca: l\'animazione di Android e, se attivo, il logo fisso. Usa l\'ADB root interno dell\'autoradio e non tocca mai /system. Gli originali vengono salvati (anche in JMCAR/boot_backup nella memoria interna) e Ripristina li rimette. Loghi dal dataset libero car-logos-dataset.</string>
     <string name="boot_usb">Salva su USB</string>
     <string name="boot_saving_usb">Scrittura sulla chiavetta USB…</string>
     <string name="boot_saved_usb">Salvato su %1$s. Scollega e ricollega la chiavetta: l\'autoradio importa l\'animazione. Per il logo fisso: Impostazioni → Impostazioni di fabbrica (8888) → Logo set → scegli %2$s → Update logo.</string>
@@ -39,5 +39,5 @@
     <string name="boot_still_failed">Logo fisso non cambiato: %1$s</string>
     <string name="boot_still_unsupported">questa autoradio non ha lo strumento del logo fisso</string>
     <string name="boot_not_qf">Installa funziona solo sul firmware QF001 / K706 previsto. Usa Salva su USB.</string>
-    <string name="boot_no_adb">L\'ADB interno dell\'autoradio non risponde (porta %1$d) e Dashwheel non ha il root. Attiva il debug USB (Impostazioni → Info → tocca 7 volte Numero build, poi Opzioni sviluppatore → Debug USB) o concedi il root, e riprova.</string>
+    <string name="boot_no_adb">L\'ADB interno dell\'autoradio non risponde (porta %1$d) e JMCAR non ha il root. Attiva il debug USB (Impostazioni → Info → tocca 7 volte Numero build, poi Opzioni sviluppatore → Debug USB) o concedi il root, e riprova.</string>
 </resources>

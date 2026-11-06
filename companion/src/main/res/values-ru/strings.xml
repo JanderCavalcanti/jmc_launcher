@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Dashwheel Companion</string>
+    <string name="app_name">JMCAR Companion</string>
     <string name="service_channel">Связь с автомобилем</string>
     <string name="status_off">Передача выключена</string>
     <string name="status_waiting">Ожидание автомобиля в вашей точке доступа</string>
@@ -23,7 +23,7 @@
     <string name="done">Готово</string>
     <string name="cars_title">Сопряжённые автомобили</string>
     <string name="pair_car">Сопрячь автомобиль</string>
-    <string name="pair_hint">В Dashwheel откройте Настройки → Телефон → Сопрячь телефон, затем отсканируйте показанный код.</string>
+    <string name="pair_hint">В JMCAR откройте Настройки → Телефон → Сопрячь телефон, затем отсканируйте показанный код.</string>
     <string name="remove">Удалить</string>
     <string name="confirm_title">Разрешить %1$s?</string>
     <string name="confirm_body">Этот автомобиль будет показывать ваши уведомления и сообщения и сможет отвечать от вашего имени. Он подключается только через вашу точку доступа.</string>
@@ -33,7 +33,7 @@
     <string name="remove_body">Автомобиль больше ничего не получит с этого телефона. Для нового сопряжения нужен новый код.</string>
     <string name="paired_since">Сопряжён %1$s</string>
     <string name="scanned_download_code">Этот код для загрузки приложения. Теперь отсканируйте другой код на экране магнитолы с подписью Код сопряжения.</string>
-    <string name="invalid_code_read">Это не код сопряжения Dashwheel (прочитано: %1$s).</string>
+    <string name="invalid_code_read">Это не код сопряжения JMCAR (прочитано: %1$s).</string>
     <string name="step_calls">Звонки</string>
     <string name="step_calls_detail">Показывает на экране автомобиля, кто звонит, чтобы ответить или сбросить вызов там, а также избранные контакты для звонков из автомобиля. Звук остаётся на Bluetooth автомобиля.</string>
     <string name="car_spot_title">Где мой автомобиль</string>
@@ -70,13 +70,13 @@
     <string name="keyboard_typed">На экране автомобиля</string>
     <string name="keyboard_copied">На экране автомобиля не выбрано поле: текст в его буфере обмена.</string>
     <string name="keyboard_failed">Экран автомобиля не принял текст.</string>
-    <string name="keyboard_no_answer">Нет ответа: обновите Dashwheel в автомобиле.</string>
+    <string name="keyboard_no_answer">Нет ответа: обновите JMCAR в автомобиле.</string>
     <string name="keyboard_not_connected">Автомобиль не подключён.</string>
     <string name="keyboard_typing_off">Ввод в поля выключен в автомобиле.</string>
     <string name="keyboard_turn_on">Включить</string>
     <string name="keyboard_turning_on">Включение в автомобиле…</string>
     <string name="keyboard_typing_on">Ввод включён: выберите поле на экране автомобиля и печатайте здесь.</string>
-    <string name="keyboard_turn_on_failed">Автомобиль не смог его включить: в автомобиле откройте Настройки, Спец. возможности и включите Dashwheel.</string>
+    <string name="keyboard_turn_on_failed">Автомобиль не смог его включить: в автомобиле откройте Настройки, Спец. возможности и включите JMCAR.</string>
     <string name="send_to_car">В автомобиль</string>
     <string name="sent_to_car">Отправлено на экран автомобиля</string>
     <string name="place_sent">Маршрут отправлен в автомобиль: %1$s</string>
@@ -268,12 +268,12 @@
     <string name="rescue_split">Выйти из разделения экрана</string>
     <string name="rescue_split_body">Экран машины больше не делится с другим приложением.</string>
     <string name="rescue_home_back">Вернуть главный экран магнитоле</string>
-    <string name="rescue_home_back_body">Собственный лаунчер магнитолы снова становится главным экраном. Dashwheel остаётся в списке приложений.</string>
-    <string name="rescue_home_take">Снова сделать Dashwheel главным</string>
-    <string name="rescue_home_take_body">Dashwheel снова становится главным экраном машины.</string>
+    <string name="rescue_home_back_body">Собственный лаунчер магнитолы снова становится главным экраном. JMCAR остаётся в списке приложений.</string>
+    <string name="rescue_home_take">Снова сделать JMCAR главным</string>
+    <string name="rescue_home_take_body">JMCAR снова становится главным экраном машины.</string>
     <string name="rescue_send">Выполнить</string>
     <string name="rescue_sending">Отправка в машину</string>
     <string name="rescue_done">Сделано в машине</string>
     <string name="rescue_failed">Машина не смогла это сделать</string>
-    <string name="rescue_no_answer">Нет ответа: обновите Dashwheel в машине.</string>
+    <string name="rescue_no_answer">Нет ответа: обновите JMCAR в машине.</string>
 </resources>

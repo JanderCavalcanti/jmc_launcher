@@ -6,8 +6,8 @@
     <string name="unit_chosen">%1$s, ваш выбор</string>
     <string name="unit_choose_title">Моя магнитола</string>
     <string name="unit_auto">Автоматически</string>
-    <string name="unit_restart">Перезапустить Dashwheel</string>
-    <string name="unit_restart_hint">Выбор вступит в силу при следующем запуске Dashwheel.</string>
+    <string name="unit_restart">Перезапустить JMCAR</string>
+    <string name="unit_restart_hint">Выбор вступит в силу при следующем запуске JMCAR.</string>
     <string name="unit_caps_section">Что умеет эта прошивка</string>
     <string name="unit_state_live">Работает</string>
     <string name="unit_state_ready">Готово</string>
@@ -19,7 +19,7 @@
     <string name="unit_applied">Готово</string>
     <string name="unit_open_whitelist">Открыть приложение белого списка</string>
     <string name="unit_fyt_keys_title">Забрать кнопки руля</string>
-    <string name="unit_fyt_keys_detail">После перезапуска прошивка передаёт кнопки руля и панели Dashwheel. Её собственные приложения на это время их теряют.</string>
+    <string name="unit_fyt_keys_detail">После перезапуска прошивка передаёт кнопки руля и панели JMCAR. Её собственные приложения на это время их теряют.</string>
     <string name="unit_needs_firmware">Нужна прошивка %1$s</string>
     <string name="unit_family_qf">QF (Hizpo, ROCO K706)</string>
     <string name="unit_family_fyt">FYT (Joying, Atoto, Mekede)</string>

@@ -26,7 +26,7 @@
     <string name="boot_restore_confirm_body">The unit\'s own boot animation and still logo are put back.</string>
     <string name="boot_play_failed">Couldn\'t play it: %1$s</string>
     <string name="boot_current">Boot logo now: %1$s</string>
-    <string name="boot_hint">Changes what the unit shows while it starts, with this brand\'s logo: the Android animation, and the still logo if switched on. Uses the head unit\'s internal root ADB and never touches /system. Originals are backed up (also to Dashwheel/boot_backup on the internal storage) and Restore puts them back. Logos come from the open car-logos-dataset.</string>
+    <string name="boot_hint">Changes what the unit shows while it starts, with this brand\'s logo: the Android animation, and the still logo if switched on. Uses the head unit\'s internal root ADB and never touches /system. Originals are backed up (also to JMCAR/boot_backup on the internal storage) and Restore puts them back. Logos come from the open car-logos-dataset.</string>
     <string name="boot_usb">Save to USB</string>
     <string name="boot_saving_usb">Writing to the USB stick…</string>
     <string name="boot_saved_usb">Saved on %1$s. Unplug the stick and plug it back in: the unit imports the animation. For the still logo: Settings → Factory settings (8888) → Logo set → pick %2$s → Update logo.</string>
@@ -39,5 +39,5 @@
     <string name="boot_still_failed">Still logo not changed: %1$s</string>
     <string name="boot_still_unsupported">this unit has no still-logo tool</string>
     <string name="boot_not_qf">Install now only works on the QF001 / K706 firmware it was made for. Use Save to USB instead.</string>
-    <string name="boot_no_adb">The head unit\'s internal ADB isn\'t answering (port %1$d) and Dashwheel has no root. Turn on USB debugging (Settings → About → tap Build number 7 times, then Developer options → USB debugging), or grant root, and try again.</string>
+    <string name="boot_no_adb">The head unit\'s internal ADB isn\'t answering (port %1$d) and JMCAR has no root. Turn on USB debugging (Settings → About → tap Build number 7 times, then Developer options → USB debugging), or grant root, and try again.</string>
 </resources>

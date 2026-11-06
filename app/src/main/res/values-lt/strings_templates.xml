@@ -38,7 +38,7 @@
     <string name="share_use">Naudoti bendrintą skydelį</string>
     <string name="share_paste_hint">DW1: kodas</string>
     <string name="share_open_file">Atidaryti failą</string>
-    <string name="share_use_hint">Įveskite ar įklijuokite kodą, atidarykite failą arba nuskaitykite QR kodą Dashwheel Companion programa.</string>
+    <string name="share_use_hint">Įveskite ar įklijuokite kodą, atidarykite failą arba nuskaitykite QR kodą JMCAR Companion programa.</string>
     <string name="share_missing_apps">Šioje magnetoloje trūksta programų: %1$d. Jų plytelės liks, kol jas pakeisite.</string>
     <string name="share_take_look">Naudoti ir jo išvaizdą</string>
     <string name="share_replace">Dėti čia</string>

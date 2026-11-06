@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Dashwheel Companion</string>
+    <string name="app_name">JMCAR Companion</string>
     <string name="service_channel">Kapcsolat az autóval</string>
     <string name="status_off">A megosztás ki van kapcsolva</string>
     <string name="status_waiting">Várakozás az autóra a hotspoton</string>
@@ -23,7 +23,7 @@
     <string name="done">Kész</string>
     <string name="cars_title">Párosított autók</string>
     <string name="pair_car">Autó párosítása</string>
-    <string name="pair_hint">A Dashwheelben nyissa meg a Beállítások → Telefon → Telefon párosítása menüt, majd olvassa be a megjelenő kódot.</string>
+    <string name="pair_hint">A JMCARben nyissa meg a Beállítások → Telefon → Telefon párosítása menüt, majd olvassa be a megjelenő kódot.</string>
     <string name="remove">Eltávolítás</string>
     <string name="confirm_title">Engedélyezi a(z) %1$s autót?</string>
     <string name="confirm_body">Ez az autó megjeleníti az értesítéseit és üzeneteit, és válaszolhat is a nevében. Csak az Ön hotspotján keresztül csatlakozik.</string>
@@ -33,7 +33,7 @@
     <string name="remove_body">Az autó semmit sem kap többé erről a telefonról. Az újbóli párosításhoz új kód kell.</string>
     <string name="paired_since">Párosítva: %1$s</string>
     <string name="scanned_download_code">Ez a kód az alkalmazás letöltésére szolgál. Most olvassa be a fejegység képernyőjén lévő másikat, amelynek felirata Párosítási kód.</string>
-    <string name="invalid_code_read">Ez nem Dashwheel párosítási kód (beolvasva: %1$s).</string>
+    <string name="invalid_code_read">Ez nem JMCAR párosítási kód (beolvasva: %1$s).</string>
     <string name="step_calls">Hívások</string>
     <string name="step_calls_detail">Az autó képernyőjén látszik, ki hívja, ott fogadhatja vagy bonthatja a hívást, és a kedvenceit is hívhatja az autóból. A hang az autó Bluetooth-kapcsolatán marad.</string>
     <string name="car_spot_title">Hol az autóm</string>
@@ -70,13 +70,13 @@
     <string name="keyboard_typed">Az autó képernyőjén</string>
     <string name="keyboard_copied">Nincs kiválasztott mező az autó képernyőjén: a szöveg a vágólapjára került.</string>
     <string name="keyboard_failed">Az autó képernyője nem fogadta a szöveget.</string>
-    <string name="keyboard_no_answer">Nincs válasz: frissítse a Dashwheelt az autóban.</string>
+    <string name="keyboard_no_answer">Nincs válasz: frissítse a JMCARt az autóban.</string>
     <string name="keyboard_not_connected">Az autó nincs csatlakoztatva.</string>
     <string name="keyboard_typing_off">A mezőkbe gépelés ki van kapcsolva az autóban.</string>
     <string name="keyboard_turn_on">Bekapcsolás</string>
     <string name="keyboard_turning_on">Bekapcsolás az autóban…</string>
     <string name="keyboard_typing_on">A gépelés be van kapcsolva: válasszon ki egy mezőt az autó képernyőjén, majd gépeljen itt.</string>
-    <string name="keyboard_turn_on_failed">Az autó nem tudta bekapcsolni: az autóban nyissa meg a Beállítások, Kisegítő lehetőségek menüt, és kapcsolja be a Dashwheelt.</string>
+    <string name="keyboard_turn_on_failed">Az autó nem tudta bekapcsolni: az autóban nyissa meg a Beállítások, Kisegítő lehetőségek menüt, és kapcsolja be a JMCARt.</string>
     <string name="send_to_car">Küldés az autóra</string>
     <string name="sent_to_car">Elküldve az autó képernyőjére</string>
     <string name="place_sent">Útvonal elküldve az autónak: %1$s</string>
@@ -266,12 +266,12 @@
     <string name="rescue_split">Osztott képernyő bezárása</string>
     <string name="rescue_split_body">Az autó képernyője már nincs megosztva más alkalmazással.</string>
     <string name="rescue_home_back">Kezdőképernyő vissza az egységnek</string>
-    <string name="rescue_home_back_body">Az egység saját indítója lesz újra a kezdőképernyő. A Dashwheel az alkalmazáslistában marad.</string>
-    <string name="rescue_home_take">Dashwheel újra kezdőképernyő</string>
-    <string name="rescue_home_take_body">A Dashwheel lesz újra az autó kezdőképernyője.</string>
+    <string name="rescue_home_back_body">Az egység saját indítója lesz újra a kezdőképernyő. A JMCAR az alkalmazáslistában marad.</string>
+    <string name="rescue_home_take">JMCAR újra kezdőképernyő</string>
+    <string name="rescue_home_take_body">A JMCAR lesz újra az autó kezdőképernyője.</string>
     <string name="rescue_send">Végrehajtás</string>
     <string name="rescue_sending">Küldés az autónak</string>
     <string name="rescue_done">Kész az autón</string>
     <string name="rescue_failed">Az autó nem tudta megtenni</string>
-    <string name="rescue_no_answer">Nincs válasz: frissítse a Dashwheelt az autón.</string>
+    <string name="rescue_no_answer">Nincs válasz: frissítse a JMCARt az autón.</string>
 </resources>

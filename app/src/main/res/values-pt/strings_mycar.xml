@@ -8,7 +8,7 @@
     <string name="mycar_working">Preparando</string>
     <string name="mycar_ready">A imagem do seu carro está pronta</string>
     <string name="mycar_failed">Não foi possível ler essa imagem. Tente um JPG ou PNG.</string>
-    <string name="mycar_model_on_phone">Um modelo 3D torna-se o seu carro no celular: no Dashwheel Companion, separador Carro, De um modelo 3D.</string>
+    <string name="mycar_model_on_phone">Um modelo 3D torna-se o seu carro no celular: no JMCAR Companion, separador Carro, De um modelo 3D.</string>
     <string name="mycar_no_picker">Sem seletor de arquivos nesta unidade. Coloque o arquivo aqui: %1$s</string>
     <string name="mycar_pick">Escolher arquivo</string>
     <string name="mycar_remove">Remover</string>
@@ -31,7 +31,7 @@
     <string name="mycar_style_outline">Contorno</string>
     <string name="mycar_style_outline_hint">Só as linhas, na cor do visual</string>
     <string name="mycar_where">Visível nos designs Mapa dos pneus e Silhueta e no mosaico O meu carro.</string>
-    <string name="mycar_phone_hint">No celular: na app Dashwheel companion, Imagem do carro e depois Escolher arquivo.</string>
+    <string name="mycar_phone_hint">No celular: na app JMCAR companion, Imagem do carro e depois Escolher arquivo.</string>
     <string name="mycar_photos">3 fotos</string>
     <string name="mycar_photos_hint">Ou escolha as fotos do carro de uma vez: lado, frente e traseira, e uma vista de cima e outra de cima com as portas abertas se as tiver. Com os nomes lado, frente, traseira, cima e aberto, nunca se trocam.</string>
     <string name="mycar_photos_no_car">Nenhum carro encontrado nessas fotos. Use fotos com o carro inteiro sobre um fundo liso.</string>

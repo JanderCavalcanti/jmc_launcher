@@ -38,7 +38,7 @@
     <string name="share_use">Een gedeeld dashboard gebruiken</string>
     <string name="share_paste_hint">DW1:-code</string>
     <string name="share_open_file">Bestand openen</string>
-    <string name="share_use_hint">Typ of plak een code, open een bestand of scan een QR-code met de Dashwheel Companion-app.</string>
+    <string name="share_use_hint">Typ of plak een code, open een bestand of scan een QR-code met de JMCAR Companion-app.</string>
     <string name="share_missing_apps">Apps die niet op dit toestel staan: %1$d. Hun tegels blijven tot je ze verandert.</string>
     <string name="share_take_look">Ook zijn uiterlijk gebruiken</string>
     <string name="share_replace">Hier zetten</string>

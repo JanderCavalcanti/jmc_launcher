@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- The Signal Finder: teach Dashwheel the car's signals (SignalFinderSheet.kt, SignalFinder.kt, LearnedSignals.kt) -->
+    <!-- The Signal Finder: teach JMCAR the car's signals (SignalFinderSheet.kt, SignalFinder.kt, LearnedSignals.kt) -->
     <string name="signals_title">Autójelek</string>
-    <string name="signals_settings_detail">Tanítsa meg a Dashwheelnek az autó ajtóit, a hátramenetet és a lámpákat</string>
-    <string name="signals_intro">A Dashwheel magától kiolvassa, amit tud. A többit a Keresés gombbal taníthatja meg, a művelet elvégzésével.</string>
+    <string name="signals_settings_detail">Tanítsa meg a JMCARnek az autó ajtóit, a hátramenetet és a lámpákat</string>
+    <string name="signals_intro">A JMCAR magától kiolvassa, amit tud. A többit a Keresés gombbal taníthatja meg, a művelet elvégzésével.</string>
     <string name="signals_sources">Figyelt források</string>
     <string name="signals_needs_root">Root szükséges</string>
     <string name="signals_values">Értékek: %1$d</string>
     <string name="signals_section">Jelek</string>
     <string name="signals_learned">Betanítva: %1$s</string>
-    <string name="signals_builtin">A Dashwheel már kiolvassa</string>
+    <string name="signals_builtin">A JMCAR már kiolvassa</string>
     <string name="signals_missing">Még nincs meg</string>
     <string name="signals_forget">Elfelejtés</string>
     <string name="signals_find">Keresés</string>

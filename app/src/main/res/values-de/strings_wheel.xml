@@ -9,7 +9,7 @@
     </plurals>
     <string name="wheel_explanation">Drücke jede Taste am Lenkrad: eine neue kommt auf die Karte, eine bekannte leuchtet grün.</string>
     <string name="wheel_explanation_tap">Tippe auf eine Taste, um sie zu benennen, zu platzieren und ihre Aktion zu wählen.</string>
-    <string name="wheel_confirm_detail">%1$s wurde erkannt. Noch einmal drücken, damit Dashwheel weiß, dass du es warst: ein Fahrzeugwert, der sich von selbst ändert, kommt nicht auf Kommando zurück.</string>
+    <string name="wheel_confirm_detail">%1$s wurde erkannt. Noch einmal drücken, damit JMCAR weiß, dass du es warst: ein Fahrzeugwert, der sich von selbst ändert, kommt nicht auf Kommando zurück.</string>
     <string name="wheel_assign_prompt">Was soll %1$s tun?</string>
     <string name="wheel_choose_app">App starten…</string>
     <string name="wheel_raw_button">Taste #%1$d</string>
@@ -24,9 +24,9 @@
     <string name="wheel_group_system">System</string>
     <string name="wheel_group_phone">Telefon</string>
     <string name="wheel_needs_accessibility">Braucht eingeschaltete Bedienungshilfen</string>
-    <string name="wheel_accessibility_hint">Zurück, letzte Apps, Benachrichtigungen und geteilter Bildschirm brauchen Dashwheel unter Einstellungen, Bedienungshilfen.</string>
+    <string name="wheel_accessibility_hint">Zurück, letzte Apps, Benachrichtigungen und geteilter Bildschirm brauchen JMCAR unter Einstellungen, Bedienungshilfen.</string>
     <string name="wheel_accessibility_enable">Einschalten</string>
-    <string name="wheel_accessibility_anywhere">Gelernte Tasten wirken nur, solange Dashwheel im Vordergrund ist, es sei denn, Dashwheel ist unter Einstellungen, Bedienungshilfen eingeschaltet.</string>
+    <string name="wheel_accessibility_anywhere">Gelernte Tasten wirken nur, solange JMCAR im Vordergrund ist, es sei denn, JMCAR ist unter Einstellungen, Bedienungshilfen eingeschaltet.</string>
     <string name="wheel_no_voice_assistant">Kein Sprachassistent auf diesem Gerät</string>
     <string name="wheel_action_back">Zurück</string>
     <string name="wheel_action_recents">Letzte Apps</string>

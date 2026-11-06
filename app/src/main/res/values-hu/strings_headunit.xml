@@ -6,8 +6,8 @@
     <string name="unit_chosen">%1$s, az Ön választása</string>
     <string name="unit_choose_title">A fejegységem</string>
     <string name="unit_auto">Automatikus</string>
-    <string name="unit_restart">Dashwheel újraindítása</string>
-    <string name="unit_restart_hint">A választás a Dashwheel következő indításakor lép életbe.</string>
+    <string name="unit_restart">JMCAR újraindítása</string>
+    <string name="unit_restart_hint">A választás a JMCAR következő indításakor lép életbe.</string>
     <string name="unit_caps_section">Amit ez a firmware kínál</string>
     <string name="unit_state_live">Működik</string>
     <string name="unit_state_ready">Kész</string>
@@ -19,7 +19,7 @@
     <string name="unit_applied">Kész</string>
     <string name="unit_open_whitelist">Engedélylista-alkalmazás megnyitása</string>
     <string name="unit_fyt_keys_title">Kormánygombok átvétele</string>
-    <string name="unit_fyt_keys_detail">Újraindítás után a firmware a kormány- és panelgombokat a Dashwheelnek adja. Saját alkalmazásai addig elveszítik őket.</string>
+    <string name="unit_fyt_keys_detail">Újraindítás után a firmware a kormány- és panelgombokat a JMCARnek adja. Saját alkalmazásai addig elveszítik őket.</string>
     <string name="unit_needs_firmware">%1$s firmware szükséges</string>
     <string name="unit_family_qf">QF (Hizpo, ROCO K706)</string>
     <string name="unit_family_fyt">FYT (Joying, Atoto, Mekede)</string>
