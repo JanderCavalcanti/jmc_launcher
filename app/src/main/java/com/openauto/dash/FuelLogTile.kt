@@ -49,7 +49,7 @@ internal fun costPer100(fills: List<FuelFill>): Double? {
 }
 
 /** A sum of money with its currency, two decimals. */
-internal fun money(v: Double, currency: String?): String = String.format(Locale.getDefault(), "%.2f %s", v, currency ?: "€").trim()
+internal fun money(v: Double, currency: String?): String = String.format(Locale.getDefault(), "%.2f %s", v, currency ?: localCurrency()).trim()
 
 /**
  * The refuels: the last one, what the car really uses and what 100 km cost.

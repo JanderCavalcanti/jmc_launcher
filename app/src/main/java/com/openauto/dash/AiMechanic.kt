@@ -145,7 +145,7 @@ object MechanicPrompt {
         language: AiLanguage,
         data: ObdData?,
         references: Map<String, String> = emptyMap(),
-        currency: String = "€"
+        currency: String = localCurrency()
     ): String = buildString {
         appendLine(MechanicPersona.of(car))
         appendLine("Its OBD scan reports these stored fault codes: ${codes.joinToString(", ")}.")

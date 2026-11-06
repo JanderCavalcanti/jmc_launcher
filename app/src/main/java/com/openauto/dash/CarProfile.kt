@@ -79,8 +79,8 @@ data class CarProfile(
     val registrationEnergy: String = "",
     /** ... and the Euro emission standard. */
     val euro: Int? = null,
-    val fuelPrice: Double = 1.75,
-    val currency: String = "€",
+    val fuelPrice: Double = if (inBrazil()) 6.30 else 1.75,
+    val currency: String = localCurrency(),
     val source: SpecSource = SpecSource.PRESET,
     val updatedAt: Long = 0L
 ) {
@@ -266,7 +266,8 @@ data class CarProfile(
                 plate = o.optString("plate"), vin = o.optString("vin"), firstRegistration = o.optString("first_registration"),
                 registrationEnergy = o.optString("registration_energy"), euro = int("euro"),
                 fuelPrice = o.optDouble("fuel_price", PRESET.fuelPrice).takeIf { !it.isNaN() } ?: PRESET.fuelPrice,
-                currency = o.optString("currency").ifBlank { PRESET.currency },
+                // A profile saved before JMCAR had euros by default: reais in Brazil.
+                currency = o.optString("currency").ifBlank { PRESET.currency }.let { if (it == "€" && inBrazil()) "R$" else it },
                 source = enum("source", SpecSource.entries.toTypedArray(), SpecSource.USER),
                 updatedAt = o.optLong("updated_at")
             )
@@ -323,3 +324,9 @@ object CarProfileStore {
             ?.putString(KEY, profile.toJson().toString())?.apply()
     }
 }
+
+/** The unit's region is Brazil (the language or the phone's region). */
+internal fun inBrazil(): Boolean = java.util.Locale.getDefault().country == "BR" || java.util.Locale.getDefault().language == "pt"
+
+/** The money symbol of where the car is: R$ in Brazil, € by default as the original app had. */
+internal fun localCurrency(): String = if (inBrazil()) "R$" else "€"
