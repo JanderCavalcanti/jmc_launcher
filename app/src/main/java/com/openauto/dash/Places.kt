@@ -132,12 +132,20 @@ internal object PlaceSearch {
      * The first place found for [query], under the name typed; null when nothing
      * matches. Throws when offline. With [nearLat]/[nearLng], places around there
      * come first (a shop's name alone would otherwise find the one in another town).
+     * Without them the car's own position is used when there is one, and in
+     * Brazil the search stays in Brazil: "Rua São Paulo" alone otherwise finds
+     * one in Portugal, which no router can reach by car.
      */
-    fun find(query: String, nearLat: Double? = null, nearLng: Double? = null): Place? {
+    fun find(
+        query: String,
+        nearLat: Double? = LocationFeed.location.value?.latitude,
+        nearLng: Double? = LocationFeed.location.value?.longitude
+    ): Place? {
         val around = if (nearLat != null && nearLng != null) {
             String.format(java.util.Locale.US, "&viewbox=%.4f,%.4f,%.4f,%.4f&bounded=0", nearLng - 1.0, nearLat + 0.7, nearLng + 1.0, nearLat - 0.7)
         } else ""
-        val url = "$SEARCH_URL?format=json&limit=1&q=" + URLEncoder.encode(query, "UTF-8") + around
+        val country = if (inBrazil()) "&countrycodes=br" else ""
+        val url = "$SEARCH_URL?format=json&limit=1&q=" + URLEncoder.encode(query, "UTF-8") + around + country
         val request = Request.Builder().url(url).header("User-Agent", USER_AGENT).build()
         Http.client.newCall(request).execute().use { resp ->
             if (!resp.isSuccessful) return null
