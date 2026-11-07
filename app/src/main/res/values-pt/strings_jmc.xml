@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="car_fuel_flex">Flex</string>
+    <string name="car_fuel_ethanol">Etanol</string>
+    <string name="car_fuel_cng">GNV</string>
+    <string name="jmc_fuel_petrol">Gasolina</string>
+    <string name="jmc_fuel_ethanol_price">Preço do etanol</string>
+    <string name="jmc_fuel_ethanol_now">Etanol no tanque agora</string>
+    <string name="jmc_fuel_ethanol_now_detail">Com etanol, consumo, autonomia e custos contam cerca de 30% a mais de combustível</string>
+    <string name="jmc_fuel_prices_title">Preços do combustível</string>
+    <string name="jmc_fuel_prices_body">Os preços que você pagou, para custos e autonomia. Toque no bloco para mudar.</string>
+    <string name="jmc_fuel_tap_to_type">Toque para digitar os preços</string>
+    <string name="jmc_fuel_main_price">Preço (%1$s)</string>
+    <string name="jmc_fuel_in_tank">No tanque: %1$s</string>
+    <string name="jmc_fuel_ethanol_pays">Etanol compensa: %1$d%% da gasolina</string>
+    <string name="jmc_fuel_petrol_pays">Gasolina compensa: etanol a %1$d%%</string>
+    <string name="jmc_fuel_save">Salvar</string>
+    <string name="jmc_cancel">Cancelar</string>
+</resources>

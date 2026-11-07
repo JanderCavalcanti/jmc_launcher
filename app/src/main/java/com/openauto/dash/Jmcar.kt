@@ -17,6 +17,9 @@ internal object Jmcar {
     /** The reversing view settings (guide lines, radar over the camera): the tbox has no camera input. */
     const val REVERSE_VIEW = false
 
+    /** The French and German station price feeds: nothing in Brazil, the driver types the prices (JmcarFuel.kt). */
+    const val STATION_FEED = false
+
     /** Tiles that need a head unit's own hardware: FM radio, CAN box, doors, tyres, the car app's data. */
     val HEAD_UNIT_TILES: Set<BuiltinKind> = setOf(
         BuiltinKind.RADIO_PRESETS,

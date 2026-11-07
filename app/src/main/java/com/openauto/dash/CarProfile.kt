@@ -22,7 +22,14 @@ import kotlin.math.roundToInt
  * AI mechanic all read it, so nothing hardcodes the car.
  */
 
-enum class FuelType { DIESEL, PETROL, HYBRID, LPG, ELECTRIC }
+/** FLEX, ETHANOL and CNG (GNV) were added for Brazil; new ones go at the end (saved by name). */
+enum class FuelType { DIESEL, PETROL, HYBRID, LPG, ELECTRIC, FLEX, ETHANOL, CNG }
+
+/** Ethanol gives about 70% of petrol's energy per litre: a flex car burns about 30% more of it. */
+internal const val ETHANOL_USE_FACTOR = 1.3
+
+/** Ethanol pays off while it costs at most this share of the petrol price (the 70% rule). */
+internal const val ETHANOL_PAYS_RATIO = 0.70
 
 /** ROBOTISED = single-clutch automated manual (Citroën BMP6 / EGS, Peugeot 2-Tronic). */
 enum class GearboxType { MANUAL, ROBOTISED, AUTOMATIC, DUAL_CLUTCH, CVT }
@@ -80,6 +87,10 @@ data class CarProfile(
     /** ... and the Euro emission standard. */
     val euro: Int? = null,
     val fuelPrice: Double = if (inBrazil()) 6.30 else 1.75,
+    /** A flex car: the ethanol price the driver typed (0 = not given); [fuelPrice] is then petrol's. */
+    val ethanolPrice: Double = 0.0,
+    /** A flex car: ethanol is what is in the tank now, for the consumption, range and costs. */
+    val ethanolNow: Boolean = false,
     val currency: String = localCurrency(),
     val source: SpecSource = SpecSource.PRESET,
     val updatedAt: Long = 0L
@@ -96,7 +107,13 @@ data class CarProfile(
     val tank: Double get() = tankL ?: TANK_LITERS
 
     /** Everyday consumption, or the old rough figure. */
-    val typicalUse: Double get() = consumptionL100 ?: AVG_L_PER_100KM
+    val typicalUse: Double get() = (consumptionL100 ?: AVG_L_PER_100KM) * if (burningEthanolInFlex) ETHANOL_USE_FACTOR else 1.0
+
+    /** A flex car running on ethanol now: its consumption (given for petrol) goes up ~30%. */
+    val burningEthanolInFlex: Boolean get() = fuel == FuelType.FLEX && ethanolNow
+
+    /** The price per litre of what is in the tank now: ethanol's in a flex car on ethanol, else [fuelPrice]. */
+    val priceNow: Double get() = if (burningEthanolInFlex && ethanolPrice > 0) ethanolPrice else fuelPrice
 
     /** Coolant temperature the engine runs at once warm. */
     val hotC: Int get() = operatingTempC ?: 90
@@ -134,6 +151,8 @@ data class CarProfile(
         FuelType.HYBRID -> Energy.HYBRID_PETROL
         FuelType.LPG -> Energy.LPG
         FuelType.ELECTRIC -> Energy.ELECTRIC
+        FuelType.FLEX, FuelType.ETHANOL -> Energy.PETROL
+        FuelType.CNG -> Energy.NATURAL_GAS
     }
 
     /**
@@ -207,6 +226,7 @@ data class CarProfile(
         put("plate", plate); put("vin", vin); put("first_registration", firstRegistration)
         put("registration_energy", registrationEnergy); putOpt("euro", euro)
         put("fuel_price", fuelPrice); put("currency", currency)
+        put("ethanol_price", ethanolPrice); put("ethanol_now", ethanolNow)
         put("source", source.name); put("updated_at", updatedAt)
     }
 
@@ -266,6 +286,8 @@ data class CarProfile(
                 plate = o.optString("plate"), vin = o.optString("vin"), firstRegistration = o.optString("first_registration"),
                 registrationEnergy = o.optString("registration_energy"), euro = int("euro"),
                 fuelPrice = o.optDouble("fuel_price", PRESET.fuelPrice).takeIf { !it.isNaN() } ?: PRESET.fuelPrice,
+                ethanolPrice = o.optDouble("ethanol_price", 0.0).takeIf { !it.isNaN() } ?: 0.0,
+                ethanolNow = o.optBoolean("ethanol_now"),
                 // A profile saved before JMCAR had euros by default: reais in Brazil.
                 currency = o.optString("currency").ifBlank { PRESET.currency }.let { if (it == "€" && inBrazil()) "R$" else it },
                 source = enum("source", SpecSource.entries.toTypedArray(), SpecSource.USER),
@@ -278,7 +300,8 @@ data class CarProfile(
 /** The profile's fuel for a certificate's [energy]. */
 private fun fuelOf(energy: Energy): FuelType = when (energy) {
     Energy.DIESEL -> FuelType.DIESEL
-    Energy.PETROL, Energy.NATURAL_GAS -> FuelType.PETROL
+    Energy.PETROL -> FuelType.PETROL
+    Energy.NATURAL_GAS -> FuelType.CNG
     Energy.HYBRID_PETROL, Energy.HYBRID_DIESEL, Energy.PLUG_IN_HYBRID -> FuelType.HYBRID
     Energy.LPG -> FuelType.LPG
     Energy.ELECTRIC, Energy.HYDROGEN -> FuelType.ELECTRIC

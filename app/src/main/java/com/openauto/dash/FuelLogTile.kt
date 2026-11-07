@@ -76,7 +76,7 @@ internal fun FuelLogCard(modifier: Modifier = Modifier) {
                 }
             }
             if (adding) {
-                AddFill(lastPrice = FuelLog.lastPrice() ?: CarProfileStore.current.fuelPrice) { liters, price ->
+                AddFill(lastPrice = FuelLog.lastPrice() ?: CarProfileStore.current.priceNow) { liters, price ->
                     FuelLog.addManual(context, liters, price)
                     adding = false
                 }

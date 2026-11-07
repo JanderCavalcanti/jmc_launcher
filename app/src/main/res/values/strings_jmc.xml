@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <!-- JMCAR's own additions (Jmcar*.kt); Portuguese in values-pt. -->
+    <string name="car_fuel_flex">Flex</string>
+    <string name="car_fuel_ethanol">Ethanol</string>
+    <string name="car_fuel_cng">CNG</string>
+    <string name="jmc_fuel_petrol">Petrol</string>
+    <string name="jmc_fuel_ethanol_price">Ethanol price</string>
+    <string name="jmc_fuel_ethanol_now">Ethanol in the tank now</string>
+    <string name="jmc_fuel_ethanol_now_detail">Consumption, range and costs count about 30% more fuel on ethanol</string>
+    <string name="jmc_fuel_prices_title">Fuel prices</string>
+    <string name="jmc_fuel_prices_body">The prices you paid, for costs and range. Tap the tile to change them.</string>
+    <string name="jmc_fuel_tap_to_type">Tap to type the prices</string>
+    <string name="jmc_fuel_main_price">%1$s price</string>
+    <string name="jmc_fuel_in_tank">In the tank: %1$s</string>
+    <string name="jmc_fuel_ethanol_pays">Ethanol pays: %1$d%% of petrol</string>
+    <string name="jmc_fuel_petrol_pays">Petrol pays: ethanol at %1$d%%</string>
+    <string name="jmc_fuel_save">Save</string>
+    <string name="jmc_cancel">Cancel</string>
+</resources>
