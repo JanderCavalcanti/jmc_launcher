@@ -502,12 +502,10 @@ object DashLayoutStore {
     private const val PREFS = "dashboard_layout"
     private const val KEY = "mode"
 
-    fun load(context: Context): DashLayout = runCatching {
-        DashLayout.valueOf(
-            context.getSharedPreferences(PREFS, Context.MODE_PRIVATE)
-                .getString(KEY, DashLayout.GRID.name) ?: DashLayout.GRID.name
-        )
-    }.getOrDefault(DashLayout.GRID)
+    // The Maps dock is no longer offered (see LayoutPicker): a saved MAPS_LEFT/RIGHT reads as GRID,
+    // so a unit left on a docked layout comes back to the dashboards after the update.
+    @Suppress("UNUSED_PARAMETER")
+    fun load(context: Context): DashLayout = DashLayout.GRID
 
     fun save(context: Context, layout: DashLayout) {
         context.getSharedPreferences(PREFS, Context.MODE_PRIVATE).edit()

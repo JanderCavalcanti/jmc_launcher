@@ -578,8 +578,9 @@ internal fun LayoutPicker(m: TopBarModel, anchor: @Composable (open: () -> Unit)
     Box {
         anchor { lock.whenParked { open = true } }
         DashMenu(open, onDismiss = { open = false }) {
-            // The Maps dock is placed through the shell: the Play edition offers the dashboards alone.
-            val layouts = if (Edition.play) DashLayout.entries.filter { it == DashLayout.GRID } else DashLayout.entries
+            // JMCAR: the Maps dock is not offered. On the Carlinkit tbox the system keeps Maps
+            // full screen and Home brought it back over the launcher, with no way back to JMCAR.
+            val layouts = listOf(DashLayout.GRID)
             layouts.forEach { l ->
                 DashMenuItem(
                     text = l.title,
