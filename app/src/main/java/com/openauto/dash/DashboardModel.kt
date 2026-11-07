@@ -621,7 +621,7 @@ object DashboardStore {
             val other = DIRECTIONS.firstOrNull { it != variant && prefs.contains(pagesKey(it)) }
             val pages = other?.let { o -> prefs.getString(pagesKey(o), null)?.let { parsePages(it, o) } }?.let(::reflow)
                 ?: defaultPages(DashLayoutStore.load(context) != DashLayout.GRID)
-            return pages.also(::notePlaced)
+            return Jmcar.mapTiles(context, pages).also(::notePlaced)
         }
 
         // A corrupt primary value falls back to the last good layout rather
@@ -646,7 +646,7 @@ object DashboardStore {
         return List(PAGE_COUNT) { p ->
             val page = parsed.getOrElse(p) { emptyList() }
             repairOverlaps(if (page.any { it.x < 0 }) autoPlace(page) else page)
-        }.also(::notePlaced)
+        }.let { Jmcar.mapTiles(context, it) }.also(::notePlaced)
     }
 
     /** The built-in kinds on any dashboard of the layout last loaded or saved: the add sheet marks them as already there. */
