@@ -32,7 +32,7 @@
     <string name="dash_reset_page">Remover painel…</string>
 
     <!-- Update banner -->
-    <string name="dash_update_downloading">Baixando atualização… %1$d %%</string>
+    <string name="dash_update_downloading">Baixando: %1$d%%</string>
     <string name="dash_update_installing">Iniciando o instalador…</string>
     <string name="dash_menu_check_updates">Procurar atualizações</string>
     <string name="dash_update_checking">Procurando atualizações…</string>
@@ -143,7 +143,7 @@
     <string name="dash_layout_button">Layout</string>
     <string name="dash_layout_another_app">Outra app ao lado dos painéis…</string>
     <string name="dash_update_dot_hint">Uma atualização espera no menu</string>
-    <string name="dash_update_dot_menu">O ponto no botão do menu é esta atualização</string>
+    <string name="dash_update_dot_menu">É o ponto no botão ⋮</string>
 
     <!-- The pages' places in the cross, and an empty page -->
     <string name="dash_page_home">Início</string>
