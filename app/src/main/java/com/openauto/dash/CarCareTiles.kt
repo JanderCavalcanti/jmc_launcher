@@ -382,7 +382,7 @@ internal fun EcoDriveCard(modifier: Modifier = Modifier) {
         val cents = if (LocalDriveLock.current.moving) 0 else 2
         InfoRow(
             stringResource(if (u.imperial) R.string.units_eco_fuel_mi else R.string.car_eco_fuel, decimal(u.distance(drive.distanceKm))),
-            stringResource(R.string.car_eco_fuel_value, decimal(liters), decimal(liters * car.fuelPrice, cents), car.currency)
+            stringResource(R.string.car_eco_fuel_value, decimal(liters), decimal(liters * car.priceNow, cents), car.currency)
         )
     }
 }
@@ -531,6 +531,9 @@ internal val FuelType.labelRes: Int
         FuelType.HYBRID -> R.string.car_fuel_hybrid
         FuelType.LPG -> R.string.car_fuel_lpg
         FuelType.ELECTRIC -> R.string.car_fuel_electric
+        FuelType.FLEX -> R.string.car_fuel_flex
+        FuelType.ETHANOL -> R.string.car_fuel_ethanol
+        FuelType.CNG -> R.string.car_fuel_cng
     }
 
 private fun tyreText(car: CarProfile): String {

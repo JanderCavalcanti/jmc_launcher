@@ -25,9 +25,9 @@
     <string name="apps_kind_range">Combustível e autonomia</string>
     <string name="apps_kind_range_blurb">Nível do tanque e km restantes</string>
     <string name="apps_kind_doors">Portas</string>
-    <string name="apps_kind_doors_blurb">Estado das portas e da mala, do carro</string>
+    <string name="apps_kind_doors_blurb">Estado das portas e do porta-malas do carro</string>
     <string name="apps_kind_can_mon">Monitor CAN</string>
-    <string name="apps_kind_can_mon_blurb">Tramas CAN em bruto, para encontrar sinais</string>
+    <string name="apps_kind_can_mon_blurb">Mensagens CAN brutas, para encontrar sinais</string>
     <string name="apps_kind_speed_hud">Velocidade</string>
     <string name="apps_kind_speed_hud_blurb">Velocidade digital grande por OBD ou GPS</string>
     <string name="apps_kind_compass">Bússola</string>
@@ -40,7 +40,7 @@
     <string name="apps_kind_parking_blurb">Salvar o local do carro e voltar a pé</string>
     <string name="apps_kind_clock">Relógio</string>
     <string name="apps_kind_clock_blurb">Hora e data, em grande</string>
-    <string name="apps_kind_weather">Meteorologia</string>
+    <string name="apps_kind_weather">Clima</string>
     <string name="apps_kind_weather_blurb">Condições junto ao carro, sem conta</string>
     <string name="apps_kind_calendar">Agenda</string>
     <string name="apps_kind_calendar_blurb">Próximos eventos do calendário</string>

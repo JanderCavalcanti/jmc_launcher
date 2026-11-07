@@ -779,7 +779,7 @@ internal fun TileContent(
             BuiltinKind.BREAK_TIMER -> BreakCard(modifier = Modifier.fillMaxSize())
             BuiltinKind.FUEL_TO_DEST -> FuelToDestCard(modifier = Modifier.fillMaxSize())
             BuiltinKind.SERVICE -> ServiceCard(modifier = Modifier.fillMaxSize())
-            BuiltinKind.FUEL_PRICES -> FuelPricesCard(modifier = Modifier.fillMaxSize())
+            BuiltinKind.FUEL_PRICES -> TypedFuelPricesCard(modifier = Modifier.fillMaxSize())
             BuiltinKind.CAR_STATUS -> CarStatusCard(modifier = Modifier.fillMaxSize())
             BuiltinKind.TYRES -> TyresCard(modifier = Modifier.fillMaxSize())
         } }

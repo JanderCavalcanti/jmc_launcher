@@ -133,7 +133,7 @@ internal object FuelLog {
         val fill = FuelFill(
             at = System.currentTimeMillis(),
             liters = liters,
-            pricePerL = station?.second ?: car.fuelPrice,
+            pricePerL = station?.second ?: car.priceNow,
             currency = if (station != null) FuelPrices.CURRENCY else car.currency,
             odometerKm = Maintenance.state.value.odometer?.nowKm,
             station = station?.first?.label,

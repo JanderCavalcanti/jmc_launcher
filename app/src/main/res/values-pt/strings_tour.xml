@@ -7,7 +7,7 @@
     <string name="tour_topic_swipe">Mudar de painel</string>
     <string name="tour_topic_arrange">Mover e aumentar</string>
     <string name="tour_topic_add">Adicionar</string>
-    <string name="tour_topic_look">Mudar o aspeto</string>
+    <string name="tour_topic_look">Mudar a aparência</string>
     <string name="tour_topic_obd">Dados do carro</string>
     <string name="tour_topic_hands">Mãos livres</string>
     <string name="tour_show_me">Mostrar</string>
@@ -25,10 +25,10 @@
     <string name="tour_arrange_body">Toque num mosaico para as opções, mantenha para o mover, arraste o canto para o redimensionar. Manter o próprio painel também inicia a organização.</string>
     <string name="tour_arrange_hint">Mais tarde, abra isto no menu, Editar painéis.</string>
     <string name="tour_add_title">Adicionar um widget ou uma app</string>
-    <string name="tour_add_body">Toque em Adicionar para colocar música, dados do carro, meteorologia ou uma app neste painel.</string>
+    <string name="tour_add_body">Toque em Adicionar para colocar música, dados do carro, previsão do tempo ou um app neste painel.</string>
     <string name="tour_add_hint">Com pressa? Os modelos enchem um painel inteiro de uma vez.</string>
     <string name="tour_look_title">Ao seu gosto</string>
-    <string name="tour_look_body">Abra o menu, depois Configurações e depois Aspeto. Escolha um tema e cores de dia ou de noite.</string>
+    <string name="tour_look_body">Abra o menu, depois Configurações e depois Aparência. Escolha um tema e cores de dia ou de noite.</string>
     <string name="tour_obd_title">Ligue o adaptador OBD</string>
     <string name="tour_obd_body">Vai na tomada debaixo do volante. Pareie-o uma vez nas configurações Bluetooth do Android e o JMCAR volta a ligar-se sozinho.</string>
     <string name="tour_obd_off">Desligado</string>

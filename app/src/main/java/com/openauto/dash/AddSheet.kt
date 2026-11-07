@@ -496,7 +496,7 @@ private fun AppsTab(apps: List<AppEntry>, onPickApp: (AppEntry) -> Unit, onPickW
                         asking = null
                         onPickApp(app)
                     }
-                    if (shell) {
+                    if (shell && Jmcar.APP_WINDOWS) {
                         ChooserRow(
                             Icons.Filled.OpenInNew, stringResource(R.string.apps_in_tile),
                             stringResource(if (canInside) R.string.apps_in_tile_inside else R.string.apps_in_tile_window)

@@ -6,7 +6,7 @@
     <string name="units_economy">Consumo</string>
     <string name="units_clock">Relógio</string>
     <string name="units_auto">Auto</string>
-    <string name="units_auto_hint">Auto segue as configurações do autorrádio: %1$s</string>
+    <string name="units_auto_hint">Auto segue as configurações da central: %1$s</string>
 
     <string name="units_eco_fuel_mi">Combustível em %1$s mi</string>
     <string name="units_fuel_dest_spare_unit_mi">mi de margem</string>
