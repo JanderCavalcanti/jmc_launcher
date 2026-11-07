@@ -7,7 +7,7 @@
     <string name="jmc_fuel_petrol">Petrol</string>
     <string name="jmc_fuel_ethanol_price">Ethanol price</string>
     <string name="jmc_fuel_ethanol_now">Ethanol in the tank now</string>
-    <string name="jmc_fuel_ethanol_now_detail">Consumption, range and costs count about 30% more fuel on ethanol</string>
+    <string name="jmc_fuel_ethanol_now_detail">Consumption, range and costs count about 30 percent more fuel on ethanol</string>
     <string name="jmc_fuel_prices_title">Fuel prices</string>
     <string name="jmc_fuel_prices_body">The prices you paid, for costs and range. Tap the tile to change them.</string>
     <string name="jmc_fuel_tap_to_type">Tap to type the prices</string>
