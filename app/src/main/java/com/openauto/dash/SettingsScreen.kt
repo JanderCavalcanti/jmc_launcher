@@ -1054,7 +1054,7 @@ private fun DrivingPane(m: TopBarModel, open: (Deep) -> Unit) {
         Icons.Filled.DirectionsCar, stringResource(R.string.settings_drive_lock),
         stringResource(R.string.settings_drive_lock_detail), m.lockWhileMoving, onChange = m.onLockWhileMoving
     )
-    SettingsRow(Icons.Filled.Videocam, stringResource(R.string.reverse_title), stringResource(R.string.reverse_settings_detail)) { open(Deep.REVERSE) }
+    if (Jmcar.REVERSE_VIEW) SettingsRow(Icons.Filled.Videocam, stringResource(R.string.reverse_title), stringResource(R.string.reverse_settings_detail)) { open(Deep.REVERSE) }
     PlacesRow { open(Deep.PLACES) }
     WazeWakeSetting()
     // Every physical button together: what the wheel's do, then what the unit's own keys open.

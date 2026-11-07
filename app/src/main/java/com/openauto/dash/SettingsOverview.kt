@@ -458,7 +458,7 @@ private val SETTINGS_INDEX: List<SettingsEntry> by lazy {
         SettingsEntry(R.string.signals_title, SettingsTab.DIAGNOSTICS, listOf(Deep.SIGNALS), detail = R.string.signals_settings_detail),
 
         SettingsEntry(R.string.settings_drive_lock, SettingsTab.DRIVING, detail = R.string.settings_drive_lock_detail),
-        SettingsEntry(R.string.reverse_title, SettingsTab.DRIVING, listOf(Deep.REVERSE), detail = R.string.reverse_settings_detail),
+        SettingsEntry(R.string.reverse_title, SettingsTab.DRIVING, listOf(Deep.REVERSE), detail = R.string.reverse_settings_detail, offered = { Jmcar.REVERSE_VIEW }),
         SettingsEntry(R.string.places_title, SettingsTab.DRIVING, listOf(Deep.PLACES)),
         SettingsEntry(R.string.settings_waze_wake, SettingsTab.DRIVING, detail = R.string.settings_waze_wake_detail, offered = { Edition.full && WazeWake.present }),
         SettingsEntry(R.string.wheel_title, SettingsTab.DRIVING, listOf(Deep.WHEEL), offered = { SteeringWheelStore.AVAILABLE }),
