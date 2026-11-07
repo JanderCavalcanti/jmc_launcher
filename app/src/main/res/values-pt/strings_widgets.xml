@@ -16,7 +16,7 @@
     <string name="widgets_switches_blurb">Silêncio, dia ou noite, não incomodar, Wi-Fi e Bluetooth</string>
     <string name="widgets_gps">GPS</string>
     <string name="widgets_gps_blurb">O sinal, os satélites, a precisão e a altitude</string>
-    <string name="widgets_perf">Cronómetro de desempenho</string>
+    <string name="widgets_perf">Cronômetro de desempenho</string>
     <string name="widgets_perf_blurb">De 0 a 50 e 100 km/h e os 400 m desde parado</string>
     <string name="widgets_wifi">Redes Wi-Fi</string>
     <string name="widgets_wifi_blurb">As redes por perto, ligar ou sair com um toque</string>
@@ -160,11 +160,11 @@
     <string name="widgets_now_driving">Dirigindo há %1$s</string>
     <string name="widgets_now_event_at">Às %1$s, daqui a %2$s</string>
 
-    <string name="widgets_switch_look">Aspeto</string>
+    <string name="widgets_switch_look">Aparência</string>
     <string name="widgets_switch_screen_off">Desligar tela</string>
     <string name="widgets_switch_mobile_data">Dados móveis</string>
     <string name="widgets_switch_mute_detail">Volume da música a zero e de volta</string>
-    <string name="widgets_switch_look_detail">Aspeto de dia, de noite ou automático</string>
+    <string name="widgets_switch_look_detail">Aparência de dia, de noite ou automático</string>
     <string name="widgets_switch_dnd_detail">Silencia chamadas e notificações</string>
     <string name="widgets_switch_wifi_detail">Liga ou desliga o Wi-Fi</string>
     <string name="widgets_switch_bluetooth_detail">Liga ou desliga o Bluetooth</string>

@@ -25,7 +25,7 @@
     <string name="mine_unit">Unidade</string>
     <string name="mine_key">Nome nas fórmulas</string>
     <string name="mine_request">Pedido</string>
-    <string name="mine_header">Endereço da centralina</string>
+    <string name="mine_header">Endereço da ECU</string>
     <string name="mine_reply">Endereço de resposta</string>
     <string name="mine_session">Sessão</string>
     <string name="mine_hint_address">Deixe endereços e sessão vazios para pedidos OBD normais como 0110.</string>
@@ -51,7 +51,7 @@
     <string name="mine_err_key">Nome nas fórmulas: primeiro uma letra, depois letras, algarismos ou _. A a H sozinhas e os nomes integrados estão ocupados.</string>
     <string name="mine_err_key_taken">Outra leitura já usa esse nome.</string>
     <string name="mine_err_request">Só pedidos de leitura em hexadecimal: modo 01, 09, 21 ou 22.</string>
-    <string name="mine_err_address">Os endereços têm 3 ou 8 dígitos hexadecimais, e um endereço de resposta precisa de um endereço de centralina.</string>
-    <string name="mine_err_session">Sessão: só 1001, 1003, 1081, 1092 ou 10C0, com endereço de centralina.</string>
+    <string name="mine_err_address">Os endereços têm 3 ou 8 dígitos hexadecimais, e um endereço de resposta precisa de um endereço de ECU.</string>
+    <string name="mine_err_session">Sessão: só 1001, 1003, 1081, 1092 ou 10C0, com endereço de ECU.</string>
     <string name="mine_err_no_bytes">As letras A a H só fazem sentido numa leitura do carro.</string>
 </resources>
