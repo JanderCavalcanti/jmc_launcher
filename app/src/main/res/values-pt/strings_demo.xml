@@ -24,6 +24,6 @@
     <string name="demo_p0401_cause_3">Arrefecedor ou conduta EGR obstruídos</string>
     <string name="demo_p0401_check_first">Desmontar a válvula EGR e verificar a fuligem</string>
     <string name="demo_p0401_repair">Limpar a válvula, ou substituí-la se prende</string>
-    <string name="demo_p0401_cost">Cerca de 80 a 150 € por uma limpeza, 250 a 400 € por uma válvula nova</string>
+    <string name="demo_p0401_cost">Cerca de R$ 400 a R$ 800 por uma limpeza, R$ 1.200 a R$ 2.000 por uma válvula nova</string>
     <string name="demo_p0401_driving">Sim. Conte com um marcha lenta um pouco irregular e mais consumo até o conserto.</string>
 </resources>

@@ -16,4 +16,6 @@
     <string name="jmc_fuel_petrol_pays">Gasolina compensa: etanol a %1$d%%</string>
     <string name="jmc_fuel_save">Salvar</string>
     <string name="jmc_cancel">Cancelar</string>
+    <string name="jmc_about_author">Jander Cavalcanti</string>
+    <string name="jmc_about_github">Projeto no GitHub</string>
 </resources>
