@@ -270,6 +270,9 @@ internal fun StandardTopBar(m: TopBarModel) {
                     PagePositionChip(Modifier.padding(start = 10.dp))
                 }
 
+                // JMCAR: the app shortcuts, between the dashboards' position and the OBD pill.
+                if (Jmcar.DOCK_IN_BAR && !narrow) BarDockRow(Modifier.weight(1.6f))
+
                 // ⋮ and the OBD pill get their room first, whatever else is on
                 // the bar; the badges go short when they share it.
                 BarEnd(modifier = Modifier.weight(1f)) {

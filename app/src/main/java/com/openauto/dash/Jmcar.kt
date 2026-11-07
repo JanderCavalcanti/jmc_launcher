@@ -47,6 +47,34 @@ internal object Jmcar {
         }
     }
 
+    /** The app shortcuts sit in the bottom bar ([BarDock]), not in a launch bar tile. */
+    const val DOCK_IN_BAR = true
+
+    /**
+     * Takes a layout's launch bar tiles out (their apps go to the bar, the
+     * first time), and grows the tiles standing on a bottom one down into its
+     * row, so the dashboard keeps no gap where the shortcuts were.
+     */
+    fun dockToBar(context: Context, pages: List<List<DashboardItem>>): List<List<DashboardItem>> {
+        BarDock.load(context)
+        if (!DOCK_IN_BAR) return pages
+        val bars = pages.flatten().filterIsInstance<DashboardItem.LaunchBar>()
+        if (bars.isEmpty()) return pages
+        if (BarDock.stored(context) == null) BarDock.save(context, bars.firstOrNull { it.packages.isNotEmpty() }?.packages.orEmpty())
+        return pages.map { page ->
+            var rest = page.filterNot { it is DashboardItem.LaunchBar }
+            page.filterIsInstance<DashboardItem.LaunchBar>()
+                .filter { it.y >= 0 && it.y + it.h == GRID_ROWS }
+                .forEach { bar ->
+                    rest = rest.map { t ->
+                        if (t.y >= 0 && t.y + t.h == bar.y && t.x < bar.x + bar.w && t.x + t.w > bar.x) t.withCell(t.x, t.y, t.w, t.h + bar.h)
+                        else t
+                    }
+                }
+            rest
+        }
+    }
+
     /**
      * Google Maps in its tile is drawn at 80 %: at the screen's own density its
      * signs, buttons and arrival card fill most of a tile a third of the screen
