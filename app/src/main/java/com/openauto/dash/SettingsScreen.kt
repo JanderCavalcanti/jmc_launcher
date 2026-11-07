@@ -519,6 +519,8 @@ private fun DiagnosticsPane(open: (Deep) -> Unit) {
     SettingsSection(stringResource(R.string.settings_section_diagnostics))
     SettingsRow(Icons.Filled.Bluetooth, stringResource(R.string.settings_obd_title), obdSummary()) { open(Deep.OBD) }
     SettingsRow(Icons.Filled.AutoAwesome, stringResource(R.string.ai_title), stringResource(R.string.settings_ai_detail)) { open(Deep.AI) }
+    // JMCAR: the integrations (the Gemini key) here too, beside the mechanic that needs them.
+    SettingsRow(Icons.Filled.Key, stringResource(R.string.api_keys_title), stringResource(R.string.jmc_integrations_detail)) { open(Deep.API_KEYS) }
     SettingsRow(Icons.Filled.Checklist, stringResource(R.string.scan_title), stringResource(R.string.scan_settings_detail)) { open(Deep.OBD_SCAN) }
     SettingsRow(Icons.Filled.Calculate, stringResource(R.string.mine_title), stringResource(R.string.mine_settings_detail)) { open(Deep.MY_READINGS) }
     SettingsRow(Icons.Filled.SettingsInputAntenna, stringResource(R.string.signals_title), stringResource(R.string.signals_settings_detail)) { open(Deep.SIGNALS) }

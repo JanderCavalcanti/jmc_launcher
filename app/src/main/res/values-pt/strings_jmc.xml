@@ -18,4 +18,6 @@
     <string name="jmc_cancel">Cancelar</string>
     <string name="jmc_about_author">Jander Cavalcanti</string>
     <string name="jmc_about_github">Projeto no GitHub</string>
+    <string name="jmc_ai_key_steps">1. No celular, abra aistudio.google.com/apikey (QR ao lado) e entre com sua conta Google.\n2. Toque em Create API key (Criar chave) e copie.\n3. Cole ou digite a chave abaixo e toque em Testar. É grátis.</string>
+    <string name="jmc_integrations_detail">As chaves dos serviços que o JMCAR usa, como o Gemini</string>
 </resources>
