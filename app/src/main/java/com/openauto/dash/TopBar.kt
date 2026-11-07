@@ -572,6 +572,8 @@ private fun SegmentBar(label: String, fraction: Float, hot: Boolean, value: Stri
  */
 @Composable
 internal fun LayoutPicker(m: TopBarModel, anchor: @Composable (open: () -> Unit) -> Unit) {
+    // JMCAR: one layout only, so the bar has no Layout button (Jmcar.kt).
+    if (!Jmcar.LAYOUT_MENU) return
     var open by remember { mutableStateOf(false) }
     // Switching layout reloads every page: parked only, like arranging.
     val lock = LocalDriveLock.current

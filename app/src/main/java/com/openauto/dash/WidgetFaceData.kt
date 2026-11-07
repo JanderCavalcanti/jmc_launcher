@@ -133,7 +133,7 @@ internal fun rememberWidgetFace(kind: BuiltinKind, env: SkinTileEnv): WidgetFace
     BuiltinKind.FUEL_TO_DEST -> fuelToDestFace()
     BuiltinKind.BREAK_TIMER -> breakFace()
     BuiltinKind.SERVICE -> serviceFace()
-    BuiltinKind.FUEL_PRICES -> fuelPricesFace()
+    BuiltinKind.FUEL_PRICES -> typedFuelPricesFace()
     BuiltinKind.CAR_STATUS -> carStatusFace()
     BuiltinKind.TYRES -> tyresFace()
     // Live views and the spec sheet: they keep their content and get the design's frame (DesignFrame).
@@ -1049,7 +1049,7 @@ private fun ecoFace(): WidgetFace {
             if (car.gearbox == GearboxType.ROBOTISED) FaceStat(stringResource(R.string.car_eco_clutch), drive.clutchHolds.toString()) else null,
             FaceStat(
                 stringResource(if (u.imperial) R.string.units_eco_fuel_mi else R.string.car_eco_fuel, fmt("%.1f", u.distance(drive.distanceKm))),
-                stringResource(R.string.car_eco_fuel_value, fmt("%.1f", liters), fmt(if (moving) "%.0f" else "%.2f", liters * car.fuelPrice), car.currency)
+                stringResource(R.string.car_eco_fuel_value, fmt("%.1f", liters), fmt(if (moving) "%.0f" else "%.2f", liters * car.priceNow), car.currency)
             )
         )
     )

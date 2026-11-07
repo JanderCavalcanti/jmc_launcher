@@ -125,7 +125,7 @@ internal val BuiltinKind.needs: Set<WidgetSource>
         BuiltinKind.FILTER_CARE, BuiltinKind.ECO_DRIVE, BuiltinKind.ENGINE_TEMPS, BuiltinKind.MY_READINGS -> setOf(WidgetSource.OBD)
         BuiltinKind.RANGE, BuiltinKind.FUEL_TO_DEST, BuiltinKind.GEAR -> if (CarBox.available) emptySet() else setOf(WidgetSource.OBD)
         BuiltinKind.SHARE_ETA -> setOf(WidgetSource.PHONE)
-        BuiltinKind.WEATHER, BuiltinKind.WEATHER_ALERTS, BuiltinKind.FUEL_PRICES, BuiltinKind.SPEED_CAMERAS,
+        BuiltinKind.WEATHER, BuiltinKind.WEATHER_ALERTS, BuiltinKind.SPEED_CAMERAS,
         BuiltinKind.SPEED_LIMIT, BuiltinKind.HOME_WORK -> setOf(WidgetSource.INTERNET)
         BuiltinKind.CAN_MON -> setOf(WidgetSource.ROOT)
         BuiltinKind.DOORS -> if (CarBox.available) emptySet() else setOf(WidgetSource.ROOT)

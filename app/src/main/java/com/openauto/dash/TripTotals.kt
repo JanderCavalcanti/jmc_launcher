@@ -45,7 +45,7 @@ internal object TripMath {
     fun use(measured: Double?, car: CarProfile): Double = measured?.takeIf { it > 0 } ?: car.typicalUse
 
     /** The price a litre: the last one paid, else the driver's own; null when neither is set. */
-    fun price(lastPaid: Double?, car: CarProfile): Double? = lastPaid?.takeIf { it > 0 } ?: car.fuelPrice.takeIf { it > 0 }
+    fun price(lastPaid: Double?, car: CarProfile): Double? = lastPaid?.takeIf { it > 0 } ?: car.priceNow.takeIf { it > 0 }
 
     /** Average speed over the moving time, km/h. */
     fun avgKmh(km: Double, movingMs: Long): Double = if (movingMs > 0L) km / (movingMs / 3_600_000.0) else 0.0

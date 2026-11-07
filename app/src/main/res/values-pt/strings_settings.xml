@@ -4,7 +4,7 @@
     <string name="settings_menu">Configurações</string>
     <string name="settings_title">Configurações</string>
     <string name="settings_section_car">Carro</string>
-    <string name="settings_section_look">Aspeto</string>
+    <string name="settings_section_look">Aparência</string>
     <string name="settings_section_advanced">Avançado</string>
     <string name="settings_ai_detail">Explica os códigos de falha e fala os alertas</string>
     <string name="settings_system_detail">Os widgets Android são adicionados sem perguntar sempre. Precisa de root.</string>
@@ -281,7 +281,7 @@
     <string name="settings_obd_linked">Ligado: %1$s</string>
     <string name="settings_obd_deepobd">Leituras da app Deep OBD</string>
     <string name="settings_access_all">Tudo permitido</string>
-    <string name="settings_about_detail">Ajuda, a visita, o projeto e apoio</string>
+    <string name="settings_about_detail">Versão, atualização e o projeto no GitHub</string>
     <string name="settings_search_hint">Procurar configurações</string>
     <string name="settings_search_clear">Limpar a pesquisa</string>
     <string name="settings_search_none">Nenhuma configuração corresponde a %1$s</string>
