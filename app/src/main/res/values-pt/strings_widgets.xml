@@ -113,8 +113,8 @@
     <string name="widgets_fuel_last">%1$s L em %2$s</string>
     <string name="widgets_fuel_per100">aos 100 km</string>
     <string name="widgets_fuel_save">Salvar</string>
-    <string name="widgets_wx">Avisos meteorológicos</string>
-    <string name="widgets_wx_blurb">Avisos meteorológicos onde está e para onde vai</string>
+    <string name="widgets_wx">Alertas do INMET</string>
+    <string name="widgets_wx_blurb">Alertas de tempo do INMET onde você está e no destino</string>
     <string name="widgets_wx_none">Nenhum aviso aqui</string>
     <string name="widgets_wx_ahead">No destino</string>
     <string name="widgets_wx_red">Vermelho</string>
