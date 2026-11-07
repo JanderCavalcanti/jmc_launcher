@@ -29,11 +29,60 @@ internal object Jmcar {
         val inside = EmbeddedApp.allowed(context)
         val from = if (inside) BuiltinKind.NAVMAP else BuiltinKind.MAPS_INSIDE
         val to = if (inside) BuiltinKind.MAPS_INSIDE else BuiltinKind.NAVMAP
-        if (pages.none { page -> page.any { it is DashboardItem.BuiltinWidget && it.kind == from } }) return pages
+        // Maps tiles made before the smaller default (1.0.821) get it once; a size chosen since stays.
+        val prefs = context.getSharedPreferences(PREFS, Context.MODE_PRIVATE)
+        val resize = inside && !prefs.getBoolean(KEY_MAPS_SIZED, false)
+        if (resize) prefs.edit().putBoolean(KEY_MAPS_SIZED, true).apply()
         return pages.map { page ->
-            page.map { if (it is DashboardItem.BuiltinWidget && it.kind == from) it.copy(kind = to) else it }
+            page.map { item ->
+                if (item !is DashboardItem.BuiltinWidget) return@map item
+                when {
+                    item.kind == from && inside ->
+                        item.copy(kind = to, zoom = if (item.zoom == 1f) MAPS_ZOOM else item.zoom)
+                    item.kind == from -> item.copy(kind = to, zoom = 1f)
+                    resize && item.kind == BuiltinKind.MAPS_INSIDE && item.zoom == 1f -> item.copy(zoom = MAPS_ZOOM)
+                    else -> item
+                }
+            }
         }
     }
+
+    /** The app shortcuts sit in the bottom bar ([BarDock]), not in a launch bar tile. */
+    const val DOCK_IN_BAR = true
+
+    /**
+     * Takes a layout's launch bar tiles out (their apps go to the bar, the
+     * first time), and grows the tiles standing on a bottom one down into its
+     * row, so the dashboard keeps no gap where the shortcuts were.
+     */
+    fun dockToBar(context: Context, pages: List<List<DashboardItem>>): List<List<DashboardItem>> {
+        BarDock.load(context)
+        if (!DOCK_IN_BAR) return pages
+        val bars = pages.flatten().filterIsInstance<DashboardItem.LaunchBar>()
+        if (bars.isEmpty()) return pages
+        if (BarDock.stored(context) == null) BarDock.save(context, bars.firstOrNull { it.packages.isNotEmpty() }?.packages.orEmpty())
+        return pages.map { page ->
+            var rest = page.filterNot { it is DashboardItem.LaunchBar }
+            page.filterIsInstance<DashboardItem.LaunchBar>()
+                .filter { it.y >= 0 && it.y + it.h == GRID_ROWS }
+                .forEach { bar ->
+                    rest = rest.map { t ->
+                        if (t.y >= 0 && t.y + t.h == bar.y && t.x < bar.x + bar.w && t.x + t.w > bar.x) t.withCell(t.x, t.y, t.w, t.h + bar.h)
+                        else t
+                    }
+                }
+            rest
+        }
+    }
+
+    /**
+     * Google Maps in its tile is drawn at 80 %: at the screen's own density its
+     * signs, buttons and arrival card fill most of a tile a third of the screen
+     * wide. The tile's size stepper (edit mode, tap the tile) changes it.
+     */
+    const val MAPS_ZOOM = 0.8f
+    private const val PREFS = "jmcar"
+    private const val KEY_MAPS_SIZED = "maps_tile_sized"
 
     /** The reversing view settings (guide lines, radar over the camera): the tbox has no camera input. */
     const val REVERSE_VIEW = false
