@@ -271,7 +271,8 @@ internal fun StandardTopBar(m: TopBarModel) {
                 }
 
                 // JMCAR: the app shortcuts, between the dashboards' position and the OBD pill.
-                if (Jmcar.DOCK_IN_BAR && !narrow) BarDockRow(Modifier.weight(1.6f))
+                // The tbox's screen (about 860 dp) counts as narrow here: the shortcuts show there too.
+                if (Jmcar.DOCK_IN_BAR) BarDockRow(Modifier.weight(if (narrow) 1.2f else 1.6f))
 
                 // ⋮ and the OBD pill get their room first, whatever else is on
                 // the bar; the badges go short when they share it.
