@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="car_fuel_flex">Flex</string>
+    <string name="car_fuel_ethanol">Etanol</string>
+    <string name="car_fuel_cng">GNV</string>
+    <string name="jmc_fuel_petrol">Gasolina</string>
+    <string name="jmc_fuel_ethanol_price">Preço do etanol</string>
+    <string name="jmc_fuel_ethanol_now">Etanol no tanque agora</string>
+    <string name="jmc_fuel_ethanol_now_detail">Com etanol, consumo, autonomia e custos contam cerca de 30 por cento a mais de combustível</string>
+    <string name="jmc_fuel_prices_title">Preços do combustível</string>
+    <string name="jmc_fuel_prices_body">Os preços que você pagou, para custos e autonomia. Toque no bloco para mudar.</string>
+    <string name="jmc_fuel_tap_to_type">Toque para digitar os preços</string>
+    <string name="jmc_fuel_main_price">Preço (%1$s)</string>
+    <string name="jmc_fuel_in_tank">No tanque: %1$s</string>
+    <string name="jmc_fuel_ethanol_pays">Etanol compensa: %1$d%% da gasolina</string>
+    <string name="jmc_fuel_petrol_pays">Gasolina compensa: etanol a %1$d%%</string>
+    <string name="jmc_fuel_save">Salvar</string>
+    <string name="jmc_cancel">Cancelar</string>
+    <string name="jmc_about_author">Jander Cavalcanti</string>
+    <string name="jmc_about_github">Projeto no GitHub</string>
+    <string name="jmc_ai_key_steps">1. No celular, abra aistudio.google.com/apikey (QR ao lado) e entre com sua conta Google.\n2. Toque em Create API key (Criar chave) e copie.\n3. Cole ou digite a chave abaixo e toque em Testar. É grátis.</string>
+    <string name="jmc_integrations_detail">As chaves dos serviços que o JMCAR usa, como o Gemini</string>
+    <string name="jmc_log_drive_title">Enviar o registro ao Google Drive</string>
+    <string name="jmc_log_drive_detail">O registro do tbox, como arquivo de texto no seu Drive, para analisar um problema</string>
+    <string name="jmc_log_drive_signin">Entre na conta Google primeiro (Configurações, Conta Google)</string>
+    <string name="jmc_log_drive_sending">Enviando o registro ao Drive</string>
+    <string name="jmc_log_drive_sent">Enviado ao Drive: %1$s</string>
+    <string name="jmc_log_drive_failed">Não foi possível enviar o registro. Confira a internet e tente de novo</string>
+</resources>

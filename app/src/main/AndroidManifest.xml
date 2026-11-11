@@ -128,6 +128,10 @@
             <action android:name="android.intent.action.MAIN" />
             <category android:name="android.intent.category.LAUNCHER" />
         </intent>
+        <!-- The last song's player, resumed in the background through its media browser (CarMediaController). -->
+        <intent>
+            <action android:name="android.media.browse.MediaBrowserService" />
+        </intent>
         <!-- Dictating a reply to a phone message, when the head unit has a recogniser. -->
         <intent>
             <action android:name="android.speech.action.RECOGNIZE_SPEECH" />

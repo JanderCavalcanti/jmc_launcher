@@ -117,6 +117,18 @@ internal fun AiSettingsDialog(onDismiss: () -> Unit) {
             style = MaterialTheme.typography.bodyMedium
         )
 
+        // How to get a key, step by step, with the page as a QR code for the phone.
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            Text(
+                stringResource(R.string.jmc_ai_key_steps),
+                color = DashColors.TextSecondary,
+                style = MaterialTheme.typography.bodySmall,
+                modifier = Modifier.weight(1f)
+            )
+            Spacer(Modifier.size(12.dp))
+            QrCode(ApiService.GEMINI.signUpUrl, Modifier.size(110.dp).clip(DashShape.Small))
+        }
+
         Label(stringResource(R.string.ai_key))
         OutlinedTextField(
             value = config.apiKey,

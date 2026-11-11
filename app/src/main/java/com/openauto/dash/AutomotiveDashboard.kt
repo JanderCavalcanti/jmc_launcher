@@ -1165,6 +1165,9 @@ fun AutomotiveDashboard(inSplitMode: Boolean = false) {
     val onLaunchApp: (String) -> Unit = { pkg ->
         if (AppLauncher.launch(context, pkg)) showAllApps = false
     }
+    // The bar's app shortcuts (JMCAR) open apps the same way and show their icons.
+    SideEffect { BarDock.launch = onLaunchApp }
+    LaunchedEffect(appsByPackage) { BarDock.apps = appsByPackage }
 
     val onLaunchSplitPair: (String, String) -> Unit = { primary, secondary ->
         if (SplitLauncher.isSystemSplitAvailable()) SplitLauncher.launchSplitPair(context, primary, secondary)
@@ -2092,6 +2095,20 @@ fun AutomotiveDashboard(inSplitMode: Boolean = false) {
                 onDismiss = { launchBarEditor = null }
             )
         }
+    }
+
+    if (BarDock.editing) {
+        val dock by BarDock.packages.collectAsState()
+        LaunchBarEditorDialog(
+            apps = apps,
+            appsByPackage = appsByPackage,
+            packages = dock,
+            onSave = { pkgs ->
+                BarDock.save(context, pkgs)
+                BarDock.editing = false
+            },
+            onDismiss = { BarDock.editing = false }
+        )
     }
 
     removeChoice?.let { page ->

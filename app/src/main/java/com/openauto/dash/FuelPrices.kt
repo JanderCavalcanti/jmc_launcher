@@ -103,7 +103,7 @@ object FuelPrices {
     fun gradesFor(car: CarProfile): List<FuelGrade> = when (car.fuel) {
         FuelType.DIESEL -> listOf(FuelGrade.GAZOLE)
         // An electric car never pumps, but the fuel tiles still need a grade to look up.
-        FuelType.PETROL, FuelType.HYBRID, FuelType.ELECTRIC -> listOf(FuelGrade.E10, FuelGrade.SP95, FuelGrade.SP98)
+        FuelType.PETROL, FuelType.HYBRID, FuelType.ELECTRIC, FuelType.FLEX, FuelType.ETHANOL, FuelType.CNG -> listOf(FuelGrade.E10, FuelGrade.SP95, FuelGrade.SP98)
         FuelType.LPG -> listOf(FuelGrade.GPLC, FuelGrade.E10, FuelGrade.SP95, FuelGrade.SP98)
     }
 
@@ -321,7 +321,8 @@ object FuelPriceRepo {
 
     /** Fetches when the list is stale, the car has moved or the grade changed; cheap to call often. */
     suspend fun refresh(lat: Double, lng: Double, grade: FuelGrade, force: Boolean = false) {
-        if (DemoMode.isOn) return
+        // JMCAR: France and Germany only, nothing in Brazil; the prices are typed (JmcarFuel.kt).
+        if (DemoMode.isOn || !Jmcar.STATION_FEED) return
         val now = System.currentTimeMillis()
         val moved = abs(lat - lastLat) > MOVE_DEG || abs(lng - lastLng) > MOVE_DEG
         if (!force && !moved && grade == lastGrade && now - lastFetch < REFRESH_MS) return

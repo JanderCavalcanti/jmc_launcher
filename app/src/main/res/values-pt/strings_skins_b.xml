@@ -40,7 +40,7 @@
 
     <!-- Horizon skin: weather and range -->
     <string name="horizon_loading">Carregando…</string>
-    <string name="horizon_weather_at_car">Meteorologia junto ao carro</string>
+    <string name="horizon_weather_at_car">Tempo junto ao carro</string>
     <string name="horizon_feels">sensação %1$d°</string>
     <string name="horizon_wind">vento %1$d km/h</string>
     <string name="horizon_range_fuel">autonomia · %1$d %% combustível</string>

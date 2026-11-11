@@ -122,7 +122,8 @@ private val LEFT_OUT_OF_CATALOG = setOf(
 )
 
 /** Whether the add sheet offers this kind (see [LEFT_OUT_OF_CATALOG]); My car comes back once it has the driver's own car to show (MyCarLook.kt). */
-internal val BuiltinKind.offered: Boolean get() = this !in LEFT_OUT_OF_CATALOG || (this == BuiltinKind.MY_CAR && MyCarLook.hasLook)
+internal val BuiltinKind.offered: Boolean get() =
+    this !in Jmcar.HEAD_UNIT_TILES && (this !in LEFT_OUT_OF_CATALOG || (this == BuiltinKind.MY_CAR && MyCarLook.hasLook))
 
 /**
  * One tile on a dashboard page, placed freely on a [GRID_COLS] x [GRID_ROWS]
@@ -620,7 +621,7 @@ object DashboardStore {
             val other = DIRECTIONS.firstOrNull { it != variant && prefs.contains(pagesKey(it)) }
             val pages = other?.let { o -> prefs.getString(pagesKey(o), null)?.let { parsePages(it, o) } }?.let(::reflow)
                 ?: defaultPages(DashLayoutStore.load(context) != DashLayout.GRID)
-            return pages.also(::notePlaced)
+            return Jmcar.mapTiles(context, Jmcar.dockToBar(context, pages)).also(::notePlaced)
         }
 
         // A corrupt primary value falls back to the last good layout rather
@@ -645,7 +646,7 @@ object DashboardStore {
         return List(PAGE_COUNT) { p ->
             val page = parsed.getOrElse(p) { emptyList() }
             repairOverlaps(if (page.any { it.x < 0 }) autoPlace(page) else page)
-        }.also(::notePlaced)
+        }.let { Jmcar.mapTiles(context, Jmcar.dockToBar(context, it)) }.also(::notePlaced)
     }
 
     /** The built-in kinds on any dashboard of the layout last loaded or saved: the add sheet marks them as already there. */

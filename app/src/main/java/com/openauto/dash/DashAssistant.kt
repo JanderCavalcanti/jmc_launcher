@@ -59,7 +59,25 @@ internal object DashAssistant {
         "wss://generativelanguage.googleapis.com/ws/google.ai.generativelanguage.v1beta.GenerativeService.BidiGenerateContent?key="
 
     /** Best first; one that refuses the setup gives way to the next. */
-    private val MODELS = listOf("gemini-3.8-live", "gemini-3.1-flash-live-preview", "gemini-2.5-flash-native-audio-preview-12-2025")
+    internal val MODELS = listOf("gemini-3.8-live", "gemini-3.1-flash-live-preview", "gemini-2.5-flash-native-audio-preview-12-2025")
+
+    private const val PREFS = "dash_assistant"
+    private const val KEY_MODEL = "live_model"
+    private const val KEY_MODEL_AT = "live_model_at"
+    /** The model that last talked is tried first for this long; then the best ones get their chance again (quotas reset daily). */
+    internal const val REMEMBER_MS = 6 * 60 * 60 * 1000L
+
+    /**
+     * [MODELS] in the order to try them: the one that last talked first, while
+     * it is recent ([REMEMBER_MS]), so a key whose quota the newest models
+     * refuse does not wait seconds for their refusals on every tap.
+     */
+    internal fun modelsToTry(remembered: String?, rememberedAt: Long, now: Long): List<String> {
+        val fresh = remembered != null && remembered in MODELS && rememberedAt in (now - REMEMBER_MS)..now
+        return if (fresh) listOf(remembered!!) + MODELS.filter { it != remembered } else MODELS
+    }
+
+    private fun prefs(context: Context) = context.getSharedPreferences(PREFS, Context.MODE_PRIVATE)
 
     private const val IN_RATE = 16_000
     private const val OUT_RATE = 24_000
@@ -120,7 +138,9 @@ internal object DashAssistant {
         _phase.value = Phase.CONNECTING
         session = scope.launch {
             var opened = false
-            for (model in MODELS) {
+            val p = prefs(app)
+            val order = modelsToTry(p.getString(KEY_MODEL, null), p.getLong(KEY_MODEL_AT, 0L), System.currentTimeMillis())
+            for (model in order) {
                 if (!isActive) return@launch
                 opened = converse(app, config, model)
                 if (opened) break
@@ -180,6 +200,7 @@ internal object DashAssistant {
             return false
         }
         Log.i(TAG, "talking with $model")
+        prefs(context).edit().putString(KEY_MODEL, model).putLong(KEY_MODEL_AT, System.currentTimeMillis()).apply()
         openAudio(context)
         _phase.value = Phase.LISTENING
         val mic = scope.launch { listen(ws) }

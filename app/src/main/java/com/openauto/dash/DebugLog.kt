@@ -37,7 +37,7 @@ object DebugLog {
     /** The newest part of the event log that goes in a report, leaving room in it for the summary. */
     private const val REPORT_EVENTS_CHARS = 40_000
     // ActivityTaskManager: which app started which screen, to see who puts a launcher in front at boot.
-    private const val LOGCAT = "logcat -d -v threadtime -t 3000 CarPower:I EmbeddedApp:I MediaResume:I DebugLog:I UnitLauncher:I NavDirections:I WazeScreen:I MapsScreen:I TileText:I SystemDisplays:I SystemDisplayHelper:I ShadowRoute:I WazeDestination:I SecondScreen:I DisplayLink:I ActivityTaskManager:I *:W"
+    private const val LOGCAT = "logcat -d -v threadtime -t 3000 CarPower:I EmbeddedApp:I MediaResume:I CarMediaController:I DebugLog:I UnitLauncher:I NavDirections:I WazeScreen:I MapsScreen:I TileText:I SystemDisplays:I SystemDisplayHelper:I ShadowRoute:I WazeDestination:I SecondScreen:I DisplayLink:I ActivityTaskManager:I *:W"
 
     /**
      * Every screen opened or brought to the front, from the events log: it is
@@ -169,7 +169,7 @@ object DebugLog {
         PhoneLink.sendLog("Unit log ${SimpleDateFormat("yyyy-MM-dd HH:mm", Locale.US).format(Date())}", report(context))
 
     /**
-     * Saves the report on the unit itself, in Download/Dashwheel, to copy to
+     * Saves the report on the unit itself, in Download/JMCAR, to copy to
      * a USB stick or read with a file manager; the file's name, or null when
      * it could not be written.
      */
@@ -181,13 +181,27 @@ object DebugLog {
                 val values = android.content.ContentValues().apply {
                     put(android.provider.MediaStore.MediaColumns.DISPLAY_NAME, name)
                     put(android.provider.MediaStore.MediaColumns.MIME_TYPE, "text/plain")
-                    put(android.provider.MediaStore.MediaColumns.RELATIVE_PATH, "${android.os.Environment.DIRECTORY_DOWNLOADS}/Dashwheel")
+                    put(android.provider.MediaStore.MediaColumns.RELATIVE_PATH, "${android.os.Environment.DIRECTORY_DOWNLOADS}/JMCAR")
                 }
                 val resolver = context.contentResolver
                 val uri = resolver.insert(android.provider.MediaStore.Downloads.EXTERNAL_CONTENT_URI, values) ?: error("no file")
                 resolver.openOutputStream(uri)?.use { it.write(text.toByteArray()) } ?: error("not writable")
                 name
             }.getOrNull()
+        }
+    }
+
+    /**
+     * jmc_launcher: sends the report to the driver's Google Drive (the account
+     * signed in for the setup backup), as a new text file "JMCAR-log-<date>.txt",
+     * for the developer to read without a phone app or a USB stick. Its name,
+     * or the failure.
+     */
+    suspend fun sendToDrive(context: Context): Result<String> {
+        val text = report(context)
+        return withContext(Dispatchers.IO) {
+            val name = "JMCAR-log-${SimpleDateFormat("yyyy-MM-dd-HH-mm", Locale.US).format(Date())}.txt"
+            GoogleAccount.uploadText(context, name, text).map { name }
         }
     }
 

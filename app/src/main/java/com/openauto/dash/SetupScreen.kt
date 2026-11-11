@@ -312,7 +312,7 @@ private fun CarStep(onNext: () -> Unit) {
     Row(horizontalArrangement = Arrangement.spacedBy(16.dp), modifier = Modifier.fillMaxWidth()) {
         Column(Modifier.weight(3f)) {
             FieldTitle(stringResource(R.string.setup_car_fuel))
-            ChoiceRow(FuelType.entries, fuel, { context.getString(it.labelRes) }) { fuel = it }
+            ChoiceRow(FuelType.entries, fuel, { context.getString(it.labelRes) }, perRow = 4) { fuel = it }
         }
         Column(Modifier.weight(2f)) {
             FieldTitle(stringResource(R.string.setup_car_gearbox))

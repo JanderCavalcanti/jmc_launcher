@@ -43,7 +43,7 @@
     <string name="signals_live_off">Desligado agora</string>
     <string name="signals_live_unknown">Ainda sem valor</string>
     <string name="signals_try_hint">Repita a ação e veja isto mudar antes de o atribuir.</string>
-    <string name="signals_raw">Sniffer em bruto</string>
+    <string name="signals_raw">Sniffer bruto</string>
     <string name="signals_resume">Retomar</string>
     <string name="signals_pause">Pausa</string>
     <string name="signals_mark">Marcar</string>
