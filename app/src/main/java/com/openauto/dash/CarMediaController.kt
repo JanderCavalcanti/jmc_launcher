@@ -5,13 +5,17 @@ import android.content.Context
 import android.content.Intent
 import android.graphics.Bitmap
 import android.media.MediaMetadata
+import android.media.browse.MediaBrowser
 import android.media.session.MediaController
 import android.media.session.MediaSessionManager
 import android.media.session.PlaybackState
+import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.os.SystemClock
 import android.provider.Settings
+import android.service.media.MediaBrowserService
+import android.util.Log
 import android.view.KeyEvent
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -161,6 +165,7 @@ class CarMediaController(private val context: Context) {
             runCatching { session.transportControls.play() }
         }
         activeController = session
+        backToDashboard()
     }
 
     /**
@@ -171,8 +176,16 @@ class CarMediaController(private val context: Context) {
     private fun publish(controller: MediaController?) {
         if (publishStock(controller)) return
         if (controller == null) {
-            _mediaState.value = MediaState()
+            // No player running (the unit just started): the last song, paused; play starts it again.
+            _mediaState.value = lastTrackState() ?: MediaState()
             return
+        }
+        // A player back after a restart with an empty session: its last song until it names one.
+        if (controller.metadata?.getString(MediaMetadata.METADATA_KEY_TITLE).isNullOrBlank() &&
+            controller.playbackState?.state != PlaybackState.STATE_PLAYING &&
+            LastTrack.get(context)?.packageName == controller.packageName
+        ) {
+            lastTrackState()?.let { _mediaState.value = it; return }
         }
         // Remember which app owns this session so the split-screen cockpit can
         // reopen the last-used media app (written only when it changes).
@@ -205,6 +218,8 @@ class CarMediaController(private val context: Context) {
                 DebugLog.note(context, "media live: ${said.joinToString(" | ")}")
             }
         }
+        val artwork = artworkFor(track, metadata?.artwork())
+        controller.packageName?.let { LastTrack.note(context, it, title, artist, durationMs, artwork) }
         showMedia(MediaState(
             title = MediaTitle.clean(title, artist),
             artist = artist,
@@ -212,10 +227,15 @@ class CarMediaController(private val context: Context) {
             hasMedia = metadata != null,
             durationMs = durationMs,
             // The unit's Bluetooth app names the track but has no cover: the phone's, where it sent one.
-            artwork = artworkFor(track, metadata?.artwork())
+            artwork = artwork
                 ?: HeadUnitMedia.phone?.art?.takeIf { controller.packageName == HeadUnitMedia.BT_PACKAGE },
             station = station
         ))
+    }
+
+    private fun lastTrackState(): MediaState? = LastTrack.get(context)?.let {
+        MediaState(title = MediaTitle.clean(it.title, it.artist), artist = it.artist, hasMedia = true,
+            durationMs = it.durationMs, artwork = it.artwork)
     }
 
     // --- A radio's station under its song -------------------------------
@@ -349,16 +369,99 @@ class CarMediaController(private val context: Context) {
         if (_mediaState.value.isPlaying) controls.pause() else controls.play()
     }
 
+    /**
+     * Nothing is running: the last song's player plays again, in the background.
+     * First the way the system's own media controls resume a player: its media
+     * browser service, asked for its recent media, and play() on the session it
+     * gives. Else a PLAY media button to it. Only when neither made it play
+     * does its screen open (as before), and the dashboard comes back once it plays.
+     */
     private fun startLastPlayer() {
-        val last = getLastMediaPackage(context)?.takeIf { context.packageManager.getLaunchIntentForPackage(it) != null }
-        val launch = last?.let { context.packageManager.getLaunchIntentForPackage(it) }
-            ?: Intent.makeMainSelectorActivity(Intent.ACTION_MAIN, Intent.CATEGORY_APP_MUSIC)
-        if (!context.launchSafely(launch)) return
-        pendingPlayPackage = last ?: ANY_PLAYER
+        val last = (LastTrack.get(context)?.packageName ?: getLastMediaPackage(context))
+            ?.takeIf { runCatching { context.packageManager.getApplicationInfo(it, 0) }.isSuccess }
+        if (last == null) {
+            openPlayer(null)
+            return
+        }
+        pendingPlayPackage = last
         pendingPlayUntil = SystemClock.elapsedRealtime() + PENDING_PLAY_MS
-        if (last != null) sendPlayButton(last)
+        val attempt = ++resumeAttempt
+        if (!resumeByBrowser(last)) sendPlayButton(last)
         // Its session may already be listed (a player kept in the background).
         playIfPending()
+        main.postDelayed({
+            if (attempt != resumeAttempt || isPlaying(last)) return@postDelayed
+            // The browser said nothing in time, or played nothing: the media button too.
+            sendPlayButton(last)
+            main.postDelayed({
+                if (attempt == resumeAttempt && !isPlaying(last)) openPlayer(last)
+            }, BUTTON_WAIT_MS)
+        }, BROWSER_WAIT_MS)
+    }
+
+    private var resumeAttempt = 0
+    private var browser: MediaBrowser? = null
+    private val dropBrowser = Runnable { browser?.let { runCatching { it.disconnect() } }; browser = null }
+
+    private fun isPlaying(packageName: String): Boolean = runCatching {
+        sessionManager.getActiveSessions(listenerComponent)
+    }.getOrNull().orEmpty().any { it.packageName == packageName && it.playbackState?.state == PlaybackState.STATE_PLAYING }
+
+    /** Connects to [packageName]'s media browser service asking for its recent media; false when it has none. */
+    private fun resumeByBrowser(packageName: String): Boolean {
+        val service = runCatching {
+            context.packageManager.queryIntentServices(Intent(MediaBrowserService.SERVICE_INTERFACE).setPackage(packageName), 0)
+        }.getOrNull()?.firstOrNull()?.serviceInfo ?: return false
+        dropBrowser.run()
+        main.removeCallbacks(dropBrowser)
+        val hints = Bundle().apply { putBoolean(MediaBrowserService.BrowserRoot.EXTRA_RECENT, true) }
+        var made: MediaBrowser? = null
+        val callback = object : MediaBrowser.ConnectionCallback() {
+            override fun onConnected() {
+                val b = made ?: return
+                runCatching {
+                    val session = MediaController(context, b.sessionToken)
+                    if (session.playbackState?.state != PlaybackState.STATE_PLAYING) session.transportControls.play()
+                    Log.i(TAG, "resumed $packageName through its media browser")
+                }.onFailure { Log.w(TAG, "browser play failed for $packageName", it) }
+            }
+            override fun onConnectionFailed() { Log.i(TAG, "media browser of $packageName refused") }
+        }
+        val b = runCatching {
+            MediaBrowser(context, ComponentName(service.packageName, service.name), callback, hints)
+        }.getOrNull() ?: return false
+        made = b
+        browser = b
+        if (runCatching { b.connect() }.isFailure) {
+            browser = null
+            return false
+        }
+        // Held while the player starts; it keeps playing on its own after.
+        main.postDelayed(dropBrowser, BROWSER_HOLD_MS)
+        return true
+    }
+
+    /** The last resort: [packageName]'s screen (the system's music app without one); the dashboard returns once it plays. */
+    private fun openPlayer(packageName: String?) {
+        val launch = packageName?.let { context.packageManager.getLaunchIntentForPackage(it) }
+            ?: Intent.makeMainSelectorActivity(Intent.ACTION_MAIN, Intent.CATEGORY_APP_MUSIC)
+        if (!context.launchSafely(launch)) return
+        pendingPlayPackage = packageName ?: ANY_PLAYER
+        pendingPlayUntil = SystemClock.elapsedRealtime() + PENDING_PLAY_MS
+        returnAfterPlay = SystemClock.elapsedRealtime() + PENDING_PLAY_MS
+        if (packageName != null) sendPlayButton(packageName)
+        playIfPending()
+    }
+
+    /** Until when the dashboard comes back to the front as the player opened by [openPlayer] starts playing. */
+    private var returnAfterPlay = 0L
+
+    private fun backToDashboard() {
+        if (SystemClock.elapsedRealtime() > returnAfterPlay) return
+        returnAfterPlay = 0L
+        main.postDelayed({
+            context.launchSafely(Intent(context, MainActivity::class.java).addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT))
+        }, RETURN_DELAY_MS)
     }
 
     /** A PLAY key press sent to [packageName]'s media button receiver. */
@@ -400,6 +503,15 @@ class CarMediaController(private val context: Context) {
 
         /** How long a player opened by [playPause] has to publish its session. */
         private const val PENDING_PLAY_MS = 15_000L
+        /** How long the player's media browser has to start the music before a media button is tried too. */
+        private const val BROWSER_WAIT_MS = 3_000L
+        /** And the media button, before the player's screen is opened. */
+        private const val BUTTON_WAIT_MS = 3_000L
+        /** How long the connection to the player's media browser is held. */
+        private const val BROWSER_HOLD_MS = 20_000L
+        /** The player opened as a last resort gets this long on screen once it plays, then the dashboard returns. */
+        private const val RETURN_DELAY_MS = 1_500L
+        private const val TAG = "CarMediaController"
         /** Covers larger than this on a side are shrunk: no tile shows more, and a 1024² cover is 4 MB to upload. */
         private const val ART_MAX_PX = 512
         /** [pendingPlayPackage] when the system's default player was opened: the first session plays. */
