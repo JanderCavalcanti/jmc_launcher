@@ -1363,6 +1363,7 @@ private fun LabSheet(open: (Deep) -> Unit, onDismiss: () -> Unit) {
                     canOpen = lost.size > 1
                 ) { expanded = !expanded }
             }
+            DriveLogRow()
             SendLogRow()
             SaveLogRow()
         }
@@ -1849,6 +1850,36 @@ private fun SaveLogRow() {
             saving = false
             saved = name
             failed = name == null
+        }
+    }
+}
+
+/**
+ * jmc_launcher: sends the unit's log to the Google Drive of the account signed
+ * in under Google account, where the developer reads it ([DebugLog.sendToDrive]).
+ */
+@Composable
+private fun DriveLogRow() {
+    val context = LocalContext.current
+    val scope = rememberCoroutineScope()
+    var sending by remember { mutableStateOf(false) }
+    var result by remember { mutableStateOf<Result<String>?>(null) }
+    val signedIn = remember { GoogleAccount.signedIn(context) }
+    SettingsRow(
+        Icons.Filled.BugReport, stringResource(R.string.jmc_log_drive_title),
+        when {
+            !signedIn -> stringResource(R.string.jmc_log_drive_signin)
+            sending -> stringResource(R.string.jmc_log_drive_sending)
+            result?.isSuccess == true -> stringResource(R.string.jmc_log_drive_sent, result!!.getOrThrow())
+            result?.isFailure == true -> stringResource(R.string.jmc_log_drive_failed)
+            else -> stringResource(R.string.jmc_log_drive_detail)
+        }
+    ) {
+        if (sending || !signedIn) return@SettingsRow
+        sending = true
+        scope.launch {
+            result = DebugLog.sendToDrive(context)
+            sending = false
         }
     }
 }

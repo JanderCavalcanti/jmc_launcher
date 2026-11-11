@@ -21,4 +21,10 @@
     <string name="jmc_about_github">Project on GitHub</string>
     <string name="jmc_ai_key_steps">1. On the phone, open aistudio.google.com/apikey (QR code) and sign in with your Google account.\n2. Tap Create API key and copy it.\n3. Paste or type it below and tap Test.</string>
     <string name="jmc_integrations_detail">The keys of the services JMCAR uses, such as Gemini</string>
+    <string name="jmc_log_drive_title">Send the log to Google Drive</string>
+    <string name="jmc_log_drive_detail">The tbox log, as a text file in your Drive, for the analysis of a problem</string>
+    <string name="jmc_log_drive_signin">Sign in to Google first (Settings, Google account)</string>
+    <string name="jmc_log_drive_sending">Sending the log to Drive</string>
+    <string name="jmc_log_drive_sent">Sent to Drive: %1$s</string>
+    <string name="jmc_log_drive_failed">Could not send the log. Check the internet and try again</string>
 </resources>

@@ -17,7 +17,10 @@ import android.provider.Settings
 import android.service.media.MediaBrowserService
 import android.util.Log
 import android.view.KeyEvent
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.launch
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 
@@ -177,7 +180,9 @@ class CarMediaController(private val context: Context) {
         if (publishStock(controller)) return
         if (controller == null) {
             // No player running (the unit just started): the last song, paused; play starts it again.
-            _mediaState.value = lastTrackState() ?: MediaState()
+            val saved = lastTrackState()
+            showingLastTrack = saved != null
+            _mediaState.value = saved ?: MediaState()
             return
         }
         // A player back after a restart with an empty session: its last song until it names one.
@@ -185,7 +190,7 @@ class CarMediaController(private val context: Context) {
             controller.playbackState?.state != PlaybackState.STATE_PLAYING &&
             LastTrack.get(context)?.packageName == controller.packageName
         ) {
-            lastTrackState()?.let { _mediaState.value = it; return }
+            lastTrackState()?.let { _mediaState.value = it; showingLastTrack = true; return }
         }
         // Remember which app owns this session so the split-screen cockpit can
         // reopen the last-used media app (written only when it changes).
@@ -219,7 +224,8 @@ class CarMediaController(private val context: Context) {
             }
         }
         val artwork = artworkFor(track, metadata?.artwork())
-        controller.packageName?.let { LastTrack.note(context, it, title, artist, durationMs, artwork) }
+        controller.packageName?.let { LastTrack.note(context, it, title, artist, durationMs, artwork, metadata?.getString(MediaMetadata.METADATA_KEY_MEDIA_ID)) }
+        showingLastTrack = false
         showMedia(MediaState(
             title = MediaTitle.clean(title, artist),
             artist = artist,
@@ -365,7 +371,9 @@ class CarMediaController(private val context: Context) {
     fun playPause() {
         if (DemoMode.isOn) return DemoMode.playPause()
         stockShown?.let { return HeadUnitMedia.playPause(context, it) }
-        val controls = activeController?.transportControls ?: return startLastPlayer()
+        val controls = activeController?.transportControls
+        // The tile shows the song saved before the restart: its player has no song yet (or no session at all).
+        if (controls == null || showingLastTrack) return startLastPlayer()
         if (_mediaState.value.isPlaying) controls.pause() else controls.play()
     }
 
@@ -377,8 +385,11 @@ class CarMediaController(private val context: Context) {
      * does its screen open (as before), and the dashboard comes back once it plays.
      */
     private fun startLastPlayer() {
-        val last = (LastTrack.get(context)?.packageName ?: getLastMediaPackage(context))
+        val saved = LastTrack.get(context)
+        val last = (saved?.packageName ?: getLastMediaPackage(context))
             ?.takeIf { runCatching { context.packageManager.getApplicationInfo(it, 0) }.isSuccess }
+        note("play pressed, nothing playing: last player ${last ?: "none"}, song \"${saved?.title.orEmpty()}\", id ${saved?.mediaId ?: "none"}, " +
+            "sessions ${boundControllers.joinToString { "${it.packageName}=${it.playbackState?.state}" }.ifEmpty { "none" }}")
         if (last == null) {
             openPlayer(null)
             return
@@ -386,20 +397,55 @@ class CarMediaController(private val context: Context) {
         pendingPlayPackage = last
         pendingPlayUntil = SystemClock.elapsedRealtime() + PENDING_PLAY_MS
         val attempt = ++resumeAttempt
-        if (!resumeByBrowser(last)) sendPlayButton(last)
-        // Its session may already be listed (a player kept in the background).
-        playIfPending()
+        val mediaId = saved?.mediaId?.takeIf { saved.packageName == last }
+        // 1. Its session, when it has one: play(), and the saved song by its id when it has an empty queue.
+        boundControllers.firstOrNull { it.packageName == last }?.let { session ->
+            note("step 1: play() on its session (state ${session.playbackState?.state})")
+            runCatching { session.transportControls.play() }
+        }
+        // 2. Its media browser, as the system's media controls resume a player.
+        val browsing = resumeByBrowser(last, mediaId)
+        if (!browsing) note("step 2: $last has no media browser")
         main.postDelayed({
-            if (attempt != resumeAttempt || isPlaying(last)) return@postDelayed
-            // The browser said nothing in time, or played nothing: the media button too.
+            if (attempt != resumeAttempt) return@postDelayed
+            if (isPlaying(last)) return@postDelayed note("playing after step 1/2")
+            // 3. The saved song by its id on whatever session it has now, and a PLAY media button.
+            val session = sessionOf(last)
+            if (mediaId != null && session != null) {
+                note("step 3: playFromMediaId on its session")
+                runCatching { session.transportControls.playFromMediaId(mediaId, null) }
+            }
+            note("step 3: PLAY media button to $last")
             sendPlayButton(last)
             main.postDelayed({
-                if (attempt == resumeAttempt && !isPlaying(last)) openPlayer(last)
+                if (attempt != resumeAttempt) return@postDelayed
+                if (isPlaying(last)) return@postDelayed note("playing after step 3")
+                // 4. Its screen, with the dashboard back in front once it plays.
+                note("step 4: nothing played, opening $last")
+                openPlayer(last)
+                main.postDelayed({
+                    if (attempt == resumeAttempt) note(if (isPlaying(last)) "playing after step 4" else "still not playing 15 s after opening $last")
+                    // The background resume failed: the log goes to Drive on its own, for the analysis.
+                    if (GoogleAccount.signedIn(context)) CoroutineScope(Dispatchers.IO).launch {
+                        DebugLog.sendToDrive(context).onFailure { Log.w(TAG, "log to Drive failed: ${it.message}") }
+                    }
+                }, PENDING_PLAY_MS)
             }, BUTTON_WAIT_MS)
         }, BROWSER_WAIT_MS)
     }
 
+    private fun note(message: String) {
+        Log.i(TAG, message)
+        DebugLog.note(context, "media: $message")
+    }
+
+    private fun sessionOf(packageName: String): MediaController? = runCatching {
+        sessionManager.getActiveSessions(listenerComponent)
+    }.getOrNull().orEmpty().firstOrNull { it.packageName == packageName }
+
     private var resumeAttempt = 0
+    /** The tile shows [LastTrack]'s song, not one a player names now. */
+    private var showingLastTrack = false
     private var browser: MediaBrowser? = null
     private val dropBrowser = Runnable { browser?.let { runCatching { it.disconnect() } }; browser = null }
 
@@ -408,7 +454,7 @@ class CarMediaController(private val context: Context) {
     }.getOrNull().orEmpty().any { it.packageName == packageName && it.playbackState?.state == PlaybackState.STATE_PLAYING }
 
     /** Connects to [packageName]'s media browser service asking for its recent media; false when it has none. */
-    private fun resumeByBrowser(packageName: String): Boolean {
+    private fun resumeByBrowser(packageName: String, mediaId: String?): Boolean {
         val service = runCatching {
             context.packageManager.queryIntentServices(Intent(MediaBrowserService.SERVICE_INTERFACE).setPackage(packageName), 0)
         }.getOrNull()?.firstOrNull()?.serviceInfo ?: return false
@@ -421,17 +467,27 @@ class CarMediaController(private val context: Context) {
                 val b = made ?: return
                 runCatching {
                     val session = MediaController(context, b.sessionToken)
-                    if (session.playbackState?.state != PlaybackState.STATE_PLAYING) session.transportControls.play()
-                    Log.i(TAG, "resumed $packageName through its media browser")
-                }.onFailure { Log.w(TAG, "browser play failed for $packageName", it) }
+                    val state = session.playbackState?.state
+                    note("step 2: media browser of $packageName connected (state $state, title \"${session.metadata?.getString(MediaMetadata.METADATA_KEY_TITLE).orEmpty()}\"): play()")
+                    if (state != PlaybackState.STATE_PLAYING) session.transportControls.play()
+                    // An empty queue ignores play(): the saved song by its id, if it is still not playing a moment later.
+                    if (mediaId != null) main.postDelayed({
+                        if (session.playbackState?.state != PlaybackState.STATE_PLAYING) {
+                            note("step 2: play() did nothing, playFromMediaId through the browser")
+                            runCatching { session.transportControls.playFromMediaId(mediaId, null) }
+                        }
+                    }, 1_200L)
+                }.onFailure { note("step 2: browser play failed for $packageName: ${it.message}") }
             }
-            override fun onConnectionFailed() { Log.i(TAG, "media browser of $packageName refused") }
+            override fun onConnectionFailed() { note("step 2: media browser of $packageName refused the connection") }
+            override fun onConnectionSuspended() { note("step 2: media browser of $packageName dropped the connection") }
         }
         val b = runCatching {
             MediaBrowser(context, ComponentName(service.packageName, service.name), callback, hints)
         }.getOrNull() ?: return false
         made = b
         browser = b
+        note("step 2: connecting to ${service.name} of $packageName")
         if (runCatching { b.connect() }.isFailure) {
             browser = null
             return false
