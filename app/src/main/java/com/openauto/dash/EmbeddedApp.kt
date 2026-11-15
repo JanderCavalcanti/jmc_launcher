@@ -1686,6 +1686,13 @@ internal object EmbeddedApp {
         /** Closes the app and opens it afresh on the tile, the way it gets there when the dashboard starts. */
         private suspend fun reopen(vd: TileDisplay) {
             reopenedAt = SystemClock.elapsedRealtime()
+            // A navigation under way is never thrown away to fix a picture: the
+            // route would be lost. The app is only placed on the tile again.
+            if (NavDirections.running.value == packageName) {
+                Log.w(TAG, "$packageName is guiding: not closed, only placed on its tile again")
+                place(vd)
+                return
+            }
             _status.value = Status.STARTING
             shell("am force-stop $packageName", "$packageName closed, to open it afresh on its tile")
             delay(CLOSE_WAIT_MS)
@@ -1708,11 +1715,17 @@ internal object EmbeddedApp {
                 return
             }
             if (runningTwice(found, id)) {
-                // Moved onto the tile beside the first, the second copy would only hide
-                // it, both still broken: the app is closed, then opened once, on the tile.
+                // The driver opened the app full screen from the launcher (the dock, the
+                // drawer) while it was in its tile, and Android gave it a second screen
+                // there. That one is the one in use (a route just set in Maps): the
+                // tile's own copy is closed, the app is NOT stopped, and the copy in use
+                // is moved onto the tile below, route and all. Stopping the app here lost
+                // the driver's route every time they came back to the dashboard.
                 restartedAt = SystemClock.elapsedRealtime()
-                shell("am force-stop $packageName", "$packageName runs twice, on its tile and on display " +
-                    found.first { it.displayId != id }.displayId + ": closed, to open it once")
+                found.filter { it.displayId == id }.forEach { stack ->
+                    shell("am stack remove ${stack.stackId}", "$packageName runs twice, on its tile and on display " +
+                        found.first { it.displayId != id }.displayId + ": the tile's copy (stack ${stack.stackId}) closed, the other moved in")
+                }
                 delay(CLOSE_WAIT_MS)
                 found = listStacks() ?: return
             }
