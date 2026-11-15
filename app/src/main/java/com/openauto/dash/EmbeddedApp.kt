@@ -1085,7 +1085,7 @@ internal object EmbeddedApp {
     /** Closes the displays of the apps not in [keep]; each app closes with its display. */
     fun releaseUnless(keep: Set<String>) {
         val gone = hosts.keys - keep
-        gone.forEach { pkg -> hosts.remove(pkg)?.let { it.retired = true; it.release() } }
+        gone.forEach { pkg -> hosts.remove(pkg)?.let { it.retired = true; it.release(); it.allowPip() } }
         if (gone.isNotEmpty()) _hosted.value = hosts.keys.toSet()
     }
 
@@ -1707,7 +1707,31 @@ internal object EmbeddedApp {
             }
         }
 
+        /** Picture-in-picture was turned off for the app while it lives on a tile ([refusePip]). */
+        @Volatile private var pipRefused = false
+
+        /**
+         * With a route set, Google Maps turns into a picture-in-picture window when
+         * Home is pressed. Closing that window lost the route, and bringing it back
+         * left Maps stuck full screen over the dashboard. While the app lives on a
+         * tile it is not allowed to go picture-in-picture: Home only sends it to the
+         * back, and it is moved onto its tile, route and all. [allowPip] gives it back.
+         */
+        private suspend fun refusePip() {
+            if (pipRefused) return
+            pipRefused = true
+            shell("appops set $packageName PICTURE_IN_PICTURE ignore", "$packageName may not go picture-in-picture while on its tile")
+        }
+
+        /** Gives the app its picture-in-picture back, once it no longer lives on a tile. */
+        fun allowPip() {
+            if (!pipRefused) return
+            pipRefused = false
+            scope.launch { shell("appops set $packageName PICTURE_IN_PICTURE default", "$packageName may go picture-in-picture again") }
+        }
+
         private suspend fun placeOnTile(vd: TileDisplay) {
+            refusePip()
             val id = vd.displayId
             var found: List<WindowListing.AppStack> = listStacks() ?: run {
                 // No shell to look with: the launch alone, which lands on the tile on most ROMs.
