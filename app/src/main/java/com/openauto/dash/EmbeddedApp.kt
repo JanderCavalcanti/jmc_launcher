@@ -1085,7 +1085,7 @@ internal object EmbeddedApp {
     /** Closes the displays of the apps not in [keep]; each app closes with its display. */
     fun releaseUnless(keep: Set<String>) {
         val gone = hosts.keys - keep
-        gone.forEach { pkg -> hosts.remove(pkg)?.let { it.retired = true; it.release() } }
+        gone.forEach { pkg -> hosts.remove(pkg)?.let { it.retired = true; it.release(); it.allowPip() } }
         if (gone.isNotEmpty()) _hosted.value = hosts.keys.toSet()
     }
 
@@ -1707,7 +1707,31 @@ internal object EmbeddedApp {
             }
         }
 
+        /** Picture-in-picture was turned off for the app while it lives on a tile ([refusePip]). */
+        @Volatile private var pipRefused = false
+
+        /**
+         * With a route set, Google Maps turns into a picture-in-picture window when
+         * Home is pressed. Closing that window lost the route, and bringing it back
+         * left Maps stuck full screen over the dashboard. While the app lives on a
+         * tile it is not allowed to go picture-in-picture: Home only sends it to the
+         * back, and it is moved onto its tile, route and all. [allowPip] gives it back.
+         */
+        private suspend fun refusePip() {
+            if (pipRefused) return
+            pipRefused = true
+            shell("appops set $packageName PICTURE_IN_PICTURE ignore", "$packageName may not go picture-in-picture while on its tile")
+        }
+
+        /** Gives the app its picture-in-picture back, once it no longer lives on a tile. */
+        fun allowPip() {
+            if (!pipRefused) return
+            pipRefused = false
+            scope.launch { shell("appops set $packageName PICTURE_IN_PICTURE default", "$packageName may go picture-in-picture again") }
+        }
+
         private suspend fun placeOnTile(vd: TileDisplay) {
+            refusePip()
             val id = vd.displayId
             var found: List<WindowListing.AppStack> = listStacks() ?: run {
                 // No shell to look with: the launch alone, which lands on the tile on most ROMs.
@@ -1730,6 +1754,8 @@ internal object EmbeddedApp {
                 found = listStacks() ?: return
             }
             var fresh = false
+            // A picture-in-picture window of the app was asked back full size once already.
+            var expanded = false
             // The listing before the start, to see what it handed off to.
             var before: String? = null
             var settled = false
@@ -1774,9 +1800,23 @@ internal object EmbeddedApp {
                     FreeformBar.insideFloats(context, packageName, found.any { floating(it) })
                     return
                 }
-                val closing = !fresh && floating.isNotEmpty()
+                // Google Maps guiding goes picture-in-picture as soon as the dashboard
+                // comes back. Closing that window threw its route away (11-15 log: the
+                // task removed, Maps started afresh), so a pinned window is never closed:
+                // the app is asked for again on the tile, which brings the same task
+                // back full size with its route, and moved over below if need be.
+                val pinned = floating.filter { it.mode == "pinned" }
+                if (pinned.isNotEmpty() && !expanded) {
+                    expanded = true
+                    Log.i(TAG, "$packageName is picture-in-picture on display ${pinned.first().displayId}: brought back full size on its tile, not closed")
+                    start(vd)
+                    delay(POLL_MS)
+                    found = listStacks() ?: return
+                    return@repeat
+                }
+                val closing = !fresh && floating.any { it.mode != "pinned" }
                 for (stack in found) {
-                    if (closing && stack in floating) {
+                    if (closing && stack in floating && stack.mode != "pinned") {
                         shell("am stack remove ${stack.stackId}", "$packageName ${stack.mode} stack ${stack.stackId} on display ${stack.displayId} closed")
                         continue
                     }
