@@ -42,6 +42,7 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.foundation.horizontalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.SaveAlt
 import androidx.compose.material.icons.filled.Autorenew
@@ -202,6 +203,9 @@ internal enum class Deep {
 /** Under this width the categories go along the top: a rail would leave the settings half a screen. */
 internal val NARROW_SETTINGS = 800.dp
 
+/** Under this height the grid of categories would leave the pane a sliver: they go in one row that slides sideways. */
+internal val SHORT_SETTINGS = 640.dp
+
 /** The theme choice and its setters, owned by the dashboard root. */
 internal data class ThemeState(
     val mode: DashThemeMode,
@@ -324,6 +328,7 @@ internal fun SettingsScreen(
 
     SolidCard(modifier = modifier) {
         BoxWithConstraints(modifier = Modifier.fillMaxSize()) {
+            val short = maxHeight < SHORT_SETTINGS
             when {
                 // The overview has the whole card: its tiles are the categories.
                 tab == SettingsTab.OVERVIEW -> SettingsOverview(
@@ -337,7 +342,8 @@ internal fun SettingsScreen(
                     onClose = close
                 )
                 maxWidth < NARROW_SETTINGS -> Column(modifier = Modifier.fillMaxSize()) {
-                    SettingsTabs(tab, choose, close)
+                    if (short) SettingsTabStrip(tab, choose, close)
+                    else SettingsTabs(tab, choose, close)
                     pane(Modifier.weight(1f).fillMaxWidth())
                 }
                 else -> Row(modifier = Modifier.fillMaxSize()) {
@@ -477,6 +483,66 @@ private fun SettingsTabs(tab: SettingsTab, onChoose: (SettingsTab) -> Unit, onCl
                     }
                 }
                 repeat(4 - row.size) { Spacer(Modifier.weight(1f)) }
+            }
+        }
+    }
+}
+
+/** Narrow and low screens (a 720 px monitor): close and the categories in one row that slides sideways, so the pane keeps the height. */
+@OptIn(androidx.compose.foundation.ExperimentalFoundationApi::class)
+@Composable
+private fun SettingsTabStrip(tab: SettingsTab, onChoose: (SettingsTab) -> Unit, onClose: () -> Unit) {
+    val tap = rememberTapFeedback()
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .background(DashColors.CardHi.copy(alpha = DashColors.CardHi.alpha * 0.4f))
+            .padding(horizontal = 10.dp, vertical = 8.dp),
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        Box(
+            modifier = Modifier
+                .size(DashSize.TouchPrimary)
+                .clip(DashShape.Medium)
+                .background(DashColors.CardHi)
+                .clickable(role = Role.Button, onClickLabel = stringResource(R.string.dash_close)) { tap(); onClose() },
+            contentAlignment = Alignment.Center
+        ) {
+            Icon(Icons.Filled.Close, contentDescription = stringResource(R.string.dash_close), tint = DashColors.TextPrimary, modifier = Modifier.size(26.dp))
+        }
+        Spacer(Modifier.width(10.dp))
+        Row(
+            modifier = Modifier.weight(1f).horizontalScroll(rememberScrollState()),
+            horizontalArrangement = Arrangement.spacedBy(6.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            SettingsTab.entries.forEach { t ->
+                val chosen = t == tab
+                val ink = if (chosen) DashColors.OnAccent else DashColors.TextPrimary
+                // The chosen one slides into sight, also when Settings open straight on a category at the end.
+                val requester = remember { BringIntoViewRequester() }
+                if (chosen) LaunchedEffect(t) { requester.bringIntoView() }
+                Row(
+                    modifier = Modifier
+                        .bringIntoViewRequester(requester)
+                        .heightIn(min = DashSize.TouchPrimary)
+                        .clip(DashShape.Medium)
+                        .then(
+                            if (chosen) Modifier.background(DashColors.AccentBrush)
+                            else Modifier.border(1.dp, DashColors.Line, DashShape.Medium)
+                        )
+                        .clickable(role = Role.Tab) { tap(); onChoose(t) }
+                        .padding(horizontal = 14.dp),
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Icon(t.icon, contentDescription = null, tint = ink, modifier = Modifier.size(22.dp))
+                    Spacer(Modifier.width(8.dp))
+                    Text(
+                        stringResource(t.titleRes), color = ink,
+                        fontWeight = if (chosen) FontWeight.SemiBold else FontWeight.Normal,
+                        style = MaterialTheme.typography.labelLarge, maxLines = 1
+                    )
+                }
             }
         }
     }
