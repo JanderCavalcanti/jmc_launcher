@@ -328,6 +328,7 @@ internal fun SettingsScreen(
 
     SolidCard(modifier = modifier) {
         BoxWithConstraints(modifier = Modifier.fillMaxSize()) {
+            val short = maxHeight < SHORT_SETTINGS
             when {
                 // The overview has the whole card: its tiles are the categories.
                 tab == SettingsTab.OVERVIEW -> SettingsOverview(
@@ -341,7 +342,7 @@ internal fun SettingsScreen(
                     onClose = close
                 )
                 maxWidth < NARROW_SETTINGS -> Column(modifier = Modifier.fillMaxSize()) {
-                    if (maxHeight < SHORT_SETTINGS) SettingsTabStrip(tab, choose, close)
+                    if (short) SettingsTabStrip(tab, choose, close)
                     else SettingsTabs(tab, choose, close)
                     pane(Modifier.weight(1f).fillMaxWidth())
                 }
