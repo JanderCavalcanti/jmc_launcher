@@ -734,10 +734,19 @@ fun AutomotiveDashboard(inSplitMode: Boolean = false) {
     // platform signing, so priv-app status buys nothing: the install is now
     // only offered from the system dialog (Build icon), never run unasked.
 
+    /**
+     * What JMCAR makes of any layout put on the pages (a template, a look, an
+     * edit), as it does when they load: the map tile is the Google Maps one when
+     * Maps may live in a tile, and the shortcuts sit in the bottom bar. Without
+     * it, choosing a template brought the built-in map back until the next start.
+     */
+    fun jmcarPages(proposed: List<List<DashboardItem>>): List<List<DashboardItem>> =
+        Jmcar.mapTiles(context, Jmcar.dockToBar(context, proposed))
+
     /** Replaces one page, remembering the previous layout for Undo, and persists. */
     fun mutatePage(page: Int, transform: (List<DashboardItem>) -> List<DashboardItem>) {
         val before = pages
-        val after = before.mapIndexed { i, list -> if (i == page) transform(list) else list }
+        val after = jmcarPages(before.mapIndexed { i, list -> if (i == page) transform(list) else list })
         if (after == before) return
         history = (history + Snapshot(before, barTabsState.value)).takeLast(MAX_UNDO)
         pages = after
@@ -886,7 +895,8 @@ fun AutomotiveDashboard(inSplitMode: Boolean = false) {
     fun removeCrossDashboard(page: Int) = removeDashboard(page)
 
     /** Replaces every page at once (a template); one Undo step brings them all back. */
-    fun mutateAll(after: List<List<DashboardItem>>) {
+    fun mutateAll(proposed: List<List<DashboardItem>>) {
+        val after = jmcarPages(proposed)
         if (after == pages) return
         history = (history + Snapshot(pages, barTabsState.value)).takeLast(MAX_UNDO)
         pages = after
@@ -912,7 +922,7 @@ fun AutomotiveDashboard(inSplitMode: Boolean = false) {
     // What the moment on Home shows: laid out for this screen, worked out once per moment and arrangement.
     val momentItems = shownMoment?.let { m ->
         remember(m, momentSettings, layout, pages, appsByPackage.keys, obdAdapter.value, shellAccess, screenConfig) {
-            MomentStore.itemsFor(momentSettings, m, variant(), templateScreen(layout != DashLayout.GRID))
+            jmcarPages(listOf(MomentStore.itemsFor(momentSettings, m, variant(), templateScreen(layout != DashLayout.GRID)))).first()
         }
     }
 
