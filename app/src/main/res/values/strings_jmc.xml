@@ -27,4 +27,19 @@
     <string name="jmc_log_drive_sending">Sending the log to Drive</string>
     <string name="jmc_log_drive_sent">Sent to Drive: %1$s</string>
     <string name="jmc_log_drive_failed">Could not send the log. Check the internet and try again</string>
+    <string name="jmc_ball_title">Floating button</string>
+    <string name="jmc_ball_detail">A button over every app: Back, Home, Recents, split screen, volume and the bar\'s first shortcuts. Drag it to move it</string>
+    <string name="jmc_ball_back">Back</string>
+    <string name="jmc_ball_home">Home</string>
+    <string name="jmc_ball_recents">Recents</string>
+    <string name="jmc_ball_split">Split</string>
+    <string name="jmc_ball_vol_down">Vol −</string>
+    <string name="jmc_ball_vol_up">Vol +</string>
+    <string name="jmc_ball_split_no_shell">The split screen needs JMCAR\'s system shell (root or the unit\'s ADB)</string>
+    <string name="jmc_ball_split_need_app">Open an app first: it stays on the left, the last one used goes beside it</string>
+    <string name="jmc_ball_split_need_two">Split: open another app first, so there are two to put side by side</string>
+    <string name="jmc_ball_split_failed">The system refused the split screen</string>
+    <string name="jmc_recents_empty">No recent apps</string>
+    <string name="jmc_recents_close">Close</string>
+    <string name="jmc_recents_close_all">Close all</string>
 </resources>

@@ -14,6 +14,7 @@ import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.platform.LocalView
 import androidx.compose.ui.layout.onGloballyPositioned
 import androidx.compose.ui.layout.positionInWindow
+import androidx.compose.material.icons.filled.RadioButtonChecked
 import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.Swipe
 import androidx.compose.material.icons.filled.TouchApp
@@ -893,7 +894,21 @@ private fun DashboardPane(m: TopBarModel, theme: ThemeState) {
     Spacer(Modifier.height(20.dp))
     NavigationSetting(theme)
     Spacer(Modifier.height(12.dp))
+    FloatingBallSetting()
+    Spacer(Modifier.height(12.dp))
     MomentsRow(m.onMoments)
+}
+
+/** jmc_launcher: JMCAR's floating button over every app ([FloatingBall]), on or off. */
+@Composable
+private fun FloatingBallSetting() {
+    val context = LocalContext.current
+    LaunchedEffect(Unit) { FloatingBall.load(context) }
+    val on by FloatingBall.on.collectAsState()
+    SettingsToggle(
+        Icons.Filled.RadioButtonChecked, stringResource(R.string.jmc_ball_title),
+        stringResource(R.string.jmc_ball_detail), on
+    ) { FloatingBall.save(context, it) }
 }
 
 /** Every sound it makes that is not an alert: the volume, the tap sound, the music after a call. */
