@@ -27,13 +27,11 @@
     <string name="jmc_log_drive_sent">Enviado ao Drive: %1$s</string>
     <string name="jmc_log_drive_failed">Não foi possível enviar o registro. Confira a internet e tente de novo</string>
     <string name="jmc_ball_title">Botão flutuante</string>
-    <string name="jmc_ball_detail">Um botão por cima de todos os apps: Voltar, Início, Recentes, tela dividida, volume e os primeiros atalhos da barra. Arraste para mudar de lugar</string>
+    <string name="jmc_ball_detail">Um botão por cima de todos os apps: Voltar, Início, Recentes, tela dividida, mudo, limpar memória e os primeiros atalhos da barra. Arraste para mudar de lugar</string>
     <string name="jmc_ball_back">Voltar</string>
     <string name="jmc_ball_home">Início</string>
     <string name="jmc_ball_recents">Recentes</string>
     <string name="jmc_ball_split">Dividir</string>
-    <string name="jmc_ball_vol_down">Vol −</string>
-    <string name="jmc_ball_vol_up">Vol +</string>
     <string name="jmc_ball_split_no_shell">A tela dividida precisa do acesso de sistema do JMCAR (root ou o ADB do tbox)</string>
     <string name="jmc_ball_split_need_app">Abra um app primeiro: ele fica à esquerda e o último usado vai ao lado</string>
     <string name="jmc_ball_split_need_two">Tela dividida: abra outro app antes, para ter dois lado a lado</string>
@@ -41,4 +39,12 @@
     <string name="jmc_recents_empty">Nenhum app recente</string>
     <string name="jmc_recents_close">Fechar</string>
     <string name="jmc_recents_close_all">Fechar todos</string>
+    <string name="jmc_ball_mute">Mudo</string>
+    <string name="jmc_ball_clean">Limpar</string>
+    <string name="jmc_ball_clean_none">Nenhum app para fechar</string>
+    <plurals name="jmc_ball_clean_done">
+        <item quantity="one">%d app fechado</item>
+        <item quantity="many">%d apps fechados</item>
+        <item quantity="other">%d apps fechados</item>
+    </plurals>
 </resources>
