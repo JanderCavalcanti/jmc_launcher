@@ -28,7 +28,7 @@
     <string name="jmc_log_drive_sent">Sent to Drive: %1$s</string>
     <string name="jmc_log_drive_failed">Could not send the log. Check the internet and try again</string>
     <string name="jmc_ball_title">Floating button</string>
-    <string name="jmc_ball_detail">A button over every app: Back, Home, Recents, split screen, volume and the bar's first shortcuts. Drag it to move it</string>
+    <string name="jmc_ball_detail">A button over every app: Back, Home, Recents, split screen, volume and the bar\'s first shortcuts. Drag it to move it</string>
     <string name="jmc_ball_back">Back</string>
     <string name="jmc_ball_home">Home</string>
     <string name="jmc_ball_recents">Recents</string>
