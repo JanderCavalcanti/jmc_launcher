@@ -46,7 +46,7 @@ import kotlin.math.hypot
  * It rides on the accessibility service ([SplitAccessibilityService]): always
  * on, brought back by Android if JMCAR's process goes, and allowed to draw over
  * every app. A tap opens the menu beside it: Back, Home, Recents (JMCAR's own
- * screen, [RecentsActivity]), split screen, volume down and up, then the first
+ * screen, [RecentsActivity]), split screen, mute, clear memory, then the first
  * app shortcuts of the bottom bar ([BarDock]). Dragged, it goes to the nearest
  * side and stays where it was left.
  */
@@ -246,11 +246,11 @@ internal object FloatingBall {
             Item(host.getString(R.string.jmc_ball_split), host.getDrawable(R.drawable.ic_ball_split), true) {
                 main.launch { BallSplit.toggle(host) }
             },
-            Item(host.getString(R.string.jmc_ball_vol_down), host.getDrawable(R.drawable.ic_ball_vol_down), true) {
-                MediaVolume.lower(host, show = true)
+            Item(host.getString(R.string.jmc_ball_mute), host.getDrawable(R.drawable.ic_ball_mute), true) {
+                MediaVolume.toggleMute(host, show = true)
             },
-            Item(host.getString(R.string.jmc_ball_vol_up), host.getDrawable(R.drawable.ic_ball_vol_up), true) {
-                MediaVolume.raise(host, show = true)
+            Item(host.getString(R.string.jmc_ball_clean), host.getDrawable(R.drawable.ic_ball_clean), true) {
+                main.launch { MemoryCleaner.clean(host) }
             }
         )
         val pm = host.packageManager
@@ -501,4 +501,48 @@ internal object RecentTasks {
         val atm = Class.forName("android.app.ActivityTaskManager").getMethod("getService").invoke(null)
         atm.javaClass.getMethod("removeTask", Int::class.javaPrimitiveType).invoke(atm, taskId) as Boolean
     }.onFailure { Log.w(TAG, "could not remove task $taskId", it) }.getOrDefault(false)
+}
+
+/**
+ * The floating button's "clear memory". The firmware's own (com.sd.ball)
+ * kills every process outside a fixed list, JMCAR among them, and with it the
+ * accessibility service, the OBD link and the music tile. This one only
+ * closes the apps the driver opened on the main screen, as Recents' "Close
+ * all" does, and leaves alone JMCAR, the Home apps, the map inside the
+ * dashboard (its own display) and the app playing music right now.
+ */
+internal object MemoryCleaner {
+    private const val TAG = "MemoryCleaner"
+
+    suspend fun clean(context: Context) {
+        val closed = withContext(Dispatchers.IO) {
+            val home = RecentTasks.homePackages(context)
+            val playing = playingPackages(context)
+            val am = context.getSystemService(ActivityManager::class.java)
+            val targets = RecentTasks.list(context)
+                .filter { it.displayId == 0 && it.packageName !in home && it.packageName !in playing }
+            targets.forEach { RecentTasks.remove(it.taskId) }
+            val packages = targets.map { it.packageName }.distinct()
+            packages.forEach { pkg -> runCatching { am?.killBackgroundProcesses(pkg) } }
+            Log.i(TAG, "closed ${packages.joinToString()} (kept playing: ${playing.joinToString()})")
+            packages.size
+        }
+        withContext(Dispatchers.Main) {
+            Toast.makeText(
+                context,
+                if (closed == 0) context.getString(R.string.jmc_ball_clean_none)
+                else context.resources.getQuantityString(R.plurals.jmc_ball_clean_done, closed, closed),
+                Toast.LENGTH_SHORT
+            ).show()
+        }
+    }
+
+    /** The apps whose media plays now (notification access, as the music tile reads them). */
+    private fun playingPackages(context: Context): Set<String> = runCatching {
+        val sessions = context.getSystemService(android.media.session.MediaSessionManager::class.java)
+        sessions.getActiveSessions(android.content.ComponentName(context, MediaNotificationListenerService::class.java))
+            .filter { it.playbackState?.state == android.media.session.PlaybackState.STATE_PLAYING }
+            .mapNotNull { it.packageName }
+            .toSet()
+    }.getOrDefault(emptySet())
 }

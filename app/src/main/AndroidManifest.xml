@@ -76,6 +76,8 @@
          app's tasks, and closing them. Signature permissions, granted through the platform key. -->
     <uses-permission android:name="android.permission.REAL_GET_TASKS" tools:ignore="ProtectedPermissions" />
     <uses-permission android:name="android.permission.REMOVE_TASKS" tools:ignore="ProtectedPermissions" />
+    <!-- The floating button's "clear memory" (MemoryCleaner, FloatingBall.kt). -->
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
     <uses-feature android:name="android.hardware.camera" android:required="false" />
 
     <!-- Hardware Requirements -->
