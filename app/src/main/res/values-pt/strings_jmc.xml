@@ -47,4 +47,11 @@
         <item quantity="many">%d apps fechados</item>
         <item quantity="other">%d apps fechados</item>
     </plurals>
+
+    <!-- Combustivel ate o destino: autonomia digitada do painel (carros sem nivel no OBD) -->
+    <string name="car_fuel_dest_tap_range">Toque para informar a autonomia</string>
+    <string name="car_fuel_dest_typed_no_nav">Autonomia informada, descontando o que você rodou. Inicie uma rota para comparar.</string>
+    <string name="car_fuel_dest_typed_title">Autonomia restante</string>
+    <string name="car_fuel_dest_typed_explain">Este carro não envia o nível de combustível. Digite a autonomia que aparece no painel; ela vai sendo descontada conforme você roda. Acabou de abastecer? Toque em Tanque cheio.</string>
+    <string name="car_fuel_dest_full_tank">Tanque cheio</string>
 </resources>
