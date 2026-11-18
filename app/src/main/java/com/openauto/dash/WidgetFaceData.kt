@@ -1065,7 +1065,7 @@ private fun fuelToDestFace(): WidgetFace {
     val icon = kindIcon(BuiltinKind.FUEL_TO_DEST)
     val title = BuiltinKind.FUEL_TO_DEST.label
     if (verdict == null) {
-        return WidgetFace(icon = icon, title = title, value = range.toString(), unit = u.distanceUnit, caption = stringResource(R.string.car_fuel_dest_no_nav), sign = SignKind.FUEL)
+        return WidgetFace(icon = icon, title = title, value = range.toString(), unit = u.distanceUnit, caption = stringResource(if (trip.typed) R.string.car_fuel_dest_typed_no_nav else R.string.car_fuel_dest_no_nav), sign = SignKind.FUEL)
     }
     val call = fuelCall(verdict)
     val km = u.distance(trip.km)

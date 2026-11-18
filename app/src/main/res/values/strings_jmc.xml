@@ -47,4 +47,11 @@
         <item quantity="one">%d app closed</item>
         <item quantity="other">%d apps closed</item>
     </plurals>
+
+    <!-- Fuel to destination: range typed off the trip computer (cars without a fuel level on OBD) -->
+    <string name="car_fuel_dest_tap_range">Tap to enter the range</string>
+    <string name="car_fuel_dest_typed_no_nav">Typed range, counted down as you drive. Start navigation to compare.</string>
+    <string name="car_fuel_dest_typed_title">Range left</string>
+    <string name="car_fuel_dest_typed_explain">This car doesn\'t send its fuel level. Type the range shown on the dashboard; it counts down as you drive. Just filled up? Tap Full tank.</string>
+    <string name="car_fuel_dest_full_tank">Full tank</string>
 </resources>
