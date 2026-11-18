@@ -258,7 +258,10 @@ internal object FloatingBall {
             val pkg = AppLauncher.packageOf(key)
             val info = runCatching { pm.getApplicationInfo(pkg, 0) }.getOrNull() ?: return@forEach
             list += Item(info.loadLabel(pm).toString(), runCatching { info.loadIcon(pm) }.getOrNull(), false) {
-                AppLauncher.launch(host, key)
+                // An app running inside a dashboard tile (Google Maps) lives on the tile's own
+                // display: opening it again only reached that hidden display, and nothing came
+                // up on the screen. The dashboard, where its tile shows it, comes up instead.
+                if (EmbeddedApp.holds(pkg)) goHome(host) else AppLauncher.launch(host, key)
             }
         }
         return list
