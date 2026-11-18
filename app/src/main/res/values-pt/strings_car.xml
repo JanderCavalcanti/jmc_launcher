@@ -71,7 +71,7 @@
     <string name="car_eco_fair">Razoável: algo brusca</string>
     <string name="car_eco_harsh">Brusca: desacelere</string>
     <string name="car_eco_band">Regime %1$d–%2$d rpm</string>
-    <string name="car_eco_hard">Acelerações / travagens bruscas</string>
+    <string name="car_eco_hard">Acelerações / freadas bruscas</string>
     <string name="car_eco_hard_value">%1$d / %2$d</string>
     <string name="car_eco_clutch">Retido na subida com o acelerador</string>
     <string name="car_eco_fuel">Combustível em %1$s km</string>
@@ -83,7 +83,7 @@
     <string name="car_fuel_dest_no_nav">Autonomia restante. Inicie a navegação no Maps ou no Waze para comparar.</string>
     <string name="car_fuel_dest_spare_unit">km de margem</string>
     <string name="car_fuel_dest_enough">Combustível suficiente</string>
-    <string name="car_fuel_dest_tight">À justa: pouca margem</string>
+    <string name="car_fuel_dest_tight">No limite: pouca margem</string>
     <string name="car_fuel_dest_short">Abasteça pelo caminho</string>
     <string name="car_fuel_dest_detail">%1$d km de autonomia · faltam %2$d km</string>
 
@@ -108,7 +108,7 @@
     <string name="car_gearbox_manual">Manual</string>
     <string name="car_gearbox_robotised">Robotizada</string>
     <string name="car_gearbox_automatic">Automática</string>
-    <string name="car_gearbox_dual_clutch">Dupla embraiagem</string>
+    <string name="car_gearbox_dual_clutch">Dupla embreagem</string>
     <string name="car_gearbox_cvt">CVT</string>
     <string name="car_fuel_diesel">Diesel</string>
     <string name="car_fuel_petrol">Gasolina</string>
@@ -168,7 +168,7 @@
 
     <!-- Spoken by CarCare, in the mechanic's language -->
     <string name="car_say_cold_revs">O motor ainda está frio. Mantenha-o abaixo das %1$d rotações durante mais alguns minutos.</string>
-    <string name="car_say_clutch_hold">Segure o carro com o freio, não com o acelerador. Isso gasta a embraiagem desta caixa.</string>
+    <string name="car_say_clutch_hold">Segure o carro com o freio, não com o acelerador. Isso gasta a embreagem desta caixa.</string>
     <string name="car_say_filter">Suas últimas %1$d viagens foram curtas. Quando puder, dirija 15 a 20 minutos acima de 60 quilômetros por hora para o filtro de partículas se limpar.</string>
     <string name="car_say_filter_regen">O filtro de partículas está se limpando. Se puder, continue a dirigir mais uns 10 minutos a velocidade constante.</string>
     <string name="car_say_filter_regen_standing">O filtro de partículas ainda está se limpando. Se puder, dirija mais alguns minutos antes de desligar o motor.</string>
@@ -234,7 +234,7 @@
     <string name="car_warn_water_diesel">Água no filtro de diesel</string>
     <string name="car_warn_engine_repair">Falha no motor, mande reparar</string>
     <string name="car_warn_pollution">Falha no sistema antipoluição</string>
-    <string name="car_warn_open">Uma porta, a mala, o capô ou a tampa do combustível está aberta</string>
+    <string name="car_warn_open">Uma porta, o porta-malas, o capô ou a tampa do combustível está aberta</string>
     <string name="car_warn_tyres">Pressão dos pneus baixa</string>
     <string name="car_warn_washer">Líquido do lava-vidros baixo</string>
     <string name="car_warn_fuel">Combustível baixo</string>

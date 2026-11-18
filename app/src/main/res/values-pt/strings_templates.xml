@@ -5,7 +5,7 @@
     <string name="templates_daily">Diário</string>
     <string name="templates_daily_blurb">Mapa e música à frente, o carro e o seu dia a um deslizar</string>
     <string name="templates_road_trip">Viagem</string>
-    <string name="templates_road_trip_blurb">Mapa grande, autonomia, meteorologia e paradas para viagens longas</string>
+    <string name="templates_road_trip_blurb">Mapa grande, autonomia, previsão do tempo e paradas para viagens longas</string>
     <string name="templates_car_health">Saúde do carro</string>
     <string name="templates_car_health_blurb">Dados do carro e códigos de falha no Início</string>
     <string name="templates_no_obd">Ainda não escolheu um adaptador OBD, por isso os widgets de dados do carro ficam de fora.</string>
@@ -30,7 +30,7 @@
     <string name="share_button">Compartilhar</string>
     <string name="share_title">Compartilhar %1$s</string>
     <string name="share_this">Passar este painel</string>
-    <string name="share_with_look">Com o seu aspeto</string>
+    <string name="share_with_look">Com a sua aparência</string>
     <string name="share_with_look_detail">O tema, dia e noite, e a barra</string>
     <string name="share_scan">Leia com um celular ou passe o código como texto</string>
     <string name="share_save_file">Salvar como arquivo</string>
@@ -40,6 +40,6 @@
     <string name="share_open_file">Abrir um arquivo</string>
     <string name="share_use_hint">Escreva ou cole um código, abra um arquivo ou leia um código QR com a app JMCAR Companion.</string>
     <string name="share_missing_apps">Apps que não estão neste rádio: %1$d. Os mosaicos ficam até os mudar.</string>
-    <string name="share_take_look">Usar também o seu aspeto</string>
+    <string name="share_take_look">Usar também a sua aparência</string>
     <string name="share_replace">Colocar aqui</string>
 </resources>

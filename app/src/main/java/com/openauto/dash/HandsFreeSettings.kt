@@ -1,11 +1,14 @@
 package com.openauto.dash
 
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
@@ -39,6 +42,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.unit.dp
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
@@ -157,6 +161,23 @@ private fun PlaceEditor(title: String, place: Place?, onSet: (Place?) -> Unit) {
         }
     }
 
+    // What the geocoder suggests for what is typed so far, asked once typing pauses.
+    var suggestions by remember { mutableStateOf<List<Place>>(emptyList()) }
+    LaunchedEffect(address) {
+        val q = address.trim()
+        if (q.length < 3) { suggestions = emptyList(); return@LaunchedEffect }
+        delay(SUGGEST_PAUSE_MS)
+        suggestions = withContext(Dispatchers.IO) { runCatching { PlaceSearch.suggest(q) }.getOrDefault(emptyList()) }
+    }
+
+    fun pick(hit: Place) {
+        keyboard?.hide()
+        suggestions = emptyList()
+        problem = null
+        onSet(hit)
+        address = ""
+    }
+
     fun here() {
         val at = HandsFree.position(context)
         if (at == null) {
@@ -190,6 +211,23 @@ private fun PlaceEditor(title: String, place: Place?, onSet: (Place?) -> Unit) {
         keyboardOptions = KeyboardOptions(imeAction = ImeAction.Search),
         keyboardActions = KeyboardActions(onSearch = { find() }, onDone = { find() }, onGo = { find() })
     )
+    if (suggestions.isNotEmpty() && !busy) {
+        Column(Modifier.fillMaxWidth()) {
+            suggestions.forEach { hit ->
+                Row(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .clickable { pick(hit) }
+                        .padding(horizontal = 8.dp, vertical = 12.dp),
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    androidx.compose.material3.Icon(Icons.Filled.Place, contentDescription = null, tint = DashColors.TextSecondary)
+                    Spacer(Modifier.width(12.dp))
+                    Text(hit.name, color = DashColors.TextPrimary, style = MaterialTheme.typography.bodyLarge, maxLines = 2)
+                }
+            }
+        }
+    }
     Row(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalAlignment = Alignment.CenterVertically) {
         SheetButton(stringResource(R.string.places_find)) { find() }
         SheetButton(stringResource(R.string.places_here), primary = false) { here() }
@@ -198,3 +236,6 @@ private fun PlaceEditor(title: String, place: Place?, onSet: (Place?) -> Unit) {
     problem?.let { Text(it, color = DashColors.Warning, style = MaterialTheme.typography.bodySmall) }
     Spacer(Modifier.height(8.dp))
 }
+
+/** How long typing must pause before the address field asks for suggestions. */
+private const val SUGGEST_PAUSE_MS = 450L

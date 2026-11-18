@@ -18,6 +18,9 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
+import androidx.compose.ui.text.input.KeyboardType
+import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.material3.OutlinedTextField
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.derivedStateOf
@@ -129,7 +132,7 @@ internal fun fuelCall(verdict: FuelVerdict): CareCall = when (verdict) {
 }
 
 /** The car's range against the distance left to drive; [verdict] is null without a route. */
-internal class FuelToDest(val rangeKm: Int, val toGoKm: Double?) {
+internal class FuelToDest(val rangeKm: Int, val toGoKm: Double?, val typed: Boolean = false) {
     val verdict: FuelVerdict? = CareRules.fuelVerdict(rangeKm, toGoKm)
     val km: Double get() = toGoKm ?: 0.0
     val spareKm: Int get() = (rangeKm - km).toInt()
@@ -147,8 +150,11 @@ internal fun rememberFuelToDest(): FuelToDest? {
     val obd = ObdBluetoothManager.data.collectAsState()
     val obdFuel by remember { derivedStateOf { obd.value.fuelLevelPct } }
     val car by CarProfileStore.profile.collectAsState()
-    val range = remember(canFuel, canRange, obdFuel, car) { carFuelInfo(canFuel, obdFuel, canRange)?.rangeKm } ?: return null
-    return FuelToDest(range, if (nav.active) CareRules.remainingKm(nav.eta) else null)
+    val typed by TypedFuelRange.state.collectAsState()
+    val read = remember(canFuel, canRange, obdFuel, car) { carFuelInfo(canFuel, obdFuel, canRange)?.rangeKm }
+    // No level from the car (VW's engine ECU doesn't serve it): the range the driver typed off the trip computer.
+    val range = read ?: typed?.nowKm ?: return null
+    return FuelToDest(range, if (nav.active) CareRules.remainingKm(nav.eta) else null, typed = read == null)
 }
 
 // --- Card pieces ----------------------------------------------------------------
@@ -382,7 +388,7 @@ internal fun EcoDriveCard(modifier: Modifier = Modifier) {
         val cents = if (LocalDriveLock.current.moving) 0 else 2
         InfoRow(
             stringResource(if (u.imperial) R.string.units_eco_fuel_mi else R.string.car_eco_fuel, decimal(u.distance(drive.distanceKm))),
-            stringResource(R.string.car_eco_fuel_value, decimal(liters), decimal(liters * car.fuelPrice, cents), car.currency)
+            stringResource(R.string.car_eco_fuel_value, decimal(liters), decimal(liters * car.priceNow, cents), car.currency)
         )
     }
 }
@@ -393,16 +399,19 @@ internal fun EcoDriveCard(modifier: Modifier = Modifier) {
 internal fun FuelToDestCard(modifier: Modifier = Modifier) {
     val trip = rememberFuelToDest()
     val u = LocalUnits.current
-    CareCard(stringResource(R.string.car_fuel_dest_title), modifier) {
+    val lock = LocalDriveLock.current
+    var asking by remember { mutableStateOf(false) }
+    // A tap gives the range read on the car's trip computer, or says the tank was just filled.
+    CareCard(stringResource(R.string.car_fuel_dest_title), modifier.clickable { lock.whenParked { asking = true } }) {
         if (trip == null) {
             Reading("--", u.distanceUnit, dimmed = true)
-            Hint(stringResource(R.string.car_fuel_dest_no_range))
+            Hint(stringResource(R.string.car_fuel_dest_tap_range))
             return@CareCard
         }
         val verdict = trip.verdict
         if (verdict == null) {
             Reading(u.distance(trip.rangeKm).toString(), u.distanceUnit)
-            Hint(stringResource(R.string.car_fuel_dest_no_nav))
+            Hint(stringResource(if (trip.typed) R.string.car_fuel_dest_typed_no_nav else R.string.car_fuel_dest_no_nav))
             return@CareCard
         }
         val call = fuelCall(verdict)
@@ -417,6 +426,38 @@ internal fun FuelToDestCard(modifier: Modifier = Modifier) {
                 if (u.imperial) R.string.units_fuel_dest_detail_mi else R.string.car_fuel_dest_detail,
                 u.distance(trip.rangeKm), u.distance(trip.km).toInt()
             )
+        )
+    }
+    if (asking) TypedRangeDialog(onDismiss = { asking = false })
+}
+
+/** The range off the car's trip computer, or a full tank: for cars that don't send their fuel level. */
+@Composable
+internal fun TypedRangeDialog(onDismiss: () -> Unit) {
+    ParkedOnly(onDismiss)
+    val u = LocalUnits.current
+    val typed by TypedFuelRange.state.collectAsState()
+    var text by remember { mutableStateOf(typed?.nowKm?.let { u.distance(it).toString() }.orEmpty()) }
+    val save = {
+        TypedRange.parse(text)?.let { TypedFuelRange.set(u.km(it.toDouble()).roundToInt()) }
+        onDismiss()
+    }
+    SettingsSheet(
+        title = stringResource(R.string.car_fuel_dest_typed_title),
+        onDismiss = onDismiss,
+        actions = {
+            SheetButton(stringResource(R.string.car_fuel_dest_full_tank), primary = false) { TypedFuelRange.fullTank(); onDismiss() }
+            SheetButton(stringResource(R.string.ai_done), onClick = save)
+        }
+    ) {
+        Text(stringResource(R.string.car_fuel_dest_typed_explain), color = DashColors.TextSecondary, style = MaterialTheme.typography.bodyMedium)
+        OutlinedTextField(
+            value = text,
+            onValueChange = { text = it },
+            singleLine = true,
+            keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
+            modifier = Modifier.fillMaxWidth(),
+            colors = fieldColors()
         )
     }
 }
@@ -531,6 +572,9 @@ internal val FuelType.labelRes: Int
         FuelType.HYBRID -> R.string.car_fuel_hybrid
         FuelType.LPG -> R.string.car_fuel_lpg
         FuelType.ELECTRIC -> R.string.car_fuel_electric
+        FuelType.FLEX -> R.string.car_fuel_flex
+        FuelType.ETHANOL -> R.string.car_fuel_ethanol
+        FuelType.CNG -> R.string.car_fuel_cng
     }
 
 private fun tyreText(car: CarProfile): String {

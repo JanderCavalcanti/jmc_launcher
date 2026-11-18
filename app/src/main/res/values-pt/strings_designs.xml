@@ -11,8 +11,8 @@
     <string name="design_amber_desc">Computador de bordo antigo: texto âmbar, linha a linha.</string>
     <string name="design_neon">Néon</string>
     <string name="design_neon_desc">Contorno magenta brilhante e marcas ciano.</string>
-    <string name="design_paper">Tinta eletrónica</string>
-    <string name="design_paper_desc">Preto mate sobre cinzento, legível em pleno sol.</string>
+    <string name="design_paper">Tinta eletrônica</string>
+    <string name="design_paper_desc">Preto fosco sobre cinza, legível em pleno sol.</string>
     <string name="design_glass">Vidro</string>
     <string name="design_glass_desc">Painel fosco sobre luz colorida suave.</string>
     <string name="design_carbon">Carbono esportivo</string>
@@ -82,7 +82,7 @@
     <string name="design_no_scan_yet">Ainda não lido</string>
     <string name="design_range_unknown">Autonomia ainda não configurada</string>
     <!-- Designs made for particular widgets (WidgetSignatures.kt) -->
-    <string name="design_thermometer">Termómetro</string>
+    <string name="design_thermometer">Termômetro</string>
     <string name="design_thermometer_desc">Uma coluna de mercúrio que sobe do frio ao quente.</string>
     <string name="design_fuel_tank">Tanque</string>
     <string name="design_fuel_tank_desc">O próprio tanque, cheio até ao nível, de V a C.</string>
@@ -129,7 +129,7 @@
     <string name="design_car_top">Carro visto de cima</string>
     <string name="design_car_top_desc">O carro visto de cima, portas abertas a vermelho.</string>
     <string name="design_data_rain">Chuva de dados</string>
-    <string name="design_data_rain_desc">As tramas em bruto caindo pelo mosaico.</string>
+    <string name="design_data_rain_desc">Os dados brutos caindo pelo mosaico.</string>
     <string name="design_sky">Céu</string>
     <string name="design_sky_desc">O céu da hora e do tempo, valor por cima.</string>
     <string name="design_sun_path">Percurso do sol</string>

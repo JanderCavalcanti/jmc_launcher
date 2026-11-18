@@ -72,6 +72,12 @@
     <uses-permission android:name="android.permission.READ_LOGS" tools:ignore="ProtectedPermissions" />
     <!-- The reversing camera's picture shown by Dashwheel itself (ReverseCamera, experimental). -->
     <uses-permission android:name="android.permission.CAMERA" />
+    <!-- jmc_launcher: the floating button's Recents (RecentsActivity, FloatingBall.kt): every
+         app's tasks, and closing them. Signature permissions, granted through the platform key. -->
+    <uses-permission android:name="android.permission.REAL_GET_TASKS" tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.REMOVE_TASKS" tools:ignore="ProtectedPermissions" />
+    <!-- The floating button's "clear memory" (MemoryCleaner, FloatingBall.kt). -->
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
     <uses-feature android:name="android.hardware.camera" android:required="false" />
 
     <!-- Hardware Requirements -->
@@ -128,6 +134,10 @@
             <action android:name="android.intent.action.MAIN" />
             <category android:name="android.intent.category.LAUNCHER" />
         </intent>
+        <!-- The last song's player, resumed in the background through its media browser (CarMediaController). -->
+        <intent>
+            <action android:name="android.media.browse.MediaBrowserService" />
+        </intent>
         <!-- Dictating a reply to a phone message, when the head unit has a recogniser. -->
         <intent>
             <action android:name="android.speech.action.RECOGNIZE_SPEECH" />
@@ -182,6 +192,15 @@
             android:name=".AccessDisclosureActivity"
             android:exported="false"
             android:excludeFromRecents="true"
+            android:theme="@style/Theme.OpenAutoDash.Transparent" />
+
+        <!-- jmc_launcher: the floating button's Recents screen (FloatingBall.kt). -->
+        <activity
+            android:name=".RecentsActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:taskAffinity="com.jmc.launcher.recents"
             android:theme="@style/Theme.OpenAutoDash.Transparent" />
 
         <!-- Reads active media sessions (title/artist/playback) from other apps.

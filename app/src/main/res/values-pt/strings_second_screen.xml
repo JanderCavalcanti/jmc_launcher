@@ -6,7 +6,7 @@
     <string name="second_screen_status_unpaired">Nenhuma segunda tela pareada</string>
     <string name="second_screen_status_unpaired_detail">Leia o código da segunda tela com a app JMCAR do celular enquanto o celular está ligado a este carro.</string>
     <string name="second_screen_status_searching">À procura da segunda tela</string>
-    <string name="second_screen_status_searching_detail">A tela e este autorrádio têm de estar ambos no hotspot do celular.</string>
+    <string name="second_screen_status_searching_detail">A tela e esta central têm de estar ambos no hotspot do celular.</string>
     <string name="second_screen_status_connected">Ligado a %1$s</string>
     <string name="second_screen_size">Tela %1$d × %2$d</string>
     <string name="second_screen_import">Importar um arquivo de associação</string>
@@ -58,7 +58,7 @@
     <string name="second_screen_keys_count">Botões que mudam de página: %1$s</string>
     <string name="second_screen_keys_learn">Aprender um botão</string>
     <string name="second_screen_keys_learn_prompt">Pressione o botão do volante que deve mudar a página do quadrante.</string>
-    <string name="second_screen_keys_learn_none">Se nada acontecer, este botão não chega às apps neste autorrádio.</string>
+    <string name="second_screen_keys_learn_none">Se nada acontecer, este botão não chega às apps nesta central.</string>
     <string name="second_screen_keys_clear">Esquecer os botões</string>
     <string name="second_screen_media_keys">Os botões multimídia mudam de página</string>
     <string name="second_screen_media_keys_detail">Um toque longo em seguinte ou anterior muda a página do quadrante.</string>
@@ -80,8 +80,8 @@
     <string name="second_screen_widget_pick">Escolher um widget</string>
     <string name="second_screen_design">Design</string>
     <string name="second_screen_board_reset">Restaurar a página original</string>
-    <string name="second_screen_copy_of">%1$s, como no autorrádio</string>
-    <string name="second_screen_copy_blurb">Uma cópia do seu mosaico no painel. Usa-se no autorrádio.</string>
+    <string name="second_screen_copy_of">%1$s, como na central</string>
+    <string name="second_screen_copy_blurb">Uma cópia do seu mosaico no painel. Usada na central.</string>
     <string name="second_screen_copy_no_tile">Ponha %1$s dentro de um mosaico do painel para o ver aqui</string>
     <string name="second_screen_copy_waits">%1$s espera que o carro pare</string>
     <string name="second_screen_map_blurb">O mapa 3D do painel, com o percurso e a próxima mudança de direção</string>

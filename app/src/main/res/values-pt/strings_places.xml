@@ -7,7 +7,7 @@
     <string name="places_home">Casa</string>
     <string name="places_work">Trabalho</string>
     <string name="places_not_set">Não definido</string>
-    <string name="places_address_hint">Morada ou local</string>
+    <string name="places_address_hint">Endereço ou local</string>
     <string name="places_find">Procurar</string>
     <string name="places_here">O carro está aqui</string>
     <string name="places_forget">Esquecer</string>

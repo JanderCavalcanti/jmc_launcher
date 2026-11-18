@@ -246,8 +246,11 @@ fun MapLibrePanel(modifier: Modifier = Modifier, wallpaper: Boolean = false) {
         val q = query.trim()
         if (q.isEmpty() || loading) return
         error = null; info = null; loading = true
+        // Places around the car first: the map's own fix, else the shared feed (PlaceSearch's default).
+        @SuppressLint("MissingPermission")
+        val here = runCatching { mapRef?.locationComponent?.lastKnownLocation }.getOrNull() ?: LocationFeed.location.value
         scope.launch {
-            val found = withContext(Dispatchers.IO) { runCatching { PlaceSearch.find(q) } }
+            val found = withContext(Dispatchers.IO) { runCatching { PlaceSearch.find(q, here?.latitude, here?.longitude) } }
             val place = found.getOrNull()
             if (place == null) {
                 loading = false

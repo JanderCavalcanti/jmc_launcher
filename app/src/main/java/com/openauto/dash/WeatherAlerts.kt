@@ -100,7 +100,7 @@ internal object WeatherWarnings {
 }
 
 /**
- * Weather warnings (MeteoAlarm, which carries Météo-France's vigilance) where
+ * Weather warnings (in Brazil INMET's, [InmetWarnings]; in Europe MeteoAlarm, which carries Météo-France's vigilance) where
  * the car is and where the guidance is taking it. Read every [REFRESH_MS];
  * a new orange or red one is said once ([SpokenEvent.WEATHER]), and the ones
  * said are kept until they expire, so a restart doesn't say them again.
@@ -115,8 +115,11 @@ internal object WeatherAlerts {
     private const val FEED = "https://feeds.meteoalarm.org/feeds/meteoalarm-legacy-atom-"
     private const val REVERSE = "https://nominatim.openstreetmap.org/reverse"
 
-    /** One place looked up: its country and the names its warnings may go by (department, region). */
-    private data class Area(val country: String, val names: List<String>)
+    /**
+     * One place looked up: its country and the names its warnings may go by
+     * (department, region); in Brazil also its town and state ("SP"), for INMET.
+     */
+    private data class Area(val country: String, val names: List<String>, val towns: List<String> = emptyList(), val uf: String = "")
 
     private val scope = CoroutineScope(SupervisorJob() + Dispatchers.IO)
     private var job: Job? = null
@@ -158,7 +161,16 @@ internal object WeatherAlerts {
         val dest = InAppNav.guidance.value?.destination
         val destArea = dest?.let { area(it.latitude(), it.longitude(), cache = false) }
         val feeds = HashMap<String, List<WeatherWarning>>()
-        fun warnings(a: Area): List<WeatherWarning> = feeds.getOrPut(a.country) {
+        // Brazil: INMET's feed, read once per round, matched by the town's IBGE code (InmetWarnings.kt).
+        var inmet: String? = null
+        fun brazil(a: Area): List<WeatherWarning> {
+            if (a.uf.isBlank()) return emptyList()
+            // The first of the names OpenStreetMap gives that IBGE knows as a municipality.
+            val (town, code) = a.towns.firstNotNullOfOrNull { t -> InmetWarnings.ibgeCode(a.uf, t)?.let { t to it } } ?: return emptyList()
+            val json = inmet ?: InmetWarnings.fetch().also { inmet = it }
+            return InmetWarnings.parse(json, System.currentTimeMillis(), code, town)
+        }
+        fun warnings(a: Area): List<WeatherWarning> = if (a.country == "br") brazil(a) else feeds.getOrPut(a.country) {
             val slug = WeatherWarnings.feedFor(a.country) ?: return@getOrPut emptyList()
             val request = Request.Builder().url(FEED + slug).header("User-Agent", OVERPASS_AGENT).build()
             Http.client.newCall(request).execute().use { r ->
@@ -166,10 +178,12 @@ internal object WeatherAlerts {
                 WeatherWarnings.parse(r.body?.string().orEmpty(), System.currentTimeMillis())
             }
         }
-        fun worst(list: List<WeatherWarning>) = list.sortedByDescending { it.level }.distinctBy { it.hazard to it.area }
-        val now = worst(warnings(hereArea).filter { WeatherWarnings.inArea(it, hereArea.names) })
+        fun worst(list: List<WeatherWarning>) = list.sortedByDescending { it.level }.distinctBy { it.hazard.ifEmpty { it.event } to it.area }
+        // INMET's are already the town's own; MeteoAlarm's are a whole country's, matched by area name.
+        fun inForce(a: Area): List<WeatherWarning> = if (a.country == "br") warnings(a) else warnings(a).filter { WeatherWarnings.inArea(it, a.names) }
+        val now = worst(inForce(hereArea))
         _here.value = now
-        _ahead.value = destArea?.let { a -> worst(warnings(a).filter { WeatherWarnings.inArea(it, a.names) }) }.orEmpty()
+        _ahead.value = destArea?.let { a -> worst(inForce(a)) }.orEmpty()
         val fresh = (now + _ahead.value).filter { it.level >= 2 && markSaid(context, w = it) }
         if (fresh.isEmpty() || !SpokenEvents.isOn(context, SpokenEvent.WEATHER)) return
         val app = AppLanguage.wrap(context)
@@ -200,14 +214,18 @@ internal object WeatherAlerts {
     private fun area(lat: Double, lng: Double, cache: Boolean): Area? {
         val key = (lat * 10).toInt() to (lng * 10).toInt()
         if (cache) areaCache?.takeIf { it.first == key }?.let { return it.second }
-        val url = String.format(Locale.US, "%s?format=json&zoom=8&lat=%.4f&lon=%.4f", REVERSE, lat, lng)
+        // Zoom 10 is the town: Brazil's warnings are by municipality; the county and region come along.
+        val url = String.format(Locale.US, "%s?format=json&zoom=10&lat=%.4f&lon=%.4f", REVERSE, lat, lng)
         val request = Request.Builder().url(url).header("User-Agent", OVERPASS_AGENT).build()
         val a = Http.client.newCall(request).execute().use { r ->
             if (!r.isSuccessful) return null
             JSONObject(r.body?.string() ?: "{}").optJSONObject("address") ?: return null
         }
         val names = listOf("county", "state_district", "state", "region").mapNotNull { k -> a.optString(k).takeIf { it.isNotBlank() } }
-        val area = Area(a.optString("country_code"), names)
+        val towns = listOf("city", "town", "municipality", "village").mapNotNull { k -> a.optString(k).takeIf { it.isNotBlank() } }.distinct()
+        // "BR-SP": the state's two letters, as IBGE's list of municipalities wants them.
+        val uf = a.optString("ISO3166-2-lvl4").substringAfter('-', "")
+        val area = Area(a.optString("country_code"), names, towns, uf)
         if (cache) areaCache = key to area
         return area
     }

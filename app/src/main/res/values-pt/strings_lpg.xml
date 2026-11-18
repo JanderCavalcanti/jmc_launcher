@@ -16,7 +16,7 @@
     <string name="lpg_save">Salvar</string>
     <string name="lpg_skip">Ignorar</string>
     <string name="lpg_use">%1$s, estimado</string>
-    <string name="lpg_use_learned">%1$s, medido na bomba</string>
+    <string name="lpg_use_learned">%1$s, medido no posto</string>
     <string name="lpg_use_label">Consumo</string>
     <string name="lpg_explanation">O indicador do carro só conhece a gasolina. O nível de GLP é calculado pelos quilômetros feitos a GLP, por isso toque em Cheio após cada abastecimento.</string>
     <string name="lpg_enable">Acompanhar um tanque de GLP</string>
@@ -56,9 +56,9 @@
     <string name="lpg_method_label">Como é calculado o GLP gasto</string>
     <string name="lpg_method_average">Média</string>
     <string name="lpg_method_engine">Motor × fator</string>
-    <string name="lpg_method_engine_detail">Mesmo a GLP, a centralina calcula a gasolina de que precisa. Lida por OBD e multiplicada pelo fator, acompanha cidade e rodovia; sem adaptador usa-se a média.</string>
+    <string name="lpg_method_engine_detail">Mesmo a GLP, a ECU calcula a gasolina de que precisa. Lida por OBD e multiplicada pelo fator, acompanha cidade e rodovia; sem adaptador usa a média.</string>
     <string name="lpg_factor">Fator, litros de GLP por litro de gasolina</string>
-    <string name="lpg_factor_learned">Medido na bomba: %1$s</string>
+    <string name="lpg_factor_learned">Medido no posto: %1$s</string>
     <string name="lpg_flow_now">Leitura do motor: %1$s L/h</string>
     <string name="lpg_flow_none">Ainda sem leitura do motor. Aparece com o adaptador ligado e o motor trabalhando.</string>
     <string name="lpg_voice_auto">GLP de volta, assim que o motor aquecer.</string>

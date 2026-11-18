@@ -189,8 +189,8 @@ internal object SteeringWheelStore {
     /** How long a pressed button stays lit on the map. */
     private const val LIT_MS = 700L
 
-    /** Whether the wheel buttons are offered at all (Settings, Driving). */
-    val AVAILABLE = true
+    /** Whether the wheel buttons are offered at all (Settings, Driving). JMCAR: the tbox has no MCU or CAN box to read them. */
+    val AVAILABLE = false
 
     private var appContext: Context? = null
     private val scope = CoroutineScope(SupervisorJob() + Dispatchers.Main.immediate)

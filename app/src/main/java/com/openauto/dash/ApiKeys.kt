@@ -134,7 +134,8 @@ internal fun ApiKeysSheet(onDismiss: () -> Unit) {
         actions = { SheetButton(stringResource(R.string.ai_done), onClick = ::close) }
     ) {
         Text(stringResource(R.string.api_keys_explanation), color = DashColors.TextSecondary, style = MaterialTheme.typography.bodyMedium)
-        for (service in ApiService.entries) {
+        // JMCAR: Tankerkönig is Germany's fuel prices, nothing for Brazil (Jmcar.STATION_FEED).
+        for (service in ApiService.entries.filter { Jmcar.STATION_FEED || it != ApiService.TANKERKOENIG }) {
             Spacer(Modifier.height(16.dp))
             ApiKeyField(service, keys.getValue(service).value) { keys.getValue(service).value = it }
         }

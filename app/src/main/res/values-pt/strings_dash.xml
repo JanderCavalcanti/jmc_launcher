@@ -117,7 +117,7 @@
     <string name="dash_theme_clean">Limpo</string>
     <string name="dash_theme_clean_desc">Minimalista, de alto contraste e fácil de ler</string>
     <string name="dash_theme_premium_glass">Vidro Premium</string>
-    <string name="dash_theme_premium_glass_desc">Vidro fumado à noite, fosco de dia</string>
+    <string name="dash_theme_premium_glass_desc">Vidro fumê à noite, fosco de dia</string>
     <string name="dash_theme_sporty">Desportivo</string>
     <string name="dash_theme_sporty_desc">Cockpit esportivo vermelho</string>
     <string name="dash_theme_floating">Flutuante</string>
@@ -129,7 +129,7 @@
     <string name="dash_theme_horizon">Horizonte</string>
     <string name="dash_theme_horizon_desc">Sem widgets, só o céu e a estrada pela frente</string>
     <string name="dash_theme_tape_deck">Leitor de cassetes</string>
-    <string name="dash_theme_tape_deck_desc">Autorrádio synthwave dos anos 80: cassete, grade néon, dígitos LED</string>
+    <string name="dash_theme_tape_deck_desc">Toca-fitas synthwave dos anos 80: cassete, grade néon, dígitos LED</string>
 
     <!-- Screen layouts (the enum names are what gets saved) -->
     <string name="dash_layout_grid">Só painéis</string>
@@ -174,9 +174,9 @@
     <string name="dash_theme_night">Noite</string>
     <string name="dash_theme_day">Dia</string>
     <string name="dash_theme_mistral">Mistral</string>
-    <string name="dash_theme_mistral_desc">O painel central do C4 Picasso: dígitos branco frio sobre grafite fumado, avisos âmbar</string>
+    <string name="dash_theme_mistral_desc">O painel central do C4 Picasso: dígitos branco frio sobre grafite fumê, avisos âmbar</string>
     <string name="dash_theme_zenith">Zénith</string>
-    <string name="dash_theme_zenith_desc">O habitáculo lounge: cinzento pérola, painéis brancos, um único acento azul profundo</string>
+    <string name="dash_theme_zenith_desc">O habitáculo lounge: cinza pérola, painéis brancos, um único acento azul profundo</string>
     <string name="dash_theme_luxury">Luxo clássico</string>
     <string name="dash_theme_luxury_desc">Vidro azul-noite, filetes dourado champanhe, algarismos finos</string>
     <string name="dash_theme_eco_leaf">Eco folha</string>
@@ -205,9 +205,9 @@
     <string name="dash_apps">Apps</string>
     <string name="dash_rootless_title">Acesso root necessário</string>
     <plurals name="dash_rootless_body">
-        <item quantity="one">%1$s precisa de acesso root, que o JMCAR não tem neste autorrádio. O bloco vai ser removido do painel.</item>
-        <item quantity="many">%1$s precisam de acesso root, que o JMCAR não tem neste autorrádio. Os blocos vão ser removidos do painel.</item>
-        <item quantity="other">%1$s precisam de acesso root, que o JMCAR não tem neste autorrádio. Os blocos vão ser removidos do painel.</item>
+        <item quantity="one">%1$s precisa de acesso root, que o JMCAR não tem nesta central. O bloco vai ser removido do painel.</item>
+        <item quantity="many">%1$s precisam de acesso root, que o JMCAR não tem nesta central. Os blocos vão ser removidos do painel.</item>
+        <item quantity="other">%1$s precisam de acesso root, que o JMCAR não tem nesta central. Os blocos vão ser removidos do painel.</item>
     </plurals>
     <!-- The bar's position chip (PagePosition.kt) -->
     <string name="dash_position_chip">Painel: %1$s</string>
@@ -233,7 +233,7 @@
     <string name="dash_theme_simple_desc">Números grandes e legíveis, o seu carro iluminado como num stand, poucos botões grandes.</string>
     <string name="dash_theme_modern">Moderno</string>
     <string name="dash_theme_modern_desc">Cartões de vidro fosco sobre uma cidade em 3D, a rota iluminada.</string>
-    <string name="dash_theme_motorsport">Desporto motorizado</string>
+    <string name="dash_theme_motorsport">Automobilismo</string>
     <string name="dash_theme_motorsport_desc">A tela de um carro de corrida: luzes de mudança, tempos por setor, moldura da cor da bandeira.</string>
     <string name="dash_theme_anime">Anime</string>
     <string name="dash_theme_anime_desc">Quadros de quadrinhos num céu de pôr do sol, o seu carro como adesivo que fala.</string>
@@ -264,7 +264,7 @@
     <string name="dash_theme_spatial">Espacial</string>
     <string name="dash_theme_spatial_desc">Janelas de vidro flutuando a diferentes profundidades sobre uma cidade 3D à noite.</string>
     <string name="dash_theme_paper">Papel</string>
-    <string name="dash_theme_paper_desc">Tinta sobre cinzento como o papel eletrónico: um mapa de pontos, factos simples e nada que se mexa.</string>
+    <string name="dash_theme_paper_desc">Tinta sobre cinza como o papel eletrônico: um mapa de pontos, fatos simples e nada que se mexa.</string>
     <string name="look_layout_applied">Início disposto como %1$s</string>
     <string name="dash_bar_size">Tamanho da barra</string>
     <string name="dash_bar_size_normal">Normal</string>

@@ -458,7 +458,7 @@ private val SETTINGS_INDEX: List<SettingsEntry> by lazy {
         SettingsEntry(R.string.signals_title, SettingsTab.DIAGNOSTICS, listOf(Deep.SIGNALS), detail = R.string.signals_settings_detail),
 
         SettingsEntry(R.string.settings_drive_lock, SettingsTab.DRIVING, detail = R.string.settings_drive_lock_detail),
-        SettingsEntry(R.string.reverse_title, SettingsTab.DRIVING, listOf(Deep.REVERSE), detail = R.string.reverse_settings_detail),
+        SettingsEntry(R.string.reverse_title, SettingsTab.DRIVING, listOf(Deep.REVERSE), detail = R.string.reverse_settings_detail, offered = { Jmcar.REVERSE_VIEW }),
         SettingsEntry(R.string.places_title, SettingsTab.DRIVING, listOf(Deep.PLACES)),
         SettingsEntry(R.string.settings_waze_wake, SettingsTab.DRIVING, detail = R.string.settings_waze_wake_detail, offered = { Edition.full && WazeWake.present }),
         SettingsEntry(R.string.wheel_title, SettingsTab.DRIVING, listOf(Deep.WHEEL), offered = { SteeringWheelStore.AVAILABLE }),
@@ -489,8 +489,6 @@ private val SETTINGS_INDEX: List<SettingsEntry> by lazy {
         SettingsEntry(R.string.dash_menu_check_updates, SettingsTab.GENERAL, listOf(Deep.ABOUT), offered = full),
         SettingsEntry(R.string.about_updates_play, SettingsTab.GENERAL, listOf(Deep.ABOUT), offered = { Edition.play }),
         SettingsEntry(R.string.settings_section_about, SettingsTab.GENERAL, listOf(Deep.ABOUT)),
-        SettingsEntry(R.string.help_title, SettingsTab.GENERAL, listOf(Deep.ABOUT)),
-        SettingsEntry(R.string.tour_settings_row, SettingsTab.GENERAL, listOf(Deep.ABOUT)),
 
         SettingsEntry(R.string.settings_lab, SettingsTab.EXPERT, listOf(Deep.LAB)),
         SettingsEntry(R.string.api_keys_title, SettingsTab.EXPERT, listOf(Deep.API_KEYS), detail = R.string.api_keys_search_detail),

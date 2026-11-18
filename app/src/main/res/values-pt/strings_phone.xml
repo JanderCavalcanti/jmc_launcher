@@ -5,7 +5,7 @@
     <string name="phone_status_connected">Ligado a %1$s</string>
     <string name="phone_status_connected_detail">As notificações e mensagens aparecem no widget Notificações.</string>
     <string name="phone_status_searching">À procura do telefone no Wi-Fi</string>
-    <string name="phone_status_searching_detail">Ative o hotspot do telefone e ligue este autorrádio; o JMCAR Companheiro trata do resto.</string>
+    <string name="phone_status_searching_detail">Ative o hotspot do telefone e conecte esta central; o JMCAR Companheiro trata do resto.</string>
     <string name="phone_status_unpaired">Nenhum celular pareado</string>
     <string name="phone_status_unpaired_detail">Associe o telefone para ver aqui as mensagens e responder.</string>
     <string name="phone_pair">Associar um telefone</string>
@@ -23,7 +23,7 @@
     <string name="phone_forget_body">As mensagens e chamadas deixam de aparecer aqui. Para voltar a associar é preciso um novo código.</string>
     <string name="phone_pair_title">Associar um telefone</string>
     <string name="phone_pair_step1">1. Instale o JMCAR Companheiro no telefone: leia este código com a câmera.</string>
-    <string name="phone_pair_step2">2. Ative o hotspot Wi-Fi do telefone e ligue este autorrádio.</string>
+    <string name="phone_pair_step2">2. Ative o hotspot Wi-Fi do telefone e conecte esta central.</string>
     <string name="phone_pair_step3">3. Na app, toque em Associar um carro e leia este código.</string>
     <string name="phone_pair_waiting">À espera do telefone…</string>
     <string name="phone_pair_done">Associado a %1$s</string>

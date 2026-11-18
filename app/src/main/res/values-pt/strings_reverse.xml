@@ -41,10 +41,10 @@
     <string name="reverse_picture_failed">O JMCAR não conseguiu a câmera: imagem da app do carro</string>
     <string name="reverse_side_left">Lado esquerdo: %1$d cm</string>
     <string name="reverse_side_right">Lado direito: %1$d cm</string>
-    <string name="reverse_boot_blocked">A mala não abre por completo aqui</string>
-    <string name="reverse_boot_title">Linha da mala</string>
-    <string name="reverse_boot_detail">Uma linha tracejada até onde chega a porta da mala aberta, e um aviso se algo estiver mais perto.</string>
-    <string name="reverse_boot_room">Espaço da mala: %1$d cm</string>
+    <string name="reverse_boot_blocked">O porta-malas não abre por completo aqui</string>
+    <string name="reverse_boot_title">Linha do porta-malas</string>
+    <string name="reverse_boot_detail">Uma linha tracejada até onde chega a tampa do porta-malas aberta, e um aviso se algo estiver mais perto.</string>
+    <string name="reverse_boot_room">Espaço do porta-malas: %1$d cm</string>
     <string name="reverse_lens">Curvatura da lente</string>
     <string name="reverse_second_title">Segunda tela</string>
     <string name="reverse_second_off">Não</string>
@@ -54,7 +54,7 @@
     <string name="reverse_near_ahead">Algo à frente</string>
     <string name="reverse_steer">Linhas de direção</string>
     <string name="reverse_flip_picture">Espelhar imagem</string>
-    <string name="reverse_radar_title">Aspeto do radar</string>
+    <string name="reverse_radar_title">Aparência do radar</string>
     <string name="reverse_radar_ground">Chão</string>
     <string name="reverse_radar_plain">Simples</string>
     <string name="reverse_radar_alert">Radar de estacionamento</string>

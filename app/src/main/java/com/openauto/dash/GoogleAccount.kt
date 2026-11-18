@@ -223,6 +223,18 @@ internal object GoogleAccount {
         refreshState(context)
     }
 
+    /** A new text file [name] in Drive (a unit log, [DebugLog.sendToDrive]). Off the main thread. */
+    fun uploadText(context: Context, name: String, text: String): Result<Unit> = runCatching {
+        val token = accessToken(context)
+        val boundary = "jmc" + System.nanoTime()
+        val meta = JSONObject().put("name", name).put("mimeType", "text/plain")
+            .put("description", "JMCAR: registro do tbox para análise").toString()
+        val body = "--$boundary\r\nContent-Type: application/json; charset=UTF-8\r\n\r\n$meta\r\n" +
+            "--$boundary\r\nContent-Type: text/plain; charset=UTF-8\r\n\r\n$text\r\n--$boundary--\r\n"
+        val (status, _) = request("POST", "$DRIVE_UPLOAD?uploadType=multipart&fields=id", token, body, "multipart/related; boundary=$boundary")
+        if (status != HttpURLConnection.HTTP_OK) throw IOException("drive log upload: http $status")
+    }
+
     /** The setup saved in Drive, as [SetupBackup.restore] takes it. Off the main thread. */
     fun download(context: Context): Result<String> = runCatching {
         val token = accessToken(context)

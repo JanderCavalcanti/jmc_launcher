@@ -81,13 +81,13 @@
     <!-- OBD adapter status messages -->
     <string name="vehicle_unknown_device">Dispositivo desconhecido</string>
     <string name="vehicle_no_response">Sem resposta do adaptador</string>
-    <string name="vehicle_no_dtc_answer">A centralina do motor não respondeu ao pedido de códigos de falha. Tente de novo daqui a pouco.</string>
+    <string name="vehicle_no_dtc_answer">A ECU do motor não respondeu ao pedido de códigos de falha. Tente de novo daqui a pouco.</string>
     <string name="vehicle_lamp_no_codes">A luz do motor está acesa mas não chegou nenhum código. Tente de novo com o motor trabalhando.</string>
     <string name="vehicle_pending">Pendente</string>
     <string name="vehicle_lamp_on">Luz do motor acesa</string>
     <string name="vehicle_lamp_off">Luz do motor apagada</string>
     <string name="vehicle_engine_off_hint">Motor desligado: com a ignição ligada, a luz do motor acende para se testar e apaga quando o motor dá partida. A leitura repete-se sozinha com o motor trabalhando.</string>
-    <string name="vehicle_obd_scope">O OBD normal só vê falhas do motor e de emissões; ABS, airbag e carroçaria precisam da ferramenta de diagnóstico da Citroën.</string>
+    <string name="vehicle_obd_scope">O OBD normal só vê falhas do motor e de emissões; ABS, airbag e carroceria precisam da ferramenta de diagnóstico da Citroën.</string>
     <string name="vehicle_clear_rejected">O adaptador respondeu «%1$s». Ligue a ignição (motor desligado) e tente novamente.</string>
 
     <!-- Doors tile -->
@@ -136,17 +136,17 @@
     <string name="vehicle_dtc_p0340_title">Sensor de posição da árvore de cames: circuito</string>
     <string name="vehicle_dtc_p0340_fix">Testar/substituir o sensor de cames; inspecionar ficha e fiação.</string>
     <string name="vehicle_dtc_p0299_title">Pressão do turbo insuficiente</string>
-    <string name="vehicle_dtc_p0299_fix">Comum em THP/HDi. Procurar fugas de pressão (tubos/intercooler), verificar wastegate/atuador do turbo e a válvula de descarga.</string>
+    <string name="vehicle_dtc_p0299_fix">Comum em THP/HDi. Procurar vazamentos de pressão (tubos/intercooler), verificar wastegate/atuador do turbo e a válvula de descarga.</string>
     <string name="vehicle_dtc_p0234_title">Sobrepressão do turbo</string>
     <string name="vehicle_dtc_p0234_fix">Verificar se o atuador da wastegate está preso, a eletroválvula de pressão e se o VNT está bloqueado (HDi).</string>
     <string name="vehicle_dtc_p0087_title">Pressão da rampa de combustível muito baixa</string>
-    <string name="vehicle_dtc_p0087_fix">HDi: verificar filtro de combustível, alimentação de baixa pressão, bomba de alta pressão e regulador de pressão da rampa; procurar ar/fugas.</string>
+    <string name="vehicle_dtc_p0087_fix">HDi: verificar filtro de combustível, alimentação de baixa pressão, bomba de alta pressão e regulador de pressão da rampa; procurar ar/vazamentos.</string>
     <string name="vehicle_dtc_p0089_title">Desempenho do regulador de pressão de combustível</string>
     <string name="vehicle_dtc_p0089_fix">Verificar o regulador de pressão da rampa/válvula doseadora e a bomba; inspecionar o filtro de combustível.</string>
     <string name="vehicle_dtc_p0093_title">Grande fuga de combustível detetada</string>
-    <string name="vehicle_dtc_p0093_fix">HDi: inspecionar retornos dos injetores, tubos de alta pressão e vedantes da bomba quanto a fugas de diesel.</string>
+    <string name="vehicle_dtc_p0093_fix">HDi: inspecionar retornos dos injetores, tubos de alta pressão e vedações da bomba quanto a vazamentos de diesel.</string>
     <string name="vehicle_dtc_p0420_title">Eficiência do catalisador abaixo do limite (banco 1)</string>
-    <string name="vehicle_dtc_p0420_fix">Muitas vezes um catalisador gasto ou uma sonda lambda traseira lenta. Excluir primeiro fugas no escape e falhas de ignição.</string>
+    <string name="vehicle_dtc_p0420_fix">Muitas vezes um catalisador gasto ou uma sonda lambda traseira lenta. Descartar primeiro vazamentos no escapamento e falhas de ignição.</string>
     <string name="vehicle_dtc_p0401_title">Fluxo EGR insuficiente</string>
     <string name="vehicle_dtc_p0401_fix">Limpar ou substituir a válvula EGR; verificar o refrigerador EGR e as condutas quanto a carvão (comum em HDi).</string>
     <string name="vehicle_dtc_p0402_title">Fluxo EGR excessivo</string>
@@ -167,7 +167,7 @@
     <string name="vehicle_dtc_p0171_fix">Procurar entradas de ar na admissão/vácuo (comum), medidor de massa de ar sujo, bomba de combustível/injetores fracos.</string>
     <string name="vehicle_dtc_p0172_title">Mistura muito rica (banco 1)</string>
     <string name="vehicle_dtc_p0172_fix">Procurar injetores pingando, pressão de combustível alta, medidor de massa de ar sujo ou sonda lambda com defeito.</string>
-    <string name="vehicle_dtc_p0505_title">Sistema de controle do ralenti</string>
+    <string name="vehicle_dtc_p0505_title">Sistema de controle da marcha lenta</string>
     <string name="vehicle_dtc_p0505_fix">Limpar o corpo de borboleta; procurar entradas de ar e verificar o motor da borboleta.</string>
     <string name="vehicle_dtc_p2100_title">Circuito do motor do atuador da borboleta</string>
     <string name="vehicle_dtc_p2100_fix">Verificar o motor do corpo de borboleta e a fiação; pode exigir a substituição do corpo de borboleta.</string>
@@ -178,7 +178,7 @@
     <string name="vehicle_dtc_fallback_fix">Sem descrição salva. Procurar códigos relacionados, verificar o sensor/fiação do circuito afetado e pesquisar «%1$s Citroën C4 Picasso» para indicações específicas do modelo.</string>
     <string name="vehicle_dtc_system_powertrain">grupo motopropulsor</string>
     <string name="vehicle_dtc_system_chassis">chassis</string>
-    <string name="vehicle_dtc_system_body">carroçaria</string>
+    <string name="vehicle_dtc_system_body">carroceria</string>
     <string name="vehicle_dtc_system_network">rede</string>
     <string name="vehicle_dtc_system_unknown">sistema desconhecido</string>
     <string name="vehicle_dtc_scope_generic">genérica</string>
@@ -186,22 +186,22 @@
     <string name="vehicle_dtc_area_fuel_air">doseamento ar/combustível</string>
     <string name="vehicle_dtc_area_ignition">ignição / falhas de ignição</string>
     <string name="vehicle_dtc_area_emissions">emissões / auxiliares</string>
-    <string name="vehicle_dtc_area_idle">velocidade / controle do ralenti</string>
-    <string name="vehicle_dtc_area_computer">centralina / saídas</string>
+    <string name="vehicle_dtc_area_idle">velocidade / controle da marcha lenta</string>
+    <string name="vehicle_dtc_area_computer">ECU / saídas</string>
     <string name="vehicle_dtc_area_transmission">transmissão</string>
     <string name="vehicle_dtc_area_system">sistema</string>
 
     <!-- Why the adapter is not connected -->
     <string name="vehicle_obd_connecting_to">Ligando a %1$s…</string>
     <string name="vehicle_obd_pairing_pin">Pareando: introduza o PIN do adaptador na janela</string>
-    <string name="vehicle_obd_switching_bt_on">Ligando o Bluetooth do autorrádio…</string>
+    <string name="vehicle_obd_switching_bt_on">Ligando o Bluetooth da central…</string>
     <string name="vehicle_obd_adapter">Adaptador: %1$s</string>
     <string name="vehicle_choose_adapter">Escolher adaptador</string>
     <string name="vehicle_err_bt_off">O Bluetooth do rádio está desligado</string>
-    <string name="vehicle_err_not_paired">%1$s não está pareado com o autorrádio: toque em OBD para o parear de novo</string>
+    <string name="vehicle_err_not_paired">%1$s não está pareado com a central: toque em OBD para o parear de novo</string>
     <string name="vehicle_err_pairing_failed">O pareamento com %1$s não terminou: toque em OBD e introduza o PIN</string>
-    <string name="vehicle_err_bt_still_off">O Bluetooth do autorrádio está desligado e não liga: reinicie o autorrádio e toque em OBD</string>
-    <string name="vehicle_err_bt_stuck">O Bluetooth Android do autorrádio está bloqueado: reinicie o autorrádio e toque em OBD</string>
+    <string name="vehicle_err_bt_still_off">O Bluetooth da central está desligado e não liga: reinicie a central e toque em OBD</string>
+    <string name="vehicle_err_bt_stuck">O Bluetooth Android da central está bloqueado: reinicie a central e toque em OBD</string>
     <string name="vehicle_err_refused">%1$s recusou a conexão: ocupado por um celular ou outra app, sem alimentação ou fora de alcance</string>
     <string name="vehicle_err_silent">%1$s ligou-se mas nunca respondeu: ligue a ignição e toque em OBD</string>
     <string name="vehicle_usb_cable">Cabo USB</string>

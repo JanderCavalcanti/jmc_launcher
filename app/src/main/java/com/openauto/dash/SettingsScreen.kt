@@ -14,6 +14,7 @@ import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.platform.LocalView
 import androidx.compose.ui.layout.onGloballyPositioned
 import androidx.compose.ui.layout.positionInWindow
+import androidx.compose.material.icons.filled.RadioButtonChecked
 import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.Swipe
 import androidx.compose.material.icons.filled.TouchApp
@@ -42,6 +43,7 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.foundation.horizontalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.SaveAlt
 import androidx.compose.material.icons.filled.Autorenew
@@ -202,6 +204,9 @@ internal enum class Deep {
 /** Under this width the categories go along the top: a rail would leave the settings half a screen. */
 internal val NARROW_SETTINGS = 800.dp
 
+/** Under this height the grid of categories would leave the pane a sliver: they go in one row that slides sideways. */
+internal val SHORT_SETTINGS = 640.dp
+
 /** The theme choice and its setters, owned by the dashboard root. */
 internal data class ThemeState(
     val mode: DashThemeMode,
@@ -324,6 +329,7 @@ internal fun SettingsScreen(
 
     SolidCard(modifier = modifier) {
         BoxWithConstraints(modifier = Modifier.fillMaxSize()) {
+            val short = maxHeight < SHORT_SETTINGS
             when {
                 // The overview has the whole card: its tiles are the categories.
                 tab == SettingsTab.OVERVIEW -> SettingsOverview(
@@ -337,7 +343,8 @@ internal fun SettingsScreen(
                     onClose = close
                 )
                 maxWidth < NARROW_SETTINGS -> Column(modifier = Modifier.fillMaxSize()) {
-                    SettingsTabs(tab, choose, close)
+                    if (short) SettingsTabStrip(tab, choose, close)
+                    else SettingsTabs(tab, choose, close)
                     pane(Modifier.weight(1f).fillMaxWidth())
                 }
                 else -> Row(modifier = Modifier.fillMaxSize()) {
@@ -482,6 +489,66 @@ private fun SettingsTabs(tab: SettingsTab, onChoose: (SettingsTab) -> Unit, onCl
     }
 }
 
+/** Narrow and low screens (a 720 px monitor): close and the categories in one row that slides sideways, so the pane keeps the height. */
+@OptIn(androidx.compose.foundation.ExperimentalFoundationApi::class)
+@Composable
+private fun SettingsTabStrip(tab: SettingsTab, onChoose: (SettingsTab) -> Unit, onClose: () -> Unit) {
+    val tap = rememberTapFeedback()
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .background(DashColors.CardHi.copy(alpha = DashColors.CardHi.alpha * 0.4f))
+            .padding(horizontal = 10.dp, vertical = 8.dp),
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        Box(
+            modifier = Modifier
+                .size(DashSize.TouchPrimary)
+                .clip(DashShape.Medium)
+                .background(DashColors.CardHi)
+                .clickable(role = Role.Button, onClickLabel = stringResource(R.string.dash_close)) { tap(); onClose() },
+            contentAlignment = Alignment.Center
+        ) {
+            Icon(Icons.Filled.Close, contentDescription = stringResource(R.string.dash_close), tint = DashColors.TextPrimary, modifier = Modifier.size(26.dp))
+        }
+        Spacer(Modifier.width(10.dp))
+        Row(
+            modifier = Modifier.weight(1f).horizontalScroll(rememberScrollState()),
+            horizontalArrangement = Arrangement.spacedBy(6.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            SettingsTab.entries.forEach { t ->
+                val chosen = t == tab
+                val ink = if (chosen) DashColors.OnAccent else DashColors.TextPrimary
+                // The chosen one slides into sight, also when Settings open straight on a category at the end.
+                val requester = remember { BringIntoViewRequester() }
+                if (chosen) LaunchedEffect(t) { requester.bringIntoView() }
+                Row(
+                    modifier = Modifier
+                        .bringIntoViewRequester(requester)
+                        .heightIn(min = DashSize.TouchPrimary)
+                        .clip(DashShape.Medium)
+                        .then(
+                            if (chosen) Modifier.background(DashColors.AccentBrush)
+                            else Modifier.border(1.dp, DashColors.Line, DashShape.Medium)
+                        )
+                        .clickable(role = Role.Tab) { tap(); onChoose(t) }
+                        .padding(horizontal = 14.dp),
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Icon(t.icon, contentDescription = null, tint = ink, modifier = Modifier.size(22.dp))
+                    Spacer(Modifier.width(8.dp))
+                    Text(
+                        stringResource(t.titleRes), color = ink,
+                        fontWeight = if (chosen) FontWeight.SemiBold else FontWeight.Normal,
+                        style = MaterialTheme.typography.labelLarge, maxLines = 1
+                    )
+                }
+            }
+        }
+    }
+}
+
 /** Over the pane's bottom edge while there is more under it: a fade and an arrow. */
 @Composable
 internal fun MoreBelow(scroll: ScrollState, modifier: Modifier = Modifier) {
@@ -519,6 +586,8 @@ private fun DiagnosticsPane(open: (Deep) -> Unit) {
     SettingsSection(stringResource(R.string.settings_section_diagnostics))
     SettingsRow(Icons.Filled.Bluetooth, stringResource(R.string.settings_obd_title), obdSummary()) { open(Deep.OBD) }
     SettingsRow(Icons.Filled.AutoAwesome, stringResource(R.string.ai_title), stringResource(R.string.settings_ai_detail)) { open(Deep.AI) }
+    // JMCAR: the integrations (the Gemini key) here too, beside the mechanic that needs them.
+    SettingsRow(Icons.Filled.Key, stringResource(R.string.api_keys_title), stringResource(R.string.jmc_integrations_detail)) { open(Deep.API_KEYS) }
     SettingsRow(Icons.Filled.Checklist, stringResource(R.string.scan_title), stringResource(R.string.scan_settings_detail)) { open(Deep.OBD_SCAN) }
     SettingsRow(Icons.Filled.Calculate, stringResource(R.string.mine_title), stringResource(R.string.mine_settings_detail)) { open(Deep.MY_READINGS) }
     SettingsRow(Icons.Filled.SettingsInputAntenna, stringResource(R.string.signals_title), stringResource(R.string.signals_settings_detail)) { open(Deep.SIGNALS) }
@@ -825,7 +894,21 @@ private fun DashboardPane(m: TopBarModel, theme: ThemeState) {
     Spacer(Modifier.height(20.dp))
     NavigationSetting(theme)
     Spacer(Modifier.height(12.dp))
+    FloatingBallSetting()
+    Spacer(Modifier.height(12.dp))
     MomentsRow(m.onMoments)
+}
+
+/** jmc_launcher: JMCAR's floating button over every app ([FloatingBall]), on or off. */
+@Composable
+private fun FloatingBallSetting() {
+    val context = LocalContext.current
+    LaunchedEffect(Unit) { FloatingBall.load(context) }
+    val on by FloatingBall.on.collectAsState()
+    SettingsToggle(
+        Icons.Filled.RadioButtonChecked, stringResource(R.string.jmc_ball_title),
+        stringResource(R.string.jmc_ball_detail), on
+    ) { FloatingBall.save(context, it) }
 }
 
 /** Every sound it makes that is not an alert: the volume, the tap sound, the music after a call. */
@@ -1054,7 +1137,7 @@ private fun DrivingPane(m: TopBarModel, open: (Deep) -> Unit) {
         Icons.Filled.DirectionsCar, stringResource(R.string.settings_drive_lock),
         stringResource(R.string.settings_drive_lock_detail), m.lockWhileMoving, onChange = m.onLockWhileMoving
     )
-    SettingsRow(Icons.Filled.Videocam, stringResource(R.string.reverse_title), stringResource(R.string.reverse_settings_detail)) { open(Deep.REVERSE) }
+    if (Jmcar.REVERSE_VIEW) SettingsRow(Icons.Filled.Videocam, stringResource(R.string.reverse_title), stringResource(R.string.reverse_settings_detail)) { open(Deep.REVERSE) }
     PlacesRow { open(Deep.PLACES) }
     WazeWakeSetting()
     // Every physical button together: what the wheel's do, then what the unit's own keys open.
@@ -1361,6 +1444,7 @@ private fun LabSheet(open: (Deep) -> Unit, onDismiss: () -> Unit) {
                     canOpen = lost.size > 1
                 ) { expanded = !expanded }
             }
+            DriveLogRow()
             SendLogRow()
             SaveLogRow()
         }
@@ -1447,7 +1531,7 @@ private const val PROJECT_URL = "https://github.com/JanderCavalcanti/jmc_launche
 /** A Google Play listing, the package name appended (the Play edition's own, and the companion's). */
 internal const val PLAY_LISTING = "https://play.google.com/store/apps/details?id="
 
-/** Who made the app, what it is, the update check, a Ko-fi link with its QR code, the tour, help and the project. */
+/** JMCAR's About: the maintainer, the project's GitHub, the version and the update check. */
 @Composable
 private fun AboutSheet(m: TopBarModel, onDismiss: () -> Unit) {
     SettingsSheet(title = stringResource(R.string.settings_section_about), onDismiss = onDismiss, actions = {}) {
@@ -1458,7 +1542,7 @@ private fun AboutSheet(m: TopBarModel, onDismiss: () -> Unit) {
 @Composable
 private fun AboutBody(m: TopBarModel) {
     val context = LocalContext.current
-    val tap = rememberTapFeedback()
+    // JMCAR: only who maintains it and where the project lives, with the version and the update check.
     Row(verticalAlignment = Alignment.CenterVertically, modifier = Modifier.padding(horizontal = 12.dp)) {
         Box(Modifier.size(64.dp).clip(DashShape.Medium)) {
             Image(painterResource(R.drawable.ic_launcher_background), null, Modifier.fillMaxSize())
@@ -1466,62 +1550,15 @@ private fun AboutBody(m: TopBarModel) {
         }
         Spacer(Modifier.width(16.dp))
         Column {
-            Text(stringResource(R.string.app_name), color = DashColors.TextPrimary, style = MaterialTheme.typography.headlineSmall)
+            Text(stringResource(R.string.jmc_about_author), color = DashColors.TextPrimary, style = MaterialTheme.typography.headlineSmall)
             Text(stringResource(R.string.settings_version, m.versionName), color = DashColors.TextSecondary, style = MaterialTheme.typography.bodyMedium)
         }
     }
-    Spacer(Modifier.height(12.dp))
-    Text(
-        stringResource(R.string.about_description),
-        color = DashColors.TextSecondary, style = MaterialTheme.typography.bodyMedium,
-        modifier = Modifier.padding(horizontal = 12.dp)
-    )
     Spacer(Modifier.height(20.dp))
-    SettingsSection(stringResource(R.string.about_author_section))
-    Column(modifier = Modifier.padding(horizontal = 12.dp)) {
-        Text(stringResource(R.string.about_author_name), color = DashColors.TextPrimary, style = MaterialTheme.typography.titleMedium)
-        Text(stringResource(R.string.about_author_role), color = DashColors.TextSecondary, style = MaterialTheme.typography.bodySmall)
-    }
-    Spacer(Modifier.height(20.dp))
-    // Google Play allows no donation link in the app: tips go through Play's own billing there.
-    if (Edition.play) {
-        TipJar(Modifier.padding(horizontal = 12.dp))
-    } else if (KOFI_URL.isNotEmpty()) {
-        SettingsSection(stringResource(R.string.about_support_section))
-        Row(
-            modifier = Modifier.padding(horizontal = 12.dp),
-            verticalAlignment = Alignment.CenterVertically
-        ) {
-            Column(Modifier.weight(1f)) {
-                Text(stringResource(R.string.about_support_text), color = DashColors.TextSecondary, style = MaterialTheme.typography.bodyMedium)
-                Spacer(Modifier.height(12.dp))
-                SheetButton(stringResource(R.string.about_kofi)) {
-                    tap()
-                    context.launchSafely(Intent(Intent.ACTION_VIEW, Uri.parse(KOFI_URL)))
-                }
-            }
-            Spacer(Modifier.width(16.dp))
-            Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                QrCode(KOFI_URL, Modifier.size(120.dp).clip(DashShape.Small))
-                Text(stringResource(R.string.about_scan), color = DashColors.TextSecondary, style = MaterialTheme.typography.labelSmall, modifier = Modifier.padding(top = 4.dp))
-            }
-        }
-    }
-    Spacer(Modifier.height(20.dp))
-    SettingsSection(stringResource(R.string.settings_section_about))
-    // Here too, where the version is read: "Update" belongs beside it.
-    UpdateRow(m)
-    var report by remember { mutableStateOf(false) }
-    SettingsRow(Icons.Filled.BugReport, stringResource(R.string.report_title), stringResource(R.string.report_row_detail)) { report = true }
-    if (report) CompatibilityReportSheet { report = false }
-    SettingsRow(Icons.Filled.School, stringResource(R.string.tour_settings_row), stringResource(R.string.tour_settings_row_detail), m.onTour)
-    // The wiki, as a QR code for the phone and a button for this screen (WikiHelp.kt).
-    var help by remember { mutableStateOf(false) }
-    SettingsRow(Icons.AutoMirrored.Filled.HelpOutline, stringResource(R.string.help_title), stringResource(R.string.help_row_detail)) { help = true }
-    if (help) WikiHelpDialog(WikiPage.HOME) { help = false }
-    SettingsRow(Icons.Filled.Favorite, stringResource(R.string.about_project), stringResource(R.string.about_project_detail)) {
+    SettingsRow(Icons.Filled.Favorite, stringResource(R.string.jmc_about_github), PROJECT_URL.removePrefix("https://")) {
         context.launchSafely(Intent(Intent.ACTION_VIEW, Uri.parse(PROJECT_URL)))
     }
+    UpdateRow(m)
 }
 
 /**
@@ -1894,6 +1931,36 @@ private fun SaveLogRow() {
             saving = false
             saved = name
             failed = name == null
+        }
+    }
+}
+
+/**
+ * jmc_launcher: sends the unit's log to the Google Drive of the account signed
+ * in under Google account, where the developer reads it ([DebugLog.sendToDrive]).
+ */
+@Composable
+private fun DriveLogRow() {
+    val context = LocalContext.current
+    val scope = rememberCoroutineScope()
+    var sending by remember { mutableStateOf(false) }
+    var result by remember { mutableStateOf<Result<String>?>(null) }
+    val signedIn = remember { GoogleAccount.signedIn(context) }
+    SettingsRow(
+        Icons.Filled.BugReport, stringResource(R.string.jmc_log_drive_title),
+        when {
+            !signedIn -> stringResource(R.string.jmc_log_drive_signin)
+            sending -> stringResource(R.string.jmc_log_drive_sending)
+            result?.isSuccess == true -> stringResource(R.string.jmc_log_drive_sent, result!!.getOrThrow())
+            result?.isFailure == true -> stringResource(R.string.jmc_log_drive_failed)
+            else -> stringResource(R.string.jmc_log_drive_detail)
+        }
+    ) {
+        if (sending || !signedIn) return@SettingsRow
+        sending = true
+        scope.launch {
+            result = DebugLog.sendToDrive(context)
+            sending = false
         }
     }
 }

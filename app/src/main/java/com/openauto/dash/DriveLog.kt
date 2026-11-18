@@ -74,7 +74,7 @@ internal object DriveLogRules {
      */
     fun summary(
         trip: TripState, eco: Drive?, car: CarProfile, ongoing: Boolean,
-        use: Double = car.typicalUse, price: Double = car.fuelPrice,
+        use: Double = car.typicalUse, price: Double = car.priceNow,
         endLat: Double? = null, endLng: Double? = null
     ): DriveSummary {
         val km = trip.distanceM / 1000.0
@@ -229,7 +229,7 @@ internal object DriveLog {
         return DriveLogRules.summary(
             trip, DriveLogRules.ecoFor(trip, CarCare.state.value), car, ongoing,
             use = FuelLog.litersPer100() ?: car.typicalUse,
-            price = FuelLog.lastPrice() ?: car.fuelPrice,
+            price = FuelLog.lastPrice() ?: car.priceNow,
             endLat = here?.latitude, endLng = here?.longitude
         )
     }

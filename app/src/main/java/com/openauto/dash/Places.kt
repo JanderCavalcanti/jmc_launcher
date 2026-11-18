@@ -122,8 +122,78 @@ internal object PlacesStore {
     }
 }
 
-/** Addresses to positions and back, from OpenStreetMap's Nominatim (free, no key). Call off the main thread. */
+/**
+ * Addresses to positions and back. Searches ask Android's geocoder first (on
+ * the tbox it is Google's, through Google Play services: no key, and it knows
+ * Manaus' shops and buildings by name), then OpenStreetMap's Nominatim (free,
+ * no key) where Android has none or finds nothing. Call off the main thread.
+ */
 internal object PlaceSearch {
+    @Volatile private var app: Context? = null
+
+    /** Gives the searches a context for Android's geocoder (DashApp). */
+    fun init(context: Context) { app = context.applicationContext }
+
+    /** How far around the car the geocoder looks first, in degrees (about 80 x 110 km). */
+    private const val NEAR_LAT = 0.7
+    private const val NEAR_LNG = 1.0
+
+    /**
+     * Up to [limit] places for what is typed so far, the ones near the car
+     * first, each under its own address: the list under an address field.
+     * Empty when nothing matches; throws only when every source failed (offline).
+     */
+    fun suggest(
+        query: String,
+        limit: Int = 5,
+        nearLat: Double? = LocationFeed.location.value?.latitude,
+        nearLng: Double? = LocationFeed.location.value?.longitude
+    ): List<Place> {
+        val q = query.trim()
+        if (q.length < 3) return emptyList()
+        val google = runCatching { android(q, limit, nearLat, nearLng) }
+        google.getOrNull()?.takeIf { it.isNotEmpty() }?.let { return it }
+        val osm = runCatching { nominatim(q, limit, nearLat, nearLng, named = false) }
+        osm.getOrNull()?.let { return it }
+        if (google.isFailure) throw google.exceptionOrNull()!!
+        throw osm.exceptionOrNull()!!
+    }
+
+    /** Android's geocoder: Google's on a unit with Play services. Empty when there is none. */
+    @Suppress("DEPRECATION") // The listener form is Android 13+; this runs off the main thread already.
+    private fun android(query: String, limit: Int, nearLat: Double?, nearLng: Double?): List<Place> {
+        val context = app ?: return emptyList()
+        if (!android.location.Geocoder.isPresent()) return emptyList()
+        val geocoder = android.location.Geocoder(context, Locale.forLanguageTag("pt-BR"))
+        val near = if (nearLat != null && nearLng != null) {
+            geocoder.getFromLocationName(query, limit, nearLat - NEAR_LAT, nearLng - NEAR_LNG, nearLat + NEAR_LAT, nearLng + NEAR_LNG)
+        } else null
+        val found = near?.takeIf { it.isNotEmpty() } ?: geocoder.getFromLocationName(query, limit)
+        return found.orEmpty()
+            .filter { it.hasLatitude() && it.hasLongitude() }
+            .filter { !inBrazil() || it.countryCode == null || it.countryCode.equals("BR", true) }
+            .map { Place(label(it.featureName, it.getAddressLine(0)) ?: query, it.latitude, it.longitude) }
+            .distinctBy { it.name }
+    }
+
+    /**
+     * "JMC Tecnologia, R. Ainoã, 12 - Cidade Nova, Manaus - AM" from the
+     * geocoder's name and address line: without the country and the CEP, and
+     * with the place's own name in front when it is one (not just the number).
+     */
+    internal fun label(feature: String?, line: String?): String? {
+        val address = line?.trim()
+            ?.replace(Regex(",\\s*Brasil$|,\\s*Brazil$"), "")
+            ?.replace(Regex(",?\\s*\\d{5}-?\\d{3}"), "")
+            ?.trim()?.trimEnd(',')?.takeIf { it.isNotEmpty() }
+        val name = feature?.trim()?.takeIf { f -> f.isNotEmpty() && f.any { it.isLetter() } && address?.contains(f, true) != true }
+        return when {
+            address == null -> name
+            name == null -> address
+            else -> "$name, $address"
+        }
+    }
+
     private const val SEARCH_URL = "https://nominatim.openstreetmap.org/search"
     private const val REVERSE_URL = "https://nominatim.openstreetmap.org/reverse"
     private const val USER_AGENT = "OpenAutoDash/1.0 (car launcher)"
@@ -132,19 +202,36 @@ internal object PlaceSearch {
      * The first place found for [query], under the name typed; null when nothing
      * matches. Throws when offline. With [nearLat]/[nearLng], places around there
      * come first (a shop's name alone would otherwise find the one in another town).
+     * Without them the car's own position is used when there is one, and in
+     * Brazil the search stays in Brazil: "Rua São Paulo" alone otherwise finds
+     * one in Portugal, which no router can reach by car.
      */
-    fun find(query: String, nearLat: Double? = null, nearLng: Double? = null): Place? {
+    fun find(
+        query: String,
+        nearLat: Double? = LocationFeed.location.value?.latitude,
+        nearLng: Double? = LocationFeed.location.value?.longitude
+    ): Place? {
+        val google = runCatching { android(query, 1, nearLat, nearLng) }.getOrNull()?.firstOrNull()
+        if (google != null) return google.copy(name = query)
+        return nominatim(query, 1, nearLat, nearLng, named = true).firstOrNull()
+    }
+
+    /** Nominatim's matches, under the name typed ([named]) or under their own address. */
+    private fun nominatim(query: String, limit: Int, nearLat: Double?, nearLng: Double?, named: Boolean): List<Place> {
         val around = if (nearLat != null && nearLng != null) {
-            String.format(java.util.Locale.US, "&viewbox=%.4f,%.4f,%.4f,%.4f&bounded=0", nearLng - 1.0, nearLat + 0.7, nearLng + 1.0, nearLat - 0.7)
+            String.format(java.util.Locale.US, "&viewbox=%.4f,%.4f,%.4f,%.4f&bounded=0", nearLng - NEAR_LNG, nearLat + NEAR_LAT, nearLng + NEAR_LNG, nearLat - NEAR_LAT)
         } else ""
-        val url = "$SEARCH_URL?format=json&limit=1&q=" + URLEncoder.encode(query, "UTF-8") + around
+        val country = if (inBrazil()) "&countrycodes=br" else ""
+        val url = "$SEARCH_URL?format=json&limit=$limit&q=" + URLEncoder.encode(query, "UTF-8") + around + country
         val request = Request.Builder().url(url).header("User-Agent", USER_AGENT).build()
         Http.client.newCall(request).execute().use { resp ->
-            if (!resp.isSuccessful) return null
-            val arr = JsonParser.parseString(resp.body?.string() ?: return null).asJsonArray
-            if (arr.size() == 0) return null
-            val o = arr[0].asJsonObject
-            return Place(query, o.get("lat").asString.toDouble(), o.get("lon").asString.toDouble())
+            if (!resp.isSuccessful) return emptyList()
+            val arr = JsonParser.parseString(resp.body?.string() ?: return emptyList()).asJsonArray
+            return arr.map { e ->
+                val o = e.asJsonObject
+                val name = if (named) query else o.get("display_name")?.asString?.let { label(null, it.split(", ").take(4).joinToString(", ")) } ?: query
+                Place(name, o.get("lat").asString.toDouble(), o.get("lon").asString.toDouble())
+            }
         }
     }
 

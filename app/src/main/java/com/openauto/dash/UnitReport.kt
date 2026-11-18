@@ -59,6 +59,8 @@ class DashApp : Application() {
         UnitPlatform.init(this)
         // Saves the setup to the Google account, when signed in.
         GoogleSync.install(this)
+        // Android's (Google's) geocoder for the address searches.
+        PlaceSearch.init(this)
     }
 }
 

@@ -178,7 +178,7 @@ internal fun CarSettingsDialog(onDismiss: () -> Unit) {
 
         Label(stringResource(R.string.car_section_engine))
         TextSpec(stringResource(R.string.car_spec_engine), draft.engine) { edit(draft.copy(engine = it)) }
-        ChoiceRow(FuelType.entries, draft.fuel, { context.getString(it.labelRes) }) { edit(draft.copy(fuel = it)) }
+        ChoiceRow(FuelType.entries, draft.fuel, { context.getString(it.labelRes) }, perRow = 4) { edit(draft.copy(fuel = it)) }
         Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
             NumSpec(stringResource(R.string.car_spec_power), draft.powerHp, version, Modifier.weight(1f)) { edit(draft.copy(powerHp = it?.toInt())) }
             NumSpec(stringResource(R.string.car_spec_torque), draft.torqueNm, version, Modifier.weight(1f)) { edit(draft.copy(torqueNm = it?.toInt())) }
@@ -231,6 +231,15 @@ internal fun CarSettingsDialog(onDismiss: () -> Unit) {
                 it?.let { price -> draft = draft.copy(fuelPrice = price) }
             }
             TextSpec(stringResource(R.string.car_spec_currency), draft.currency, Modifier.weight(1f)) { draft = draft.copy(currency = it) }
+        }
+        // A flex car: the ethanol price too, and which of the two is in the tank now.
+        if (draft.fuel == FuelType.FLEX) {
+            NumSpec(stringResource(R.string.jmc_fuel_ethanol_price), draft.ethanolPrice.takeIf { it > 0 }, version, Modifier.fillMaxWidth(), decimals = true) {
+                draft = draft.copy(ethanolPrice = it ?: 0.0)
+            }
+            SwitchRow(stringResource(R.string.jmc_fuel_ethanol_now), stringResource(R.string.jmc_fuel_ethanol_now_detail), draft.ethanolNow) {
+                draft = draft.copy(ethanolNow = it)
+            }
         }
 
         if (draft.notes.isNotEmpty()) {
@@ -348,7 +357,7 @@ private fun TextSpec(label: String, value: String, modifier: Modifier = Modifier
  * draft was replaced.
  */
 @Composable
-private fun NumSpec(
+internal fun NumSpec(
     label: String,
     value: Number?,
     version: Int,

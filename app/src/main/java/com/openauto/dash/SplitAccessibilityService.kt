@@ -67,6 +67,8 @@ class SplitAccessibilityService : AccessibilityService() {
         } == true
         Log.d(TAG, "connected")
         updateOverlayForSplit()
+        // jmc_launcher: JMCAR's own floating button rides on this service.
+        FloatingBall.attach(this)
         if (Edition.full) {
             wazeWatch?.cancel()
             wazeWatch = mainScope.launch { NavDirections.running.collect { wazeRuns = it == WazeScreen.PACKAGE; watchContent(wazeRuns || mapsInFront) } }
@@ -142,6 +144,7 @@ class SplitAccessibilityService : AccessibilityService() {
         connectedState.value = false
         SecondScreenController.serviceFiltersKeys = false
         hideSwapOverlay()
+        FloatingBall.detach()
         return super.onUnbind(intent)
     }
 
@@ -152,6 +155,7 @@ class SplitAccessibilityService : AccessibilityService() {
         connectedState.value = false
         SecondScreenController.serviceFiltersKeys = false
         hideSwapOverlay()
+        FloatingBall.detach()
         super.onDestroy()
     }
 

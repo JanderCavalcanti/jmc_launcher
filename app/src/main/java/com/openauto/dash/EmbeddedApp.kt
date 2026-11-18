@@ -1085,7 +1085,7 @@ internal object EmbeddedApp {
     /** Closes the displays of the apps not in [keep]; each app closes with its display. */
     fun releaseUnless(keep: Set<String>) {
         val gone = hosts.keys - keep
-        gone.forEach { pkg -> hosts.remove(pkg)?.let { it.retired = true; it.release() } }
+        gone.forEach { pkg -> hosts.remove(pkg)?.let { it.retired = true; it.release(); it.allowPip() } }
         if (gone.isNotEmpty()) _hosted.value = hosts.keys.toSet()
     }
 
@@ -1686,6 +1686,13 @@ internal object EmbeddedApp {
         /** Closes the app and opens it afresh on the tile, the way it gets there when the dashboard starts. */
         private suspend fun reopen(vd: TileDisplay) {
             reopenedAt = SystemClock.elapsedRealtime()
+            // A navigation under way is never thrown away to fix a picture: the
+            // route would be lost. The app is only placed on the tile again.
+            if (NavDirections.running.value == packageName) {
+                Log.w(TAG, "$packageName is guiding: not closed, only placed on its tile again")
+                place(vd)
+                return
+            }
             _status.value = Status.STARTING
             shell("am force-stop $packageName", "$packageName closed, to open it afresh on its tile")
             delay(CLOSE_WAIT_MS)
@@ -1700,7 +1707,31 @@ internal object EmbeddedApp {
             }
         }
 
+        /** Picture-in-picture was turned off for the app while it lives on a tile ([refusePip]). */
+        @Volatile private var pipRefused = false
+
+        /**
+         * With a route set, Google Maps turns into a picture-in-picture window when
+         * Home is pressed. Closing that window lost the route, and bringing it back
+         * left Maps stuck full screen over the dashboard. While the app lives on a
+         * tile it is not allowed to go picture-in-picture: Home only sends it to the
+         * back, and it is moved onto its tile, route and all. [allowPip] gives it back.
+         */
+        private suspend fun refusePip() {
+            if (pipRefused) return
+            pipRefused = true
+            shell("appops set $packageName PICTURE_IN_PICTURE ignore", "$packageName may not go picture-in-picture while on its tile")
+        }
+
+        /** Gives the app its picture-in-picture back, once it no longer lives on a tile. */
+        fun allowPip() {
+            if (!pipRefused) return
+            pipRefused = false
+            scope.launch { shell("appops set $packageName PICTURE_IN_PICTURE default", "$packageName may go picture-in-picture again") }
+        }
+
         private suspend fun placeOnTile(vd: TileDisplay) {
+            refusePip()
             val id = vd.displayId
             var found: List<WindowListing.AppStack> = listStacks() ?: run {
                 // No shell to look with: the launch alone, which lands on the tile on most ROMs.
@@ -1708,15 +1739,23 @@ internal object EmbeddedApp {
                 return
             }
             if (runningTwice(found, id)) {
-                // Moved onto the tile beside the first, the second copy would only hide
-                // it, both still broken: the app is closed, then opened once, on the tile.
+                // The driver opened the app full screen from the launcher (the dock, the
+                // drawer) while it was in its tile, and Android gave it a second screen
+                // there. That one is the one in use (a route just set in Maps): the
+                // tile's own copy is closed, the app is NOT stopped, and the copy in use
+                // is moved onto the tile below, route and all. Stopping the app here lost
+                // the driver's route every time they came back to the dashboard.
                 restartedAt = SystemClock.elapsedRealtime()
-                shell("am force-stop $packageName", "$packageName runs twice, on its tile and on display " +
-                    found.first { it.displayId != id }.displayId + ": closed, to open it once")
+                found.filter { it.displayId == id }.forEach { stack ->
+                    shell("am stack remove ${stack.stackId}", "$packageName runs twice, on its tile and on display " +
+                        found.first { it.displayId != id }.displayId + ": the tile's copy (stack ${stack.stackId}) closed, the other moved in")
+                }
                 delay(CLOSE_WAIT_MS)
                 found = listStacks() ?: return
             }
             var fresh = false
+            // A picture-in-picture window of the app was asked back full size once already.
+            var expanded = false
             // The listing before the start, to see what it handed off to.
             var before: String? = null
             var settled = false
@@ -1761,9 +1800,23 @@ internal object EmbeddedApp {
                     FreeformBar.insideFloats(context, packageName, found.any { floating(it) })
                     return
                 }
-                val closing = !fresh && floating.isNotEmpty()
+                // Google Maps guiding goes picture-in-picture as soon as the dashboard
+                // comes back. Closing that window threw its route away (11-15 log: the
+                // task removed, Maps started afresh), so a pinned window is never closed:
+                // the app is asked for again on the tile, which brings the same task
+                // back full size with its route, and moved over below if need be.
+                val pinned = floating.filter { it.mode == "pinned" }
+                if (pinned.isNotEmpty() && !expanded) {
+                    expanded = true
+                    Log.i(TAG, "$packageName is picture-in-picture on display ${pinned.first().displayId}: brought back full size on its tile, not closed")
+                    start(vd)
+                    delay(POLL_MS)
+                    found = listStacks() ?: return
+                    return@repeat
+                }
+                val closing = !fresh && floating.any { it.mode != "pinned" }
                 for (stack in found) {
-                    if (closing && stack in floating) {
+                    if (closing && stack in floating && stack.mode != "pinned") {
                         shell("am stack remove ${stack.stackId}", "$packageName ${stack.mode} stack ${stack.stackId} on display ${stack.displayId} closed")
                         continue
                     }

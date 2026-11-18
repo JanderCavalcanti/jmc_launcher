@@ -329,6 +329,7 @@ object Maintenance {
     fun setContext(context: Context) {
         if (appContext != null) return
         appContext = context.applicationContext
+        TypedFuelRange.start(context)
         load()
         scope.launch { CarProfileStore.profile.collect { onCar(it) } }
         scope.launch { followGps() }
@@ -453,6 +454,8 @@ object Maintenance {
     /** The drive monitor counted [km] more kilometres. */
     fun drove(km: Double) {
         if (km <= 0.0 || DemoMode.isOn) return
+        // The range typed off the trip computer counts down too, mileage known or not.
+        TypedFuelRange.drove(km)
         val odo = _state.value.odometer ?: return
         _state.value = _state.value.copy(odometer = odo.copy(drivenSince = odo.drivenSince + km))
         drivenUnsaved += km
